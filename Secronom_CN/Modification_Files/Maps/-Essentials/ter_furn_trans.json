@@ -117,7 +117,7 @@
   {
     "type": "ter_furn_transform",
     "id": "veinhole_open",
-    "fail_message": "你离入口太远了。。。",
+    "fail_message": "你离入口太远了…",
     "terrain": [
       {
         "//": "We use a spell to open the closed entrance once the veinhole dies.",

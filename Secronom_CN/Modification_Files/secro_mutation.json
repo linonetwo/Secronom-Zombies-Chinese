@@ -27,7 +27,7 @@
       "str": "突变体"
     },
     "points": 1,
-    "description": "你还不明白为什么你要选择这个烂摊子。。。",
+    "description": "你还不明白为什么你要选择这个烂摊子…",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -418,7 +418,7 @@
     "type": "mutation",
     "id": "SECRO_TENDRIL_THICK_THRESHOLD",
     "name": {
-      "str": "核心-卷须"
+      "str": "<color_light_green>核心</color>-卷须"
     },
     "points": 10,
     "visibility": 2,
@@ -457,7 +457,7 @@
     "type": "mutation",
     "id": "SECRO_TENDRIL_TENT_THRESHOLD",
     "name": {
-      "str": "核心-卷须"
+      "str": "<color_light_green>核心</color>-卷须"
     },
     "points": 10,
     "visibility": 2,
@@ -644,7 +644,7 @@
     "type": "mutation",
     "id": "SECRO_BLADE_SHARP_THRESHOLD",
     "name": {
-      "str": "核心-叶片"
+      "str": "<color_light_green>核心</color>-叶片"
     },
     "points": 10,
     "visibility": 4,
@@ -673,7 +673,7 @@
     "type": "mutation",
     "id": "SECRO_BLADE_SERRATED_THRESHOLD",
     "name": {
-      "str": "核心-叶片"
+      "str": "<color_light_green>核心</color>-叶片"
     },
     "points": 10,
     "visibility": 4,
@@ -1693,7 +1693,7 @@
     "ugliness": 6,
     "mixed_effect": true,
     "valid": false,
-    "description": "由于进一步的改变，你的舌头变得更宽了，并且在它的表面两侧形成了一套可伸缩的骨刀片。尽管它在感官和攻击能力上有了显著的提高，但你与他人的对话也变得更加难以处理。。。但我觉得这很适合恐吓。",
+    "description": "由于进一步的改变，你的舌头变得更宽了，并且在它的表面两侧形成了一套可伸缩的骨刀片。尽管它在感官和攻击能力上有了显著的提高，但你与他人的对话也变得更加难以处理…但我觉得这很适合恐吓。",
     "types": [
       "MUZZLE"
     ],
@@ -2026,7 +2026,7 @@
     "visibility": 6,
     "ugliness": 6,
     "valid": false,
-    "description": "你头上有几个细长的长鼻。他们偶尔抽搐，并不由自主地，增加头部累赘25。如果条件满足，他们可以从你的受害者身上吸取生命力。。。除非他们还活着。",
+    "description": "你头上有几个细长的长鼻。他们偶尔抽搐，并不由自主地，增加头部累赘25。如果条件满足，他们可以从你的受害者身上吸取生命力…除非他们还活着。",
     "prereqs": [
       "SECRO_UNKNOWN_HAIR_START"
     ],

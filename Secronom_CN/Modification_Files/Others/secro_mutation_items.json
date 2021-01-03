@@ -42,7 +42,7 @@
     "type": "GENERIC",
     "category": "secro_cores",
     "name": "<color_light_green>blade core</color>",
-    "description": "这个核心提供了暂时的被动效果。与其他核心堆叠。\n攻击成本：<color_light_green>4</color>",
+    "description": "这个核心提供了暂时的被动效果。与其他核心堆叠。\n攻击成本：<color_light_green>4</color>\nDamage: <color_light_green>2</color>\nDodge: <color_light_green>1</color></color>",
     "weight": "3 g",
     "volume": "3 ml",
     "price": 0,

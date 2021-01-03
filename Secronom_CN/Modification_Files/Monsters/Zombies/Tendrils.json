@@ -331,7 +331,7 @@
           "id": "mon_zombie_tentawraith_outburst"
         },
         "cooldown": 52,
-        "monster_message": "%1$s击中地面后，%3$s下大量粗触手断裂！卷须从地上冒出来！</color>"
+        "monster_message": "<color_yellow>%1$s strikes the ground then ruptures a vast amount of thick tentacles under %3$s!</color>\n<color_red>%1$s击中地面后，%3$s下大量粗触手断裂！卷须从地上冒出来！</color>"
       },
       {
         "type": "bite",
@@ -435,7 +435,7 @@
           "id": "mon_zombie_tentawraith_tent_pmis"
         },
         "cooldown": 23,
-        "monster_message": "%1$s在%3$s点扫过卷须！</color>"
+        "monster_message": "<color_yellow>%1$s在%3$s点扫过卷须！</color>"
       }
     ],
     "death_function": [

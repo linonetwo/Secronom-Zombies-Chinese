@@ -988,7 +988,7 @@
       "str": "狐狸",
       "str_pl": "狐狸"
     },
-    "description": "一只长着血丝毛的狐狸。。。真的。\n受肉食的侵扰，这个曾经的生物不再是动物，而是嗜血的恶魔。",
+    "description": "一只长着血丝毛的狐狸…真的。\n受肉食的侵扰，这个曾经的生物不再是动物，而是嗜血的恶魔。",
     "default_faction": "secro_flesh",
     "bodytype": "dog",
     "species": [

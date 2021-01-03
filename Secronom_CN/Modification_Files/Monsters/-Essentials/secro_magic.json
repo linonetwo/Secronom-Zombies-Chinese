@@ -28,7 +28,7 @@
     "type": "SPELL",
     "id": "secro_spell_null",
     "name": "null",
-    "description": "无效的。。。别理这个。",
+    "description": "无效的…别理这个。",
     "valid_targets": [
       "none"
     ],
@@ -1698,7 +1698,7 @@
     "id": "mon_vector_rize_smol_target",
     "name": "a spell",
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
-    "message": "<npcname>锁定了目标。。。",
+    "message": "<npcname>锁定了目标…",
     "extra_effects": [
       {
         "id": "mon_vector_rize_smol",
@@ -1749,7 +1749,7 @@
     "id": "mon_vector_rize_big_target",
     "name": "a spell",
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
-    "message": "<npcname>锁定了目标。。。",
+    "message": "<npcname>锁定了目标…",
     "extra_effects": [
       {
         "id": "mon_vector_rize_big",
@@ -7025,7 +7025,7 @@
     "id": "mon_sflesh_veinstalk_spread_target",
     "name": "a spell",
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
-    "message": "<npcname>锁定了目标。。。",
+    "message": "<npcname>锁定了目标…",
     "extra_effects": [
       {
         "id": "mon_sflesh_veinstalk_spread_near",

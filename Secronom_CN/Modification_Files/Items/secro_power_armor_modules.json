@@ -454,7 +454,7 @@
     "name": {
       "str": "Secronom模块植入“光学”"
     },
-    "description": "一套电力装甲模块，安装各种先进的瞄准系统的眼睛。模块植入式“光学”显著提高了感知能力，并略微扩大了用户的视距。使用内置UPS。\n\n模块植入式“光学”提供：\n<color\\u-white>感知：<color\\u-light\\u-green>+6</color>",
+    "description": "一套电力装甲模块，安装各种先进的瞄准系统的眼睛。模块植入式“光学”显著提高了感知能力，并略微扩大了用户的视距。使用内置UPS。\n\n模块植入式“光学”提供：\n<color_white>感知：<color_light_green>+6</color>",
     "weight": "4225 g",
     "volume": "3 L",
     "price": 730000,

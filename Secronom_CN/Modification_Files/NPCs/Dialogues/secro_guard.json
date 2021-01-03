@@ -25,7 +25,7 @@
                   "no": "你需要什么吗，幸存者？",
                   "yes": {
                     "u_has_effect": "secro_guard_backfrom_mission2",
-                    "no": "我们似乎什么也没找到。。。我们应该回去。",
+                    "no": "我们似乎什么也没找到…我们应该回去。",
                     "yes": "你想要什么？"
                   }
                 }
@@ -157,7 +157,7 @@
         }
       },
       {
-        "text": "关于坐标。。。",
+        "text": "关于坐标…",
         "topic": "TALK_MISSION_OFFER",
         "condition": {
           "and": [
@@ -173,7 +173,7 @@
         }
       },
       {
-        "text": "我们在这里。。。",
+        "text": "我们在这里…",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -196,7 +196,7 @@
         ]
       },
       {
-        "text": "好吧，那么。。。",
+        "text": "好吧，那么…",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -212,7 +212,7 @@
         }
       },
       {
-        "text": "没有什么。。。",
+        "text": "没有什么…",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -228,7 +228,7 @@
         }
       },
       {
-        "text": "我们最好走。。。",
+        "text": "我们最好走…",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -309,7 +309,7 @@
     },
     "responses": [
       {
-        "text": "好吧，那么。。。",
+        "text": "好吧，那么…",
         "topic": "TALK_DONE",
         "condition": {
           "not": {

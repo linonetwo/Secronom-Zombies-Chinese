@@ -38,7 +38,7 @@
           "id": "mon_zombie_revenant_target"
         },
         "cooldown": 12,
-        "monster_message": "%1$s捕捉附近怪物的强大威力！</color>"
+        "monster_message": "<color_red>%1$s捕捉附近怪物的强大威力！</color>"
       }
     ],
     "death_drops": "default_zombie_death_drops",
@@ -149,7 +149,7 @@
           "id": "mon_zombie_revenant_allure_target"
         },
         "cooldown": 12,
-        "monster_message": "%1$s把它的黏液扩散到周围！</color>"
+        "monster_message": "<color_red>%1$s把它的黏液扩散到周围！</color>"
       }
     ],
     "death_drops": "default_zombie_death_drops",

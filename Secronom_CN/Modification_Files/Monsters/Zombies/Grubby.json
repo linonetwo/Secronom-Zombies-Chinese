@@ -43,7 +43,7 @@
           "id": "mon_zombie_grubby_target_random"
         },
         "cooldown": 17,
-        "monster_message": "%1$s的脓液喷发，释放出成群的寄生虫！</color>"
+        "monster_message": "<color_yellow>%1$s的脓液喷发，释放出成群的寄生虫！</color>"
       }
     ],
     "death_drops": "default_zombie_death_drops",
@@ -113,7 +113,7 @@
           "id": "mon_zombie_slimy_target_random"
         },
         "cooldown": 34,
-        "monster_message": "%1$s的脓液爆炸，释放出成群的寄生虫！</color>"
+        "monster_message": "<color_yellow>%1$s的脓液爆炸，释放出成群的寄生虫！</color>"
       }
     ],
     "upgrades": {
@@ -185,7 +185,7 @@
           "id": "mon_zombie_glut_target"
         },
         "cooldown": 34,
-        "monster_message": "%1$s的一部分身体剧烈地爆炸，释放出大量的寄生虫！</color>"
+        "monster_message": "<color_yellow>%1$s的一部分身体剧烈地爆炸，释放出大量的寄生虫！</color>"
       }
     ],
     "death_function": [

@@ -3050,7 +3050,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“a”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“a”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3083,7 +3083,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“a”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“a”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3116,7 +3116,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“a”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“a”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3149,7 +3149,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“b”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“b”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3182,7 +3182,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“b”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“b”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3215,7 +3215,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“b”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“b”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3248,7 +3248,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“c”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“c”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3280,7 +3280,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“c”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“c”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3312,7 +3312,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“c”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“c”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3344,7 +3344,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“d”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“d”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3377,7 +3377,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“d”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“d”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3410,7 +3410,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“d”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“d”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3443,7 +3443,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“e”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“e”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3476,7 +3476,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“e”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“e”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3509,7 +3509,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“e”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“e”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3542,7 +3542,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“f”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“f”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3575,7 +3575,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“f”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“f”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3608,7 +3608,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“f”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“f”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3641,7 +3641,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“g”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“g”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3674,7 +3674,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“g”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“g”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3707,7 +3707,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“g”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“g”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3740,7 +3740,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“h”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“h”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3772,7 +3772,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“h”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“h”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3804,7 +3804,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“h”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“h”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3836,7 +3836,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“i”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“i”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3869,7 +3869,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“i”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“i”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3902,7 +3902,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“i”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“i”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3935,7 +3935,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“j”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“j”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -3968,7 +3968,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“j”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“j”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4001,7 +4001,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“j”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“j”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4034,7 +4034,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“k”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“k”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4067,7 +4067,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“k”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“k”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4100,7 +4100,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“k”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“k”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4133,7 +4133,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“l”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“l”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4166,7 +4166,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“l”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“l”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4199,7 +4199,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“l”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“l”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4232,7 +4232,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“m”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“m”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4264,7 +4264,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“m”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“m”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4296,7 +4296,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“m”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“m”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4328,7 +4328,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“n”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“n”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4361,7 +4361,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“n”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“n”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4394,7 +4394,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“n”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“n”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4427,7 +4427,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“o”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“o”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4460,7 +4460,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“o”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“o”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4493,7 +4493,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“o”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“o”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4526,7 +4526,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“p”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“p”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4559,7 +4559,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“p”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“p”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4592,7 +4592,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“p”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“p”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4625,7 +4625,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“q”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“q”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4658,7 +4658,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“q”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“q”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4691,7 +4691,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“q”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“q”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4724,7 +4724,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“r”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“r”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4756,7 +4756,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“r”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“r”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4788,7 +4788,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“r”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“r”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4820,7 +4820,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“s”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“s”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4853,7 +4853,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“s”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“s”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4886,7 +4886,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“s”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“s”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4919,7 +4919,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“t”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“t”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4952,7 +4952,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“t”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“t”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -4985,7 +4985,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆\n*坐标“t”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆\n*坐标“t”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5018,7 +5018,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“a”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“a”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5051,7 +5051,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“a”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“a”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5084,7 +5084,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“a”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“a”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5117,7 +5117,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“b”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“b”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5150,7 +5150,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“b”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“b”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5183,7 +5183,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“b”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“b”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5216,7 +5216,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“c”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“c”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5248,7 +5248,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“c”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“c”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5280,7 +5280,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“c”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“c”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5312,7 +5312,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀片）\n*坐标“d”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（刀片）\n*坐标“d”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5345,7 +5345,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀片）\n*坐标“d”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（刀片）\n*坐标“d”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5378,7 +5378,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀片）\n*坐标“d”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（刀片）\n*坐标“d”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5411,7 +5411,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“e”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“e”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5444,7 +5444,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“e”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“e”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5477,7 +5477,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“e”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“e”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5510,7 +5510,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“f”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“f”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5543,7 +5543,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“f”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“f”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5576,7 +5576,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“f”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“f”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5609,7 +5609,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“g”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“g”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5642,7 +5642,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“g”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“g”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5675,7 +5675,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“g”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“g”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5708,7 +5708,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀片）\n*坐标“h”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（刀片）\n*坐标“h”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5740,7 +5740,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀片）\n*坐标“h”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（刀片）\n*坐标“h”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5772,7 +5772,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀片）\n*坐标“h”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（刀片）\n*坐标“h”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5804,7 +5804,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀）\n*坐标“i”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（刀）\n*坐标“i”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5837,7 +5837,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀）\n*坐标“i”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（刀）\n*坐标“i”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5870,7 +5870,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀）\n*坐标“i”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（刀）\n*坐标“i”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5903,7 +5903,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀片）\n*坐标“j”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（刀片）\n*坐标“j”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5936,7 +5936,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀片）\n*坐标“j”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（刀片）\n*坐标“j”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -5969,7 +5969,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀片）\n*坐标“j”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（刀片）\n*坐标“j”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6002,7 +6002,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“k”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“k”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6035,7 +6035,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“k”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“k”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6068,7 +6068,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“k”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“k”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6101,7 +6101,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀片）\n*坐标“l”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（刀片）\n*坐标“l”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6134,7 +6134,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀片）\n*坐标“l”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（刀片）\n*坐标“l”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6167,7 +6167,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀片）\n*坐标“l”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（刀片）\n*坐标“l”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6200,7 +6200,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀片）\n*坐标“m”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（刀片）\n*坐标“m”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6232,7 +6232,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀片）\n*坐标“m”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（刀片）\n*坐标“m”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6264,7 +6264,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀片）\n*坐标“m”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（刀片）\n*坐标“m”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6296,7 +6296,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“n”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“n”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6329,7 +6329,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“n”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“n”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6362,7 +6362,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“n”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“n”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6395,7 +6395,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀）\n*坐标“o”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（刀）\n*坐标“o”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6428,7 +6428,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀）\n*坐标“o”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（刀）\n*坐标“o”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6461,7 +6461,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀）\n*坐标“o”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（刀）\n*坐标“o”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6494,7 +6494,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“p”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“p”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6527,7 +6527,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“p”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“p”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6560,7 +6560,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“p”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“p”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6593,7 +6593,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀）\n*坐标“q”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（刀）\n*坐标“q”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6626,7 +6626,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀）\n*坐标“q”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（刀）\n*坐标“q”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6659,7 +6659,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀）\n*坐标“q”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（刀）\n*坐标“q”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6692,7 +6692,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“r”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“r”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6724,7 +6724,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“r”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“r”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6756,7 +6756,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“r”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“r”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6788,7 +6788,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“s”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“s”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6821,7 +6821,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“s”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“s”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6854,7 +6854,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀刃）\n*坐标“s”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（刀刃）\n*坐标“s”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6887,7 +6887,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀片）\n*坐标“t”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（刀片）\n*坐标“t”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6920,7 +6920,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀片）\n*坐标“t”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（刀片）\n*坐标“t”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6953,7 +6953,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（刀片）\n*坐标“t”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（刀片）\n*坐标“t”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -6986,7 +6986,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“a”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“a”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7019,7 +7019,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“a”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“a”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7052,7 +7052,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“a”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“a”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7085,7 +7085,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“b”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“b”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7118,7 +7118,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“b”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“b”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7151,7 +7151,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“b”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“b”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7184,7 +7184,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“c”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“c”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7216,7 +7216,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“c”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“c”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7248,7 +7248,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“c”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“c”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7280,7 +7280,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“d”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“d”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7313,7 +7313,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“d”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“d”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7346,7 +7346,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“d”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“d”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7379,7 +7379,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“e”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“e”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7412,7 +7412,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“e”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“e”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7445,7 +7445,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“e”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“e”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7478,7 +7478,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“f”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“f”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7511,7 +7511,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“f”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“f”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7544,7 +7544,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“f”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“f”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7577,7 +7577,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“g”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“g”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7610,7 +7610,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“g”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“g”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7643,7 +7643,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“g”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“g”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7676,7 +7676,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“h”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“h”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7708,7 +7708,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“h”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“h”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7740,7 +7740,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“h”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“h”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7772,7 +7772,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“i”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“i”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7805,7 +7805,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“i”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“i”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7838,7 +7838,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“i”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“i”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7871,7 +7871,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“j”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“j”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7904,7 +7904,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“j”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“j”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7937,7 +7937,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“j”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“j”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -7970,7 +7970,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“k”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“k”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8003,7 +8003,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“k”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“k”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8036,7 +8036,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“k”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“k”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8069,7 +8069,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“l”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“l”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8102,7 +8102,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“l”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“l”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8135,7 +8135,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“l”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“l”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8168,7 +8168,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“m”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“m”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8200,7 +8200,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“m”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“m”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8232,7 +8232,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“m”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“m”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8264,7 +8264,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“n”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“n”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8297,7 +8297,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“n”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“n”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8330,7 +8330,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“n”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“n”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8363,7 +8363,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“o”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“o”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8396,7 +8396,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“o”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“o”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8429,7 +8429,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“o”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“o”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8462,7 +8462,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“p”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“p”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8495,7 +8495,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“p”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“p”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8528,7 +8528,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“p”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“p”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8561,7 +8561,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“q”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“q”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8594,7 +8594,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“q”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“q”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8627,7 +8627,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“q”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“q”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8660,7 +8660,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“r”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“r”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8692,7 +8692,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“r”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“r”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8724,7 +8724,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“r”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“r”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8756,7 +8756,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“s”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“s”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8789,7 +8789,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“s”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“s”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8822,7 +8822,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“s”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“s”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8855,7 +8855,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“t”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“t”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8888,7 +8888,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“t”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“t”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8921,7 +8921,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（卷须）\n*坐标“t”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（卷须）\n*坐标“t”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8954,7 +8954,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“a”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“a”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -8987,7 +8987,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“a”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“a”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9020,7 +9020,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“a”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“a”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9053,7 +9053,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“b”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“b”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9086,7 +9086,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“b”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“b”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9119,7 +9119,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“b”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“b”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9152,7 +9152,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“c”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“c”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9184,7 +9184,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“c”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“c”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9216,7 +9216,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“c”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“c”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9248,7 +9248,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“d”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“d”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9281,7 +9281,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“d”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“d”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9314,7 +9314,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“d”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“d”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9347,7 +9347,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“e”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“e”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9380,7 +9380,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“e”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“e”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9413,7 +9413,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“e”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“e”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9446,7 +9446,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“f”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“f”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9479,7 +9479,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“f”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“f”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9512,7 +9512,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“f”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“f”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9545,7 +9545,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“g”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“g”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9578,7 +9578,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“g”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“g”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9611,7 +9611,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“g”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“g”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9644,7 +9644,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“h”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“h”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9676,7 +9676,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“h”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“h”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9708,7 +9708,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“h”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“h”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9740,7 +9740,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“i”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“i”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9773,7 +9773,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“i”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“i”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9806,7 +9806,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“i”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“i”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9839,7 +9839,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“j”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“j”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9872,7 +9872,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“j”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“j”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9905,7 +9905,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“j”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“j”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9938,7 +9938,7 @@
         ]
       },
       {
-        "text": "[88K]口红\n* \"Far\" 方向\n防御",
+        "text": "[88K]口红\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -9971,7 +9971,7 @@
         ]
       },
       {
-        "text": "[88K]口红\n* \"Mid\" 方向\n防御",
+        "text": "[88K]口红\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10004,7 +10004,7 @@
         ]
       },
       {
-        "text": "[88K]口红\n* \"Near\" 方向\n防御",
+        "text": "[88K]口红\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10037,7 +10037,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“l”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“l”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10070,7 +10070,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“l”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“l”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10103,7 +10103,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“l”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“l”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10136,7 +10136,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“m”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“m”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10168,7 +10168,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“m”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“m”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10200,7 +10200,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“m”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“m”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10232,7 +10232,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“n”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“n”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10265,7 +10265,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“n”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“n”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10298,7 +10298,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“n”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“n”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10331,7 +10331,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“o”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“o”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10364,7 +10364,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“o”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“o”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10397,7 +10397,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“o”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“o”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10430,7 +10430,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“p”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“p”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10463,7 +10463,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“p”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“p”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10496,7 +10496,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“p”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“p”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10529,7 +10529,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“q”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“q”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10562,7 +10562,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“q”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“q”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10595,7 +10595,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“q”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“q”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10628,7 +10628,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“r”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“r”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10660,7 +10660,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“r”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“r”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10692,7 +10692,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“r”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“r”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10724,7 +10724,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“s”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“s”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10757,7 +10757,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“s”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“s”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10790,7 +10790,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“s”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“s”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10823,7 +10823,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“t”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“t”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10856,7 +10856,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“t”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“t”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10889,7 +10889,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（口红）\n*坐标“t”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（口红）\n*坐标“t”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10922,7 +10922,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“a”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“a”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10955,7 +10955,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“a”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“a”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -10988,7 +10988,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“a”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“a”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11021,7 +11021,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“b”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“b”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11054,7 +11054,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“b”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“b”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11087,7 +11087,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“b”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“b”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11120,7 +11120,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“c”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“c”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11152,7 +11152,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“c”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“c”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11184,7 +11184,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“c”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“c”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11216,7 +11216,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“d”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“d”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11249,7 +11249,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“d”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“d”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11282,7 +11282,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“d”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“d”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11315,7 +11315,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“e”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“e”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11348,7 +11348,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“e”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“e”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11381,7 +11381,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“e”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“e”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11414,7 +11414,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“f”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“f”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11447,7 +11447,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“f”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“f”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11480,7 +11480,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“f”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“f”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11513,7 +11513,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“g”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“g”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11546,7 +11546,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“g”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“g”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11579,7 +11579,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“g”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“g”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11612,7 +11612,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“h”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“h”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11644,7 +11644,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“h”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“h”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11676,7 +11676,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“h”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“h”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11708,7 +11708,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“i”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“i”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11741,7 +11741,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“i”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“i”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11774,7 +11774,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“i”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“i”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11807,7 +11807,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“j”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“j”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11840,7 +11840,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“j”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“j”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11873,7 +11873,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“j”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“j”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11906,7 +11906,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“k”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“k”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11939,7 +11939,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“k”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“k”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -11972,7 +11972,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“k”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“k”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12005,7 +12005,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“l”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“l”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12038,7 +12038,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“l”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“l”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12071,7 +12071,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“l”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“l”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12104,7 +12104,7 @@
         ]
       },
       {
-        "text": "[88m*88米]\n* \"Far\" 方向\n防御",
+        "text": "[88m*88米]\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12136,7 +12136,7 @@
         ]
       },
       {
-        "text": "[88m*88米]\n* \"Mid\" 方向\n防御",
+        "text": "[88m*88米]\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12168,7 +12168,7 @@
         ]
       },
       {
-        "text": "[88m*88米]\n* \"Near\" 方向\n防御",
+        "text": "[88m*88米]\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12200,7 +12200,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“n”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“n”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12233,7 +12233,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“n”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“n”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12266,7 +12266,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“n”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“n”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12299,7 +12299,7 @@
         ]
       },
       {
-        "text": "[88O]肉堆\n* \"Far\" 方向\n防御",
+        "text": "[88O]肉堆\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12332,7 +12332,7 @@
         ]
       },
       {
-        "text": "[88O]肉堆\n* \"Mid\" 方向\n防御",
+        "text": "[88O]肉堆\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12365,7 +12365,7 @@
         ]
       },
       {
-        "text": "[88O]肉堆\n* \"Near\" 方向\n防御",
+        "text": "[88O]肉堆\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12398,7 +12398,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“p”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“p”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12431,7 +12431,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“p”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“p”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12464,7 +12464,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“p”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“p”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12497,7 +12497,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“q”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“q”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12530,7 +12530,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“q”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“q”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12563,7 +12563,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“q”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“q”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12596,7 +12596,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“r”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“r”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12628,7 +12628,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“r”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“r”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12660,7 +12660,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“r”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“r”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12692,7 +12692,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“s”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“s”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12725,7 +12725,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“s”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“s”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12758,7 +12758,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“s”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“s”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12791,7 +12791,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“t”\n* \"Far\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“t”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12824,7 +12824,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“t”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“t”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12857,7 +12857,7 @@
         ]
       },
       {
-        "text": "[完成]肉堆（统一）\n*坐标“t”\n* \"Near\" 方向\n防御",
+        "text": "[完成]肉堆（统一）\n*坐标“t”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12890,7 +12890,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“a”\n* \"Far\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“a”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12923,7 +12923,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“a”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“a”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12956,7 +12956,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“a”\n* \"Near\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“a”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -12989,7 +12989,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“b”\n* \"Far\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“b”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13022,7 +13022,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“b”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“b”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13055,7 +13055,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“b”\n* \"Near\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“b”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13088,7 +13088,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“c”\n* \"Far\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“c”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13120,7 +13120,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“c”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“c”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13152,7 +13152,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“c”\n* \"Near\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“c”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13184,7 +13184,7 @@
         ]
       },
       {
-        "text": "[88D]完成“肉食掠夺者88”\n* \"Far\" 方向\n防御",
+        "text": "[88D]完成“肉食掠夺者88”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13217,7 +13217,7 @@
         ]
       },
       {
-        "text": "[88D]完成“肉食掠夺者88”\n* \"Mid\" 方向\n防御",
+        "text": "[88D]完成“肉食掠夺者88”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13250,7 +13250,7 @@
         ]
       },
       {
-        "text": "[88D]完成“肉食掠夺者88”\n* \"Near\" 方向\n防御",
+        "text": "[88D]完成“肉食掠夺者88”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13283,7 +13283,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“e”\n* \"Far\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“e”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13316,7 +13316,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“e”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“e”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13349,7 +13349,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“e”\n* \"Near\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“e”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13382,7 +13382,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“f”\n* \"Far\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“f”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13415,7 +13415,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“f”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“f”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13448,7 +13448,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“f”\n* \"Near\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“f”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13481,7 +13481,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“g”\n* \"Far\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“g”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13514,7 +13514,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“g”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“g”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13547,7 +13547,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“g”\n* \"Near\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“g”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13580,7 +13580,7 @@
         ]
       },
       {
-        "text": "[88H]完成“肉食掠夺者88”\n* \"Far\" 方向\n防御",
+        "text": "[88H]完成“肉食掠夺者88”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13612,7 +13612,7 @@
         ]
       },
       {
-        "text": "[88H]完成“肉食掠夺者88”\n* \"Mid\" 方向\n防御",
+        "text": "[88H]完成“肉食掠夺者88”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13644,7 +13644,7 @@
         ]
       },
       {
-        "text": "[88H]完成“肉食掠夺者88”\n* \"Near\" 方向\n防御",
+        "text": "[88H]完成“肉食掠夺者88”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13676,7 +13676,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“i”\n* \"Far\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“i”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13709,7 +13709,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“i”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“i”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13742,7 +13742,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“i”\n* \"Near\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“i”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13775,7 +13775,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“j”\n* \"Far\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“j”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13808,7 +13808,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“j”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“j”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13841,7 +13841,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“j”\n* \"Near\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“j”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13874,7 +13874,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“k”\n* \"Far\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“k”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13907,7 +13907,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“k”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“k”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13940,7 +13940,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“k”\n* \"Near\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“k”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -13973,7 +13973,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“l”\n* \"Far\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“l”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14006,7 +14006,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“l”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“l”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14039,7 +14039,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“l”\n* \"Near\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“l”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14072,7 +14072,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“m”\n* \"Far\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“m”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14104,7 +14104,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“m”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“m”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14136,7 +14136,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“m”\n* \"Near\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“m”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14168,7 +14168,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“n”\n* \"Far\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“n”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14201,7 +14201,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“n”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“n”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14234,7 +14234,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“n”\n* \"Near\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“n”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14267,7 +14267,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“o”\n* \"Far\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“o”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14300,7 +14300,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“o”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“o”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14333,7 +14333,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“o”\n* \"Near\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“o”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14366,7 +14366,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“p”\n* \"Far\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“p”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14399,7 +14399,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“p”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“p”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14432,7 +14432,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“p”\n* \"Near\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“p”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14465,7 +14465,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“q”\n* \"Far\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“q”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14498,7 +14498,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“q”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“q”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14531,7 +14531,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“q”\n* \"Near\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“q”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14564,7 +14564,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“r”\n* \"Far\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“r”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14596,7 +14596,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“r”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“r”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14628,7 +14628,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“r”\n* \"Near\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“r”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14660,7 +14660,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“s”\n* \"Far\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“s”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14693,7 +14693,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“s”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“s”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14726,7 +14726,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“s”\n* \"Near\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“s”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14759,7 +14759,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“t”\n* \"Far\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“t”\n* “远”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14792,7 +14792,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“t”\n* \"Mid\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“t”\n* “中”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [
@@ -14825,7 +14825,7 @@
         ]
       },
       {
-        "text": "[完成]蹂躏者肉堆\n*坐标“t”\n* \"Near\" 方向\n防御",
+        "text": "[完成]蹂躏者肉堆\n*坐标“t”\n* “近”方向\n防御",
         "topic": "TALK_DONE",
         "condition": {
           "and": [

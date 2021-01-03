@@ -48,7 +48,7 @@
           "id": "mon_fleshweaver_vscratch"
         },
         "cooldown": 33,
-        "monster_message": "%1$s注射%3$s挥发性液体！</color>"
+        "monster_message": "<color_yellow>%1$s注射%3$s挥发性液体！</color>"
       }
     ],
     "death_function": [

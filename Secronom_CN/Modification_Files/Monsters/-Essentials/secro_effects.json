@@ -403,7 +403,7 @@
       "媒介感染"
     ],
     "desc": [
-      "你正遭受媒介感染！\n药物似乎不起作用，可能需要一些东西。。。多汁的。"
+      "你正遭受媒介感染！\n药物似乎不起作用，可能需要一些东西…多汁的。"
     ],
     "rating": "bad",
     "max_intensity": 3,
@@ -1860,7 +1860,7 @@
     "type": "effect_type",
     "id": "secro_power_armor_flesh_devouring_note",
     "apply_message": "You body fills in with distress...",
-    "remove_message": "肉体停止扩散。。。现在。",
+    "remove_message": "肉体停止扩散…现在。",
     "rating": "bad",
     "base_mods": {
       "hurt_min": [

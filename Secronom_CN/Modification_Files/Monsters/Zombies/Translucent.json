@@ -126,7 +126,7 @@
           "id": "mon_zombie_pellucid_aburst"
         },
         "cooldown": 49,
-        "monster_message": "%1$s把一个酸球射到%3$s上！</color>"
+        "monster_message": "<color_red>%1$s把一个酸球射到%3$s上！</color>"
       }
     ],
     "special_when_hit": [

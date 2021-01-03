@@ -10,13 +10,13 @@
         "no": "你需要知道更多的信息吗？",
         "yes": {
           "u_has_effect": "secro_scientist_mission1_progress",
-          "no": "也许我已经告诉你了我所知道的一切。。。",
+          "no": "也许我已经告诉你了我所知道的一切…",
           "yes": {
             "u_has_effect": "secro_scientist_partake_mission1",
-            "no": "不，这不是弓室。。。",
+            "no": "不，这不是弓室…",
             "yes": {
               "u_has_effect": "secro_scientist_udisgustcoldblood",
-              "no": "既然我们到了，我们就不会被那些蹒跚而行的食人族打扰了。。。现在。",
+              "no": "既然我们到了，我们就不会被那些蹒跚而行的食人族打扰了…现在。",
               "yes": [
                 "What do you need, survivor?",
                 "You need something?"
@@ -134,7 +134,7 @@
         }
       },
       {
-        "text": "关于修理。。。",
+        "text": "关于修理…",
         "topic": "TALK_SECRO_SCIENTIST_repair",
         "condition": {
           "u_has_effect": "secro_scientist_partake_mission2"
@@ -167,7 +167,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SECRO_SCIENTIST_whoisme_srsly",
-    "dynamic_line": "这不重要，但如果你想知道，我不介意。。。因为一切都搞砸了。",
+    "dynamic_line": "这不重要，但如果你想知道，我不介意…因为一切都搞砸了。",
     "responses": [
       {
         "text": "那就告诉我你的秘密。",
@@ -224,7 +224,7 @@
         }
       },
       {
-        "text": "我想我什么都问过了。。。",
+        "text": "我想我什么都问过了…",
         "topic": "TALK_SECRO_SCIENTIST_main",
         "condition": {
           "and": [
@@ -282,7 +282,7 @@
         }
       },
       {
-        "text": "我想我什么都问过了。。。",
+        "text": "我想我什么都问过了…",
         "topic": "TALK_SECRO_SCIENTIST_main",
         "condition": {
           "and": [
@@ -359,7 +359,7 @@
         }
       },
       {
-        "text": "我想我什么都问过了。。。",
+        "text": "我想我什么都问过了…",
         "topic": "TALK_SECRO_SCIENTIST_main",
         "condition": {
           "and": [
@@ -436,7 +436,7 @@
         }
       },
       {
-        "text": "我想我什么都问过了。。。",
+        "text": "我想我什么都问过了…",
         "topic": "TALK_SECRO_SCIENTIST_main",
         "condition": {
           "and": [
@@ -605,10 +605,10 @@
   {
     "type": "talk_topic",
     "id": "TALK_SECRO_SCIENTIST_whereisme_lab_secret",
-    "dynamic_line": "如果你有兴趣，我可以告诉你一件事。。。在这个设施的深处是一种大规模杀伤性武器，是为军事“使用”而制造的。",
+    "dynamic_line": "如果你有兴趣，我可以告诉你一件事…在这个设施的深处是一种大规模杀伤性武器，是为军事“使用”而制造的。",
     "responses": [
       {
-        "text": "谢谢你的消息，我想。。。",
+        "text": "谢谢你的消息，我想…",
         "topic": "TALK_SECRO_SCIENTIST_main",
         "effect": {
           "duration": "PERMANENT",
@@ -680,7 +680,7 @@
       "no": "你在想什么？",
       "yes": {
         "u_has_effect": "secro_scientist_asked_secronom_wanderers",
-        "no": "我明白了，你对我们的“意外”创造很好奇。。。",
+        "no": "我明白了，你对我们的“意外”创造很好奇…",
         "yes": "这就是科学，明白吗？你可能认为我们是可怕的，但我们想要的是为我们所有人打开新的发现。是的，我们搞砸了，但我们仍然在这里，努力和帮助对方度过这场噩梦。\n我不能改变你对我们的看法，但如果你想了解更多关于secronom项目的信息，请与我们的研究人员联系。"
       }
     },
@@ -733,7 +733,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SECRO_SCIENTIST_secronom_what_cityzeds",
-    "dynamic_line": "什么？那可不好。。。\n你知道，一旦与一个有生存能力的受害者接触，secronom就有极大的改变能力。如果与催化剂混合，这将把一个人的身体变成一个适应性活武器，但这并不总是以相同的结果结束。",
+    "dynamic_line": "什么？那可不好…\n你知道，一旦与一个有生存能力的受害者接触，secronom就有极大的改变能力。如果与催化剂混合，这将把一个人的身体变成一个适应性活武器，但这并不总是以相同的结果结束。",
     "responses": [
       {
         "text": "那它是怎么传播的呢？",
@@ -770,10 +770,10 @@
   {
     "type": "talk_topic",
     "id": "TALK_SECRO_SCIENTIST_secronom_what_wanderers_wtf",
-    "dynamic_line": "这些变种人的思维方式和僵尸蛋头不同，他们可能在树林里散步。\n我们通过在每个受试者身上应用一种超浓缩的诱变剂发现了它们，结果，其中很少有人转化成这些可憎的东西，而其余的人都死了。。。这是不幸的，因为我们的团队认为他们男性化的身体可以处理这种潜在的力量。",
+    "dynamic_line": "这些变种人的思维方式和僵尸蛋头不同，他们可能在树林里散步。\n我们通过在每个受试者身上应用一种超浓缩的诱变剂发现了它们，结果，其中很少有人转化成这些可憎的东西，而其余的人都死了…这是不幸的，因为我们的团队认为他们男性化的身体可以处理这种潜在的力量。",
     "responses": [
       {
-        "text": "好吧，现在我知道你的团队做了一个不人道的行为。。。",
+        "text": "好吧，现在我知道你的团队做了一个不人道的行为…",
         "topic": "TALK_SECRO_SCIENTIST_secronom_what",
         "effect": [
           {

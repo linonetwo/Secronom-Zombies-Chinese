@@ -40,7 +40,7 @@
           "id": "mon_zombie_skittyweavy_target"
         },
         "cooldown": 2,
-        "monster_message": "%1$s从%3$s逃走了！</color>\n<color_yellow>然后%1$s匆忙注射它的针！</color>"
+        "monster_message": "<color_light_red>%1$s flees from %3$s!</color>\n<color_yellow>%1$s从%3$s逃走了！</color>\n<color_yellow>然后%1$s匆忙注射它的针！</color>"
       }
     ],
     "death_function": [
@@ -99,7 +99,7 @@
           "id": "mon_zombie_skittyweavy_repleshy_target"
         },
         "cooldown": 2,
-        "monster_message": "%1$s从%3$s逃走了！</color>\n<color_yellow>然后%1$s匆忙注射它的针！</color>"
+        "monster_message": "<color_light_red>%1$s flees from %3$s!</color>\n<color_yellow>%1$s从%3$s逃走了！</color>\n<color_yellow>然后%1$s匆忙注射它的针！</color>"
       }
     ],
     "death_function": [
@@ -158,7 +158,7 @@
           "id": "mon_zombie_skittyweavy_sickly_target"
         },
         "cooldown": 2,
-        "monster_message": "%1$s从%3$s逃走了！</color>\n<color_yellow>然后%1$s急忙给它的鼻子注射！</color>"
+        "monster_message": "<color_light_red>%1$s flees from %3$s!</color>\n<color_yellow>%1$s从%3$s逃走了！</color>\n<color_yellow>然后%1$s急忙给它的鼻子注射！</color>"
       }
     ],
     "death_function": [

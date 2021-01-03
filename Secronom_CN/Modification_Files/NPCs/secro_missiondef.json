@@ -65,10 +65,10 @@
       "describe": "…",
       "offer": "你已经听说了计划。一旦我们的幸存者接受了我的短途旅行请求。",
       "accepted": "很好。现在走吧，我们不能在目前的情况下浪费时间。",
-      "rejected": "那么。。。我们稍后再谈。",
+      "rejected": "那么…我们稍后再谈。",
       "advice": "那些标本在近距离内很难看。",
       "inquire": "我们得走了。",
-      "success": "非常感谢。现在我们有了更多的活动空间。也就是说，告诉其他人待在这里。。。他们也需要你的帮助。",
+      "success": "非常感谢。现在我们有了更多的活动空间。也就是说，告诉其他人待在这里…他们也需要你的帮助。",
       "success_lie": "...",
       "failure": "..."
     }
@@ -79,7 +79,7 @@
     "name": {
       "str": "为SDP-L1炮塔收集材料"
     },
-    "description": "收集<color\\u-light\\u-green>4块钢材<color>，<color\\u-light\\u-green>18块废金属<color>，<color\\u-light\\u-green>9块电子废料<color>，<color\\u-light\\u-green>9个电源转换器<color>，<color\\u-light\\u-green>5条铜线<color>和<color\\u-light\\u-green>一个破碎的激光光束转台<color>。",
+    "description": "收集<color_light_green>4块钢材<color>，<color_light_green>18块废金属<color>，<color_light_green>9块电子废料<color>，<color_light_green>9个电源转换器<color>，<color_light_green>5条铜线<color>和<color_light_green>一个破碎的激光光束转台<color>。",
     "goal": "MGOAL_CONDITION",
     "goal_condition": {
       "and": [
@@ -200,7 +200,7 @@
       "describe": "…",
       "offer": "我想让你从地堡里取回一个坏掉的SDP-L1和其他必要的部件，以便我完全修理炮塔。",
       "accepted": "那就去吧，以后都给我。",
-      "rejected": "那么。。。我们稍后再谈。",
+      "rejected": "那么…我们稍后再谈。",
       "advice": "如果它太重，就把它拖走。",
       "inquire": "我们得走了。",
       "success": "很好。这个过程可能需要一个小时。在我修理的时候，如果别人需要你的帮助，你应该和他们谈谈。",
@@ -338,7 +338,7 @@
       "describe": "…",
       "offer": "一旦你准备好了，你必须用我提供的取样工具从那个生物身上取一个样本。",
       "accepted": "好的，这是工具箱。它被设置为扫描一个神秘的标本。我已经把坐标发给了我们的警卫，跟他谈谈，他会给你带路的。但是记住，这个生物用欺骗来隐藏自己。",
-      "rejected": "那么。。。我们稍后再谈。",
+      "rejected": "那么…我们稍后再谈。",
       "advice": "小心使用采样器套件，因为它只扫描谜，否则你会浪费电池。",
       "inquire": "样品怎么样？",
       "success": "干得好，幸存者。我将开始鉴定这种树脂，希望它能有很好的用途。",
@@ -394,9 +394,9 @@
       "offer": "无人机一报告她就给了我坐标。我会帮你采集样本，把这个生物从你身边赶走。你准备好了吗？",
       "accepted": "很好。目标离这里不远。",
       "rejected": "等你准备好了再问我一次。",
-      "advice": "我从没见过这种生物。。。",
+      "advice": "我从没见过这种生物…",
       "inquire": "你杀了他们吗？",
-      "success": "等待。不是那个合适的。。。我想我们输了。",
+      "success": "等待。不是那个合适的…我想我们输了。",
       "success_lie": "真正地？我和你并肩作战，但你却对你明明没做的事撒谎？",
       "failure": "..."
     }

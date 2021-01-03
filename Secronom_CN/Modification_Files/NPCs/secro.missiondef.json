@@ -65,10 +65,10 @@
       "describe": "…",
       "offer": "你已经听说了计划。一旦我们的幸存者接受了我的短途旅行请求。",
       "accepted": "很好。现在走吧，我们不能在目前的情况下浪费时间。",
-      "rejected": "那么。。。我们稍后再谈。",
+      "rejected": "那么…我们稍后再谈。",
       "advice": "那些标本在近距离内很难看。",
       "inquire": "我们得走了。",
-      "success": "非常感谢。现在我们有了更多的活动空间。也就是说，告诉其他人待在这里。。。他们也需要你的帮助。",
+      "success": "非常感谢。现在我们有了更多的活动空间。也就是说，告诉其他人待在这里…他们也需要你的帮助。",
       "success_lie": "...",
       "failure": "..."
     }
@@ -79,7 +79,7 @@
     "name": {
       "str": "为SDP-L1炮塔收集材料"
     },
-    "description": "收集<color\\u-light\\u-green>4块钢材<color>，<color\\u-light\\u-green>18块废金属<color>，<color\\u-light\\u-green>9块电子废料<color>，<color\\u-light\\u-green>9个电源转换器<color>，<color\\u-light\\u-green>5条铜线<color>和<color\\u-light\\u-green>一个破碎的激光光束转台<color>。",
+    "description": "收集<color_light_green>4块钢材<color>，<color_light_green>18块废金属<color>，<color_light_green>9块电子废料<color>，<color_light_green>9个电源转换器<color>，<color_light_green>5条铜线<color>和<color_light_green>一个破碎的激光光束转台<color>。",
     "goal": "MGOAL_CONDITION",
     "goal_condition": {
       "and": [
@@ -200,7 +200,7 @@
       "describe": "…",
       "offer": "我想让你从地堡里取回一个坏掉的SDP-L1和其他必要的部件，以便我完全修理炮塔。",
       "accepted": "那就去吧，以后都给我。",
-      "rejected": "那么。。。我们稍后再谈。",
+      "rejected": "那么…我们稍后再谈。",
       "advice": "如果它太重，就把它拖走。",
       "inquire": "我们得走了。",
       "success": "很好。这个过程可能需要一个小时。在我修理的时候，如果别人需要你的帮助，你应该和他们谈谈。",

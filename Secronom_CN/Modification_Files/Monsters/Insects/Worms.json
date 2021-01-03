@@ -165,7 +165,7 @@
           "id": "mon_zombieworm_wriggly_target"
         },
         "cooldown": 40,
-        "monster_message": "%1$s的触须穿透%3$s！"
+        "monster_message": "<color_yellow>%1$s's tentacles pierces through %3$s</color>%1$s的触须穿透%3$s！"
       },
       {
         "type": "bite",

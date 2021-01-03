@@ -213,7 +213,7 @@
           "id": "mon_summon_nightwail_shadow"
         },
         "cooldown": 38,
-        "monster_message": "%1$s分裂了一大块阴影！</color>"
+        "monster_message": "<color_yellow>%1$s分裂了一大块阴影！</color>"
       }
     ],
     "regenerates": 10,
@@ -278,7 +278,7 @@
           "id": "mon_zombie_nightwail_shadow_curse_target"
         },
         "cooldown": 10,
-        "monster_message": "%1$s诅咒%3$s！</color>"
+        "monster_message": "<color_yellow>%1$s诅咒%3$s！</color>"
       }
     ],
     "death_function": [

@@ -161,7 +161,7 @@
     "color": "light_green",
     "name": {
       "str": "<color_light_green>核心</color>（刀锋僵尸）",
-      "str_pl": "核心（刀锋僵尸）"
+      "str_pl": "<color_light_green>核心</color>（刀锋僵尸）"
     },
     "description": "一种被严重压缩的刀锋僵尸的肉。含有适合复制的有效DNA。",
     "price": 30,
@@ -217,8 +217,8 @@
     "symbol": "Q",
     "color": "light_green",
     "name": {
-      "str": "核心（卷须僵尸）",
-      "str_pl": "核心（卷须僵尸）"
+      "str": "<color_light_green>核心</color>（卷须僵尸）",
+      "str_pl": "<color_light_green>核心</color>（卷须僵尸）"
     },
     "description": "卷须僵尸的一种被严重压缩的肉。含有适合复制的有效DNA。",
     "price": 30,

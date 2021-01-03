@@ -51,7 +51,7 @@
     "special_attacks": [
       {
         "type": "spell",
-        "monster_message": "%1$s绽放出矢量雾！</color>",
+        "monster_message": "<color_yellow>%1$s绽放出矢量雾！</color>",
         "spell_data": {
           "id": "mon_vector_rize_smol_target"
         },
@@ -130,7 +130,7 @@
     "special_attacks": [
       {
         "type": "spell",
-        "monster_message": "%1$s绽放出矢量雾！</color>",
+        "monster_message": "<color_yellow>%1$s绽放出矢量雾！</color>",
         "spell_data": {
           "id": "mon_vector_rize_smol_target"
         },
@@ -236,7 +236,7 @@
       ],
       {
         "type": "spell",
-        "monster_message": "%1$s绽放出矢量雾！</color>",
+        "monster_message": "<color_yellow>%1$s绽放出矢量雾！</color>",
         "spell_data": {
           "id": "mon_vector_rize_smol_target"
         },
@@ -305,7 +305,7 @@
     "special_attacks": [
       {
         "type": "spell",
-        "monster_message": "%1$s绽放出矢量雾！</color>",
+        "monster_message": "<color_yellow>%1$s绽放出矢量雾！</color>",
         "spell_data": {
           "id": "mon_vector_rize_big_target"
         },
@@ -452,7 +452,7 @@
     "special_attacks": [
       {
         "type": "spell",
-        "monster_message": "%1$s绽放出矢量雾！</color>",
+        "monster_message": "<color_yellow>%1$s绽放出矢量雾！</color>",
         "spell_data": {
           "id": "mon_vector_rize_big_target"
         },

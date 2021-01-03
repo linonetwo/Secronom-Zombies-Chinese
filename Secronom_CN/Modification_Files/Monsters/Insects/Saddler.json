@@ -4,7 +4,7 @@
     "id": "mon_insect_saddler_brood",
     "type": "MONSTER",
     "name": "saddler broodmother",
-    "description": "恶魔般的巨大马鞍，有无数绿色多毛的细长腿，覆盖整个马鞍底部。在它们下面产生一种沉重的，怪异的声音，很像从婴儿鞍没有生产。。。但是。",
+    "description": "恶魔般的巨大马鞍，有无数绿色多毛的细长腿，覆盖整个马鞍底部。在它们下面产生一种沉重的，怪异的声音，很像从婴儿鞍没有生产…但是。",
     "default_faction": "saddler",
     "species": [
       "SSADDLER"

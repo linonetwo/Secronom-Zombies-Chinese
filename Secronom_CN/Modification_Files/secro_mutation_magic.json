@@ -208,7 +208,7 @@
     "id": "SECRO_UNKNOWN_HAIR_SUCK_succ_er",
     "type": "SPELL",
     "name": "Succ - Heal",
-    "description": "由一种突变或特征所产生的咒语，被动或主动。如果你看到了这个，那就改读这个：\n“你吸吮了目标，治愈了你2。”",
+    "description": "由一种突变或特征所产生的咒语，被动或主动。如果你看到了这个，那就改读这个：\n“你吸吮了目标，治愈了你2点。”",
     "flags": [
       "SILENT",
       "NO_PROJECTILE"

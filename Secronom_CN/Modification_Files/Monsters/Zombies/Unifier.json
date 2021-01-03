@@ -43,7 +43,7 @@
           "id": "mon_zombie_unify_bv_target"
         },
         "cooldown": 45,
-        "monster_message": "%1$s的手下产生了一条血管！</color>"
+        "monster_message": "<color_yellow>%1$s的手下产生了一条血管！</color>"
       }
     ],
     "death_drops": "default_zombie_death_drops",
@@ -203,7 +203,7 @@
           "id": "mon_zombie_hemo_bwave"
         },
         "cooldown": 60,
-        "monster_message": "%1$s控制自己的血液并把它送到%3$s！</color>\n<color_yellow>有几条血管从%1$s的身体里冒出来！</color>"
+        "monster_message": "<color_red>%1$s manipulates its own blood and sends it to %3$s!</color>\n<color_yellow>%1$s控制自己的血液并把它送到%3$s！</color>\n<color_yellow>有几条血管从%1$s的身体里冒出来！</color>"
       }
     ],
     "regenerates": 2,

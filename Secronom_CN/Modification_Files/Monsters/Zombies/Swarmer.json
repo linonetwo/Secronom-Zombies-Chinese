@@ -446,7 +446,7 @@
           "id": "mon_zombie_swarmer_evo_savage_tension_target_random"
         },
         "cooldown": 11,
-        "monster_message": "<color\\u洋红>%1$s剧烈抽搐…</color>"
+        "monster_message": "<color_magenta>%1$s剧烈抽搐…</color>"
       }
     ],
     "death_drops": "default_zombie_death_drops",

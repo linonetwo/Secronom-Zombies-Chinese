@@ -1772,7 +1772,7 @@
     "id": "secro_flesh_splicer_target",
     "name": "a spell",
     "description": "目标由物品施法。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
-    "message": "<color_dark_gray>生物有机拼接器的触角开始剧烈扭动。。。\n<color_light_green>生物有机拼接器耙%3$s！",
+    "message": "<color_dark_gray>生物有机拼接器的触角开始剧烈扭动…\n<color_light_green>生物有机拼接器耙%3$s！",
     "extra_effects": [
       {
         "id": "secro_flesh_splicer_zombie_blade"

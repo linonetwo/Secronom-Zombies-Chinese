@@ -232,7 +232,7 @@
         }
       },
       {
-        "text": "关于你的服务。。。",
+        "text": "关于你的服务…",
         "topic": "SECRO_FLESH_HIVEMIND_service",
         "condition": {
           "and": [
@@ -486,7 +486,7 @@
     "dynamic_line": "*它伸展卷须，穿过地面。核心在天鹅绒般的条纹脉冲，因为它再次控制营地。",
     "responses": [
       {
-        "text": "可以。。。",
+        "text": "可以…",
         "topic": "TALK_DONE"
       }
     ]

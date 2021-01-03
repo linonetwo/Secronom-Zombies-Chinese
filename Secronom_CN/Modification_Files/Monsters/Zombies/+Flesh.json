@@ -40,7 +40,7 @@
         },
         "//": "Since the player is walking on the flesh, this spell's cooldown should be VERY high.",
         "cooldown": 225,
-        "monster_message": "%1$s扭动着，发出深红的恐怖来对抗%3$s！</color>"
+        "monster_message": "<color_light_red>%1$s扭动着，发出深红的恐怖来对抗%3$s！</color>"
       }
     ],
     "harvest": "exempt",
@@ -269,7 +269,7 @@
     "name": {
       "str": "肉袋"
     },
-    "description": "附着在附近地形上的一种球状大脓液。不同于它张开的嘴，它以恒定的速度搏动，好像它要孵化。。。",
+    "description": "附着在附近地形上的一种球状大脓液。不同于它张开的嘴，它以恒定的速度搏动，好像它要孵化…",
     "default_faction": "secro_flesh",
     "bodytype": "blob",
     "species": [
@@ -415,7 +415,7 @@
           "id": "mon_sflesh_vbeast_wlace"
         },
         "cooldown": 28,
-        "monster_message": "%1$s把卷须扫到%3$s上！</color>"
+        "monster_message": "<color_light_red>%1$s把卷须扫到%3$s上！</color>"
       }
     ],
     "harvest": "exempt",
@@ -593,7 +593,7 @@
           "id": "mon_sflesh_flesh_target"
         },
         "cooldown": 12,
-        "monster_message": "%1$s发抖！</color>"
+        "monster_message": "<color_light_red>%1$s发抖！</color>"
       }
     ],
     "regenerates": 20,
@@ -724,7 +724,7 @@
           "id": "mon_sflesh_wall_ing_target"
         },
         "cooldown": 5,
-        "monster_message": "%1$s发抖！</color>"
+        "monster_message": "<color_light_red>%1$s发抖！</color>"
       }
     ],
     "harvest": "exempt",
@@ -788,7 +788,7 @@
           "id": "mon_sflesh_flesh_city_target"
         },
         "cooldown": 16,
-        "monster_message": "%1$s颤抖着，用它的触角敲打着一切！\n%1$s的卷须刺穿%3$s！</color>"
+        "monster_message": "<color_light_red>%1$s颤抖着，用它的触角敲打着一切！\n%1$s的卷须刺穿%3$s！</color>"
       }
     ],
     "regenerates": 10,
@@ -854,7 +854,7 @@
           "id": "mon_sflesh_flesh_weak_target"
         },
         "cooldown": 10,
-        "monster_message": "%1$s在%3$s点击打一只触手！</color>"
+        "monster_message": "<color_light_red>%1$s在%3$s点击打一只触手！</color>"
       }
     ],
     "regenerates": 4,
@@ -922,7 +922,7 @@
           "id": "mon_sflesh_wall_city_ing_target"
         },
         "cooldown": 5,
-        "monster_message": "%1$s发抖！</color>"
+        "monster_message": "<color_light_red>%1$s发抖！</color>"
       }
     ],
     "harvest": "exempt",
@@ -1047,7 +1047,7 @@
           "id": "mon_sflesh_veinstalk_spread_target"
         },
         "cooldown": 10,
-        "monster_message": "%1$s剧烈抽搐…</color>"
+        "monster_message": "<color_red>%1$s剧烈抽搐…</color>"
       }
     ],
     "death_function": [
@@ -1152,7 +1152,7 @@
           "id": "mon_sflesh_fleshling_tiny_devour"
         },
         "cooldown": 50,
-        "monster_message": "%1$s吞噬%3$s…</color>"
+        "monster_message": "<color_magenta>%1$s吞噬%3$s…</color>"
       }
     ],
     "harvest": "exempt",
@@ -1212,7 +1212,7 @@
           "id": "mon_sflesh_fleshling_smol_devour"
         },
         "cooldown": 75,
-        "monster_message": "%1$s吞噬%3$s…</color>"
+        "monster_message": "<color_magenta>%1$s吞噬%3$s…</color>"
       }
     ],
     "flags": [
@@ -1268,7 +1268,7 @@
           "id": "mon_sflesh_fleshling_med_devour"
         },
         "cooldown": 100,
-        "monster_message": "%1$s吞噬%3$s…</color>"
+        "monster_message": "<color_magenta>%1$s吞噬%3$s…</color>"
       }
     ],
     "flags": [
@@ -1324,7 +1324,7 @@
           "id": "mon_sflesh_fleshling_big_devour"
         },
         "cooldown": 125,
-        "monster_message": "%1$s吞噬%3$s…</color>"
+        "monster_message": "<color_magenta>%1$s吞噬%3$s…</color>"
       }
     ],
     "flags": [
@@ -1381,7 +1381,7 @@
           "id": "mon_sflesh_fleshling_huge_devour"
         },
         "cooldown": 150,
-        "monster_message": "%1$s吞噬%3$s…</color>"
+        "monster_message": "<color_light_red>%1$s吞噬%3$s…</color>"
       }
     ],
     "flags": [
@@ -1453,7 +1453,7 @@
           "id": "mon_sflesh_fleshling_stingy_target_random"
         },
         "cooldown": 30,
-        "monster_message": "%1$s在%3$s处闪烁时剧烈地抽搐！</color>"
+        "monster_message": "<color_light_red>%1$s在%3$s处闪烁时剧烈地抽搐！</color>"
       }
     ],
     "death_function": [
@@ -1518,7 +1518,7 @@
           "id": "mon_sflesh_fleshling_ravagy_target"
         },
         "cooldown": 24,
-        "monster_message": "%1$s的骨头长出来了！</color>"
+        "monster_message": "<color_yellow>%1$s的骨头长出来了！</color>"
       }
     ],
     "death_function": [
@@ -1579,7 +1579,7 @@
           "id": "mon_sflesh_fleshling_scavengy_flee_target"
         },
         "cooldown": 3,
-        "monster_message": "%1$s从%3$s逃走了！</color>"
+        "monster_message": "<color_light_red>%1$s从%3$s逃走了！</color>"
       }
     ],
     "death_function": [
@@ -1637,7 +1637,7 @@
           "id": "mon_sflesh_fleshling_scavengy_explosive_pop_target"
         },
         "cooldown": 5,
-        "monster_message": "%1$s爆炸成血迹！</color>"
+        "monster_message": "<color_yellow>%1$s爆炸成血迹！</color>"
       }
     ],
     "harvest": "exempt",
@@ -1693,7 +1693,7 @@
           "id": "mon_sflesh_fleshling_scavengy_tent_tentsurprise"
         },
         "cooldown": 5,
-        "monster_message": "%1$s爆炸成一堆有叶片的触手！</color>"
+        "monster_message": "<color_yellow>%1$s爆炸成一堆有叶片的触手！</color>"
       }
     ],
     "harvest": "exempt",

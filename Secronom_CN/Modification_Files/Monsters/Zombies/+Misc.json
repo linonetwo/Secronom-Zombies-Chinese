@@ -42,7 +42,7 @@
           "id": "mon_zombie_nautilus_sewave"
         },
         "cooldown": 26,
-        "monster_message": "%1$s淹没并向%3$s方向产生地震波！"
+        "monster_message": "<color_yellow>%1$s submerges and generates a seismic wave towards %3$s</color>%1$s淹没并向%3$s方向产生地震波！"
       }
     ],
     "death_function": [
@@ -406,7 +406,7 @@
           "id": "mon_zombie_fake_poly_ichorus_target"
         },
         "cooldown": 0,
-        "monster_message": "%1$s破裂成鱼鳞病！</color>"
+        "monster_message": "<color_red>%1$s破裂成鱼鳞病！</color>"
       }
     ],
     "death_function": [
@@ -545,7 +545,7 @@
           "id": "mon_zombie_fake_poly_psyrus_target"
         },
         "cooldown": 0,
-        "monster_message": "%1$s破裂成一个psyrus！</color>"
+        "monster_message": "<color_red>%1$s破裂成一个psyrus！</color>"
       }
     ],
     "death_function": [
@@ -687,7 +687,7 @@
           "id": "mon_zombie_uruxis_spawn_target"
         },
         "cooldown": 24,
-        "monster_message": "%1$s诅咒周围的地区，因为它把自己笼罩在阴影里！</color>"
+        "monster_message": "<color_yellow>%1$s诅咒周围的地区，因为它把自己笼罩在阴影里！</color>"
       }
     ],
     "death_drops": "default_zombie_death_drops",
@@ -958,7 +958,7 @@
           "id": "mon_zombie_fleshmonger_reflesh_target"
         },
         "cooldown": 18,
-        "monster_message": "%1$s刺穿附近的怪物！</color>"
+        "monster_message": "<color_yellow>%1$s刺穿附近的怪物！</color>"
       }
     ],
     "regenerates": 20,
@@ -1161,7 +1161,7 @@
           "id": "mon_zombie_cordev_target_random"
         },
         "cooldown": 9,
-        "monster_message": "%1$s的视线锁定%3$s…</color>"
+        "monster_message": "<color_yellow>%1$s的视线锁定%3$s…</color>"
       },
       {
         "cooldown": 15,
@@ -1263,7 +1263,7 @@
           "id": "mon_zombie_fleshysnaky_target"
         },
         "cooldown": 21,
-        "monster_message": "%1$s的怒火随着它对%3$s的眩光而增强！</color>"
+        "monster_message": "<color_yellow>%1$s的怒火随着它对%3$s的眩光而增强！</color>"
       },
       {
         "cooldown": 31,
@@ -1344,7 +1344,7 @@
           "id": "mon_zombie_akin_target"
         },
         "cooldown": 5,
-        "monster_message": "%1$s的内脏卷须在附着在%3$s上时会起伏！</color>"
+        "monster_message": "<color_yellow>%1$s的内脏卷须在附着在%3$s上时会起伏！</color>"
       }
     ],
     "death_drops": "default_zombie_death_drops",
@@ -1701,7 +1701,7 @@
     "name": {
       "str": "放弃的僵尸"
     },
-    "description": "一个被稀释的僵尸，令人震惊，因为它邪恶的眼睛只显示出它所看的人的活力的表情。一个人可以轻易地夺走他的生命，但是一些不人道的东西在这个腐烂的容器周围徘徊。。。",
+    "description": "一个被稀释的僵尸，令人震惊，因为它邪恶的眼睛只显示出它所看的人的活力的表情。一个人可以轻易地夺走他的生命，但是一些不人道的东西在这个腐烂的容器周围徘徊…",
     "default_faction": "zombie",
     "bodytype": "human",
     "species": [

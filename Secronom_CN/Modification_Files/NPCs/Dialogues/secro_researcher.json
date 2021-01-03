@@ -333,7 +333,7 @@
     "dynamic_line": "这是没有必要的，因为当你在处理神秘密室的时候，我已经派了一架侦察机去用追踪装置搜索那个标本，它的报告可能需要一段时间。",
     "responses": [
       {
-        "text": "可以。。。我会等的。",
+        "text": "可以…我会等的。",
         "topic": "TALK_SECRO_RESEARCHER_main",
         "effect": {
           "duration": "PERMANENT",
@@ -345,10 +345,10 @@
   {
     "type": "talk_topic",
     "id": "TALK_SECRO_RESEARCHER_mission1_notyet",
-    "dynamic_line": "无人机还在搜索中。。。",
+    "dynamic_line": "无人机还在搜索中…",
     "responses": [
       {
-        "text": "可以。。。",
+        "text": "可以…",
         "topic": "TALK_SECRO_RESEARCHER_main"
       }
     ]

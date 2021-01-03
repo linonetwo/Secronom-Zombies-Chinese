@@ -82,7 +82,7 @@
         }
       },
       {
-        "text": "没有关系。。。",
+        "text": "没有关系…",
         "topic": "TALK_DONE"
       }
     ]
@@ -333,7 +333,7 @@
   {
     "id": "SECRO_FLESH_HIVEMIND_service_meatfarm_growing",
     "type": "talk_topic",
-    "dynamic_line": "*消耗提供的肉体，然后连接的扇区开始跳动。。。",
+    "dynamic_line": "*消耗提供的肉体，然后连接的扇区开始跳动…",
     "responses": [
       {
         "text": "…",

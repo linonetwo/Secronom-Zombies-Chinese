@@ -35,7 +35,7 @@
           "id": "mon_secro_laserturret_heatray"
         },
         "cooldown": 5,
-        "monster_message": "%1$s在%3$s处射出一道热射线！</color>"
+        "monster_message": "<color_yellow>%1$s在%3$s处射出一道热射线！</color>"
       }
     ],
     "death_drops": {},
@@ -88,7 +88,7 @@
           "id": "mon_secro_electurret_target"
         },
         "cooldown": 3,
-        "monster_message": "%1$s发出电流！</color>"
+        "monster_message": "<color_yellow>%1$s发出电流！</color>"
       }
     ],
     "death_drops": {},

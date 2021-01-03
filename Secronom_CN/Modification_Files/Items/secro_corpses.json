@@ -6,7 +6,7 @@
     "name": {
       "str": "尸体"
     },
-    "description": "一个人的无头尸体。它的伤口看起来又深又空。。。",
+    "description": "一个人的无头尸体。它的伤口看起来又深又空…",
     "looks_like": "corpse_generic_human",
     "volume": "33 L",
     "weight": "47 kg",

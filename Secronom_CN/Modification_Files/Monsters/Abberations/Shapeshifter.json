@@ -39,7 +39,7 @@
           "id": "mon_shifter_target"
         },
         "cooldown": 10,
-        "monster_message": "%1$s周围的空气越来越浓！</color>"
+        "monster_message": "<color_red>%1$s周围的空气越来越浓！</color>"
       }
     ],
     "death_function": [

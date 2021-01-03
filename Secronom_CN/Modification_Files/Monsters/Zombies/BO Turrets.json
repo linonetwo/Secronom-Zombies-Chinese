@@ -145,7 +145,7 @@
           "id": "mon_sflesh_camp_turret_tendril_target"
         },
         "cooldown": 5,
-        "monster_message": "%1$s扭动！</color>"
+        "monster_message": "<color_light_red>%1$s扭动！</color>"
       }
     ],
     "death_function": [
@@ -254,7 +254,7 @@
           "id": "mon_sflesh_camp_turret_unify_target"
         },
         "cooldown": 35,
-        "monster_message": "%1$s发抖！</color>"
+        "monster_message": "<color_light_red>%1$s发抖！</color>"
       }
     ],
     "death_function": [
@@ -309,7 +309,7 @@
           "id": "mon_sflesh_camp_turret_hravager_target"
         },
         "cooldown": 8,
-        "monster_message": "%1$s疯狂地扭动着！</color>"
+        "monster_message": "<color_yellow>%1$s疯狂地扭动着！</color>"
       }
     ],
     "death_function": [
