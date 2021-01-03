@@ -1,0 +1,704 @@
+[
+  {
+    "id": "secro_power_armor_flesh_morph_fite_blades",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": {
+      "str": "战机武器"
+    },
+    "description": "激活此命令以命令肉身血管向所选武器变形。如果不这样做，将不会取消肉类消费。类似的变形不会叠加。\n变形需要<color_yellow>300步</color>才能完成",
+    "weight": "3 g",
+    "volume": "3 ml",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "%",
+    "color": "light_red",
+    "coverage": 0,
+    "encumbrance": 0,
+    "power_armor": true,
+    "material_thickness": 1,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "secro_power_armor_flesh_morphed_fite_blades_give",
+      "no_fail": true,
+      "need_worn": true,
+      "level": 0
+    },
+    "flags": [
+      "NO_TAKEOFF",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  {
+    "id": "secro_power_armor_flesh_morphed_fite_blades",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": {
+      "str": "战斗机武器"
+    },
+    "description": "突出在你的关节是尖锐和致命的弯曲刀片组成的肉和骨头。擅长近距离攻击。",
+    "weight": "400 g",
+    "volume": "145 ml",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "%",
+    "color": "light_red_white",
+    "coverage": 0,
+    "encumbrance": 0,
+    "power_armor": true,
+    "material_thickness": 1,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "secro_power_armor_flesh_morphed_fite_blades_lowcut",
+              "hit_self": false,
+              "once_in": 5,
+              "message": "你的骨刀砍了%2$s刀！",
+              "npc_message": "%1$s斜杠%2$s！"
+            },
+            {
+              "id": "secro_power_armor_flesh_morphed_fite_blades_highcut",
+              "hit_self": false,
+              "once_in": 50,
+              "message": "你的骨刀耙%2$s！",
+              "npc_message": "%1$s耙%2$s！"
+            }
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "NO_TAKEOFF",
+      "ONLY_ONE",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  {
+    "id": "secro_power_armor_flesh_morph_fite_tentacles",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": {
+      "str": "战机颜色"
+    },
+    "description": "激活此命令以命令肉身血管向所选武器变形。如果不这样做，将不会取消肉类消费。类似的变形不会叠加。\n变形需要<color_yellow>300步</color>才能完成",
+    "weight": "3 g",
+    "volume": "3 ml",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "%",
+    "color": "light_red",
+    "coverage": 0,
+    "encumbrance": 0,
+    "power_armor": true,
+    "material_thickness": 1,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "secro_power_armor_flesh_morphed_fite_tentacles_give",
+      "no_fail": true,
+      "need_worn": true,
+      "level": 0
+    },
+    "flags": [
+      "NO_TAKEOFF",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  {
+    "id": "secro_power_armor_flesh_morphed_fite_tentacles",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": {
+      "str": "战斗机武器"
+    },
+    "description": "你的背上长着几根纤细的触角，不停地扭动，每根都有一根带刺的刺。\n\n激活执行：\n<color_cyan>广泛瘫痪</color>-<color_yellow>1250移动成本</color>",
+    "weight": "220 g",
+    "volume": "400 ml",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "%",
+    "color": "light_red_white",
+    "coverage": 0,
+    "encumbrance": 0,
+    "power_armor": true,
+    "material_thickness": 1,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "secro_power_armor_flesh_morphed_fite_tentacles_random",
+      "no_fail": true,
+      "need_worn": true,
+      "level": 0
+    },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "secro_power_armor_flesh_morphed_fite_tentacles_lowstab",
+              "hit_self": false,
+              "once_in": 10,
+              "message": "你的静脉注射%2$s！",
+              "npc_message": "%1$s的静脉注射%2$s！"
+            },
+            {
+              "id": "secro_power_armor_flesh_morphed_fite_tentacles_highstab",
+              "hit_self": false,
+              "once_in": 100,
+              "message": "你的血管变得狂野，然后在%2$s点穿刺！",
+              "npc_message": "%1$s的血管失控了，然后刺穿了%2$s！"
+            }
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "NO_TAKEOFF",
+      "ONLY_ONE",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  {
+    "id": "secro_power_armor_flesh_morph_fite_fleshpound",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": {
+      "str": "战斗机武器"
+    },
+    "description": "激活此命令以命令肉身血管向所选武器变形。如果不这样做，将不会取消肉类消费。类似的变形不会叠加。\n变形需要<color_yellow>300个移动</color>才能完成。",
+    "weight": "3 g",
+    "volume": "3 ml",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "%",
+    "color": "light_red",
+    "coverage": 0,
+    "encumbrance": 0,
+    "power_armor": true,
+    "material_thickness": 1,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "secro_power_armor_flesh_morphed_fite_fleshpound_give",
+      "no_fail": true,
+      "need_worn": true,
+      "level": 0
+    },
+    "flags": [
+      "NO_TAKEOFF",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  {
+    "id": "secro_power_armor_flesh_morphed_fite_fleshpound",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": {
+      "str": "战斗机武器"
+    },
+    "description": "肉容器的手臂变成了一团跳动的肉，你感觉到它的力量在你体内涌动。它使处理困难，但他们包冲击力！\n\n<彩色浅红色>战斗机武器</color>-飞翼提供：\n<彩色白>力量：<彩色浅绿色>+2</color>",
+    "weight": "2900 g",
+    "volume": "1780 ml",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "%",
+    "color": "light_red_white",
+    "coverage": 0,
+    "encumbrance": 0,
+    "power_armor": true,
+    "material_thickness": 1,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            {
+              "value": "STRENGTH",
+              "add": 1
+            },
+            {
+              "value": "BONUS_DAMAGE",
+              "multiply": 0.025
+            },
+            {
+              "value": "ATTACK_COST",
+              "multiply": 0.0375
+            }
+          ],
+          "hit_you_effect": [
+            {
+              "id": "secro_power_armor_flesh_morphed_fite_fleshpound_powpunch",
+              "hit_self": false,
+              "once_in": 150,
+              "message": "你的强力冲孔%2$s！",
+              "npc_message": "%1$s强力冲孔%2$s！"
+            }
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "NO_TAKEOFF",
+      "ONLY_ONE",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  {
+    "id": "secro_power_armor_flesh_morph_fite_jawarms",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": {
+      "str": "战斗机武器"
+    },
+    "description": "激活此命令以命令肉身血管向所选武器变形。如果不这样做，将不会取消肉类消费。类似的变形不会叠加。\n变形需要<color_yellow>300个移动</color>才能完成。",
+    "weight": "3 g",
+    "volume": "3 ml",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "%",
+    "color": "light_red",
+    "coverage": 0,
+    "encumbrance": 0,
+    "power_armor": true,
+    "material_thickness": 1,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "secro_power_armor_flesh_morphed_fite_jawarms_give",
+      "no_fail": true,
+      "need_worn": true,
+      "level": 0
+    },
+    "flags": [
+      "NO_TAKEOFF",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  {
+    "id": "secro_power_armor_flesh_morphed_fite_jawarms",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": {
+      "str": "战斗机武器"
+    },
+    "description": "手掌下是巨大的、张开的孔口，上面排列着不规则的牙齿。它啃咬任何它接触到的东西。它有强壮的下颚，擅长啃食猎物。\n\n战斗机武器提供：\n攻击成本：<color_red>+5%</color></color>",
+    "weight": "2900 g",
+    "volume": "1780 ml",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "%",
+    "color": "light_red_white",
+    "coverage": 0,
+    "encumbrance": 0,
+    "power_armor": true,
+    "material_thickness": 1,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            {
+              "value": "ATTACK_COST",
+              "multiply": 0.025
+            }
+          ],
+          "hit_you_effect": [
+            {
+              "id": "secro_power_armor_flesh_morphed_fite_jawarms_lowdmg",
+              "hit_self": false,
+              "once_in": 12,
+              "message": "你的咬人者在%2$s点咬人！",
+              "npc_message": "%1$s的咬人者在%2$s咬人！"
+            },
+            {
+              "id": "secro_power_armor_flesh_morphed_fite_jawarms_highdmg",
+              "hit_self": false,
+              "once_in": 120,
+              "message": "你的咬在%2$s响！",
+              "npc_message": "%1$s的咬人咬了%2$s！"
+            }
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "NO_TAKEOFF",
+      "ONLY_ONE",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  {
+    "id": "secro_power_armor_flesh_morph_gun_spit",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": {
+      "str": "炮手武器"
+    },
+    "description": "激活此命令以命令肉身血管向所选武器变形。如果不这样做，将不会取消肉类消费。类似的变形不会叠加。\n变形需要<color_yellow>300个移动</color>才能完成。",
+    "weight": "3 g",
+    "volume": "3 ml",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "%",
+    "color": "cyan",
+    "coverage": 0,
+    "encumbrance": 0,
+    "power_armor": true,
+    "material_thickness": 1,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "secro_power_armor_flesh_morphed_gun_spit_give",
+      "no_fail": true,
+      "need_worn": true,
+      "level": 0
+    },
+    "flags": [
+      "NO_TAKEOFF",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  {
+    "id": "secro_power_armor_flesh_morphed_gun_spit",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": {
+      "str": "炮手武器"
+    },
+    "description": "一个细长的长鼻状的肢体从你的肩膀伸出，偶尔会抽搐。四肢流着嘶嘶的血酸。\n\n激活执行：\n<color_cyan>深红色淋浴</color>-<color_yellow>900移动成本</color>",
+    "weight": "110 g",
+    "volume": "295 ml",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "%",
+    "color": "cyan_white",
+    "coverage": 0,
+    "encumbrance": 0,
+    "power_armor": true,
+    "material_thickness": 1,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "secro_power_armor_flesh_morphed_gun_spit_cs",
+      "no_fail": true,
+      "need_worn": true,
+      "level": 0
+    },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "intermittent_activation": {
+            "effects": [
+              {
+                "frequency": "45 seconds",
+                "spell_effects": [
+                  {
+                    "id": "secro_power_armor_flesh_morphed_gun_spit_as_target"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "flags": [
+      "NO_TAKEOFF",
+      "ONLY_ONE",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  {
+    "id": "secro_power_armor_flesh_morph_gun_bonelance",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": {
+      "str": "炮手武器"
+    },
+    "description": "激活此命令以命令肉身血管向所选武器变形。如果不这样做，将不会取消肉类消费。类似的变形不会叠加。\n变形需要<color_yellow>300个移动</color>才能完成。",
+    "weight": "3 g",
+    "volume": "3 ml",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "%",
+    "color": "cyan",
+    "coverage": 0,
+    "encumbrance": 0,
+    "power_armor": true,
+    "material_thickness": 1,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "secro_power_armor_flesh_morphed_gun_bonelance_give",
+      "no_fail": true,
+      "need_worn": true,
+      "level": 0
+    },
+    "flags": [
+      "NO_TAKEOFF",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  {
+    "id": "secro_power_armor_flesh_morphed_gun_bonelance",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": {
+      "str": "炮手武器"
+    },
+    "description": "一个巨大的开口代替了你的左手。内衬尖锐的钙化材料，严重妨碍你处理物体。\n\n<color_light_blue>枪手武器</color>-骨枪骑兵提供：\n<color_white>攻击成本：<color_red>+20%</color>",
+    "weight": "1300 g",
+    "volume": "1835 ml",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "%",
+    "color": "cyan_white",
+    "coverage": 0,
+    "encumbrance": 0,
+    "power_armor": true,
+    "material_thickness": 1,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "secro_power_armor_flesh_morphed_gun_bonelance_random",
+      "no_fail": true,
+      "need_worn": true,
+      "level": 0
+    },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            {
+              "value": "ATTACK_COST",
+              "multiply": 0.1
+            }
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "NO_TAKEOFF",
+      "ONLY_ONE",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  {
+    "id": "secro_power_armor_flesh_morph_jugg_bonespikes",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": {
+      "str": "<color_light_green>[MORPH]</color><color_yellow>神像武器</color>-骨钉"
+    },
+    "description": "激活此命令以命令肉身血管向所选武器变形。如果不这样做，将不会取消肉类消费。类似的变形不会叠加。\n变形需要<color_yellow>300个移动</color>才能完成。",
+    "weight": "3 g",
+    "volume": "3 ml",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "%",
+    "color": "cyan",
+    "coverage": 0,
+    "encumbrance": 0,
+    "power_armor": true,
+    "material_thickness": 1,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "secro_power_armor_flesh_morphed_jugg_bonespikes_give",
+      "no_fail": true,
+      "need_worn": true,
+      "level": 0
+    },
+    "flags": [
+      "NO_TAKEOFF",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  {
+    "id": "secro_power_armor_flesh_morphed_jugg_bonespikes",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": {
+      "str": "巨型武器-骨钉"
+    },
+    "description": "你的血管被许多大的，骨头的突起所覆盖。作为一个伟大的保护，以流动性为代价。\n\n<color_yellow>神像武器</color>-骨钉提供：\n<color_white>速度：<color_red>-5%</color></color>",
+    "weight": "3240 g",
+    "volume": "5445 ml",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "%",
+    "color": "cyan_white",
+    "coverage": 0,
+    "encumbrance": 0,
+    "power_armor": true,
+    "material_thickness": 1,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "secro_power_armor_flesh_morphed_jugg_bonespikes_skeletaloutburst_pay",
+      "no_fail": true,
+      "need_worn": true,
+      "level": 0
+    },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "hit_me_effect": [
+            {
+              "id": "secro_power_armor_flesh_morphed_jugg_bonespikes_lowstab",
+              "hit_self": false,
+              "once_in": 5,
+              "message": "你的骨刺对%2$s有反应！",
+              "npc_message": "%1$s的骨刺刺了%2$s！"
+            },
+            {
+              "id": "secro_power_armor_flesh_morphed_jugg_bonespikes_highstab",
+              "hit_self": false,
+              "once_in": 50,
+              "message": "你的骨刺在%2$s点反击！",
+              "npc_message": "%1$s的骨钉在%2$s处反击！"
+            }
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "NO_TAKEOFF",
+      "ONLY_ONE",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  {
+    "id": "secro_power_armor_flesh_morph_coward_powerlegs",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": {
+      "str": "敏捷武器"
+    },
+    "description": "激活此命令以命令肉身血管向所选武器变形。如果不这样做，将不会取消肉类消费。类似的变形不会叠加。\n变形需要<color_yellow>300个移动</color>才能完成。",
+    "weight": "3 g",
+    "volume": "3 ml",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "%",
+    "color": "light_green",
+    "coverage": 0,
+    "encumbrance": 0,
+    "power_armor": true,
+    "material_thickness": 1,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "secro_power_armor_flesh_morphed_coward_powerlegs_give",
+      "no_fail": true,
+      "need_worn": true,
+      "level": 0
+    },
+    "flags": [
+      "NO_TAKEOFF",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  {
+    "id": "secro_power_armor_flesh_morphed_coward_powerlegs",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": {
+      "str": "敏捷武器"
+    },
+    "description": "在血管的膝关节上形成的向下延伸到脚底的是弹性肌肉纤维。这使得佩戴者的腿部能够更大程度地发挥力量。\n\n<color_light_green>敏捷武器</color>-动力腿提供：\n<color_white>速度：<color_light_green>+10</color>",
+    "weight": "1335 g",
+    "volume": "430 ml",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "%",
+    "color": "light_green_white",
+    "coverage": 0,
+    "encumbrance": 0,
+    "power_armor": true,
+    "material_thickness": 1,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            {
+              "value": "SPEED",
+              "add": 5
+            },
+            {
+              "value": "MOVE_COST",
+              "multiply": -0.025
+            }
+          ],
+          "hit_you_effect": [
+            {
+              "id": "secro_power_armor_flesh_morphed_coward_powerlegs_powkick",
+              "hit_self": false,
+              "once_in": 150,
+              "message": "你踢了%2$s！",
+              "npc_message": "%1$s powerkicks %2$s！"
+            }
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "NO_TAKEOFF",
+      "ONLY_ONE",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  }
+]

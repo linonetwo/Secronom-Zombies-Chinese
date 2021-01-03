@@ -1,0 +1,568 @@
+[
+  {
+    "//": "These are used for flesh camps. which are traversible for players.",
+    "type": "terrain",
+    "id": "t_secro_dirt_flesh_camp",
+    "looks_like": "t_secro_dirt_flesh",
+    "name": "肉质污垢",
+    "description": "脏兮兮的，却布满血脉。",
+    "symbol": ".",
+    "color": "light_red",
+    "move_cost": 5,
+    "flags": [
+      "FLAMMABLE",
+      "TRANSPARENT",
+      "FLAT",
+      "S_FLESH"
+    ],
+    "bash": {
+      "sound": "splash",
+      "ter_set": "t_dirt",
+      "str_min": 8,
+      "str_max": 16,
+      "bash_below": true
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_grass_flesh_camp",
+    "looks_like": "t_secro_grass_flesh",
+    "name": "肉草",
+    "description": "一簇细小的触角曾经是野草。",
+    "symbol": ".",
+    "color": "red",
+    "move_cost": 5,
+    "flags": [
+      "FLAMMABLE",
+      "TRANSPARENT",
+      "FLAT",
+      "S_FLESH"
+    ],
+    "bash": {
+      "sound": "splash",
+      "ter_set": "t_grass",
+      "str_min": 8,
+      "str_max": 16,
+      "bash_below": true
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_grass_long_flesh_camp",
+    "looks_like": "t_secro_grass_long_flesh",
+    "name": "长肉草",
+    "description": "一簇长的卷须，在胫骨高的地方扭动。",
+    "symbol": ",",
+    "color": "red",
+    "move_cost": 6,
+    "flags": [
+      "FLAMMABLE",
+      "TRANSPARENT",
+      "FLAT",
+      "S_FLESH"
+    ],
+    "bash": {
+      "sound": "splash",
+      "ter_set": "t_grass_long",
+      "str_min": 8,
+      "str_max": 16,
+      "bash_below": true
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_grass_tall_flesh_camp",
+    "looks_like": "t_secro_grass_tall_flesh",
+    "name": "高草",
+    "description": "卷须一簇高的卷须，盘旋在头上。",
+    "symbol": "'",
+    "color": "red",
+    "move_cost": 8,
+    "coverage": 50,
+    "flags": [
+      "FLAMMABLE",
+      "TRANSPARENT",
+      "FLAT",
+      "S_FLESH"
+    ],
+    "bash": {
+      "sound": "splash",
+      "ter_set": "t_grass_tall",
+      "str_min": 8,
+      "str_max": 16,
+      "bash_below": true
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_shrub_flesh_camp",
+    "looks_like": "t_secro_shrub_flesh",
+    "name": "肉质灌木",
+    "description": "丛生的灌木。",
+    "symbol": "#",
+    "color": "red",
+    "move_cost": 8,
+    "coverage": 40,
+    "flags": [
+      "TRANSPARENT",
+      "CONTAINER",
+      "FLAMMABLE_ASH",
+      "THIN_OBSTACLE",
+      "PLACE_ITEM",
+      "SHRUB",
+      "SHORT",
+      "S_FLESH"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash.",
+      "sound_fail": "splat.",
+      "ter_set": "t_shrub"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_tree_young_flesh_camp",
+    "looks_like": "t_secro_tree_young_flesh",
+    "name": "肉质幼树",
+    "description": "这只幼树被果肉吞食，嫩枝上覆盖着膜状血管，叶子上滴着血迹。",
+    "symbol": "1",
+    "color": [
+      "red",
+      "light_red",
+      "red",
+      "red"
+    ],
+    "move_cost": 7,
+    "flags": [
+      "TRANSPARENT",
+      "FLAMMABLE_ASH",
+      "NOITEM",
+      "YOUNG",
+      "REDUCE_SCENT",
+      "S_FLESH"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_tree_young"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_tree_flesh_camp",
+    "looks_like": "t_secro_tree_flesh",
+    "name": "肉树",
+    "description": "一棵完全长成的树，尽管它已经被果肉压垮了，却依然挺立着。",
+    "symbol": "7",
+    "color": [
+      "red",
+      "light_red",
+      "red",
+      "red"
+    ],
+    "move_cost": 0,
+    "coverage": 80,
+    "flags": [
+      "FLAMMABLE_ASH",
+      "NOITEM",
+      "SUPPORTS_ROOF",
+      "REDUCE_SCENT",
+      "S_FLESH"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_tree"
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_secro_boulder_small_flesh_camp",
+    "looks_like": "f_secro_boulder_small_flesh",
+    "name": "肉质小漂石",
+    "description": "屈服于肉体的小岩石。",
+    "symbol": "o",
+    "color": "dark_gray",
+    "move_cost_mod": 3,
+    "coverage": 30,
+    "required_str": 10,
+    "crafting_pseudo_item": "boulder_anvil",
+    "flags": [
+      "FLAMMABLE_HARD",
+      "TRANSPARENT",
+      "S_FLESH",
+      "UNSTABLE",
+      "MOUNTABLE",
+      "TINY"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat."
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_secro_boulder_medium_flesh_camp",
+    "looks_like": "f_secro_boulder_medium_flesh",
+    "name": "肉质中漂石",
+    "description": "屈服于肉体的岩石。",
+    "symbol": "0",
+    "color": "dark_gray",
+    "move_cost_mod": 6,
+    "coverage": 45,
+    "required_str": 16,
+    "crafting_pseudo_item": "boulder_anvil",
+    "flags": [
+      "FLAMMABLE_HARD",
+      "NOITEM",
+      "TRANSPARENT",
+      "S_FLESH",
+      "UNSTABLE",
+      "MOUNTABLE",
+      "SHORT",
+      "BASHABLE"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat."
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_secro_boulder_large_flesh_camp",
+    "looks_like": "f_secro_boulder_large_flesh",
+    "name": "肉质大卵石",
+    "description": "屈从于肉体的大石头。",
+    "symbol": "O",
+    "color": "dark_gray",
+    "move_cost_mod": -1,
+    "coverage": 65,
+    "required_str": 32,
+    "flags": [
+      "FLAMMABLE_HARD",
+      "NOITEM",
+      "S_FLESH",
+      "BASHABLE",
+      "BLOCK_WIND"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat."
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_flesh_camp",
+    "looks_like": "t_secro_flesh",
+    "name": "肉",
+    "description": "恶心的肉堆，粘糊糊的和有机的，因为它似乎生活。这种粉红色的肉已经腐烂到了核心，纵火焚烧可能不是治疗的方法。",
+    "symbol": ".",
+    "color": "red",
+    "move_cost": 5,
+    "flags": [
+      "FLAMMABLE_HARD",
+      "TRANSPARENT",
+      "FLAT",
+      "S_FLESH"
+    ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_flesh_camp_smoot",
+    "looks_like": "t_secro_flesh",
+    "name": "肉",
+    "description": "恶心的肉堆，粘糊糊的和有机的，因为它似乎生活。这种粉红色的肉已经腐烂到了核心，纵火焚烧可能不是治疗的方法。",
+    "symbol": ".",
+    "color": "light_red",
+    "move_cost": 2,
+    "flags": [
+      "FLAMMABLE_HARD",
+      "TRANSPARENT",
+      "FLAT",
+      "S_FLESH"
+    ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_flesh_camp_wall",
+    "looks_like": "t_secro_flesh_wall",
+    "name": "肉壁",
+    "description": "恶心的肉墙，粘糊糊的，有机的，因为它似乎生活。这种致密的肉块对心脏是有害的，纵火可能不是治疗的方法。",
+    "symbol": "#",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 100,
+    "bash": {
+      "str_min": 100,
+      "str_max": 300,
+      "sound": "splash!",
+      "sound_fail": "splat.",
+      "ter_set": "t_secro_flesh_camp"
+    },
+    "flags": [
+      "FLAMMABLE_HARD",
+      "NOITEM",
+      "SUPPORTS_ROOF",
+      "WALL",
+      "AUTO_WALL_SYMBOL",
+      "S_FLESH",
+      "BLOCK_WIND"
+    ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_flesh_camp_wall_veins_smoot",
+    "looks_like": "t_secro_flesh",
+    "name": "肉",
+    "description": "恶心的肉堆，粘糊糊的和有机的，因为它似乎生活。这种粉红色的肉已经腐烂到了核心，纵火焚烧可能不是治疗的方法。",
+    "symbol": ".",
+    "color": "light_red",
+    "move_cost": 1,
+    "flags": [
+      "FLAMMABLE_HARD",
+      "TRANSPARENT",
+      "FLAT",
+      "S_FLESH"
+    ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_flesh_camp_wall_veins",
+    "looks_like": "t_secro_flesh_wall",
+    "name": "脉壁",
+    "description": "由叶脉状的卷须组成的墙，看起来是在飞行中形成的。",
+    "symbol": "#",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 90,
+    "bash": {
+      "str_min": 10,
+      "str_max": 30,
+      "sound": "splook!",
+      "sound_fail": "splat.",
+      "ter_set": "t_secro_flesh_camp_wall_veins_smoot"
+    },
+    "flags": [
+      "FLAMMABLE_HARD",
+      "NOITEM",
+      "SUPPORTS_ROOF",
+      "WALL",
+      "AUTO_WALL_SYMBOL",
+      "S_FLESH",
+      "BLOCK_WIND"
+    ]
+  },
+  {
+    "type": "furniture",
+    "id": "f_secro_flesh_camp_bed",
+    "name": "肉床",
+    "symbol": "#",
+    "description": "一块被小心地模制在床上的肉。虽然它可能很粘，但它能保暖。",
+    "color": "red",
+    "move_cost_mod": 5,
+    "coverage": 60,
+    "comfort": 4,
+    "floor_bedding_warmth": 700,
+    "required_str": -1,
+    "flags": [
+      "TRANSPARENT",
+      "FLAMMABLE_HARD",
+      "PLACE_ITEM",
+      "MOUNTABLE",
+      "CAN_SIT",
+      "S_FLESH"
+    ],
+    "bash": {
+      "str_min": 15,
+      "str_max": 50,
+      "sound": "splook!",
+      "sound_fail": "splat.",
+      "items": [
+        {
+          "item": "secro_flesh",
+          "count": [
+            2,
+            4
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_secro_flesh_camp_floorstorage",
+    "name": "地板残留物",
+    "symbol": "o",
+    "description": "地板上张大的嘴。很适合存放物品，只是不要掉进里面。",
+    "color": "red",
+    "move_cost_mod": 3,
+    "coverage": 10,
+    "required_str": -1,
+    "flags": [
+      "CONTAINER",
+      "PLACE_ITEM",
+      "TRANSPARENT",
+      "FLAMMABLE_HARD",
+      "MOUNTABLE",
+      "S_FLESH"
+    ],
+    "max_volume": "2500 L",
+    "bash": {
+      "str_min": 20,
+      "str_max": 30,
+      "sound": "splook!",
+      "sound_fail": "splat!",
+      "items": [
+        {
+          "item": "secro_flesh",
+          "count": [
+            2,
+            3
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_secro_flesh_camp_storage",
+    "name": "残留",
+    "symbol": "{",
+    "description": "从地板上伸出的张嘴。很适合存放物品，只是不要进去。",
+    "color": "red",
+    "move_cost_mod": -1,
+    "coverage": 10,
+    "required_str": -1,
+    "flags": [
+      "CONTAINER",
+      "PLACE_ITEM",
+      "TRANSPARENT",
+      "FLAMMABLE_HARD",
+      "S_FLESH"
+    ],
+    "max_volume": "10000 L",
+    "bash": {
+      "str_min": 20,
+      "str_max": 60,
+      "sound": "splook!",
+      "sound_fail": "splat!",
+      "items": [
+        {
+          "item": "secro_flesh",
+          "count": [
+            3,
+            5
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_secro_flesh_camp_displaystorage",
+    "name": "肉架",
+    "symbol": "{",
+    "description": "把你的东西放在这里。别担心，它们不会溶解的。",
+    "color": "light_red",
+    "move_cost_mod": -1,
+    "coverage": 10,
+    "required_str": -1,
+    "flags": [
+      "CONTAINER",
+      "PLACE_ITEM",
+      "TRANSPARENT",
+      "FLAMMABLE_HARD",
+      "S_FLESH"
+    ],
+    "max_volume": "1500 L",
+    "bash": {
+      "str_min": 10,
+      "str_max": 20,
+      "sound": "splook!",
+      "sound_fail": "splat!",
+      "items": [
+        {
+          "item": "secro_flesh",
+          "count": [
+            1,
+            3
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_secro_flesh_camp_liquidstorage",
+    "name": "肉容器",
+    "description": "一大袋用来储存液体的肉，有一个便于使用的通风吸管。",
+    "symbol": "O",
+    "color": "light_red",
+    "move_cost_mod": -1,
+    "coverage": 90,
+    "required_str": -1,
+    "flags": [
+      "CONTAINER",
+      "LIQUIDCONT",
+      "NOITEM",
+      "SEALED",
+      "TRANSPARENT",
+      "S_FLESH"
+    ],
+    "examine_action": "keg",
+    "keg_capacity": 750,
+    "bash": {
+      "str_min": 20,
+      "str_max": 60,
+      "sound": "splook!",
+      "sound_fail": "splat!",
+      "items": [
+        {
+          "item": "secro_flesh",
+          "count": [
+            3,
+            5
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_secro_flesh_camp_light",
+    "name": "生物发光疣",
+    "description": "这球状疣丛发出生物发光光。",
+    "symbol": "i",
+    "color": "white",
+    "move_cost_mod": 2,
+    "coverage": 5,
+    "required_str": -1,
+    "light_emitted": 3,
+    "flags": [
+      "TRANSPARENT"
+    ],
+    "bash": {
+      "str_min": 6,
+      "str_max": 9,
+      "sound": "splook!",
+      "sound_fail": "splat!",
+      "items": [
+        {
+          "item": "secro_flesh"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,304 @@
+[
+  {
+    "//": "Lying body is a reference from the Silent Hill. It looks like a zombie, so I included it.",
+    "id": "mon_zombie_WALKINGPOTATO",
+    "type": "MONSTER",
+    "name": {
+      "str": "躺着的身体"
+    },
+    "description": "一个肿胀的茧，似乎是由皮肤构成的。从里面传来无声的呻吟声",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "SECROZED_1",
+      "HUMAN"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 50,
+    "speed": 25,
+    "diff": 1,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⚱",
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 0,
+    "melee_dice": 0,
+    "melee_dice_sides": 0,
+    "melee_cut": 0,
+    "dodge": 0,
+    "armor_bash": 15,
+    "armor_cut": 15,
+    "armor_fire": 2,
+    "vision_day": 0,
+    "vision_night": 0,
+    "harvest": "zombie",
+    "upgrades": {
+      "half_life": 12,
+      "into_group": "GROUP_LYING_UPGRADE"
+    },
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "STUMBLES",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "FILTHY",
+      "REVIVES"
+    ]
+  },
+  {
+    "//": "Flying zombies.",
+    "id": "mon_zombie_zawk",
+    "type": "MONSTER",
+    "name": {
+      "str": "扎克"
+    },
+    "description": "一种曾经的人形动物，以其长满杂草的瘦翅膀、弯曲的爪子和喙而与众不同。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "SECROZED_1",
+      "HUMAN"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 75,
+    "speed": 110,
+    "diff": 5,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "♆",
+    "color": "dark_gray_red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 2,
+    "melee_cut": 4,
+    "dodge": 2,
+    "armor_bash": 2,
+    "armor_cut": 1,
+    "vision_day": 45,
+    "vision_night": 4,
+    "harvest": "zombie",
+    "death_function": [
+      "NORMAL"
+    ],
+    "upgrades": {
+      "half_life": 16,
+      "into_group": "GROUP_LYING_UPGRADEX"
+    },
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY",
+      "FLIES",
+      "GRABS"
+    ]
+  },
+  {
+    "//": "much like a gasbag.",
+    "id": "mon_zombie_zoth",
+    "type": "MONSTER",
+    "name": {
+      "str": "佐思"
+    },
+    "description": "一具腐烂的尸体，带着布满灰尘的翅膀在半空中缓慢盘旋，每扇翅膀都在传播毒素。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "SECROZED_1",
+      "HUMAN"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 60,
+    "speed": 80,
+    "material": [
+      "flesh"
+    ],
+    "diff": 5,
+    "symbol": "♅",
+    "emit_fields": [
+      "secro_zoth"
+    ],
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 2,
+    "melee_dice": 2,
+    "melee_dice_sides": 2,
+    "melee_cut": 1,
+    "dodge": 1,
+    "armor_bash": 3,
+    "armor_cut": 2,
+    "vision_day": 35,
+    "vision_night": 20,
+    "harvest": "zombie",
+    "death_function": [
+      "NORMAL"
+    ],
+    "upgrades": {
+      "half_life": 16,
+      "into_group": "GROUP_LYING_UPGRADEX"
+    },
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY",
+      "FLIES",
+      "GRABS"
+    ]
+  },
+  {
+    "id": "mon_zombie_nightwail",
+    "looks_like": "mon_darkman",
+    "type": "MONSTER",
+    "name": {
+      "str": "夜啼"
+    },
+    "description": "巨大的飞影，在绝望和仇恨中散发着恶臭。一个充满神秘的生物，不知道它做什么。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "SECROZED_3",
+      "HUMAN"
+    ],
+    "volume": "1452000 ml",
+    "weight": "81500 g",
+    "hp": 440,
+    "speed": 30,
+    "diff": 15,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "☫",
+    "color": "dark_gray",
+    "aggression": 10,
+    "morale": 10,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 3,
+    "melee_cut": 4,
+    "dodge": 2,
+    "armor_bash": 2,
+    "armor_cut": 1,
+    "vision_day": 15,
+    "vision_night": 45,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_summon_nightwail_shadow"
+        },
+        "cooldown": 38,
+        "monster_message": "%1$s分裂了一大块阴影！</color>"
+      }
+    ],
+    "regenerates": 10,
+    "regenerates_in_dark": true,
+    "death_function": [
+      "DISAPPEAR"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY",
+      "FLIES",
+      "PACIFIST",
+      "HARDTOSHOOT",
+      "NOGIB",
+      "NOHEAD",
+      "WEBWALK",
+      "PLASTIC",
+      "ELECTRIC",
+      "ACIDPROOF"
+    ],
+    "//": "Imitates the jinx zombie for using shadows as weaponry."
+  },
+  {
+    "id": "mon_zombie_nightwail_shadow",
+    "type": "MONSTER",
+    "name": {
+      "str": "阴影"
+    },
+    "description": "这是一个活生生的阴影状的东西，像云，但黑色。什么都不怕，什么都不怕。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE"
+    ],
+    "volume": "750 ml",
+    "weight": "1000 g",
+    "hp": 20,
+    "speed": 105,
+    "diff": 1,
+    "symbol": "⬮",
+    "color": "dark_gray",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 1,
+    "melee_dice": 1,
+    "melee_dice_sides": 1,
+    "melee_cut": 1,
+    "dodge": 1,
+    "vision_day": 15,
+    "vision_night": 45,
+    "harvest": "exempt",
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_zombie_nightwail_shadow_curse_target"
+        },
+        "cooldown": 10,
+        "monster_message": "%1$s诅咒%3$s！</color>"
+      }
+    ],
+    "death_function": [
+      "DISAPPEAR"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "GOODHEARING",
+      "SMELLS",
+      "NOHEAD",
+      "HARDTOSHOOT",
+      "WEBWALK",
+      "FLIES",
+      "PLASTIC",
+      "ELECTRIC",
+      "ACIDPROOF",
+      "NO_BREATHE",
+      "PACIFIST",
+      "NOGIB"
+    ]
+  }
+]

@@ -1,0 +1,209 @@
+[
+  {
+    "id": "mon_zombie_grubby",
+    "type": "MONSTER",
+    "name": {
+      "str": "肮脏的僵尸"
+    },
+    "description": "臃肿的解剖结构，肮脏的臭味，和巨大的蠕虫充满脓周围是无法预测的不愉快，从这个可怕的污损尸体看。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "SECROZED_2",
+      "HUMAN"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "harvest": "zombie",
+    "hp": 70,
+    "speed": 55,
+    "diff": 1,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⚆",
+    "color": "yellow",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 1,
+    "melee_dice": 1,
+    "melee_dice_sides": 1,
+    "melee_cut": 2,
+    "armor_cut": 2,
+    "armor_bash": 4,
+    "armor_stab": 4,
+    "vision_day": 20,
+    "path_settings": {
+      "max_dist": 20
+    },
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_zombie_grubby_target_random"
+        },
+        "cooldown": 17,
+        "monster_message": "%1$s的脓液喷发，释放出成群的寄生虫！</color>"
+      }
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "upgrades": {
+      "half_life": 14,
+      "into": "mon_zombie_slimy"
+    },
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "FILTHY",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "BONES",
+      "GROUP_MORALE"
+    ]
+  },
+  {
+    "id": "mon_zombie_slimy",
+    "type": "MONSTER",
+    "name": {
+      "str": "黏糊糊的僵尸"
+    },
+    "description": "在它的无皮身体里注入了斑点和蠕虫，这只僵尸几乎不能用脚行走。当黏液从洞里滴下时，寄生虫可以更快地“游”过去。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "SECROZED_2",
+      "HUMAN"
+    ],
+    "harvest": "zombie",
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 75,
+    "speed": 40,
+    "diff": 15,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Q",
+    "color": "cyan_yellow",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 1,
+    "melee_dice": 1,
+    "melee_dice_sides": 1,
+    "melee_cut": 1,
+    "armor_cut": 3,
+    "armor_bash": 5,
+    "armor_stab": 4,
+    "vision_day": 22,
+    "path_settings": {
+      "max_dist": 20
+    },
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_zombie_slimy_target_random"
+        },
+        "cooldown": 34,
+        "monster_message": "%1$s的脓液爆炸，释放出成群的寄生虫！</color>"
+      }
+    ],
+    "upgrades": {
+      "half_life": 20,
+      "into_group": "GROUP_GRUBBY_UPGRADEX"
+    },
+    "death_function": [
+      "SPLATTER"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "BONES",
+      "FILTHY",
+      "BILE_BLOOD"
+    ]
+  },
+  {
+    "//": "Like a bloated zombie, but with its speed and a unique ability, it may explode before it even gets close.",
+    "id": "mon_zombie_glut",
+    "type": "MONSTER",
+    "name": {
+      "str": "过剩"
+    },
+    "description": "一种肿胀的退化的尸体，严重地被虫子侵扰，虫子占据了它的全身，使它过度膨胀。这些膨胀的部分是不稳定的，它的突然爆炸会引起广泛的感染。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "SECROZED_3",
+      "HUMAN"
+    ],
+    "harvest": "zombie",
+    "volume": "92500 ml",
+    "weight": "120000 g",
+    "hp": 400,
+    "speed": 10,
+    "diff": 15,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Q",
+    "color": "red_cyan",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 2,
+    "melee_dice": 1,
+    "melee_dice_sides": 4,
+    "melee_cut": 1,
+    "armor_bash": 12,
+    "vision_day": 25,
+    "path_settings": {
+      "max_dist": 20
+    },
+    "special_attacks": [
+      [
+        "SUICIDE",
+        0
+      ],
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_zombie_glut_target"
+        },
+        "cooldown": 34,
+        "monster_message": "%1$s的一部分身体剧烈地爆炸，释放出大量的寄生虫！</color>"
+      }
+    ],
+    "death_function": [
+      "SPLATTER",
+      "GAS"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "BONES",
+      "BILE_BLOOD"
+    ]
+  }
+]

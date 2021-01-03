@@ -1,0 +1,182 @@
+[
+  {
+    "id": "SECRO_FLESH_SPAWN_HATCHERY_main",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "*shakes.",
+      "*shakes violently.",
+      "*is shaking.",
+      "*is shaking violently."
+    ],
+    "responses": [
+      {
+        "text": "创建汞齐…",
+        "topic": "SECRO_FLESH_SPAWN_HATCHERY_hatch"
+      },
+      {
+        "text": "精心服务。",
+        "topic": "SECRO_FLESH_SPAWN_HATCHERY_job"
+      },
+      {
+        "text": "别管了。",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "SECRO_FLESH_SPAWN_HATCHERY_job",
+    "type": "talk_topic",
+    "dynamic_line": "*用扭曲的管子把你包裹起来：\n孵化室专门用来形成汞合金伴侣。它用大量的肉在短时间内形成汞合金。",
+    "responses": [
+      {
+        "text": "可以。",
+        "topic": "SECRO_FLESH_SPAWN_HATCHERY_main"
+      }
+    ]
+  },
+  {
+    "id": "SECRO_FLESH_SPAWN_HATCHERY_hatch",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "npc_has_effect": "secro_flesh_hatchery_hatching",
+      "yes": "*正在形成汞合金。",
+      "no": "*用它的管子轻敲你，然后在它的顶端露出一个孔。它需要350块肉，大约需要4个小时才能完全形成汞合金。"
+    },
+    "responses": [
+      {
+        "text": "[形式]*用肉喂养它*",
+        "topic": "SECRO_FLESH_SPAWN_HATCHERY_hatching",
+        "condition": {
+          "and": [
+            {
+              "not": {
+                "npc_has_effect": "secro_flesh_hatchery_hatching"
+              }
+            },
+            {
+              "not": {
+                "npc_has_effect": "secro_flesh_hatchery_hatching_amalgam"
+              }
+            },
+            {
+              "u_has_items": {
+                "item": "secro_flesh",
+                "count": 350
+              }
+            }
+          ]
+        },
+        "effect": [
+          {
+            "u_sell_item": "secro_flesh",
+            "count": 350
+          },
+          {
+            "npc_consume_item": "secro_flesh",
+            "count": 350
+          },
+          {
+            "npc_add_effect": "secro_flesh_hatchery_hatching",
+            "duration": 12500
+          },
+          {
+            "npc_add_effect": "secro_flesh_hatchery_hatching_amalgam",
+            "duration": "PERMANENT"
+          }
+        ]
+      },
+      {
+        "text": "【INSTA-HATCH】*喂它肉*",
+        "topic": "TALK_DONE",
+        "condition": {
+          "and": [
+            {
+              "u_has_trait": "SECRONOM_FLESH_DEBUG"
+            },
+            {
+              "u_has_items": {
+                "item": "secro_flesh",
+                "count": 350
+              }
+            }
+          ]
+        },
+        "effect": [
+          {
+            "u_sell_item": "secro_flesh",
+            "count": 350
+          },
+          {
+            "npc_consume_item": "secro_flesh",
+            "count": 350
+          },
+          {
+            "u_buy_monster": "mon_sflesh_hatchery_amalgam"
+          }
+        ]
+      },
+      {
+        "text": "[舱口]",
+        "topic": "SECRO_FLESH_SPAWN_HATCHERY_hatched",
+        "condition": {
+          "and": [
+            {
+              "not": {
+                "npc_has_effect": "secro_flesh_hatchery_hatching"
+              }
+            },
+            {
+              "npc_has_effect": "secro_flesh_hatchery_hatching_amalgam"
+            }
+          ]
+        },
+        "effect": [
+          {
+            "u_buy_monster": "mon_sflesh_hatchery_amalgam"
+          },
+          {
+            "npc_lose_effect": "secro_flesh_hatchery_hatching_amalgam"
+          }
+        ]
+      },
+      {
+        "text": "以后再说。",
+        "topic": "SECRO_FLESH_SPAWN_HATCHERY_main",
+        "condition": {
+          "not": {
+            "npc_has_effect": "secro_flesh_hatchery_hatching"
+          }
+        }
+      },
+      {
+        "text": "可以。",
+        "topic": "SECRO_FLESH_SPAWN_HATCHERY_main",
+        "condition": {
+          "npc_has_effect": "secro_flesh_hatchery_hatching"
+        }
+      }
+    ]
+  },
+  {
+    "id": "SECRO_FLESH_SPAWN_HATCHERY_hatching",
+    "type": "talk_topic",
+    "dynamic_line": "*用扭曲的管子吞噬肉体。它的孔口开始收缩，身体也开始收缩。你能听到令人不安的心跳声。",
+    "responses": [
+      {
+        "text": "...",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "SECRO_FLESH_SPAWN_HATCHERY_hatched",
+    "type": "talk_topic",
+    "dynamic_line": "*轻轻地把新形成的汞合金通过扭曲的管子放在你面前，孵化室慢慢恢复正常。汞合金瞪着你，似乎能辨认出你的容貌。",
+    "responses": [
+      {
+        "text": "呃。。。",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

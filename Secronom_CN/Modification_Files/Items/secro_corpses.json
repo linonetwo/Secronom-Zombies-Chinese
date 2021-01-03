@@ -1,0 +1,66 @@
+[
+  {
+    "type": "GENERIC",
+    "id": "corpse_saddler_used",
+    "copy-from": "corpse",
+    "name": {
+      "str": "尸体"
+    },
+    "description": "一个人的无头尸体。它的伤口看起来又深又空。。。",
+    "looks_like": "corpse_generic_human",
+    "volume": "33 L",
+    "weight": "47 kg",
+    "material": [
+      "hflesh"
+    ],
+    "delete": {
+      "flags": [
+        "CORPSE"
+      ]
+    }
+  },
+  {
+    "type": "GENERIC",
+    "id": "broken_secro_laserturret",
+    "symbol": ",",
+    "color": "light_red",
+    "weight": "75 kg",
+    "name": {
+      "str": "破损的激光束炮塔"
+    },
+    "copy-from": "broken_turret"
+  },
+  {
+    "type": "GENERIC",
+    "id": "broken_secro_electurret",
+    "symbol": ",",
+    "color": "cyan",
+    "name": {
+      "str": "电击炮塔断裂"
+    },
+    "weight": "75 kg",
+    "copy-from": "broken_turret"
+  },
+  {
+    "type": "GENERIC",
+    "id": "broken_secro_gravturret",
+    "symbol": ",",
+    "color": "magenta",
+    "name": {
+      "str": "破碎的伽维顿炮塔"
+    },
+    "copy-from": "broken_turret"
+  },
+  {
+    "type": "GENERIC",
+    "id": "broken_secro_laserturret_mod",
+    "symbol": ",",
+    "color": "light_red",
+    "weight": "75 kg",
+    "name": {
+      "str": "非活动激光束转台"
+    },
+    "description": "不活动的炮塔。它需要充电才能再次使用，或者可能会被掏空作为零件。",
+    "copy-from": "broken_turret"
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "type": "profession",
+    "id": "secro_prof_vesselrecruit",
+    "name": "船舶新兵",
+    "description": "你是一名新兵，任务是在装有必要仿生学的生物有机动力装甲（肉身船）上进行阿尔法实地测试。灾难发生后，你和团队的联系就失去了，最糟糕的是，给西服喂食将是一个大问题。",
+    "points": 4,
+    "skills": [
+      {
+        "level": 2,
+        "name": "gun"
+      },
+      {
+        "level": 1,
+        "name": "rifle"
+      },
+      {
+        "level": 2,
+        "name": "melee"
+      },
+      {
+        "level": 1,
+        "name": "stabbing"
+      },
+      {
+        "level": 1,
+        "name": "dodge"
+      }
+    ],
+    "CBMs": [
+      "bio_power_armor_interface",
+      "bio_batteries",
+      "bio_power_storage_mkII",
+      "bio_power_storage_mkII"
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "secro_power_armor_module_core"
+        ],
+        "entries": [
+          {
+            "item": "secro_flesh",
+            "count": 10
+          },
+          {
+            "item": "secro_recipe_flesh_field"
+          },
+          {
+            "item": "secro_power_armor_flesh",
+            "ammo-item": "secro_flesh",
+            "charges": 100
+          },
+          {
+            "item": "knife_combat"
+          },
+          {
+            "group": "charged_cell_phone"
+          }
+        ]
+      }
+    },
+    "flags": [
+      "SCEN_ONLY"
+    ]
+  },
+  {
+    "type": "profession",
+    "id": "secro_prof_pathogenvessel",
+    "name": "致病性实验",
+    "description": "你，一只不幸的实验鼠，被选中穿着一件极其不稳定的生物有机动力盔甲——肉身血管“病原体”——进行测试。虽然团队可能允许你接触外界，但你的确切行动受到了监控。但现在一切都陷入混乱，你要么从西装中解脱出来，要么与西装融为一体。。。",
+    "points": 8,
+    "skills": [
+      {
+        "level": 1,
+        "name": "melee"
+      }
+    ],
+    "CBMs": [
+      "bio_power_armor_interface",
+      "bio_batteries",
+      "bio_power_storage_mkII",
+      "bio_power_storage_mkII",
+      "bio_power_storage_mkII"
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "secro_power_armor_module_core"
+        ],
+        "entries": [
+          {
+            "item": "secro_flesh",
+            "count": 12
+          },
+          {
+            "item": "secro_power_armor_flesh_infect",
+            "ammo-item": "secro_flesh",
+            "charges": 200
+          },
+          {
+            "item": "secro_recipe_flesh_field"
+          },
+          {
+            "group": "charged_cell_phone"
+          }
+        ]
+      }
+    },
+    "flags": [
+      "SCEN_ONLY"
+    ]
+  }
+]

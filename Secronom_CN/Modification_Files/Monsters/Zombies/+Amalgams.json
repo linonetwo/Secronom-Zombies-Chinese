@@ -1,0 +1,180 @@
+[
+  {
+    "//": "Support-type zed who assists allies by healing them.",
+    "id": "mon_zombie_skittyweavy",
+    "type": "MONSTER",
+    "name": "skittering weaver",
+    "description": "一种变异的生物，大小像猫，外表像虱子和甲虫的杂交体。它的前肢形成了一对奇怪的弯曲针头，针尖上有一个开口，下颚流着口水。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "SECROZED_1",
+      "INSECT"
+    ],
+    "volume": "4000 ml",
+    "weight": 4000,
+    "harvest": "arachnid_tainted",
+    "hp": 30,
+    "diff": 5,
+    "speed": 75,
+    "material": [
+      "iflesh"
+    ],
+    "symbol": "⚚",
+    "color": "light_green",
+    "attack_cost": 225,
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 8,
+    "melee_dice": 1,
+    "melee_dice_sides": 1,
+    "melee_cut": 0,
+    "dodge": 5,
+    "armor_bash": 1,
+    "armor_cut": 4,
+    "armor_stab": 2,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_zombie_skittyweavy_target"
+        },
+        "cooldown": 2,
+        "monster_message": "%1$s从%3$s逃走了！</color>\n<color_yellow>然后%1$s匆忙注射它的针！</color>"
+      }
+    ],
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "CLIMBS",
+      "POISON",
+      "PACIFIST",
+      "NO_BREATHE",
+      "ATTACKMON",
+      "HARDTOSHOOT",
+      "PATH_AVOID_DANGER_2"
+    ]
+  },
+  {
+    "id": "mon_zombie_skittyweavy_repleshy",
+    "type": "MONSTER",
+    "name": "replenishing weaver",
+    "description": "一种卑鄙的昆虫，被膜壳保护着。它和它的前身有相似的特点，只是它的体积变大了。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "SECROZED_1",
+      "INSECT"
+    ],
+    "volume": "12000 ml",
+    "weight": 8000,
+    "harvest": "arachnid_tainted",
+    "hp": 75,
+    "diff": 30,
+    "speed": 50,
+    "material": [
+      "iflesh"
+    ],
+    "symbol": "⚚",
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "attack_cost": 325,
+    "melee_skill": 10,
+    "melee_dice": 1,
+    "melee_dice_sides": 1,
+    "melee_cut": 0,
+    "dodge": 4,
+    "armor_bash": 5,
+    "armor_cut": 15,
+    "armor_stab": 7,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_zombie_skittyweavy_repleshy_target"
+        },
+        "cooldown": 2,
+        "monster_message": "%1$s从%3$s逃走了！</color>\n<color_yellow>然后%1$s匆忙注射它的针！</color>"
+      }
+    ],
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "CLIMBS",
+      "POISON",
+      "PACIFIST",
+      "NO_BREATHE",
+      "ATTACKMON",
+      "HARDTOSHOOT",
+      "PATH_AVOID_DANGER_2"
+    ]
+  },
+  {
+    "id": "mon_zombie_skittyweavy_sickly",
+    "type": "MONSTER",
+    "name": "plague weaver",
+    "description": "甲壳虫一种变异严重的昆虫，有几条细长的四肢从其膜状甲壳虫壳向外伸展。在每个角度都变形了，一个独特的长鼻滴下了一种令人陶醉的物质。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "SECROZED_1",
+      "INSECT"
+    ],
+    "volume": "10000 ml",
+    "weight": 7200,
+    "harvest": "arachnid_tainted",
+    "hp": 55,
+    "speed": 50,
+    "diff": 25,
+    "material": [
+      "iflesh"
+    ],
+    "symbol": "⚚",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "attack_cost": 275,
+    "melee_skill": 10,
+    "melee_dice": 1,
+    "melee_dice_sides": 1,
+    "melee_cut": 0,
+    "dodge": 5,
+    "armor_bash": 3,
+    "armor_cut": 12,
+    "armor_stab": 5,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_zombie_skittyweavy_sickly_target"
+        },
+        "cooldown": 2,
+        "monster_message": "%1$s从%3$s逃走了！</color>\n<color_yellow>然后%1$s急忙给它的鼻子注射！</color>"
+      }
+    ],
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "CLIMBS",
+      "POISON",
+      "PACIFIST",
+      "NO_BREATHE",
+      "ATTACKMON",
+      "HARDTOSHOOT",
+      "PATH_AVOID_DANGER_2"
+    ]
+  }
+]

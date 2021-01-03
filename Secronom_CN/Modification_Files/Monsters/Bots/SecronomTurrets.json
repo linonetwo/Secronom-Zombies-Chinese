@@ -1,0 +1,161 @@
+[
+  {
+    "id": "mon_secro_laserturret",
+    "type": "MONSTER",
+    "name": {
+      "str": "激光束转台"
+    },
+    "description": "SDP-L1，也被称为Secronom防御项目类型“激光器”，是一种先进的激光炮塔，基于微型TX-5LR Cerberus。它的自动激光炮发射一束集中的纯热穿透目标。每一次射击都需要来自它源头的巨大力量。",
+    "default_faction": "secro_defense_bot",
+    "species": [
+      "ROBOT"
+    ],
+    "diff": 20,
+    "volume": "60000 ml",
+    "weight": "172 kg",
+    "hp": 50,
+    "speed": 100,
+    "material": [
+      "steel"
+    ],
+    "symbol": "2",
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "armor_bash": 10,
+    "armor_cut": 10,
+    "armor_stab": 10,
+    "luminance": 5,
+    "vision_day": 15,
+    "vision_night": 5,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_secro_laserturret_heatray"
+        },
+        "cooldown": 5,
+        "monster_message": "%1$s在%3$s处射出一道热射线！</color>"
+      }
+    ],
+    "death_drops": {},
+    "death_function": [
+      "BROKEN"
+    ],
+    "flags": [
+      "SEES",
+      "NOHEAD",
+      "ELECTRIC",
+      "ELECTRONIC",
+      "COLDPROOF",
+      "IMMOBILE",
+      "NO_BREATHE"
+    ]
+  },
+  {
+    "id": "mon_secro_electurret",
+    "type": "MONSTER",
+    "name": {
+      "str": "电击炮塔"
+    },
+    "description": "SDP-E3是一种经过高度改装的炮塔，利用其通电的特斯拉线圈来固定附近的生物。它的360度人工智能传感器凸轮允许它识别敌人和发射炮塔自动。它牢牢地嵌入地形，需要巨大的能量从它的源头运作。",
+    "default_faction": "secro_defense_bot",
+    "species": [
+      "ROBOT"
+    ],
+    "diff": 20,
+    "volume": "60000 ml",
+    "weight": "172 kg",
+    "hp": 50,
+    "speed": 100,
+    "material": [
+      "steel"
+    ],
+    "symbol": "2",
+    "color": "cyan",
+    "aggression": 100,
+    "morale": 100,
+    "armor_bash": 12,
+    "armor_cut": 12,
+    "armor_stab": 12,
+    "luminance": 5,
+    "vision_day": 5,
+    "vision_night": 5,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_secro_electurret_target"
+        },
+        "cooldown": 3,
+        "monster_message": "%1$s发出电流！</color>"
+      }
+    ],
+    "death_drops": {},
+    "death_function": [
+      "BROKEN"
+    ],
+    "flags": [
+      "SEES",
+      "NOHEAD",
+      "ELECTRIC",
+      "ELECTRONIC",
+      "COLDPROOF",
+      "IMMOBILE",
+      "NO_BREATHE"
+    ]
+  },
+  {
+    "id": "mon_secro_gravturret",
+    "type": "MONSTER",
+    "name": {
+      "str": "引力子炮塔"
+    },
+    "description": "SDP-G7P是一种小型炮塔，利用其巨大的、张开的炮筒下产生的强磁场使目标失去方向。炮塔的充电速度很慢，产生的能量场不会持续太久，因为它是它的前身的原型版本。",
+    "default_faction": "secro_defense_bot",
+    "species": [
+      "ROBOT"
+    ],
+    "diff": 20,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 20,
+    "speed": 100,
+    "material": [
+      "steel"
+    ],
+    "symbol": "2",
+    "color": "magenta",
+    "aggression": 100,
+    "morale": 100,
+    "armor_bash": 7,
+    "armor_cut": 7,
+    "armor_stab": 7,
+    "luminance": 5,
+    "vision_day": 15,
+    "vision_night": 5,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_secro_gravturret_energize"
+        },
+        "cooldown": 20,
+        "monster_message": "<color_magenta>%1$s在%3$s下产生一个通电磁场！</color>"
+      }
+    ],
+    "death_drops": {},
+    "death_function": [
+      "BROKEN"
+    ],
+    "flags": [
+      "SEES",
+      "NOHEAD",
+      "ELECTRIC",
+      "ELECTRONIC",
+      "COLDPROOF",
+      "IMMOBILE",
+      "NO_BREATHE"
+    ]
+  }
+]

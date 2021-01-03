@@ -1,0 +1,2505 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_secro_flat_roof_flesh",
+    "name": "平顶",
+    "description": "一个平坦的屋顶，覆盖着血淋淋的肉。",
+    "symbol": ".",
+    "color": "red",
+    "//": "Flesh version of terrains has +3 move cost.",
+    "move_cost": 5,
+    "flags": [
+      "TRANSPARENT",
+      "FLAT",
+      "S_FLESH"
+    ],
+    "bash": {
+      "//": "Flesh terrains' str_min and _max has +5 bash resistance.",
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_flat_roof"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_wall_flesh",
+    "name": "肉墙",
+    "description": "典型的墙壁，现在覆盖着膜状静脉、肉和某种肿胀的疣。",
+    "symbol": "LINE_OXOX",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "FLAMMABLE",
+      "NOITEM",
+      "SUPPORTS_ROOF",
+      "WALL",
+      "AUTO_WALL_SYMBOL",
+      "MINEABLE",
+      "BLOCK_WIND",
+      "S_FLESH"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_wall"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_window_flesh",
+    "name": "肉窗",
+    "description": "静脉网阻塞了整个玻璃，使它无法透过，除非你打破它。",
+    "symbol": "\"",
+    "color": "light_red",
+    "move_cost": 0,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "FLAMMABLE",
+      "NOITEM",
+      "REDUCE_SCENT",
+      "BARRICADABLE_WINDOW",
+      "CONNECT_TO_WALL",
+      "BLOCK_WIND",
+      "S_FLESH"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "sound_vol": 16,
+      "sound_fail_vol": 10,
+      "ter_set": "t_secro_window_frame_flesh",
+      "items": [
+        {
+          "item": "glass_shard",
+          "count": [
+            34,
+            50
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_window_frame_flesh",
+    "name": "肉质窗框",
+    "description": "一个窗框，溅满了鲜血，锯齿状的玻璃碎片上有裂痕。",
+    "symbol": "0",
+    "color": "light_red",
+    "move_cost": 11,
+    "coverage": 60,
+    "roof": "t_secro_flat_roof_flesh",
+    "bash": {
+      "str_min": 1,
+      "str_max": 1,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "sound_vol": 12,
+      "sound_fail_vol": 8,
+      "ter_set": "t_window_empty",
+      "items": [
+        {
+          "item": "glass_shard",
+          "count": [
+            6,
+            10
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "TRANSPARENT",
+      "SHARP",
+      "FLAMMABLE",
+      "NOITEM",
+      "MOUNTABLE",
+      "CONNECT_TO_WALL",
+      "SMALL_PASSAGE",
+      "S_FLESH"
+    ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_door_flesh",
+    "name": "木门",
+    "description": "覆盖着厚厚的肉质纹理的标准门。",
+    "symbol": "+",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 95,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "FLAMMABLE_ASH",
+      "DOOR",
+      "NOITEM",
+      "BARRICADABLE_DOOR",
+      "CONNECT_TO_WALL",
+      "BLOCK_WIND",
+      "S_FLESH"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splat!",
+      "sound_fail": "splat!",
+      "ter_set": "t_door_c"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_door_locked_flesh",
+    "name": "木门",
+    "description": "覆盖着厚厚的肉质纹理的标准门。你几乎看不到一个锁孔，虽然你不能做任何事情不消除所有的血迹坚持到它。",
+    "symbol": "+",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 95,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "FLAMMABLE_ASH",
+      "NOITEM",
+      "OPENCLOSE_INSIDE",
+      "REDUCE_SCENT",
+      "CONNECT_TO_WALL",
+      "BARRICADABLE_DOOR",
+      "BLOCK_WIND",
+      "S_FLESH"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_door_locked"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_floor_flesh",
+    "name": "肉质地板",
+    "description": "这层地板上布满了肉串，就像根在小缝隙里深深地挖掘。",
+    "symbol": ".",
+    "color": "light_red",
+    "move_cost": 5,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "TRANSPARENT",
+      "FLAMMABLE_HARD",
+      "SUPPORTS_ROOF",
+      "COLLAPSES",
+      "INDOORS",
+      "FLAT",
+      "ROAD",
+      "NOCOLLIDE",
+      "S_FLESH"
+    ],
+    "bash": {
+      "sound": "splash!",
+      "ter_set": "t_floor",
+      "str_min": 8,
+      "str_max": 16
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_rock_floor_flesh",
+    "name": "肉质岩层",
+    "description": "黏糊糊的肉串网从天花板伸进地板。",
+    "symbol": ".",
+    "color": "red",
+    "move_cost": 5,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "TRANSPARENT",
+      "INDOORS",
+      "COLLAPSES",
+      "SUPPORTS_ROOF",
+      "FLAT",
+      "ROAD",
+      "NOCOLLIDE",
+      "S_FLESH"
+    ],
+    "bash": {
+      "ter_set": "t_rock_floor",
+      "str_min": 8,
+      "str_max": 16,
+      "bash_below": true
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_stairs_down_flesh",
+    "name": "肉质楼梯",
+    "description": "一段向下的楼梯，除了被肉体所占据。",
+    "symbol": ">",
+    "color": "red",
+    "move_cost": 5,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "TRANSPARENT",
+      "GOES_DOWN",
+      "INDOORS",
+      "PLACE_ITEM",
+      "S_FLESH"
+    ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_stairs_up_flesh",
+    "name": "肉质楼梯",
+    "description": "一段向上的楼梯，除了被肉体占据。",
+    "symbol": "<",
+    "color": "red",
+    "move_cost": 5,
+    "flags": [
+      "TRANSPARENT",
+      "GOES_UP",
+      "INDOORS",
+      "PLACE_ITEM",
+      "S_FLESH"
+    ]
+  },
+  {
+    "//": "Since terrains are not capable to act as emitters, we use an invincible, but flammable furniture for the solution.",
+    "type": "furniture",
+    "id": "f_secro_fleshknot_emitter",
+    "name": "肉疣",
+    "description": "一个很小的疣，但它的大小，它可以传播大量的有害气体到空气中。摧毁它是一项挑战，因为它会就地生长。",
+    "symbol": ",",
+    "color": "light_red",
+    "move_cost_mod": 1,
+    "required_str": -1,
+    "emissions": [
+      "emit_fleshknot_gas_terrains"
+    ],
+    "flags": [
+      "TRANSPARENT",
+      "FLAMMABLE",
+      "NOCOLLIDE",
+      "S_FLESH",
+      "EMITTER"
+    ]
+  },
+  {
+    "//": "Starting here are the furnitures and terrains seen in flesh forest.",
+    "type": "terrain",
+    "id": "t_secro_dirt_flesh",
+    "name": "肉质污垢",
+    "description": "脏兮兮的，却布满血脉。",
+    "symbol": ".",
+    "color": "light_red",
+    "move_cost": 5,
+    "flags": [
+      "FLAMMABLE",
+      "TRANSPARENT",
+      "FLAT",
+      "S_FLESH"
+    ],
+    "bash": {
+      "sound": "splash",
+      "ter_set": "t_dirt",
+      "str_min": 8,
+      "str_max": 16,
+      "bash_below": true
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_grass_flesh",
+    "name": "肉草",
+    "description": "一簇细小的触角曾经是野草。",
+    "symbol": ".",
+    "color": "red",
+    "move_cost": 5,
+    "flags": [
+      "FLAMMABLE",
+      "TRANSPARENT",
+      "FLAT",
+      "S_FLESH"
+    ],
+    "bash": {
+      "sound": "splash",
+      "ter_set": "t_grass",
+      "str_min": 8,
+      "str_max": 16,
+      "bash_below": true
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_grass_long_flesh",
+    "name": "长肉草",
+    "description": "一簇长的卷须，在胫骨高的地方扭动。",
+    "symbol": ",",
+    "color": "red",
+    "move_cost": 6,
+    "flags": [
+      "FLAMMABLE",
+      "TRANSPARENT",
+      "FLAT",
+      "S_FLESH"
+    ],
+    "bash": {
+      "sound": "splash",
+      "ter_set": "t_grass_long",
+      "str_min": 8,
+      "str_max": 16,
+      "bash_below": true
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_grass_tall_flesh",
+    "name": "高草",
+    "description": "卷须一簇高的卷须，盘旋在头上。",
+    "symbol": "'",
+    "color": "red",
+    "move_cost": 8,
+    "coverage": 50,
+    "flags": [
+      "FLAMMABLE",
+      "TRANSPARENT",
+      "FLAT",
+      "S_FLESH"
+    ],
+    "bash": {
+      "sound": "splash",
+      "ter_set": "t_grass_tall",
+      "str_min": 8,
+      "str_max": 16,
+      "bash_below": true
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_shrub_flesh",
+    "name": "肉质灌木",
+    "description": "丛生的灌木。",
+    "symbol": "#",
+    "color": "red",
+    "move_cost": 8,
+    "coverage": 40,
+    "flags": [
+      "TRANSPARENT",
+      "CONTAINER",
+      "FLAMMABLE_ASH",
+      "THIN_OBSTACLE",
+      "PLACE_ITEM",
+      "SHRUB",
+      "SHORT",
+      "S_FLESH"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash.",
+      "sound_fail": "splat.",
+      "ter_set": "t_shrub"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_tree_young_flesh",
+    "name": "肉质幼树",
+    "description": "这只幼树被果肉吞食，嫩枝上覆盖着膜状血管，叶子上滴着血迹。",
+    "symbol": "1",
+    "color": [
+      "red",
+      "light_red",
+      "red",
+      "red"
+    ],
+    "move_cost": 7,
+    "flags": [
+      "TRANSPARENT",
+      "FLAMMABLE_ASH",
+      "NOITEM",
+      "YOUNG",
+      "REDUCE_SCENT",
+      "S_FLESH"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_tree_young"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_tree_flesh",
+    "name": "肉树",
+    "description": "一棵完全长成的树，尽管它已经被果肉压垮了，却依然挺立着。",
+    "symbol": "7",
+    "color": [
+      "red",
+      "light_red",
+      "red",
+      "red"
+    ],
+    "move_cost": 0,
+    "coverage": 80,
+    "flags": [
+      "FLAMMABLE_ASH",
+      "NOITEM",
+      "SUPPORTS_ROOF",
+      "REDUCE_SCENT",
+      "S_FLESH"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_tree"
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_secro_flower_flesh",
+    "name": "肉花",
+    "description": "这朵恐怖的花已经落下。",
+    "symbol": "f",
+    "color": "red",
+    "move_cost_mod": 0,
+    "required_str": -1,
+    "flags": [
+      "FLAMMABLE_ASH",
+      "TRANSPARENT",
+      "TINY",
+      "FLAMMABLE_ASH",
+      "NOCOLLIDE",
+      "FLOWER",
+      "S_FLESH"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash.",
+      "sound_fail": "whish."
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_secro_boulder_small_flesh",
+    "name": "肉质小漂石",
+    "description": "屈服于肉体的小岩石。",
+    "symbol": "o",
+    "color": "dark_gray",
+    "move_cost_mod": 3,
+    "coverage": 30,
+    "required_str": 10,
+    "crafting_pseudo_item": "boulder_anvil",
+    "flags": [
+      "FLAMMABLE_HARD",
+      "TRANSPARENT",
+      "S_FLESH",
+      "UNSTABLE",
+      "MOUNTABLE",
+      "TINY"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat."
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_secro_boulder_medium_flesh",
+    "name": "肉质中漂石",
+    "description": "屈服于肉体的岩石。",
+    "symbol": "0",
+    "color": "dark_gray",
+    "move_cost_mod": 6,
+    "coverage": 45,
+    "required_str": 16,
+    "crafting_pseudo_item": "boulder_anvil",
+    "flags": [
+      "FLAMMABLE_HARD",
+      "NOITEM",
+      "TRANSPARENT",
+      "S_FLESH",
+      "UNSTABLE",
+      "MOUNTABLE",
+      "SHORT",
+      "BASHABLE"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat."
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_secro_boulder_large_flesh",
+    "name": "肉质大卵石",
+    "description": "屈从于肉体的大石头。",
+    "symbol": "O",
+    "color": "dark_gray",
+    "move_cost_mod": -1,
+    "coverage": 65,
+    "required_str": 32,
+    "flags": [
+      "FLAMMABLE_HARD",
+      "NOITEM",
+      "S_FLESH",
+      "BASHABLE",
+      "BLOCK_WIND"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat."
+    }
+  },
+  {
+    "//": "Flesh forest's terrestrial body parts. Here we encounter LOTS of FF's abominations.",
+    "type": "terrain",
+    "id": "t_secro_flesh",
+    "name": "肉",
+    "description": "恶心的肉堆，粘糊糊的和有机的，因为它似乎生活。这种粉红色的肉已经腐烂到了核心，纵火焚烧可能不是治疗的方法。",
+    "symbol": ".",
+    "color": "red",
+    "move_cost": 5,
+    "flags": [
+      "FLAMMABLE_HARD",
+      "TRANSPARENT",
+      "FLAT",
+      "S_FLESH"
+    ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_flesh_wall",
+    "name": "肉壁",
+    "description": "恶心的肉墙，粘糊糊的，有机的，因为它似乎生活。这种致密的肉块对心脏是有害的，纵火可能不是治疗的方法。",
+    "symbol": "#",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 100,
+    "bash": {
+      "str_min": 100,
+      "str_max": 300,
+      "sound": "splash!",
+      "sound_fail": "splat.",
+      "ter_set": "t_secro_flesh"
+    },
+    "flags": [
+      "FLAMMABLE_HARD",
+      "NOITEM",
+      "SUPPORTS_ROOF",
+      "WALL",
+      "AUTO_WALL_SYMBOL",
+      "S_FLESH",
+      "BLOCK_WIND"
+    ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_flesh_wall_veins",
+    "looks_like": "t_secro_flesh_wall",
+    "name": "脉壁",
+    "description": "由叶脉状的卷须组成的墙，看起来是在飞行中形成的。",
+    "symbol": "#",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 90,
+    "bash": {
+      "str_min": 10,
+      "str_max": 30,
+      "sound": "splook!",
+      "sound_fail": "splat.",
+      "ter_set": "t_secro_flesh"
+    },
+    "flags": [
+      "FLAMMABLE_HARD",
+      "NOITEM",
+      "SUPPORTS_ROOF",
+      "WALL",
+      "AUTO_WALL_SYMBOL",
+      "S_FLESH",
+      "BLOCK_WIND"
+    ]
+  },
+  {
+    "type": "furniture",
+    "id": "f_secro_tree_flesh_atk",
+    "name": "肉树",
+    "description": "一棵完全长成的树，尽管它已经被果肉压垮了，却依然挺立着。仔细观察，它的枝干似乎是独立运动的。",
+    "symbol": "7",
+    "color": [
+      "red",
+      "light_red",
+      "red",
+      "red"
+    ],
+    "move_cost_mod": -1,
+    "required_str": -1,
+    "coverage": 95,
+    "emissions": [
+      "emit_flesh_tree_grab"
+    ],
+    "flags": [
+      "FLAMMABLE_ASH",
+      "NOITEM",
+      "SUPPORTS_ROOF",
+      "REDUCE_SCENT",
+      "S_FLESH",
+      "EMITTER"
+    ],
+    "bash": {
+      "str_min": 16,
+      "str_max": 24,
+      "sound": "splash!",
+      "sound_fail": "splat!"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_flesh_entrance_close",
+    "name": "肉",
+    "description": "恶心的肉堆，粘糊糊的和有机的，因为它似乎生活。这种粉红色的肉已经腐烂到了核心，纵火焚烧可能不是治疗的方法。",
+    "symbol": ".",
+    "color": "red",
+    "move_cost": 5,
+    "flags": [
+      "FLAMMABLE_HARD",
+      "TRANSPARENT",
+      "FLAT",
+      "S_FLESH",
+      "FF_ENTRANCE"
+    ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_flesh_entrance_open",
+    "name": "脉孔",
+    "description": "一个死静脉孔，现在一个无害的开口露出一个空洞。当然很恶心，但是没有别的办法。。。",
+    "symbol": "O",
+    "color": "red",
+    "move_cost": 5,
+    "flags": [
+      "FLAMMABLE_HARD",
+      "TRANSPARENT",
+      "FLAT",
+      "S_FLESH",
+      "GOES_DOWN"
+    ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_flesh_entrance_up",
+    "name": "脉孔",
+    "description": "静脉孔通向表面的死静脉孔的内孔。当然很恶心，但是没有别的办法。。。",
+    "symbol": "O",
+    "color": "red",
+    "move_cost": 5,
+    "flags": [
+      "FLAMMABLE_HARD",
+      "TRANSPARENT",
+      "FLAT",
+      "S_FLESH",
+      "GOES_UP"
+    ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_flesh_cave_entrance_open",
+    "looks_like": "t_secro_flesh_entrance_open",
+    "name": "脉孔",
+    "description": "不成熟的静脉孔。它平静地跳动着。当然很恶心，但是没有别的办法。。。",
+    "symbol": "o",
+    "color": "red",
+    "move_cost": 5,
+    "flags": [
+      "FLAMMABLE_HARD",
+      "TRANSPARENT",
+      "FLAT",
+      "S_FLESH",
+      "GOES_DOWN"
+    ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_flesh_cave_entrance_up",
+    "looks_like": "t_secro_flesh_entrance_up",
+    "name": "脉孔",
+    "description": "未发育的静脉孔通向表面的内孔。当然很恶心，但是没有别的办法。。。",
+    "symbol": "o",
+    "color": "red",
+    "move_cost": 5,
+    "flags": [
+      "FLAMMABLE_HARD",
+      "TRANSPARENT",
+      "FLAT",
+      "S_FLESH",
+      "GOES_UP"
+    ]
+  },
+  {
+    "type": "furniture",
+    "id": "f_secro_sack_hatch",
+    "name": "孵化肉袋",
+    "description": "开口张开的肉袋。你可能想尽快销毁它。",
+    "symbol": "0",
+    "color": "red",
+    "move_cost_mod": 1,
+    "required_str": -1,
+    "coverage": 20,
+    "emissions": [
+      "emit_flesh_sack_hatch"
+    ],
+    "flags": [
+      "FLAMMABLE",
+      "S_FLESH",
+      "EMITTER"
+    ],
+    "bash": {
+      "str_min": 12,
+      "str_max": 24,
+      "sound": "splook!",
+      "sound_fail": "splat!"
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_secro_tendril_cluster",
+    "name": "卷须簇",
+    "description": "从地面和天花板上长出的一片巨大的、扭动的触角。仔细观察，这些触角正试图形成一体。你可能想尽快销毁它。",
+    "symbol": "&",
+    "color": "light_red",
+    "move_cost_mod": 1,
+    "required_str": -1,
+    "coverage": 5,
+    "emissions": [
+      "emit_flesh_tentclus"
+    ],
+    "flags": [
+      "FLAMMABLE",
+      "TRANSPARENT",
+      "S_FLESH",
+      "EMITTER"
+    ],
+    "bash": {
+      "str_min": 15,
+      "str_max": 30,
+      "sound": "splook!",
+      "sound_fail": "splat!"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_flesh_inside_down",
+    "name": "口缝",
+    "description": "一个口子。只要有足够的勇气，你就能从中解脱出来，并将你引向深渊。",
+    "symbol": "O",
+    "color": "light_red",
+    "move_cost": 5,
+    "flags": [
+      "FLAMMABLE_HARD",
+      "TRANSPARENT",
+      "FLAT",
+      "S_FLESH",
+      "GOES_DOWN"
+    ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_flesh_inside_up",
+    "name": "口缝",
+    "description": "一个口子。只要有足够的勇气，你就可以抓住它松软、黏糊糊的肉边爬上去。",
+    "symbol": "O",
+    "color": "light_red",
+    "move_cost": 5,
+    "flags": [
+      "FLAMMABLE_HARD",
+      "TRANSPARENT",
+      "FLAT",
+      "S_FLESH",
+      "GOES_UP"
+    ]
+  },
+  {
+    "type": "furniture",
+    "id": "f_secro_flesh_bones",
+    "name": "骨性生长物",
+    "description": "一堆充满刺骨的肉，从下面冒出来，所以小心你的脚步！",
+    "symbol": "^",
+    "color": "white",
+    "move_cost_mod": 1,
+    "required_str": -1,
+    "emissions": [
+      "emit_flesh_bones"
+    ],
+    "flags": [
+      "FLAMMABLE",
+      "TRANSPARENT",
+      "S_FLESH",
+      "ROUGH",
+      "EMITTER",
+      "FF_BIOHAZARD"
+    ],
+    "bash": {
+      "str_min": 10,
+      "str_max": 20,
+      "sound": "splash!",
+      "sound_fail": "splook!"
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_secro_flesh_tent",
+    "name": "卷须",
+    "description": "一片密集的卷须。这些都很短，但可以牢牢抓住，所以注意你的脚步！",
+    "symbol": "^",
+    "color": "light_red",
+    "move_cost_mod": 2,
+    "required_str": -1,
+    "emissions": [
+      "emit_flesh_tendrils"
+    ],
+    "flags": [
+      "FLAMMABLE",
+      "TRANSPARENT",
+      "S_FLESH",
+      "EMITTER",
+      "FF_BIOHAZARD"
+    ],
+    "bash": {
+      "str_min": 7,
+      "str_max": 14,
+      "sound": "splook!",
+      "sound_fail": "splat!"
+    }
+  },
+  {
+    "//": "Another type of floor augmented with traps by the flesh.",
+    "looks_like": "t_secro_flesh",
+    "type": "furniture",
+    "id": "f_secro_flesh",
+    "name": "肉",
+    "description": "一层较厚的肉，搏动速度较快，但与正常肉有相似之处。",
+    "symbol": ".",
+    "color": "red",
+    "move_cost_mod": 1,
+    "required_str": -1,
+    "flags": [
+      "FLAMMABLE",
+      "TRANSPARENT",
+      "S_FLESH",
+      "FF_BIOHAZARD"
+    ]
+  },
+  {
+    "looks_like": "t_secro_flesh_wall",
+    "type": "furniture",
+    "id": "f_secro_flesh_wall",
+    "name": "肉壁",
+    "description": "恶心的肉墙，粘糊糊的，有机的，因为它似乎生活。这种致密的肉块对心脏是有害的，纵火可能不是治疗的方法。",
+    "symbol": "#",
+    "color": "red",
+    "move_cost_mod": -1,
+    "required_str": -1,
+    "coverage": 100,
+    "flags": [
+      "FLAMMABLE_HARD",
+      "NOITEM",
+      "SUPPORTS_ROOF",
+      "WALL",
+      "AUTO_WALL_SYMBOL",
+      "S_FLESH",
+      "BLOCK_WIND",
+      "FF_BIOHAZARD"
+    ]
+  },
+  {
+    "looks_like": "t_secro_flesh_wall",
+    "type": "furniture",
+    "id": "f_secro_flesh_wall_spawning",
+    "name": "肉壁",
+    "description": "恶心的肉墙，粘糊糊的，有机的，因为它似乎生活。这种致密的肉块对心脏是有害的，纵火可能不是治疗的方法。",
+    "symbol": "#",
+    "color": "red",
+    "move_cost_mod": -1,
+    "required_str": -1,
+    "coverage": 100,
+    "emissions": [
+      "emit_flesh_wall"
+    ],
+    "flags": [
+      "FLAMMABLE_HARD",
+      "NOITEM",
+      "SUPPORTS_ROOF",
+      "WALL",
+      "AUTO_WALL_SYMBOL",
+      "S_FLESH",
+      "BLOCK_WIND",
+      "EMITTER",
+      "FF_BIOHAZARD"
+    ]
+  },
+  {
+    "looks_like": "t_secro_flesh",
+    "type": "terrain",
+    "id": "t_secro_flesh_inside_up_close",
+    "name": "肉",
+    "description": "恶心的肉堆，粘糊糊的和有机的，因为它似乎生活。这种粉红色的肉已经腐烂到了核心，纵火焚烧可能不是治疗的方法。",
+    "symbol": ".",
+    "color": "red",
+    "move_cost": 5,
+    "flags": [
+      "FLAMMABLE_HARD",
+      "TRANSPARENT",
+      "FLAT",
+      "S_FLESH",
+      "FF_EXIT"
+    ]
+  },
+  {
+    "looks_like": "t_secro_flesh",
+    "type": "furniture",
+    "id": "f_secro_biome",
+    "name": "肉",
+    "description": "恶心的肉堆，粘糊糊的和有机的，因为它似乎生活。这种粉红色的肉已经腐烂到了核心，纵火焚烧可能不是治疗的方法。",
+    "symbol": ".",
+    "color": "red",
+    "move_cost_mod": 1,
+    "required_str": -1,
+    "emissions": [
+      "emit_flesh_biome"
+    ],
+    "flags": [
+      "TRANSPARENT",
+      "FLAMMABLE",
+      "S_FLESH",
+      "EMITTER"
+    ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_flesh_wall_weak",
+    "name": "肉壁",
+    "description": "恶心的肉墙，粘糊糊的，有机的，因为它似乎生活。这密集的肉块是邪恶的核心。这肉还没发育好，一个简单的猛击就能把它取下来。",
+    "symbol": "#",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 100,
+    "flags": [
+      "FLAMMABLE_HARD",
+      "NOITEM",
+      "SUPPORTS_ROOF",
+      "WALL",
+      "AUTO_WALL_SYMBOL",
+      "S_FLESH",
+      "BLOCK_WIND",
+      "FF_BIOHAZARD"
+    ],
+    "bash": {
+      "str_min": 10,
+      "str_max": 20,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_secro_flesh"
+    }
+  },
+  {
+    "looks_like": "t_secro_flesh_inside_up_close",
+    "type": "terrain",
+    "id": "t_secro_flesh_exit_closed",
+    "name": "肉",
+    "description": "恶心的肉堆，粘糊糊的和有机的，因为它似乎生活。这种粉红色的肉已经腐烂到了核心，纵火焚烧可能不是治疗的方法。",
+    "symbol": ".",
+    "color": "red",
+    "move_cost": 5,
+    "flags": [
+      "FLAMMABLE_HARD",
+      "TRANSPARENT",
+      "FLAT",
+      "S_FLESH",
+      "FC_EXIT"
+    ]
+  },
+  {
+    "//": "Destroy these to prevent them from spawning veinstalks.",
+    "type": "furniture",
+    "id": "f_secro_veinstalk",
+    "name": "脉丛",
+    "description": "从地上伸出的一种短而紧凑的活眼触角丛。它不祥地盯着周围的环境。。。",
+    "symbol": "s",
+    "color": "red",
+    "move_cost_mod": 1,
+    "required_str": -1,
+    "coverage": 10,
+    "emissions": [
+      "emit_veinstalk_spawn"
+    ],
+    "flags": [
+      "FLAMMABLE",
+      "S_FLESH",
+      "EMITTER"
+    ],
+    "bash": {
+      "str_min": 12,
+      "str_max": 22,
+      "sound": "splook!",
+      "sound_fail": "splat!"
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_secro_flesh_gas_emitter",
+    "name": "坏疽性肿瘤",
+    "description": "一种从肉中长出来的大肿瘤，散发着可怕的臭味，并在很大范围内传播。",
+    "symbol": "i",
+    "color": "pink",
+    "move_cost_mod": 1,
+    "required_str": -1,
+    "bash": {
+      "str_min": 11,
+      "str_max": 21,
+      "sound": "splook!",
+      "sound_fail": "splat!"
+    },
+    "emissions": [
+      "emit_sflesh_gas_spread_low",
+      "emit_sflesh_gas_spread_med",
+      "emit_sflesh_gas_spread_high"
+    ],
+    "flags": [
+      "TRANSPARENT",
+      "FLAMMABLE",
+      "NOCOLLIDE",
+      "S_FLESH",
+      "EMITTER"
+    ]
+  },
+  {
+    "type": "furniture",
+    "id": "f_secro_flesh_core",
+    "name": "肉心",
+    "description": "一大块肉，发出微弱的、不祥的深红色。",
+    "symbol": "o",
+    "color": "red",
+    "move_cost_mod": 1,
+    "required_str": -1,
+    "bash": {
+      "str_min": 13,
+      "str_max": 23,
+      "sound": "splook!",
+      "sound_fail": "splat!",
+      "items": [
+        {
+          "item": "secro_flesh_core",
+          "count": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "NOITEM",
+      "S_FLESH"
+    ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_wall_w_flesh",
+    "name": "肉白墙",
+    "description": "墙壁涂成白色，用血迹装饰。",
+    "symbol": "LINE_OXOX",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "FLAMMABLE",
+      "NOITEM",
+      "SUPPORTS_ROOF",
+      "WALL",
+      "CHIP",
+      "S_FLESH",
+      "AUTO_WALL_SYMBOL",
+      "MINEABLE",
+      "BLOCK_WIND"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_wall_w"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_wall_g_flesh",
+    "name": "肉绿墙",
+    "description": "墙壁漆成绿色，用血迹装饰。",
+    "symbol": "LINE_OXOX",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "FLAMMABLE",
+      "NOITEM",
+      "SUPPORTS_ROOF",
+      "WALL",
+      "CHIP",
+      "S_FLESH",
+      "AUTO_WALL_SYMBOL",
+      "MINEABLE",
+      "BLOCK_WIND"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_wall_g"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_wall_r_flesh",
+    "name": "肉色红墙",
+    "description": "墙壁涂成红色，用血迹装饰。",
+    "symbol": "LINE_OXOX",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "FLAMMABLE",
+      "NOITEM",
+      "SUPPORTS_ROOF",
+      "WALL",
+      "CHIP",
+      "S_FLESH",
+      "AUTO_WALL_SYMBOL",
+      "MINEABLE",
+      "BLOCK_WIND"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_wall_r"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_wall_b_flesh",
+    "name": "肉蓝墙",
+    "description": "墙壁涂成蓝色，用血迹装饰。",
+    "symbol": "LINE_OXOX",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "FLAMMABLE",
+      "NOITEM",
+      "SUPPORTS_ROOF",
+      "WALL",
+      "CHIP",
+      "S_FLESH",
+      "AUTO_WALL_SYMBOL",
+      "MINEABLE",
+      "BLOCK_WIND"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_wall_b"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_brick_wall_flesh",
+    "name": "肉砖墙",
+    "description": "坚固的砖墙，足够坚固，可以用足够的墙支撑屋顶，防止任何不需要的访客。",
+    "symbol": "LINE_OXOX",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "NOITEM",
+      "SUPPORTS_ROOF",
+      "WALL",
+      "AUTO_WALL_SYMBOL",
+      "MINEABLE",
+      "BLOCK_WIND",
+      "S_FLESH"
+    ],
+    "connects_to": "WALL",
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_brick_wall"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_rock_wall_flesh",
+    "name": "肉石墙",
+    "description": "被肉覆盖的更坚固的石墙。",
+    "symbol": "LINE_OXOX",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "NOITEM",
+      "SUPPORTS_ROOF",
+      "S_FLESH",
+      "WALL",
+      "AUTO_WALL_SYMBOL",
+      "MINEABLE",
+      "BLOCK_WIND"
+    ],
+    "connects_to": "WALL",
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_rock_wall"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_bars_flesh",
+    "name": "肉质金属棒",
+    "description": "被肉压得满满当当的粗铁条。由于覆盖着厚厚的纹理，几乎无法穿透。",
+    "symbol": "\"",
+    "color": "red",
+    "move_cost": 0,
+    "flags": [
+      "TRANSPARENT",
+      "NOITEM",
+      "PERMEABLE",
+      "CONNECT_TO_WALL",
+      "THIN_OBSTACLE",
+      "S_FLESH"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_bars"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_wall_glass_flesh",
+    "name": "玻璃幕墙",
+    "description": "一堵玻璃墙，它的整个表面覆盖着肉，挡住了透过它的视线。",
+    "symbol": "LINE_OXOX",
+    "color": "light_red",
+    "move_cost": 0,
+    "coverage": 90,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "NOITEM",
+      "WALL",
+      "AUTO_WALL_SYMBOL",
+      "BLOCK_WIND",
+      "S_FLESH"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_wall_glass"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_door_glass_flesh",
+    "name": "玻璃门",
+    "description": "一扇布满肉的玻璃门。你不能通过它除非。。。",
+    "symbol": "+",
+    "color": "light_red",
+    "move_cost": 0,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "S_FLESH",
+      "NOITEM",
+      "CONNECT_TO_WALL",
+      "BLOCK_WIND"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_door_glass_c"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_concrete_flesh",
+    "name": "肉质混凝土",
+    "description": "满是厚厚的膜状纹理的混凝土。",
+    "symbol": ".",
+    "color": "red",
+    "move_cost": 5,
+    "flags": [
+      "TRANSPARENT",
+      "FLAT",
+      "ROAD",
+      "MINEABLE",
+      "NOCOLLIDE",
+      "S_FLESH"
+    ],
+    "bash": {
+      "ter_set": "t_concrete",
+      "str_min": 8,
+      "str_max": 16
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_sidewalk_flesh",
+    "name": "肉质人行道",
+    "description": "布满血肉的人行道，密密麻麻的纹理从裂缝中钻出来。",
+    "symbol": ".",
+    "color": "light_red",
+    "move_cost": 5,
+    "flags": [
+      "TRANSPARENT",
+      "FLAT",
+      "ROAD",
+      "MINEABLE",
+      "NOCOLLIDE",
+      "S_FLESH"
+    ],
+    "bash": {
+      "ter_set": "t_sidewalk",
+      "str_min": 8,
+      "str_max": 16
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_pavement_flesh",
+    "name": "肉质路面",
+    "connects_to": "PAVEMENT",
+    "description": "一段沥青，裂缝上有厚厚的纹理。",
+    "symbol": ".",
+    "color": "red",
+    "move_cost": 5,
+    "flags": [
+      "TRANSPARENT",
+      "FLAT",
+      "ROAD",
+      "S_FLESH",
+      "NOCOLLIDE",
+      "MINEABLE"
+    ],
+    "bash": {
+      "ter_set": "t_pavement",
+      "str_min": 8,
+      "str_max": 16
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_pavement_y_flesh",
+    "name": "肉黄路面",
+    "connects_to": "PAVEMENT",
+    "description": "厚厚的膜状静脉下面几乎看不到黄色的痕迹。",
+    "symbol": ".",
+    "color": "light_red",
+    "move_cost": 5,
+    "flags": [
+      "TRANSPARENT",
+      "FLAT",
+      "ROAD",
+      "S_FLESH",
+      "NOCOLLIDE",
+      "MINEABLE"
+    ],
+    "bash": {
+      "ter_set": "t_pavement_y",
+      "str_min": 8,
+      "str_max": 16
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_thconc_floor_flesh",
+    "name": "素混凝土地面",
+    "description": "满是肉的水泥地板。",
+    "symbol": ".",
+    "color": "light_red",
+    "move_cost": 5,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "TRANSPARENT",
+      "SUPPORTS_ROOF",
+      "COLLAPSES",
+      "INDOORS",
+      "FLAT",
+      "NOCOLLIDE",
+      "ROAD",
+      "S_FLESH"
+    ],
+    "bash": {
+      "sound": "splash!",
+      "ter_set": "t_thconc_floor",
+      "str_min": 8,
+      "str_max": 16
+    }
+  },
+  {
+    "//": "These are used in flesh cities to keep players from climbing a building (rooftops are complicated)",
+    "type": "terrain",
+    "id": "t_secro_ladder_broken_flesh",
+    "name": "肉梯",
+    "description": "有血迹和静脉阻塞的梯子。",
+    "symbol": "<",
+    "color": "red",
+    "move_cost": 5,
+    "flags": [
+      "TRANSPARENT",
+      "PLACE_ITEM"
+    ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_stairs_broken_flesh",
+    "name": "肉质楼梯",
+    "description": "一段被肉严重侵扰的楼梯。这条路被堵住了，不可能通过。",
+    "symbol": "<",
+    "color": "red",
+    "move_cost": 5,
+    "flags": [
+      "TRANSPARENT",
+      "INDOORS",
+      "PLACE_ITEM",
+      "S_FLESH"
+    ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_gutter_downspout_flesh",
+    "name": "肉质落水管",
+    "description": "长满了从上到下摸索的卷须的排水沟。它黏糊糊的质地使它很滑。",
+    "symbol": "|",
+    "color": "light_red",
+    "move_cost": 6,
+    "flags": [
+      "TRANSPARENT",
+      "S_FLESH",
+      "THIN_OBSTACLE",
+      "UNSTABLE"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat.",
+      "ter_set": "t_gutter_downspout"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_railing_flesh",
+    "name": "栏杆",
+    "description": "长满肉的木制栏杆。",
+    "symbol": "LINE_OXOX",
+    "color": "red",
+    "move_cost": 6,
+    "flags": [
+      "TRANSPARENT",
+      "NOITEM",
+      "THIN_OBSTACLE",
+      "MOUNTABLE",
+      "SHORT",
+      "AUTO_WALL_SYMBOL",
+      "BURROWABLE",
+      "S_FLESH"
+    ],
+    "connects_to": "RAILING",
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat.",
+      "ter_set": "t_railing"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_door_metal_flesh",
+    "name": "肉质金属门",
+    "description": "一扇可以承受更多惩罚的铁门，上面有肉。",
+    "symbol": "+",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 95,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "NOITEM",
+      "S_FLESH",
+      "CONNECT_TO_WALL",
+      "MINEABLE",
+      "BLOCK_WIND"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_door_metal_c"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_door_metal_locked_flesh",
+    "name": "肉质金属门",
+    "description": "一扇可以承受更多惩罚的铁门，上面有肉。它也被锁住了。",
+    "symbol": "+",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 95,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "NOITEM",
+      "REDUCE_SCENT",
+      "CONNECT_TO_WALL",
+      "MINEABLE",
+      "BLOCK_WIND",
+      "S_FLESH"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_door_metal_locked"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_carpet_red_flesh",
+    "name": "肉色红地毯",
+    "description": "布满血迹的柔软的红地毯。",
+    "symbol": ".",
+    "color": "red",
+    "move_cost": 5,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "TRANSPARENT",
+      "FLAMMABLE_HARD",
+      "SUPPORTS_ROOF",
+      "COLLAPSES",
+      "INDOORS",
+      "NOCOLLIDE",
+      "S_FLESH",
+      "FLAT"
+    ],
+    "bash": {
+      "sound": "splash!",
+      "ter_set": "t_carpet_red",
+      "str_min": 8,
+      "str_max": 16
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_carpet_yellow_flesh",
+    "name": "肉色黄地毯",
+    "description": "柔软的黄色地毯上满是血迹。",
+    "symbol": ".",
+    "color": "red",
+    "move_cost": 5,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "TRANSPARENT",
+      "FLAMMABLE_HARD",
+      "SUPPORTS_ROOF",
+      "COLLAPSES",
+      "INDOORS",
+      "NOCOLLIDE",
+      "S_FLESH",
+      "FLAT"
+    ],
+    "bash": {
+      "sound": "splash!",
+      "ter_set": "t_carpet_yellow",
+      "str_min": 8,
+      "str_max": 16
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_carpet_green_flesh",
+    "name": "肉绿地毯",
+    "description": "满是血迹的柔软的绿色地毯。",
+    "symbol": ".",
+    "color": "red",
+    "move_cost": 5,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "TRANSPARENT",
+      "FLAMMABLE_HARD",
+      "SUPPORTS_ROOF",
+      "COLLAPSES",
+      "INDOORS",
+      "NOCOLLIDE",
+      "S_FLESH",
+      "FLAT"
+    ],
+    "bash": {
+      "sound": "splash!",
+      "ter_set": "t_carpet_green",
+      "str_min": 8,
+      "str_max": 16
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_carpet_purple_flesh",
+    "name": "紫绒地毯",
+    "description": "柔软的紫色地毯上满是血迹。",
+    "symbol": ".",
+    "color": "red",
+    "move_cost": 5,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "TRANSPARENT",
+      "FLAMMABLE_HARD",
+      "SUPPORTS_ROOF",
+      "COLLAPSES",
+      "NOCOLLIDE",
+      "INDOORS",
+      "S_FLESH",
+      "FLAT"
+    ],
+    "bash": {
+      "sound": "splash!",
+      "ter_set": "t_carpet_purple",
+      "str_min": 8,
+      "str_max": 16
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_linoleum_white_flesh",
+    "name": "肉质油毡砖",
+    "description": "被坚硬的、有弹性的地板所侵扰。",
+    "symbol": ".",
+    "color": "light_red",
+    "move_cost": 5,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "TRANSPARENT",
+      "SUPPORTS_ROOF",
+      "COLLAPSES",
+      "INDOORS",
+      "NOCOLLIDE",
+      "S_FLESH",
+      "FLAT",
+      "ROAD"
+    ],
+    "bash": {
+      "sound": "splash!",
+      "ter_set": "t_linoleum_white",
+      "str_min": 8,
+      "str_max": 16
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_linoleum_gray_flesh",
+    "name": "肉质油毡砖",
+    "roof": "t_secro_flat_roof_flesh",
+    "description": "布满肉的坚硬的、灰色的、有橡胶的地板。",
+    "symbol": ".",
+    "color": "light_red",
+    "move_cost": 5,
+    "flags": [
+      "TRANSPARENT",
+      "SUPPORTS_ROOF",
+      "COLLAPSES",
+      "INDOORS",
+      "NOCOLLIDE",
+      "S_FLESH",
+      "FLAT",
+      "ROAD"
+    ],
+    "bash": {
+      "sound": "splash!",
+      "ter_set": "t_linoleum_gray",
+      "str_min": 8,
+      "str_max": 16
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_fence_flesh",
+    "name": "肉栅栏",
+    "description": "木头做的屏障，没什么复杂的。温和地建议不要去哪里。",
+    "symbol": "LINE_OXOX",
+    "color": "red",
+    "move_cost": 6,
+    "flags": [
+      "TRANSPARENT",
+      "DIGGABLE",
+      "FLAMMABLE_ASH",
+      "NOITEM",
+      "THIN_OBSTACLE",
+      "REDUCE_SCENT",
+      "MOUNTABLE",
+      "SHORT",
+      "AUTO_WALL_SYMBOL",
+      "BURROWABLE",
+      "S_FLESH"
+    ],
+    "connects_to": "WOODFENCE",
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash.",
+      "sound_fail": "splat.",
+      "ter_set": "t_fence"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_column_flesh",
+    "name": "肉柱",
+    "description": "覆盖着肉的混凝土柱。",
+    "symbol": "1",
+    "color": "light_red",
+    "move_cost": 0,
+    "coverage": 80,
+    "flags": [
+      "WALL",
+      "MINEABLE",
+      "S_FLESH"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_column"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_console_broken_flesh",
+    "name": "肉质破碎控制台",
+    "description": "这是一个独立的计算机终端，是超越打破。血管在监视器里蠕动。",
+    "symbol": "6",
+    "color": "light_red",
+    "move_cost": 0,
+    "coverage": 50,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "TRANSPARENT",
+      "NOITEM",
+      "INDOORS",
+      "SHORT",
+      "PERMEABLE"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_console_broken"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_console_flesh",
+    "name": "丰满的电脑控制台",
+    "description": "这是一个独立的计算机终端。静脉在监视器中蠕动，但在目前的情况下似乎可以工作。",
+    "symbol": "6",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 50,
+    "light_emitted": 5,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "TRANSPARENT",
+      "CONSOLE",
+      "S_FLESH",
+      "NOITEM",
+      "INDOORS",
+      "SHORT",
+      "PERMEABLE"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_console"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_gates_mech_control_flesh",
+    "name": "绞肉机",
+    "description": "这是一个闸门控制绞车。卷须覆盖在手柄上，如果去掉，就可以使用了。",
+    "symbol": "6",
+    "color": "red",
+    "move_cost": 0,
+    "flags": [
+      "TRANSPARENT",
+      "NOITEM",
+      "INDOORS",
+      "PERMEABLE",
+      "THIN_OBSTACLE",
+      "S_FLESH"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_gates_mech_control"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_gates_control_concrete_flesh",
+    "name": "绞肉机",
+    "description": "这是一个闸门控制绞车。卷须覆盖在手柄上，如果去掉，就可以使用了。",
+    "symbol": "6",
+    "color": "cyan_red",
+    "move_cost": 0,
+    "flags": [
+      "TRANSPARENT",
+      "NOITEM",
+      "INDOORS",
+      "PERMEABLE",
+      "THIN_OBSTACLE",
+      "S_FLESH"
+    ],
+    "examine_action": "controls_gate",
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_gates_control_concrete"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_atm_flesh",
+    "name": "肉质ATM",
+    "description": "肉覆盖了整个机构，你不能做任何有用的事。。。",
+    "symbol": "&",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 55,
+    "flags": [
+      "TRANSPARENT",
+      "NOITEM",
+      "REDUCE_SCENT",
+      "PERMEABLE"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_atm"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_window_stained_green_flesh",
+    "name": "高高彩色玻璃窗",
+    "description": "满是肉的翡翠色窗户。",
+    "symbol": "\"",
+    "color": "red",
+    "move_cost": 0,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "NOITEM",
+      "SUPPORTS_ROOF",
+      "WALL",
+      "BARRICADABLE_WINDOW",
+      "CONNECT_TO_WALL",
+      "MINEABLE",
+      "BLOCK_WIND",
+      "S_FLESH"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_window_stained_green"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_window_stained_red_flesh",
+    "name": "高高彩色玻璃窗",
+    "description": "一扇布满血肉的红宝石色窗户。",
+    "symbol": "\"",
+    "color": "red",
+    "move_cost": 0,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "NOITEM",
+      "SUPPORTS_ROOF",
+      "WALL",
+      "BARRICADABLE_WINDOW",
+      "CONNECT_TO_WALL",
+      "MINEABLE",
+      "BLOCK_WIND",
+      "S_FLESH"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_window_stained_red"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_window_stained_blue_flesh",
+    "name": "高高彩色玻璃窗",
+    "description": "一扇沾满蓝宝石的窗户。",
+    "symbol": "\"",
+    "color": "red",
+    "move_cost": 0,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "NOITEM",
+      "SUPPORTS_ROOF",
+      "WALL",
+      "BARRICADABLE_WINDOW",
+      "CONNECT_TO_WALL",
+      "MINEABLE",
+      "BLOCK_WIND",
+      "S_FLESH"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_window_stained_blue"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_window_bars_flesh",
+    "name": "带金属条的肉质窗框",
+    "description": "一个用钢条和一块巨大的玻璃覆盖着血脉的温登框架。",
+    "symbol": "#",
+    "color": "light_red",
+    "move_cost": 0,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "NOITEM",
+      "CONNECT_TO_WALL",
+      "THIN_OBSTACLE",
+      "S_FLESH"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_window_bars"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_chainfence_flesh",
+    "name": "肉质铁丝网",
+    "description": "一种铁丝网围栏，其有花纹的洞被厚厚的果肉堵住。",
+    "symbol": "LINE_OXOX",
+    "color": "light_red",
+    "move_cost": 0,
+    "flags": [
+      "TRANSPARENT",
+      "NOITEM",
+      "THIN_OBSTACLE",
+      "PERMEABLE",
+      "UNSTABLE",
+      "CLIMBABLE",
+      "AUTO_WALL_SYMBOL",
+      "BURROWABLE",
+      "S_FLESH"
+    ],
+    "connects_to": "CHAINFENCE",
+    "examine_action": "chainfence",
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_chainfence"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_chaingate_l_flesh",
+    "name": "肉丝门",
+    "description": "一个有肉覆盖了大部分洞的链式门。它有一个明显的挂锁机制，打开它可能需要你删除所有的血迹在它。",
+    "symbol": "+",
+    "color": "red",
+    "move_cost": 0,
+    "flags": [
+      "TRANSPARENT",
+      "PERMEABLE",
+      "THIN_OBSTACLE",
+      "BURROWABLE",
+      "S_FLESH"
+    ],
+    "connects_to": "CHAINFENCE",
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_chaingate_l"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_chaingate_c_flesh",
+    "name": "肉丝门",
+    "description": "一个有肉覆盖了大部分洞的链式门。",
+    "symbol": "+",
+    "color": "red",
+    "move_cost": 0,
+    "flags": [
+      "TRANSPARENT",
+      "PERMEABLE",
+      "THIN_OBSTACLE",
+      "BURROWABLE",
+      "S_FLESH"
+    ],
+    "connects_to": "CHAINFENCE",
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_chaingate_c"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_wall_p_flesh",
+    "name": "肉色粉墙",
+    "description": "粉刷墙壁，用血迹装饰。",
+    "symbol": "LINE_OXOX",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "FLAMMABLE",
+      "NOITEM",
+      "SUPPORTS_ROOF",
+      "WALL",
+      "CHIP",
+      "S_FLESH",
+      "AUTO_WALL_SYMBOL",
+      "MINEABLE",
+      "BLOCK_WIND"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_wall_p"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_reinforced_door_glass_flesh",
+    "name": "玻璃门",
+    "description": "布满肉的强化玻璃门。打开它可能是个小问题。。。",
+    "symbol": "+",
+    "color": "red",
+    "move_cost": 0,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "NOITEM",
+      "CONNECT_TO_WALL",
+      "MINEABLE",
+      "BLOCK_WIND",
+      "S_FLESH"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_reinforced_door_glass_c"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_brick_wall_flesh",
+    "name": "肉砖墙",
+    "description": "一种坚固的砖墙，其纹理从缝隙中挖掘出来，形成奇怪的图案。",
+    "symbol": "LINE_OXOX",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "NOITEM",
+      "SUPPORTS_ROOF",
+      "WALL",
+      "AUTO_WALL_SYMBOL",
+      "MINEABLE",
+      "BLOCK_WIND",
+      "S_FLESH"
+    ],
+    "connects_to": "WALL",
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_brick_wall"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_concrete_wall_flesh",
+    "name": "素混凝土墙",
+    "description": "已经不舒服的被肉感染的墙。",
+    "symbol": "LINE_OXOX",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "NOITEM",
+      "SUPPORTS_ROOF",
+      "WALL",
+      "NO_SCENT",
+      "AUTO_WALL_SYMBOL",
+      "MINEABLE",
+      "S_FLESH",
+      "BLOCK_WIND"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_concrete_wall"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_wall_metal_flesh",
+    "name": "肉质金属墙",
+    "description": "被肉覆盖的厚的，防爆的金属墙。现在你有更多的时间把它取下来。",
+    "symbol": "LINE_OXOX",
+    "color": "light_red",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "NOITEM",
+      "SUPPORTS_ROOF",
+      "WALL",
+      "NO_SCENT",
+      "AUTO_WALL_SYMBOL",
+      "MINEABLE",
+      "S_FLESH",
+      "BLOCK_WIND"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_wall_metal"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_reinforced_glass_flesh",
+    "name": "玻璃纤维",
+    "description": "厚而耐用的强化玻璃板，布满了肉。它不仅很难，而且完全阻挡了通过它的视野。",
+    "symbol": "LINE_OXOX",
+    "color": "light_red",
+    "move_cost": 0,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "NOITEM",
+      "WALL",
+      "NO_SCENT",
+      "AUTO_WALL_SYMBOL",
+      "MINEABLE",
+      "S_FLESH",
+      "BLOCK_WIND"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_reinforced_glass"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_water_dispenser_flesh",
+    "name": "肉汁饮水机",
+    "description": "一种有几个水龙头的机器，用来分配干净的水。不过，果肉堵塞了分配器，使其毫无用处。",
+    "symbol": "W",
+    "color": "light_red",
+    "move_cost": 0,
+    "coverage": 40,
+    "flags": [
+      "TRANSPARENT",
+      "S_FLESH"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat.",
+      "ter_set": "t_water_dispenser"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_ballistic_glass_flesh",
+    "name": "肉质防弹玻璃",
+    "looks_like": "t_reinforced_glass",
+    "description": "这种层叠的玻璃比以前坚硬得多。",
+    "symbol": "LINE_OXOX",
+    "color": "light_red",
+    "move_cost": 0,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [
+      "NOITEM",
+      "WALL",
+      "NO_SCENT",
+      "AUTO_WALL_SYMBOL",
+      "MINEABLE",
+      "BLOCK_WIND",
+      "S_FLESH"
+    ],
+    "bash": {
+      "str_min": 8,
+      "str_max": 16,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_ballistic_glass"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_card_flesh",
+    "name": "读卡器",
+    "description": "这是一个智能卡读卡器。在生物危害标志下面刻着一段文字，上面写着“Secronom项目”。你肯定需要某种特殊的钥匙卡才能开门。",
+    "//": "Secronom. You'll find the keycard in the secronom lab.",
+    "symbol": "6",
+    "color": "pink",
+    "move_cost": 0,
+    "flags": [
+      "NOITEM",
+      "CONNECT_TO_WALL"
+    ],
+    "bash": {
+      "str_min": 18,
+      "str_max": 180,
+      "sound": "crunch!",
+      "sound_fail": "whack!",
+      "ter_set": "t_card_reader_broken",
+      "items": [
+        {
+          "item": "plastic_chunk",
+          "count": [
+            0,
+            2
+          ]
+        },
+        {
+          "item": "scrap",
+          "prob": 50
+        }
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_door_metal_secrofrr",
+    "name": "生物危害金属门",
+    "description": "一种镀锌钢门，锻造后可承受惩罚并阻止任何人或任何事。通常与需要外部电源解锁的自动电子锁定机构结合使用。它有一个生物危害符号和一个嵌入门上的读卡器，标有“1级许可”。",
+    "symbol": "+",
+    "looks_like": "t_secro_door_metal_secrofv",
+    "color": "cyan",
+    "move_cost": 0,
+    "coverage": 95,
+    "roof": "t_flat_roof",
+    "flags": [
+      "NOITEM",
+      "REDUCE_SCENT",
+      "CONNECT_TO_WALL",
+      "LOCKED",
+      "MINEABLE",
+      "BLOCK_WIND"
+    ],
+    "bash": {
+      "str_min": 120,
+      "str_max": 350,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "ter_set": "t_mdoor_frame",
+      "items": [
+        {
+          "item": "scrap",
+          "count": [
+            15,
+            30
+          ]
+        },
+        {
+          "item": "steel_plate",
+          "prob": 80
+        },
+        {
+          "item": "hinge",
+          "count": [
+            1,
+            4
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_door_metal_secrofv",
+    "name": "生物危害金属门",
+    "description": "一种镀锌钢门，锻造后可承受惩罚并阻止任何人或任何事。通常与需要外部电源解锁的自动电子锁定机构结合使用。它有一个生物危害的符号，描绘了另一边的一些不为人知的东西。。。当肉纤维从边缘爬出来的时候。门上嵌入了读卡器，需要一个特殊的钥匙卡才能打开。",
+    "//": "Actually locked, as in, LOCKED",
+    "symbol": "+",
+    "looks_like": "t_door_metal_c",
+    "color": "cyan",
+    "move_cost": 0,
+    "coverage": 95,
+    "roof": "t_flat_roof",
+    "flags": [
+      "NOITEM",
+      "REDUCE_SCENT",
+      "CONNECT_TO_WALL",
+      "LOCKED",
+      "MINEABLE",
+      "BLOCK_WIND"
+    ],
+    "bash": {
+      "str_min": 120,
+      "str_max": 350,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "ter_set": "t_mdoor_frame",
+      "items": [
+        {
+          "item": "scrap",
+          "count": [
+            15,
+            30
+          ]
+        },
+        {
+          "item": "steel_plate",
+          "prob": 80
+        },
+        {
+          "item": "hinge",
+          "count": [
+            1,
+            4
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_experiment_vat",
+    "name": "实验缸",
+    "description": "装满淡黄色溶液的大桶。肉似乎包围着玻璃管，好像他们在隐藏什么。。。",
+    "symbol": "0",
+    "color": "light_red",
+    "looks_like": "t_vat",
+    "move_cost": 0,
+    "coverage": 40,
+    "roof": "t_flat_roof",
+    "flags": [
+      "TRANSPARENT",
+      "SEALED",
+      "PLACE_ITEM",
+      "WALL"
+    ],
+    "bash": {
+      "str_min": 12,
+      "str_max": 90,
+      "sound": "splash!",
+      "sound_fail": "splat.",
+      "sound_vol": 16,
+      "sound_fail_vol": 12,
+      "ter_set": "t_floor",
+      "items": [
+        {
+          "item": "glass_shard",
+          "count": [
+            42,
+            84
+          ]
+        },
+        {
+          "item": "scrap",
+          "count": [
+            0,
+            2
+          ]
+        }
+      ]
+    }
+  }
+]

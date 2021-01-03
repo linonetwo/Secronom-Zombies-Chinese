@@ -1,0 +1,722 @@
+[
+  {
+    "type": "ammunition_type",
+    "id": "SSgrenade",
+    "name": "SS Grenade",
+    "default": "SSxgrenade"
+  },
+  {
+    "id": "SSxgrenade",
+    "type": "AMMO",
+    "name": "SSx grenade",
+    "description": "带数字10秒计时器的圆形金属X型手榴弹。",
+    "weight": "200 g",
+    "volume": "500 ml",
+    "price": 40000,
+    "material": [
+      "plastic",
+      "powder"
+    ],
+    "symbol": "*",
+    "color": "white",
+    "count": 1,
+    "ammo_type": "SSgrenade",
+    "range": 18,
+    "damage": {
+      "damage_type": "stab",
+      "amount": 4,
+      "armor_penetration": 8
+    },
+    "effects": [
+      "NEVER_MISFIRES",
+      "COOKOFF",
+      "ACT_ON_RANGED_HIT",
+      "RECOVER_9",
+      "CUSTOM_EXPLOSION"
+    ],
+    "explode_in_fire": true,
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": {
+      "target": "SSxgrenadeact",
+      "target_charges": 10,
+      "active": true,
+      "type": "transform"
+    }
+  },
+  {
+    "id": "SSxgrenadeact",
+    "type": "TOOL",
+    "name": "SSx grenade",
+    "description": "一枚圆形金属X型手榴弹，带有数字10秒计时器，目前正在计时。",
+    "weight": "200 g",
+    "volume": "500 ml",
+    "price": 40000,
+    "material": [
+      "plastic",
+      "powder"
+    ],
+    "symbol": "*",
+    "color": "white",
+    "initial_charges": 1,
+    "max_charges": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "explosion": {
+        "power": 5,
+        "distance_factor": 0.1,
+        "shrapnel": 3
+      }
+    }
+  },
+  {
+    "id": "SSygrenade",
+    "type": "AMMO",
+    "name": "SSy grenade",
+    "description": "带数字10秒计时器的圆形金属Y型手榴弹。",
+    "weight": "300 g",
+    "volume": "500 ml",
+    "price": 50000,
+    "material": [
+      "plastic",
+      "powder"
+    ],
+    "symbol": "*",
+    "color": "white",
+    "count": 1,
+    "ammo_type": "SSgrenade",
+    "range": 18,
+    "damage": {
+      "damage_type": "stab",
+      "amount": 4,
+      "armor_penetration": 8
+    },
+    "effects": [
+      "NEVER_MISFIRES",
+      "COOKOFF",
+      "ACT_ON_RANGED_HIT",
+      "RECOVER_9",
+      "CUSTOM_EXPLOSION"
+    ],
+    "explode_in_fire": true,
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": {
+      "target": "SSygrenadeact",
+      "target_charges": 10,
+      "active": true,
+      "type": "transform"
+    }
+  },
+  {
+    "id": "SSygrenadeact",
+    "type": "TOOL",
+    "name": "SSy grenade",
+    "description": "一枚圆形金属Y型手榴弹，带有数字10秒计时器，目前正在计时。",
+    "weight": "300 g",
+    "volume": "500 ml",
+    "price": 50000,
+    "material": [
+      "plastic",
+      "powder"
+    ],
+    "symbol": "*",
+    "color": "white",
+    "initial_charges": 1,
+    "max_charges": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "explosion": {
+        "power": 10,
+        "distance_factor": 0.3,
+        "shrapnel": 5
+      }
+    }
+  },
+  {
+    "id": "SSzgrenade",
+    "type": "AMMO",
+    "name": "SSz grenade",
+    "description": "带数字10秒计时器的圆形金属Z型手榴弹。",
+    "weight": "400 g",
+    "volume": "500 ml",
+    "price": 65000,
+    "material": [
+      "plastic",
+      "powder"
+    ],
+    "symbol": "*",
+    "color": "white",
+    "count": 1,
+    "ammo_type": "SSgrenade",
+    "range": 18,
+    "damage": {
+      "damage_type": "stab",
+      "amount": 4,
+      "armor_penetration": 8
+    },
+    "effects": [
+      "NEVER_MISFIRES",
+      "COOKOFF",
+      "ACT_ON_RANGED_HIT",
+      "RECOVER_9",
+      "CUSTOM_EXPLOSION"
+    ],
+    "explode_in_fire": true,
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": {
+      "target": "SSzgrenadeact",
+      "target_charges": 10,
+      "active": true,
+      "type": "transform"
+    }
+  },
+  {
+    "id": "SSzgrenadeact",
+    "type": "TOOL",
+    "name": "SSz grenade",
+    "description": "一枚圆形金属Z型手榴弹，带有数字10秒计时器，目前正在计时。",
+    "weight": "400 g",
+    "volume": "500 ml",
+    "price": 65000,
+    "material": [
+      "plastic",
+      "powder"
+    ],
+    "symbol": "*",
+    "color": "white",
+    "initial_charges": 1,
+    "max_charges": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "explosion": {
+        "power": 20,
+        "distance_factor": 0.5,
+        "shrapnel": 10
+      }
+    }
+  },
+  {
+    "id": "SSimpactgrenade",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "SS grenade",
+    "description": "圆形金属手榴弹。",
+    "weight": "240 g",
+    "volume": "500 ml",
+    "to_hit": -1,
+    "bashing": 6,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "symbol": "*",
+    "color": "light_red",
+    "explode_in_fire": true,
+    "use_action": {
+      "target": "SSimpactgrenadeact",
+      "target_charges": 1,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [
+      "TRADER_AVOID",
+      "CUSTOM_EXPLOSION"
+    ]
+  },
+  {
+    "id": "SSimpactgrenadeact",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "SS grenade",
+    "description": "圆形金属手榴弹。就要爆炸了。",
+    "weight": "240 g",
+    "volume": "500 ml",
+    "to_hit": -1,
+    "bashing": 6,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "symbol": "*",
+    "color": "red",
+    "initial_charges": 1,
+    "max_charges": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "draw_explosion_radius": 2,
+      "draw_explosion_color": "red",
+      "sound_volume": 0,
+      "sound_msg": "Tick.",
+      "no_deactivate_msg": "It's no use!",
+      "explosion": {
+        "power": 6,
+        "distance_factor": 0.2,
+        "shrapnel": 1
+      }
+    },
+    "flags": [
+      "BOMB",
+      "TRADER_AVOID",
+      "CUSTOM_EXPLOSION"
+    ]
+  },
+  {
+    "id": "bot_secroinforcer",
+    "type": "TOOL",
+    "name": "reinforcer bot",
+    "description": "这是一个不活跃的增强机器人。",
+    "weight": "16225 g",
+    "volume": "1000 ml",
+    "price": 120000,
+    "to_hit": -3,
+    "bashing": 10,
+    "material": [
+      "steel"
+    ],
+    "symbol": "O",
+    "color": "light_gray",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_bot_secroinforcer",
+      "friendly_msg": "It is bugged!",
+      "hostile_msg": "The reinforcer bot shoots off!",
+      "difficulty": 1000,
+      "moves": 100,
+      "place_randomly": true,
+      "skills": [
+        "survival",
+        "computer"
+      ]
+    }
+  },
+  {
+    "id": "bot_secroshocker",
+    "type": "TOOL",
+    "name": "shocker bot",
+    "description": "这是一个不活动的震动机器人。",
+    "weight": "1454 g",
+    "volume": "500 ml",
+    "price": 80000,
+    "to_hit": -3,
+    "bashing": 6,
+    "material": [
+      "steel"
+    ],
+    "symbol": "O",
+    "color": "light_gray",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_bot_secroshocker",
+      "friendly_msg": "It is bugged!",
+      "hostile_msg": "A shocker bot flies off!",
+      "difficulty": 1000,
+      "moves": 100,
+      "place_randomly": true,
+      "skills": [
+        "survival",
+        "computer"
+      ]
+    }
+  },
+  {
+    "id": "bot_secroriflewalker",
+    "type": "TOOL",
+    "name": "walker bot",
+    "description": "这是一个不活动的步行机器人。",
+    "weight": "1454 g",
+    "volume": "500 ml",
+    "price": 80000,
+    "to_hit": -3,
+    "bashing": 6,
+    "material": [
+      "steel"
+    ],
+    "symbol": "O",
+    "color": "light_gray",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_bot_secroriflewalker",
+      "friendly_msg": "It is bugged!",
+      "hostile_msg": "A walker bot lands down!",
+      "difficulty": 1000,
+      "moves": 100,
+      "place_randomly": true,
+      "skills": [
+        "survival",
+        "computer"
+      ]
+    }
+  },
+  {
+    "id": "bot_secrolauncher",
+    "type": "TOOL",
+    "name": "launcher bot",
+    "description": "这是一个非活动的启动程序bot。",
+    "weight": "1454 g",
+    "volume": "500 ml",
+    "price": 80000,
+    "to_hit": -3,
+    "bashing": 6,
+    "material": [
+      "steel"
+    ],
+    "symbol": "O",
+    "color": "light_gray",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_bot_secrolauncher",
+      "friendly_msg": "It is bugged!",
+      "hostile_msg": "A launcher bot flies off!",
+      "difficulty": 1000,
+      "moves": 100,
+      "place_randomly": true,
+      "skills": [
+        "survival",
+        "computer"
+      ]
+    }
+  },
+  {
+    "id": "bot_secromissile",
+    "type": "TOOL",
+    "name": "SS homing missile",
+    "description": "这是一枚静止的SS寻的导弹。",
+    "weight": "324 g",
+    "volume": "250 ml",
+    "price": 80000,
+    "to_hit": -3,
+    "bashing": 6,
+    "material": [
+      "steel"
+    ],
+    "symbol": "O",
+    "color": "light_gray",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_bot_secromissile",
+      "friendly_msg": "It is bugged!",
+      "hostile_msg": "A missile starts to track down targets!",
+      "difficulty": 1000,
+      "moves": 100,
+      "place_randomly": true,
+      "skills": [
+        "survival",
+        "computer"
+      ]
+    }
+  },
+  {
+    "id": "saddler_detach",
+    "type": "TOOL",
+    "name": "saddler",
+    "description": "这个马鞍就要脱离它死去的主人了。",
+    "volume": "4000 ml",
+    "weight": "4000 g",
+    "price": 0,
+    "to_hit": -2,
+    "bashing": 1,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "h",
+    "color": "green",
+    "drop_action": {
+      "type": "explosion",
+      "sound_volume": 0,
+      "sound_msg": "*splat*",
+      "no_deactivate_msg": "*splat* *splat*",
+      "draw_explosion_color": "green",
+      "fields_type": "fd_saddler_detach",
+      "fields_radius": 0,
+      "fields_min_intensity": 1,
+      "fields_max_intensity": 1
+    }
+  },
+  {
+    "id": "saddler_brute_detach",
+    "type": "TOOL",
+    "name": "saddler brute",
+    "description": "这个马鞍兽即将脱离它死去的主人。",
+    "volume": "4000 ml",
+    "weight": "4000 g",
+    "price": 0,
+    "to_hit": -2,
+    "bashing": 1,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "h",
+    "color": "dark_gray",
+    "drop_action": {
+      "type": "explosion",
+      "sound_volume": 0,
+      "sound_msg": "*splat*",
+      "no_deactivate_msg": "*splat* *splat*",
+      "draw_explosion_color": "green",
+      "fields_type": "fd_saddler_brute_detach",
+      "fields_radius": 0,
+      "fields_min_intensity": 1,
+      "fields_max_intensity": 1
+    }
+  },
+  {
+    "id": "saddler_scout_detach",
+    "type": "TOOL",
+    "name": "saddler brute",
+    "description": "这个马鞍兽即将脱离它死去的主人。",
+    "volume": "4000 ml",
+    "weight": "4000 g",
+    "price": 0,
+    "to_hit": -2,
+    "bashing": 1,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "h",
+    "color": "red",
+    "drop_action": {
+      "type": "explosion",
+      "sound_volume": 0,
+      "sound_msg": "*splat*",
+      "no_deactivate_msg": "*splat* *splat*",
+      "draw_explosion_color": "green",
+      "fields_type": "fd_saddler_scout_detach",
+      "fields_radius": 0,
+      "fields_min_intensity": 1,
+      "fields_max_intensity": 1
+    }
+  },
+  {
+    "id": "relinquish_revive",
+    "type": "TOOL",
+    "name": "relinquished zombie's body",
+    "description": "一具尸体，即将复活。。。",
+    "volume": "1 ml",
+    "weight": "1 g",
+    "price": 0,
+    "to_hit": -2,
+    "bashing": 1,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "Z",
+    "color": "green",
+    "drop_action": {
+      "type": "explosion",
+      "sound_volume": 0,
+      "sound_msg": "*splat*",
+      "no_deactivate_msg": "*splat* *splat*",
+      "draw_explosion_color": "green",
+      "fields_type": "fd_relinquished_revive",
+      "fields_radius": 0,
+      "fields_min_intensity": 1,
+      "fields_max_intensity": 1
+    }
+  },
+  {
+    "id": "veinhole_gap",
+    "type": "TOOL",
+    "name": "writhing tendrils",
+    "description": "静脉孔周围的触手，现在从过度伤害中撤退。",
+    "volume": "200 L",
+    "weight": "200000 g",
+    "price": 0,
+    "to_hit": -2,
+    "bashing": 1,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "0",
+    "color": "red",
+    "drop_action": {
+      "target": "veinhole_gap_act",
+      "target_charges": 1,
+      "active": true,
+      "type": "transform"
+    }
+  },
+  {
+    "id": "veinhole_gap_act",
+    "type": "TOOL",
+    "name": "writhing tendrils",
+    "description": "静脉孔周围的触手，现在从过度伤害中撤退。",
+    "volume": "200 L",
+    "weight": "200000 g",
+    "price": 0,
+    "to_hit": -2,
+    "bashing": 1,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "0",
+    "color": "red",
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": {
+      "type": "cast_spell",
+      "spell_id": "mon_sflesh_entrance_open",
+      "no_fail": true,
+      "level": 0
+    }
+  },
+  {
+    "id": "flesh_sack_death",
+    "type": "TOOL",
+    "name": "hatched flesh sack",
+    "description": "产生副细胞的肉袋。",
+    "volume": "1 ml",
+    "weight": "1 g",
+    "price": 0,
+    "to_hit": -2,
+    "bashing": 1,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "O",
+    "color": "red",
+    "drop_action": {
+      "type": "explosion",
+      "sound_volume": 0,
+      "sound_msg": "*splat*",
+      "no_deactivate_msg": "*splat* *splat*",
+      "draw_explosion_color": "red",
+      "fields_type": "fd_sflesh_sack_dead",
+      "fields_radius": 0,
+      "fields_min_intensity": 1,
+      "fields_max_intensity": 1
+    }
+  },
+  {
+    "id": "flesh_taken_death",
+    "type": "TOOL",
+    "name": "hatched taken",
+    "description": "这部电影的内容是由电影改编的。",
+    "volume": "1 ml",
+    "weight": "1 g",
+    "price": 0,
+    "to_hit": -2,
+    "bashing": 1,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "O",
+    "color": "red",
+    "drop_action": {
+      "type": "explosion",
+      "sound_volume": 0,
+      "sound_msg": "*splat*",
+      "no_deactivate_msg": "*splat* *splat*",
+      "draw_explosion_color": "red",
+      "fields_type": "fd_sflesh_taken",
+      "fields_radius": 0,
+      "fields_min_intensity": 1,
+      "fields_max_intensity": 1
+    }
+  },
+  {
+    "id": "flesh_death",
+    "type": "TOOL",
+    "name": "melting flesh",
+    "description": "肉正在除虫。你不确定它是否还活着。。。",
+    "volume": "1000 L",
+    "weight": "23000 kg",
+    "price": 0,
+    "to_hit": -2,
+    "bashing": 1,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "0",
+    "color": "red",
+    "drop_action": {
+      "target": "flesh_death_act",
+      "target_charges": 1,
+      "active": true,
+      "type": "transform"
+    }
+  },
+  {
+    "id": "flesh_death_act",
+    "type": "TOOL",
+    "name": "melting flesh",
+    "description": "肉正在除虫。你不确定它是否还活着。。。",
+    "volume": "200 L",
+    "weight": "200000 g",
+    "price": 0,
+    "to_hit": -2,
+    "bashing": 1,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "0",
+    "color": "red",
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": {
+      "type": "cast_spell",
+      "spell_id": "mon_sflesh_flesh_bio_death",
+      "no_fail": true,
+      "level": 0
+    }
+  },
+  {
+    "id": "flesh_heap_death",
+    "type": "TOOL",
+    "name": "melting flesh heap",
+    "description": "肉堆分裂了它的联合体。",
+    "volume": "1 ml",
+    "weight": "1 g",
+    "price": 0,
+    "to_hit": -2,
+    "bashing": 1,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "O",
+    "color": "red",
+    "drop_action": {
+      "type": "explosion",
+      "sound_volume": 0,
+      "sound_msg": "*splat*",
+      "no_deactivate_msg": "*splat* *splat*",
+      "draw_explosion_color": "red",
+      "fields_type": "fd_sflesh_heap_death",
+      "fields_radius": 1,
+      "fields_min_intensity": 1,
+      "fields_max_intensity": 1
+    }
+  },
+  {
+    "id": "shifter_shift",
+    "type": "TOOL",
+    "name": "shadow",
+    "description": "一个正在形成的阴影。。。超凡脱俗的。",
+    "volume": "4000 ml",
+    "weight": "4000 g",
+    "price": 0,
+    "to_hit": -2,
+    "bashing": 1,
+    "material": [
+      "secro_null"
+    ],
+    "symbol": "@",
+    "color": "dark_gray",
+    "drop_action": {
+      "type": "explosion",
+      "sound_volume": 0,
+      "sound_msg": "*splat*",
+      "no_deactivate_msg": "*splat* *splat*",
+      "draw_explosion_color": "green",
+      "fields_type": "fd_shifter_shift",
+      "fields_radius": 0,
+      "fields_min_intensity": 1,
+      "fields_max_intensity": 1
+    }
+  }
+]

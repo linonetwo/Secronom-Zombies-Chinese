@@ -1,0 +1,172 @@
+[
+  {
+    "//": "Support-type zed that manipulates the stats of targeted creatures.",
+    "id": "mon_zombie_revenant",
+    "type": "MONSTER",
+    "name": "revenant",
+    "description": "笼罩在奇怪的恶臭中，这具被严重稀释的尸体成了恶魔亡灵的监管者。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "SECROZED_2",
+      "HUMAN"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "harvest": "zombie",
+    "hp": 65,
+    "diff": 1,
+    "speed": 60,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "♀",
+    "color": "magenta",
+    "aggression": 50,
+    "morale": 50,
+    "emit_fields": [
+      "emit_revenant_trigger_immunity"
+    ],
+    "melee_skill": 0,
+    "melee_dice": 0,
+    "melee_dice_sides": 0,
+    "melee_cut": 0,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_zombie_revenant_target"
+        },
+        "cooldown": 12,
+        "monster_message": "%1$s捕捉附近怪物的强大威力！</color>"
+      }
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "BONES",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_zombie_revenant_forsaken",
+    "type": "MONSTER",
+    "name": "forsaken revenant",
+    "description": "充满了恐惧和仇恨，阴郁的光环笼罩着这具尸体脆弱的身体，因为它的眼睛邪恶地盯着虚空。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "SECROZED_2",
+      "HUMAN"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "harvest": "zombie",
+    "diff": 15,
+    "hp": 75,
+    "speed": 45,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "♁",
+    "color": "dark_gray",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 0,
+    "melee_dice": 0,
+    "melee_dice_sides": 0,
+    "melee_cut": 0,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_zombie_revenant_forsaken_target"
+        },
+        "cooldown": 12,
+        "monster_message": "<color_red>%1$s屈从地瞪着%3$s！</color>"
+      }
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "BONES",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_zombie_revenant_allure",
+    "type": "MONSTER",
+    "name": "alluring revenant",
+    "description": "在浓雾笼罩下，一个苗条的人形身影坚挺地站立着。调皮的，它的爪子上滴着奇怪的黑色粘液。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "SECROZED_2",
+      "HUMAN"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "harvest": "zombie",
+    "hp": 70,
+    "diff": 15,
+    "speed": 50,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "♂",
+    "color": "red",
+    "emit_fields": [
+      "emit_revenant_allure_induce_immunity"
+    ],
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 0,
+    "melee_dice": 0,
+    "melee_dice_sides": 0,
+    "melee_cut": 0,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_zombie_revenant_allure_target"
+        },
+        "cooldown": 12,
+        "monster_message": "%1$s把它的黏液扩散到周围！</color>"
+      }
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "BONES",
+      "FILTHY",
+      "HARDTOSHOOT"
+    ]
+  }
+]

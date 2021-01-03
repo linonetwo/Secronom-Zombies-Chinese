@@ -1,0 +1,219 @@
+[
+  {
+    "id": "secro_power_armor_flesh_create_fite_bspear",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": {
+      "str": "<color_pink>[来自]</color><color_light_red>战斗创作</color>-骨矛"
+    },
+    "description": "激活此命令以命令肉身血管形成所选的造物。如果不这样做，将不会取消肉类消费。\n成型需要<color_yellow>1250次移动</color>才能完成。",
+    "weight": "3 g",
+    "volume": "3 ml",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "%",
+    "color": "light_red",
+    "coverage": 0,
+    "encumbrance": 0,
+    "power_armor": true,
+    "material_thickness": 1,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "secro_power_armor_flesh_created_fite_bspear_give",
+      "no_fail": true,
+      "need_worn": true,
+      "level": 0
+    },
+    "flags": [
+      "NO_TAKEOFF",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  {
+    "id": "secro_power_armor_flesh_created_fite_bspear",
+    "type": "GENERIC",
+    "symbol": "/",
+    "color": "red",
+    "name": {
+      "str": "战机创造-骨矛"
+    },
+    "description": "利用肌肉的多功能细胞重建而成。这种生物有机长矛顶端有一个带刺的骨头，而其余的是由肉织带和纤维制成的。",
+    "price": 0,
+    "price_postapoc": 0,
+    "to_hit": 3,
+    "material": [
+      "flesh",
+      "bone"
+    ],
+    "flags": [
+      "DURABLE_MELEE",
+      "TRADER_AVOID",
+      "REACH_ATTACK",
+      "SHEATH_SPEAR",
+      "ALWAYS_TWOHAND"
+    ],
+    "techniques": [
+      "WBLOCK_1",
+      "WIDE",
+      "SWEEP"
+    ],
+    "weight": "2785 g",
+    "volume": "3325 ml",
+    "bashing": 8,
+    "cutting": 20,
+    "qualities": [
+      [
+        "COOK",
+        1
+      ],
+      [
+        "BUTCHER",
+        -100
+      ]
+    ]
+  },
+  {
+    "id": "secro_power_armor_flesh_create_gun_bonerifle",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": {
+      "str": "<color_pink>[形态]</color><color_light_blue>炮手创造</color>-骨步枪"
+    },
+    "description": "激活此命令以命令肉身血管形成所选的造物。如果不这样做，将不会取消肉类消费。\n成型需要<color_yellow>4350次移动</color>才能完成。",
+    "weight": "3 g",
+    "volume": "3 ml",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "%",
+    "color": "light_red",
+    "coverage": 0,
+    "encumbrance": 0,
+    "power_armor": true,
+    "material_thickness": 1,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "secro_power_armor_flesh_created_gun_bonerifle_give",
+      "no_fail": true,
+      "need_worn": true,
+      "level": 0
+    },
+    "flags": [
+      "NO_TAKEOFF",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  {
+    "id": "secro_power_armor_flesh_created_gun_bonerifle",
+    "type": "GUN",
+    "reload_noise_volume": 3,
+    "symbol": "(",
+    "color": "red",
+    "name": {
+      "str": "炮手创造-骨步枪"
+    },
+    "description": "利用肌肉的多功能细胞重建而成。这种生物有机步枪向目标发射针状骨弹。它没有触发机制，步枪只响应用户的命令。一旦它收到一个输入，它就会在弹室中产生一个肌腱冲击，使子弹以高速穿过它的长筒。\n\n激活执行：\n<color_cyan><color_pink>[表单]</color>补充</color>-<color_yellow>800步</color>/<color_light_red>5 hp（随机）</color>",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [
+      "flesh",
+      "bone"
+    ],
+    "flags": [
+      "TRADER_AVOID",
+      "NEVER_JAMS",
+      "NON-FOULING",
+      "NO_UNLOAD"
+    ],
+    "skill": "rifle",
+    "ammo": "secro_flesh_boneneedle",
+    "weight": "2830 g",
+    "volume": "4325 ml",
+    "bashing": 10,
+    "range": 15,
+    "ranged_damage": {
+      "damage_type": "stab",
+      "amount": 18
+    },
+    "dispersion": 150,
+    "durability": 10,
+    "clip_size": 8,
+    "reload": 75,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "secro_power_armor_flesh_created_gun_bonerifle_ammo_give",
+      "no_fail": true,
+      "need_wielding": true,
+      "level": 0
+    }
+  },
+  {
+    "id": "secro_power_armor_flesh_create_jugg_bpick",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": {
+      "str": "<color_pink>[形式]</color><color_yellow>juggernaut创作</color>-骨骼拾取"
+    },
+    "description": "激活此命令以命令肉身血管形成所选的造物。如果不这样做，将不会取消肉类消费。\n成型需要<color_yellow>2500次移动</color>才能完成。",
+    "weight": "3 g",
+    "volume": "3 ml",
+    "price": 0,
+    "price_postapoc": 0,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "%",
+    "color": "light_red",
+    "coverage": 0,
+    "encumbrance": 0,
+    "power_armor": true,
+    "material_thickness": 1,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "secro_power_armor_flesh_created_jugg_bpick_give",
+      "no_fail": true,
+      "need_worn": true,
+      "level": 0
+    },
+    "flags": [
+      "NO_TAKEOFF",
+      "POWERARMOR_COMPATIBLE"
+    ]
+  },
+  {
+    "id": "secro_power_armor_flesh_created_jugg_bpick",
+    "type": "TOOL",
+    "name": {
+      "str": "<color_yellow>juggernaut创作</color>-骨骼拾取"
+    },
+    "description": "利用肌肉的多功能细胞重建而成。这种生物有机鹤嘴锄头上有一块高度压缩的骨头，柄上有一块钙化的肉。",
+    "weight": "4125 g",
+    "volume": "2 L",
+    "price": 0,
+    "price_postapoc": 0,
+    "bashing": 10,
+    "cutting": 6,
+    "material": [
+      "flesh",
+      "bone"
+    ],
+    "symbol": "/",
+    "color": "red",
+    "use_action": "PICKAXE",
+    "techniques": [
+      "WBLOCK_1"
+    ],
+    "flags": [
+      "TRADER_AVOID",
+      "SPEAR",
+      "DURABLE_MELEE",
+      "DIG_TOOL",
+      "SHEATH_AXE"
+    ]
+  }
+]

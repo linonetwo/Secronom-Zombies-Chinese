@@ -1,0 +1,67 @@
+[
+  {
+    "type": "COMESTIBLE",
+    "id": "saddler_egg",
+    "name": "saddler egg",
+    "weight": "110 g",
+    "color": "green",
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "quench": -5,
+    "nutrition": -30,
+    "description": "可怕的毛蛋。敢吃这个！",
+    "price": 0,
+    "material": [
+      "egg"
+    ],
+    "volume": "250 ml",
+    "fun": -50
+  },
+  {
+    "type": "TOOL",
+    "id": "hatchingsaddleregg",
+    "name": "cracked saddler egg",
+    "weight": "110 g",
+    "color": "green",
+    "symbol": "o",
+    "description": "可怕的毛蛋。用它来打破。",
+    "price": 0,
+    "material": [
+      "egg"
+    ],
+    "volume": "250 ml",
+    "flags": [
+      "NO_DROP"
+    ],
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_insect_saddler_baby",
+      "difficulty": 2,
+      "friendly_msg": "A baby saddler skitters!",
+      "hostile_msg": "Turns out to be a bad egg!",
+      "place_randomly": true,
+      "skills": [
+        "survival",
+        "melee"
+      ]
+    }
+  },
+  {
+    "type": "GENERIC",
+    "id": "saddler_egg_hatched",
+    "looks_like": "hatchingsaddleregg",
+    "symbol": ",",
+    "color": "green",
+    "name": "hatched saddler egg",
+    "description": "马鞍子孵出的蛋。它仍然覆盖着黏糊糊的绿色黏液，但你看不出它有什么用处，只能扔掉。",
+    "material": [
+      "egg"
+    ],
+    "flags": [
+      "NO_SALVAGE"
+    ],
+    "weight": "2 g",
+    "volume": "250 ml",
+    "category": "spare_parts"
+  }
+]

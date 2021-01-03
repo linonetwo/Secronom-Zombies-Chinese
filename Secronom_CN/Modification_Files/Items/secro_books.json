@@ -1,0 +1,54 @@
+[
+  {
+    "id": "secro_recipe_flesh",
+    "type": "BOOK",
+    "name": {
+      "str": "Secronom项目“肉”：研究成果",
+      "str_pl": "Secronom项目“肉体”的复制品：研究成果"
+    },
+    "description": "这本高技术论文的装订本描述了最近的发现，涉及多个测试的肉。上面印着“批准”…",
+    "weight": "1433 g",
+    "volume": "1250 ml",
+    "price": 50000,
+    "price_postapoc": 1800,
+    "bashing": 5,
+    "material": [
+      "paper",
+      "plastic"
+    ],
+    "symbol": "?",
+    "color": "light_red",
+    "skill": "cooking",
+    "required_level": 6,
+    "max_level": 7,
+    "intelligence": 13,
+    "time": "25 m",
+    "fun": -1
+  },
+  {
+    "id": "secro_recipe_flesh_field",
+    "type": "BOOK",
+    "name": {
+      "str": "Secronom项目“肉”：实地研究",
+      "str_pl": "Secronom项目“肉体”的复制品：实地研究"
+    },
+    "description": "这本高技术论文的活页夹描述了穿戴者穿着生物有机动力盔甲的协议，并简单演示了如何形成它的“食物”。",
+    "weight": "223 g",
+    "volume": "455 ml",
+    "price": 500,
+    "price_postapoc": 50,
+    "bashing": 1,
+    "material": [
+      "paper",
+      "plastic"
+    ],
+    "symbol": "?",
+    "color": "light_red",
+    "skill": "cooking",
+    "required_level": 1,
+    "max_level": 1,
+    "intelligence": 10,
+    "time": "10 m",
+    "fun": -1
+  }
+]

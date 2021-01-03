@@ -1,0 +1,147 @@
+[
+  {
+    "id": "laser_rifle_secrodragon",
+    "type": "GUN",
+    "reload_noise_volume": 10,
+    "name": "SS laser rifle",
+    "description": "虽然它被认为不如A7激光步枪，党卫军激光步枪显示效率在弹幕射击廉价的UPS费用，以及其重量和体积减少。",
+    "weight": "520 g",
+    "volume": "750 ml",
+    "price": 610000,
+    "to_hit": -2,
+    "bashing": 5,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "symbol": "(",
+    "color": "magenta",
+    "skill": "rifle",
+    "range": 40,
+    "ranged_damage": {
+      "damage_type": "stab",
+      "amount": 7,
+      "armor_penetration": 14
+    },
+    "dispersion": 1000,
+    "durability": 10,
+    "loudness": 10,
+    "ammo_effects": [
+      "LASER",
+      "INCENDIARY"
+    ],
+    "flags": [
+      "NEVER_JAMS"
+    ]
+  },
+  {
+    "id": "SS_grenade_launchersecrodragon",
+    "type": "GUN",
+    "name": "SS grenade launcher",
+    "description": "一个简单的榴弹发射器，用于特殊的党卫军榴弹。",
+    "weight": "2654 g",
+    "volume": "1500 ml",
+    "price": 522000,
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel"
+    ],
+    "symbol": ")",
+    "color": "light_red",
+    "skill": "launcher",
+    "range": 50,
+    "ranged_damage": {
+      "damage_type": "bash",
+      "amount": 10
+    },
+    "dispersion": 1000,
+    "durability": 10,
+    "reload": 500,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        1
+      ]
+    ],
+    "ammo_effects": [
+      "EXPLOSIVE"
+    ],
+    "flags": [
+      "NEVER_JAMS"
+    ]
+  },
+  {
+    "id": "SS_pershield",
+    "type": "GUN",
+    "name": "perimeter shield",
+    "description": "它向任何接近装备了它的实体的人发送一个极具破坏性的电流。可能也会让用户震惊。",
+    "weight": "10000 g",
+    "volume": "2500 ml",
+    "price": 100,
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel"
+    ],
+    "symbol": ")",
+    "color": "light_red",
+    "skill": "launcher",
+    "range": 1,
+    "ranged_damage": {
+      "damage_type": "electric",
+      "amount": 8
+    },
+    "dispersion": 1000,
+    "durability": 10,
+    "reload": 100,
+    "ammo_effects": [
+      "LIGHTNING",
+      "BEANBAG",
+      "WIDE"
+    ],
+    "//": "Will stun its primary target.",
+    "flags": [
+      "NEVER_JAMS"
+    ]
+  },
+  {
+    "id": "squirtler_bulb",
+    "type": "GUN",
+    "copy-from": "fake_item",
+    "name": "squirting bulb",
+    "description": "喷射器的灯泡。",
+    "flags": [
+      "NEVER_JAMS"
+    ],
+    "ammo_effects": [
+      "NO_DAMAGE_SCALING",
+      "DRAW_AS_LINE"
+    ],
+    "skill": "rifle",
+    "durability": 10,
+    "range": 10,
+    "modes": [
+      [
+        "N",
+        "near",
+        5
+      ],
+      [
+        "M",
+        "mid",
+        2
+      ],
+      [
+        "L",
+        "far",
+        1
+      ]
+    ],
+    "dispersion": 1000,
+    "ranged_damage": {
+      "damage_type": "acid",
+      "amount": 2
+    }
+  }
+]

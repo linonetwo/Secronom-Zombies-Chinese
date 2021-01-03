@@ -1,0 +1,101 @@
+[
+  {
+    "type": "speech",
+    "speaker": "mon_fleshweaver",
+    "sound": "爪子在磨！",
+    "volume": 20
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_fleshweaver",
+    "sound": "爪子的尖叫声！",
+    "volume": 20
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_fleshweaver",
+    "sound": "刺耳刺耳的声音！",
+    "volume": 30
+  },
+  {
+    "//": "In half-life, scientists with head crabs beg for help, but they speak backwards (heard only when near them). It was an easter egg too!",
+    "type": "speech",
+    "speaker": [
+      "mon_saddler_infected",
+      "mon_saddler_infected_brute",
+      "mon_saddler_infected_scout"
+    ],
+    "sound": "“嗯，请”",
+    "volume": 2
+  },
+  {
+    "type": "speech",
+    "speaker": [
+      "mon_saddler_infected",
+      "mon_saddler_infected_brute",
+      "mon_saddler_infected_scout"
+    ],
+    "sound": "“…efil ym dne”",
+    "volume": 2
+  },
+  {
+    "type": "speech",
+    "speaker": [
+      "mon_saddler_infected",
+      "mon_saddler_infected_brute",
+      "mon_saddler_infected_scout"
+    ],
+    "sound": "“…efil ym ot dne na tup esapelp.”",
+    "volume": 2
+  },
+  {
+    "type": "speech",
+    "speaker": [
+      "mon_saddler_infected",
+      "mon_saddler_infected_brute",
+      "mon_saddler_infected_scout"
+    ],
+    "sound": "“决议”",
+    "volume": 2
+  },
+  {
+    "type": "speech",
+    "speaker": [
+      "mon_saddler_infected",
+      "mon_saddler_infected_brute",
+      "mon_saddler_infected_scout"
+    ],
+    "sound": "“…蒂利克”",
+    "volume": 2
+  },
+  {
+    "type": "speech",
+    "speaker": [
+      "mon_saddler_infected",
+      "mon_saddler_infected_brute",
+      "mon_saddler_infected_scout"
+    ],
+    "sound": "“…我的天哪”",
+    "volume": 2
+  },
+  {
+    "type": "speech",
+    "speaker": [
+      "mon_saddler_infected",
+      "mon_saddler_infected_brute",
+      "mon_saddler_infected_scout"
+    ],
+    "sound": "听不见的喃喃自语。",
+    "volume": 5
+  },
+  {
+    "type": "speech",
+    "speaker": [
+      "mon_saddler_infected",
+      "mon_saddler_infected_brute",
+      "mon_saddler_infected_scout"
+    ],
+    "sound": "听不见刺耳的声音。",
+    "volume": 5
+  }
+]

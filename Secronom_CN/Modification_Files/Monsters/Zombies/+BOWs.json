@@ -1,0 +1,422 @@
+[
+  {
+    "//": "BOWs are special zeds adapted to confront players who are ready for anything. Exclusive in secronom labs.",
+    "id": "mon_zedbow_kaxix",
+    "type": "MONSTER",
+    "name": {
+      "str": "卡西克斯"
+    },
+    "description": "一种人形生物，手断裂成镰刀，头部类似鳗鱼。它穿着实验服，表示一种进步的状态。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "HUMAN"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 140,
+    "speed": 90,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "light_green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "melee_cut": 6,
+    "dodge": 3,
+    "armor_bash": 2,
+    "armor_cut": 4,
+    "armor_fire": 2,
+    "harvest": "zombie",
+    "special_attacks": [
+      [
+        "LUNGE",
+        15
+      ],
+      {
+        "type": "bite",
+        "cooldown": 5,
+        "min_mul": 0.2,
+        "max_mul": 0.6,
+        "no_infection_chance": 75,
+        "damage_max_instance": [
+          {
+            "damage_type": "cut",
+            "amount": 4,
+            "armor_multiplier": 0.2
+          },
+          {
+            "damage_type": "stab",
+            "amount": 8,
+            "armor_multiplier": 0.4
+          }
+        ]
+      }
+    ],
+    "death_drops": "SSmutant_drop",
+    "upgrades": {
+      "half_life": 10,
+      "into_group": "GROUP_BOW_KAXIX"
+    },
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "FILTHY",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES"
+    ]
+  },
+  {
+    "id": "mon_zedbow_kaxix_armed",
+    "type": "MONSTER",
+    "copy-from": "mon_zedbow_kaxix",
+    "description": "一种人形生物，手断裂成镰刀，头部类似鳗鱼。它身穿特殊的盔甲，胸前有一个镶嵌的“SS”符号。",
+    "color": "light_green_white",
+    "armor_bash": 30,
+    "armor_cut": 22,
+    "armor_stab": 26,
+    "armor_fire": 10,
+    "armor_acid": 10
+  },
+  {
+    "id": "mon_zedbow_axxuros",
+    "type": "MONSTER",
+    "name": {
+      "str": "阿克苏罗斯"
+    },
+    "description": "一种人形生物，部分遭受坏死炮击。它的两条胳膊合二为一，中间长出许多骨刺。它穿着实验服，表示一种进步的状态。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "HUMAN"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 165,
+    "speed": 85,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "yellow",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 4,
+    "melee_dice_sides": 6,
+    "melee_cut": 4,
+    "dodge": 3,
+    "armor_bash": 2,
+    "armor_cut": 4,
+    "armor_fire": 2,
+    "vision_day": 20,
+    "harvest": "zombie",
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 10,
+        "damage_max_instance": [
+          {
+            "damage_type": "cut",
+            "amount": 4,
+            "armor_multiplier": 0.4
+          },
+          {
+            "damage_type": "stab",
+            "amount": 8,
+            "armor_multiplier": 0.8
+          }
+        ]
+      }
+    ],
+    "death_drops": "SSmutant_drop",
+    "upgrades": {
+      "half_life": 10,
+      "into_group": "GROUP_BOW_AXXUROS"
+    },
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "FILTHY",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES"
+    ]
+  },
+  {
+    "id": "mon_zedbow_axxuros_armed",
+    "type": "MONSTER",
+    "copy-from": "mon_zedbow_axxuros",
+    "description": "一种人形生物，部分遭受坏死炮击。它的两条胳膊合二为一，中间长出许多骨刺。它身穿特殊的盔甲，胸前有一个镶嵌的“SS”符号。",
+    "color": "yellow_white",
+    "armor_bash": 30,
+    "armor_cut": 22,
+    "armor_stab": 26,
+    "armor_fire": 10,
+    "armor_acid": 10
+  },
+  {
+    "id": "mon_zedbow_exios",
+    "type": "MONSTER",
+    "name": {
+      "str": "出口"
+    },
+    "description": "一种人形生物，头和尾都有犬科的外形。它的一只手变成了成堆的触角，顶端有着笨拙的骨性刀片。它穿着实验服，表示一种进步的状态。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "HUMAN"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 120,
+    "speed": 105,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 2,
+    "melee_cut": 8,
+    "dodge": 2,
+    "armor_bash": 2,
+    "armor_cut": 4,
+    "armor_fire": 2,
+    "vision_day": 30,
+    "harvest": "zombie",
+    "special_attacks": [
+      [
+        "STRETCH_ATTACK",
+        10
+      ],
+      {
+        "type": "bite",
+        "cooldown": 15,
+        "damage_max_instance": [
+          {
+            "damage_type": "bash",
+            "amount": 10,
+            "armor_multiplier": 0.4
+          },
+          {
+            "damage_type": "stab",
+            "amount": 14,
+            "armor_multiplier": 0.6
+          }
+        ]
+      }
+    ],
+    "death_drops": "SSmutant_drop",
+    "upgrades": {
+      "half_life": 10,
+      "into_group": "GROUP_BOW_EXIOS"
+    },
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "FILTHY",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES"
+    ]
+  },
+  {
+    "id": "mon_zedbow_exios_armed",
+    "type": "MONSTER",
+    "copy-from": "mon_zedbow_exios",
+    "description": "一种人形生物，头和尾都有犬科的外形。它的一只手变成了成堆的触角，顶端有着笨拙的骨性刀片。它身穿特殊的盔甲，胸前有一个镶嵌的“SS”符号。",
+    "color": "green_white",
+    "armor_bash": 30,
+    "armor_cut": 22,
+    "armor_stab": 26,
+    "armor_fire": 10,
+    "armor_acid": 10
+  },
+  {
+    "id": "mon_zedbow_drexx",
+    "type": "MONSTER",
+    "name": {
+      "str": "德雷克斯"
+    },
+    "description": "一种巨大的人形生物，其手形如锤子。它是由凝固的骨头制成的，它的动力比预期的要大。它穿着实验服，表示一种进步的状态。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "HUMAN"
+    ],
+    "volume": "92500 ml",
+    "weight": "120000 g",
+    "hp": 180,
+    "speed": 60,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 6,
+    "melee_dice_sides": 8,
+    "melee_cut": 0,
+    "vision_day": 20,
+    "harvest": "zombie",
+    "special_attacks": [
+      [
+        "SMASH",
+        30
+      ]
+    ],
+    "death_drops": "SSmutant_drop",
+    "upgrades": {
+      "half_life": 10,
+      "into_group": "GROUP_BOW_DREXX"
+    },
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "FILTHY",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES"
+    ]
+  },
+  {
+    "id": "mon_zedbow_drexx_armed",
+    "type": "MONSTER",
+    "copy-from": "mon_zedbow_drexx",
+    "description": "一种巨大的人形生物，其手形如锤子。它是由凝固的骨头制成的，它的动力比预期的要大。它身穿特殊的盔甲，胸前有一个镶嵌的“SS”符号。",
+    "color": "light_red_white",
+    "armor_bash": 30,
+    "armor_cut": 22,
+    "armor_stab": 26,
+    "armor_fire": 10,
+    "armor_acid": 10
+  },
+  {
+    "id": "mon_zedbow_epixo",
+    "type": "MONSTER",
+    "name": {
+      "str": "埃皮克索"
+    },
+    "description": "一种巨大的、畸形的生物，外表隐约是人形的。以其膨胀的肌肉和灾难性的性质，它寻求愤怒的生活。它穿着一套特殊的实验服，象征着一种进步的状态。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "HUMAN"
+    ],
+    "volume": "875000 ml",
+    "weight": "200000 g",
+    "hp": 435,
+    "speed": 100,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "melee_cut": 6,
+    "dodge": 3,
+    "armor_bash": 2,
+    "armor_cut": 4,
+    "armor_fire": 2,
+    "harvest": "zombie",
+    "special_attacks": [
+      [
+        "LUNGE",
+        15
+      ],
+      {
+        "type": "bite",
+        "cooldown": 5,
+        "min_mul": 0.2,
+        "max_mul": 0.6,
+        "no_infection_chance": 75,
+        "damage_max_instance": [
+          {
+            "damage_type": "cut",
+            "amount": 4,
+            "armor_multiplier": 0.2
+          },
+          {
+            "damage_type": "stab",
+            "amount": 8,
+            "armor_multiplier": 0.4
+          }
+        ]
+      }
+    ],
+    "death_drops": "SSmutant_drop",
+    "upgrades": {
+      "half_life": 10,
+      "into_group": "GROUP_BOW_EPIXO"
+    },
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "FILTHY",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES"
+    ]
+  },
+  {
+    "id": "mon_zedbow_epixo_armed",
+    "type": "MONSTER",
+    "copy-from": "mon_zedbow_epixo",
+    "description": "一种巨大的、畸形的生物，外表隐约是人形的。以其膨胀的肌肉和灾难性的性质，它寻求愤怒的生活。它身穿特殊的盔甲，胸前有一个镶嵌的“SS”符号。",
+    "color": "red_white",
+    "armor_bash": 30,
+    "armor_cut": 22,
+    "armor_stab": 26,
+    "armor_fire": 10,
+    "armor_acid": 10
+  }
+]

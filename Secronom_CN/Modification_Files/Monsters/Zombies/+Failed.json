@@ -1,0 +1,380 @@
+[
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "SSmutant_drop",
+    "//": "Dreadful mutation caused their patient dress to rip, leaving only a garbage",
+    "entries": [
+      {
+        "item": "rag_bloody"
+      }
+    ]
+  },
+  {
+    "//": "Failed specimens. Unwanted creatures of secronom lab, now the ravaging wanderers inside.",
+    "id": "mon_zedfail_seeker",
+    "type": "MONSTER",
+    "name": {
+      "str": "探索者"
+    },
+    "description": "诱人的海星形状的大皮肤和嘴缝在每一个尖端附近啃咬。巨眼蜥蜴渴望寻找猎物。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "HUMAN"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 95,
+    "speed": 105,
+    "diff": 1,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "✫",
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 1,
+    "melee_dice_sides": 4,
+    "melee_cut": 3,
+    "dodge": 1,
+    "armor_bash": 4,
+    "armor_cut": 2,
+    "armor_fire": 2,
+    "vision_day": 50,
+    "vision_night": 10,
+    "harvest": "zombie",
+    "special_attacks": [
+      [
+        "LUNGE",
+        15
+      ],
+      {
+        "type": "bite",
+        "cooldown": 6,
+        "min_mul": 0.5,
+        "max_mul": 1,
+        "no_infection_chance": 20,
+        "damage_max_instance": [
+          {
+            "damage_type": "cut",
+            "amount": 4,
+            "armor_multiplier": 0.6
+          },
+          {
+            "damage_type": "stab",
+            "amount": 2,
+            "armor_multiplier": 0.8
+          }
+        ]
+      }
+    ],
+    "death_drops": "SSmutant_drop",
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "FILTHY",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES"
+    ]
+  },
+  {
+    "id": "mon_zedfail_floral",
+    "type": "MONSTER",
+    "name": {
+      "str": "植物群"
+    },
+    "description": "头部变异变形成花瓣状嘴的人体。它显示了数百颗牙齿和一个中心的眼睛每当它打开。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "HUMAN"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 90,
+    "speed": 100,
+    "diff": 1,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⚵",
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 5,
+    "melee_cut": 2,
+    "dodge": 1,
+    "armor_bash": 5,
+    "armor_cut": 2,
+    "harvest": "zombie",
+    "armor_fire": 1,
+    "special_attacks": [
+      [
+        "LUNGE",
+        20
+      ],
+      {
+        "type": "bite",
+        "cooldown": 10,
+        "min_mul": 1,
+        "damage_max_instance": [
+          {
+            "damage_type": "bash",
+            "amount": 15,
+            "armor_multiplier": 0.8
+          },
+          {
+            "damage_type": "stab",
+            "amount": 5,
+            "armor_multiplier": 0.4
+          }
+        ]
+      }
+    ],
+    "death_drops": "SSmutant_drop",
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "FILTHY",
+      "NO_BREATHE",
+      "REVIVES"
+    ]
+  },
+  {
+    "id": "mon_zedfail_twistcrawl",
+    "type": "MONSTER",
+    "name": {
+      "str": "变形履带"
+    },
+    "description": "一个扭曲的身体与人体解剖的各种附件，导致一个噩梦般敏捷的爬虫。它的头裂成了一张可怕的嘴，里面有一只恶魔般的眼睛，不停地张开和靠近它的周围。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "HUMAN"
+    ],
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 50,
+    "speed": 120,
+    "diff": 2,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⚺",
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 1,
+    "melee_dice_sides": 4,
+    "melee_cut": 2,
+    "dodge": 1,
+    "armor_bash": 1,
+    "armor_cut": 4,
+    "armor_fire": 1,
+    "harvest": "zombie",
+    "special_attacks": [
+      [
+        "LUNGE",
+        12
+      ],
+      {
+        "type": "bite",
+        "cooldown": 13,
+        "min_mul": 0.5,
+        "damage_max_instance": [
+          {
+            "damage_type": "cut",
+            "amount": 10,
+            "armor_multiplier": 0.7,
+            "armor_penetration": 14
+          },
+          {
+            "damage_type": "stab",
+            "amount": 4,
+            "armor_multiplier": 0.5
+          }
+        ]
+      }
+    ],
+    "death_drops": "SSmutant_drop",
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "HEARS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "FILTHY",
+      "NO_BREATHE",
+      "REVIVES",
+      "HARDTOSHOOT"
+    ]
+  },
+  {
+    "id": "mon_zedfail_chomp",
+    "type": "MONSTER",
+    "name": {
+      "str": "chomper公司"
+    },
+    "description": "无头人形怪物，肋骨裂成一个圆眼睛的嘴。武器不见了，但这是一个不可误判的威胁。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "HUMAN"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 75,
+    "speed": 90,
+    "diff": 5,
+    "harvest": "zombie",
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⪝",
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 0,
+    "melee_dice_sides": 4,
+    "melee_cut": 2,
+    "armor_bash": 2,
+    "armor_cut": 4,
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 10,
+        "min_mul": 0.5,
+        "damage_max_instance": [
+          {
+            "damage_type": "cut",
+            "amount": 3,
+            "armor_multiplier": 0.6
+          },
+          {
+            "damage_type": "stab",
+            "amount": 14,
+            "armor_multiplier": 0.5
+          }
+        ]
+      }
+    ],
+    "death_drops": "SSmutant_drop",
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "FILTHY",
+      "REVIVES",
+      "NOHEAD"
+    ]
+  },
+  {
+    "id": "mon_zedfail_squirtler",
+    "type": "MONSTER",
+    "name": {
+      "str": "喷射器"
+    },
+    "description": "这是一个不规则的地形，浅绿色的皮肤，球状物附着在皮肤肿胀。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 75,
+    "speed": 50,
+    "diff": 20,
+    "harvest": "exempt",
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⩅",
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 0,
+    "melee_dice": 0,
+    "melee_dice_sides": 0,
+    "melee_cut": 0,
+    "armor_bash": 4,
+    "armor_cut": 4,
+    "vision_day": 20,
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 4,
+        "move_cost": 50,
+        "gun_type": "squirtler_bulb",
+        "require_targeting_player": false,
+        "description": "喷壶工喷了一股酸！",
+        "ranges": [
+          [
+            1,
+            2,
+            "N"
+          ],
+          [
+            3,
+            5,
+            "M"
+          ],
+          [
+            6,
+            10,
+            "L"
+          ]
+        ]
+      }
+    ],
+    "//": "The acid is very strong (cuz of headshot).",
+    "death_function": [
+      "ACID",
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "IMMOBILE",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "FILTHY",
+      "REVIVES",
+      "NOHEAD",
+      "ACIDPROOF",
+      "ACID_BLOOD"
+    ]
+  }
+]

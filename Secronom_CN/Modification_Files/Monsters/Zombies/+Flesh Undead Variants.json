@@ -1,0 +1,5116 @@
+[
+  {
+    "//": "The taken (or flesh variants) - flesh version of vanilla creatures. This file contains undead variants. Secronom creatures or anything related are immune to flesh infection.The takens has +25% health, +3 bash resistance and +2 adaptive damage (higher melee dice provides 2 bashing damage to its melee attack. If equal, then half for both). Everything else are the same, except the living's conversion into undead. Also, stunts the flesh variant's evolution and can be rid of manipulation if burnt down (but not for living creatures).",
+    "id": "mon_sflesh_taken_zombie",
+    "type": "MONSTER",
+    "name": {
+      "str": "肉僵尸"
+    },
+    "description": "一具被肉体吞噬的尸体，完全控制着它无意识的思想。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE",
+      "HUMAN"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 100,
+    "speed": 70,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 3,
+    "melee_cut": 0,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "vision_night": 3,
+    "armor_bash": 3,
+    "harvest": "zombie",
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 5
+      },
+      [
+        "GRAB",
+        7
+      ],
+      [
+        "scratch",
+        20
+      ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_tough",
+    "type": "MONSTER",
+    "name": {
+      "str": "坚强的僵尸"
+    },
+    "description": "曾经是一个运动的人类，现在是一个残忍的怪物。它的五官扭曲成纯粹愤怒的表情。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE",
+      "HUMAN"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 125,
+    "speed": 85,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 3,
+    "melee_dice_sides": 3,
+    "melee_cut": 1,
+    "dodge": 1,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "armor_bash": 2,
+    "armor_cut": 1,
+    "vision_night": 3,
+    "harvest": "zombie",
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 5,
+        "min_mul": 0.7
+      },
+      [
+        "GRAB",
+        7
+      ],
+      [
+        "scratch",
+        20
+      ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_tough",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_fat",
+    "type": "MONSTER",
+    "name": {
+      "str": "胖僵尸"
+    },
+    "description": "这具超重的人的尸体在移动的过程中跌跌撞撞，用一种空洞的黑色目光注视着周围的环境。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE",
+      "HUMAN"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 119,
+    "speed": 55,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 3,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_cut": 0,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "armor_bash": 8,
+    "armor_cut": 3,
+    "vision_night": 3,
+    "harvest": "zombie",
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 5,
+        "min_mul": 0.75
+      },
+      [
+        "scratch",
+        20
+      ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_fat",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "STUN_IMMUNE",
+      "NO_BREATHE",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_skeleton",
+    "type": "MONSTER",
+    "name": {
+      "str": "骨架"
+    },
+    "description": "一个巨大的过度生长的骨化组织已经取代了这个僵尸腐烂的皮肤与有机装甲的密集骨。它漫无目的地蹒跚而行，周围空气中弥漫着令人作呕的噼啪声，关节处渗出大量黑色黏液。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE",
+      "HUMAN"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 38,
+    "speed": 60,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "bone",
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "white",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 3,
+    "melee_dice_sides": 6,
+    "melee_cut": 4,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "cut"
+      }
+    ],
+    "dodge": 2,
+    "armor_bash": 3,
+    "armor_cut": 15,
+    "armor_stab": 30,
+    "armor_acid": 3,
+    "vision_day": 30,
+    "vision_night": 3,
+    "harvest": "mr_bones",
+    "special_attacks": [
+      [
+        "scratch",
+        10
+      ],
+      {
+        "type": "bite",
+        "cooldown": 5
+      }
+    ],
+    "death_drops": "default_zombie_clothes",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_skeleton",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "ABSORBS",
+      "HARDTOSHOOT",
+      "NO_BREATHE",
+      "POISON",
+      "STUN_IMMUNE",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_spitter",
+    "type": "MONSTER",
+    "name": {
+      "str": "吐口水的僵尸"
+    },
+    "description": "一个驼背的人体，眼睛向上伸入前额，脸颊下垂，脸的大部分被皱起的嘴占据。它的胃肿胀，几乎是半透明的，带有病态的天鹅绒色。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE",
+      "HUMAN"
+    ],
+    "diff": 10,
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 88,
+    "speed": 95,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe",
+      "emit_flesh_biome_immunity"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "yellow_green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 3,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "melee_cut": 0,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "dodge": 1,
+    "armor_bash": 3,
+    "vision_night": 3,
+    "harvest": "zombie",
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_zombie_spitter_cspit"
+        },
+        "cooldown": 12,
+        "monster_message": "<color_light_red>%1$s喷出浓缩的血酸球！</color>"
+      }
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_spitter",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "ACIDPROOF",
+      "ACID_BLOOD",
+      "NO_BREATHE",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_crawler",
+    "type": "MONSTER",
+    "name": {
+      "str": "爬行僵尸"
+    },
+    "description": "这具人类尸体拖着胳膊慢慢地走着。它的腿损伤得无法修复。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE",
+      "HUMAN"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 75,
+    "speed": 20,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "pink_green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 2,
+    "melee_dice": 2,
+    "melee_dice_sides": 3,
+    "melee_cut": 0,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "armor_bash": 3,
+    "vision_day": 10,
+    "harvest": "zombie",
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 5
+      },
+      [
+        "scratch",
+        20
+      ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_crawler",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GRABS",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_skeleton_brute",
+    "type": "MONSTER",
+    "name": {
+      "str": "骷髅兽"
+    },
+    "description": "这个僵尸腐烂的皮肤上覆盖着扭曲的钙化骨板。它身体周围的关节和裂缝都渗出了黑色的黏液。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE"
+    ],
+    "volume": "92500 ml",
+    "weight": "120 kg",
+    "hp": 219,
+    "speed": 60,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh",
+      "bone"
+    ],
+    "symbol": "Z",
+    "color": "white",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 8,
+    "melee_cut": 10,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "cut"
+      }
+    ],
+    "dodge": 1,
+    "armor_cut": 30,
+    "armor_bash": 15,
+    "armor_acid": 1,
+    "vision_day": 35,
+    "vision_night": 3,
+    "harvest": "mr_bones",
+    "special_attacks": [
+      [
+        "SMASH",
+        45
+      ],
+      {
+        "id": "scratch",
+        "damage_max_instance": [
+          {
+            "damage_type": "cut",
+            "amount": 15,
+            "armor_multiplier": 0.6
+          }
+        ]
+      }
+    ],
+    "death_drops": "default_zombie_clothes",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_skeleton_brute",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "ABSORBS",
+      "HARDTOSHOOT",
+      "REVIVES",
+      "NO_BREATHE",
+      "POISON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_skeleton_hulk",
+    "type": "MONSTER",
+    "name": {
+      "str": "骷髅巨人"
+    },
+    "description": "这具丑陋的傀儡，由电镀过的骨头和畸形的肉组成，拖着沉重而尖尖的四肢，像一个不需要的负担。以前柔软脆弱的骨头围绕着它的身体生长，只是为了保护它，它们一直在生长。成长。成长。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE"
+    ],
+    "diff": 5,
+    "volume": "875000 ml",
+    "weight": "200 kg",
+    "hp": 600,
+    "speed": 60,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh",
+      "bone"
+    ],
+    "symbol": "Z",
+    "color": "white",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 5,
+    "melee_dice": 3,
+    "melee_dice_sides": 6,
+    "melee_cut": 15,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "cut"
+      }
+    ],
+    "armor_bash": 23,
+    "armor_cut": 45,
+    "vision_day": 50,
+    "vision_night": 4,
+    "harvest": "mr_bones",
+    "special_attacks": [
+      [
+        "SMASH",
+        20
+      ],
+      [
+        "STRETCH_ATTACK",
+        20
+      ],
+      [
+        "LONGSWIPE",
+        20
+      ],
+      {
+        "id": "scratch",
+        "damage_max_instance": [
+          {
+            "damage_type": "cut",
+            "amount": 23,
+            "armor_multiplier": 0.8
+          }
+        ]
+      }
+    ],
+    "death_drops": "mon_zombie_hulk_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_skeleton_hulk",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "DESTROYS",
+      "POISON",
+      "ATTACKMON",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "PUSH_VEH",
+      "HARDTOSHOOT",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_survivor",
+    "type": "MONSTER",
+    "name": {
+      "str": "幸存者僵尸"
+    },
+    "description": "仍然穿着破烂的简易盔甲和武器，很明显，这个僵尸曾经是像你一样的幸存者。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 150,
+    "speed": 90,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "light_red_green",
+    "aggression": 75,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 4,
+    "melee_dice_sides": 6,
+    "melee_cut": 0,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "dodge": 3,
+    "armor_bash": 10,
+    "armor_cut": 7,
+    "armor_acid": 4,
+    "vision_day": 50,
+    "vision_night": 3,
+    "harvest": "zombie",
+    "path_settings": {
+      "max_dist": 3
+    },
+    "special_attacks": [
+      [
+        "SHRIEK",
+        20
+      ],
+      {
+        "type": "bite",
+        "cooldown": 5,
+        "min_mul": 1
+      },
+      [
+        "GRAB",
+        7
+      ],
+      {
+        "id": "scratch",
+        "damage_max_instance": [
+          {
+            "damage_type": "cut",
+            "amount": 16
+          }
+        ]
+      }
+    ],
+    "death_drops": "mon_zombie_survivor_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_survivor",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "ABSORBS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_biter",
+    "type": "MONSTER",
+    "name": {
+      "str": "狼吞虎咽的咬人者"
+    },
+    "description": "扭曲肿胀的人体。它的下巴已经拉长成鳄鱼一样的口鼻，滴着恶臭的唾液。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 125,
+    "speed": 110,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "cyan_green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 4,
+    "melee_dice_sides": 6,
+    "melee_cut": 4,
+    "melee_damage": [
+      {
+        "amount": 1,
+        "damage_type": "bash"
+      },
+      {
+        "amount": 1,
+        "damage_type": "cut"
+      }
+    ],
+    "dodge": 3,
+    "armor_bash": 8,
+    "armor_cut": 2,
+    "vision_day": 15,
+    "vision_night": 3,
+    "harvest": "zombie",
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 4,
+        "accuracy": 5,
+        "damage_max_instance": [
+          {
+            "damage_type": "stab",
+            "amount": 10,
+            "armor_multiplier": 0.3
+          },
+          {
+            "damage_type": "bash",
+            "amount": 10,
+            "armor_multiplier": 0.3
+          }
+        ]
+      },
+      [
+        "GRAB",
+        4
+      ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_biter",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "ABSORBS",
+      "SMELLS",
+      "KEENNOSE",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "GRABS",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_brainless",
+    "type": "MONSTER",
+    "name": {
+      "str": "无脑僵尸"
+    },
+    "description": "僵尸和其他僵尸一样，只是它的特征和头骨都被摧毁了。目前还不清楚是什么导致了这种损伤，但在这些肉片之间，你可以看到它的脸和大脑都消失了，尽管它的耳朵完好无损。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "volume": "61875 ml",
+    "weight": "78200 g",
+    "hp": 75,
+    "speed": 65,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "light_green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 3,
+    "melee_dice": 2,
+    "melee_dice_sides": 3,
+    "melee_cut": 0,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "armor_bash": 3,
+    "vision_day": 2,
+    "vision_night": 0,
+    "harvest": "zombie",
+    "special_attacks": [
+      [
+        "GRAB",
+        7
+      ],
+      [
+        "scratch",
+        20
+      ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_brainless",
+    "flags": [
+      "HEARS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NOHEAD",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_ears",
+    "type": "MONSTER",
+    "name": {
+      "str": "侦听器僵尸"
+    },
+    "description": "这只僵尸的头曾经明显地被摧毁了，它脸上的缝隙现在充满了一种特殊的灰色粘液。人的耳朵垂在两侧，巨大而不安。前面的细缝表明它可以看到。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "volume": "62275 ml",
+    "weight": "79800 g",
+    "hp": 113,
+    "speed": 70,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "light_green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_cut": 0,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "armor_bash": 3,
+    "vision_day": 7,
+    "vision_night": 4,
+    "harvest": "zombie",
+    "special_attacks": [
+      [
+        "GRAB",
+        6
+      ],
+      [
+        "scratch",
+        20
+      ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_ears",
+    "flags": [
+      "HEARS",
+      "GOODHEARING",
+      "ABSORBS",
+      "SEES",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NOHEAD",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_skull",
+    "type": "MONSTER",
+    "name": {
+      "str": "骷髅僵尸"
+    },
+    "description": "这种生物的头是一个可怕的灰色头骨，由人类的骨头碎片和某种粘液组成。锯齿状的牙齿是可见的，因为它的下巴和令人不安的人类，无盖的眼睛盯着你从他们的眼窝。这东西的肉质耳朵有四个尺寸太大，在自身重量的作用下下垂。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 169,
+    "speed": 100,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "light_gray",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 4,
+    "melee_dice_sides": 4,
+    "melee_cut": 2,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "dodge": 1,
+    "armor_bash": 8,
+    "armor_cut": 3,
+    "vision_day": 25,
+    "vision_night": 5,
+    "harvest": "zombie",
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 5,
+        "min_mul": 0.7
+      },
+      [
+        "GRAB",
+        6
+      ],
+      [
+        "scratch",
+        15
+      ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_skull",
+    "flags": [
+      "HEARS",
+      "GOODHEARING",
+      "ABSORBS",
+      "SEES",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NOHEAD",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_brute",
+    "type": "MONSTER",
+    "name": {
+      "str": "僵尸畜生"
+    },
+    "description": "它的整个身体膨胀着肌肉和肿胀溃烂的伤口。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE",
+      "HUMAN"
+    ],
+    "diff": 2,
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 150,
+    "speed": 105,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 3,
+    "melee_dice_sides": 8,
+    "melee_cut": 2,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "armor_bash": 7,
+    "armor_cut": 6,
+    "vision_night": 4,
+    "harvest": "zombie",
+    "special_attacks": [
+      [
+        "SMASH",
+        30
+      ],
+      [
+        "GRAB",
+        7
+      ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_brute",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "PUSH_MON",
+      "PUSH_VEH",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_brute_grappler",
+    "type": "MONSTER",
+    "name": {
+      "str": "僵尸摔跤手"
+    },
+    "description": "一块溃烂的肌肉，有健美运动员那么大。似乎急于扼杀你的生命。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "diff": 2,
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 350,
+    "speed": 95,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "red_white",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 7,
+    "melee_dice": 3,
+    "melee_dice_sides": 8,
+    "melee_cut": 1,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "dodge": 3,
+    "armor_bash": 13,
+    "armor_cut": 14,
+    "armor_stab": 8,
+    "vision_night": 3,
+    "harvest": "zombie",
+    "special_attacks": [
+      [
+        "SMASH",
+        30
+      ],
+      [
+        "BIO_OP_TAKEDOWN",
+        20
+      ],
+      [
+        "RANGED_PULL",
+        20
+      ],
+      [
+        "GRAB_DRAG",
+        10
+      ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_brute_grappler",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "PUSH_VEH",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_brute_ninja",
+    "type": "MONSTER",
+    "name": {
+      "str": "僵尸夜袭者"
+    },
+    "description": "不知怎的，这个畜生像个怪物一样躲在黑暗中。对于这么大的僵尸来说非常灵活。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "diff": 2,
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 250,
+    "speed": 90,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "dark_gray_red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 5,
+    "melee_dice": 4,
+    "melee_dice_sides": 4,
+    "melee_cut": 4,
+    "melee_damage": [
+      {
+        "amount": 1,
+        "damage_type": "bash"
+      },
+      {
+        "amount": 1,
+        "damage_type": "cut"
+      }
+    ],
+    "dodge": 4,
+    "armor_bash": 11,
+    "armor_cut": 5,
+    "vision_day": 5,
+    "vision_night": 40,
+    "harvest": "zombie",
+    "special_attacks": [
+      [
+        "SMASH",
+        40
+      ],
+      [
+        "STRETCH_ATTACK",
+        20
+      ],
+      [
+        "LONGSWIPE",
+        20
+      ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_brute_ninja",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "GOODHEARING",
+      "SMELLS",
+      "ABSORBS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "PUSH_VEH",
+      "NIGHT_INVISIBILITY",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_grappler",
+    "type": "MONSTER",
+    "name": {
+      "str": "抓斗僵尸"
+    },
+    "description": "一个不死的人形生物，当它移动的时候，它拉长的手臂沿着地面拖曳。它看起来几乎有一种预感，因为肿胀的背部和肩部肌肉撕裂了它的皮肤。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 138,
+    "speed": 85,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "cyan_white",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 5,
+    "melee_dice": 4,
+    "melee_dice_sides": 5,
+    "melee_cut": 0,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "armor_bash": 3,
+    "dodge": 2,
+    "vision_day": 30,
+    "vision_night": 5,
+    "harvest": "zombie",
+    "special_attacks": [
+      [
+        "RANGED_PULL",
+        20
+      ],
+      [
+        "GRAB_DRAG",
+        3
+      ],
+      {
+        "type": "bite",
+        "cooldown": 5
+      }
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_grappler",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_hollow",
+    "type": "MONSTER",
+    "name": {
+      "str": "僵尸洞"
+    },
+    "description": "当僵尸伸展和弯曲的时候，黑色的空心眼睛审视着周围的环境，无论是谁的原始身体都无法做到。唯一看起来坚固的东西，在这个灵活的黑色脉体上，是一排排锋利的黑色牙齿。你会觉得人类仅存的东西就是皮肤，就像穿衣服一样。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 125,
+    "speed": 70,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "black_white",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "melee_cut": 4,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "cut"
+      }
+    ],
+    "dodge": 4,
+    "armor_bash": 11,
+    "armor_cut": 4,
+    "armor_stab": 10,
+    "vision_day": 30,
+    "vision_night": 3,
+    "harvest": "zombie",
+    "special_attacks": [
+      [
+        "STRETCH_BITE",
+        10
+      ],
+      [
+        "STRETCH_ATTACK",
+        5
+      ]
+    ],
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_hollow",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_hulk",
+    "type": "MONSTER",
+    "name": {
+      "str": "僵尸绿巨人"
+    },
+    "description": "一个人的身体现在肿到六个人那么大，胳膊像垃圾桶一样宽。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "diff": 5,
+    "volume": "875000 ml",
+    "weight": "200 kg",
+    "hp": 600,
+    "speed": 130,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "white_magenta",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 5,
+    "melee_dice": 4,
+    "melee_dice_sides": 8,
+    "melee_cut": 0,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "armor_bash": 11,
+    "armor_cut": 12,
+    "vision_day": 50,
+    "vision_night": 4,
+    "harvest": "zombie",
+    "special_attacks": [
+      [
+        "SMASH",
+        20
+      ]
+    ],
+    "death_drops": "mon_zombie_hulk_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_hulk",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "DESTROYS",
+      "POISON",
+      "ATTACKMON",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "PUSH_VEH",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_hunter",
+    "type": "MONSTER",
+    "name": {
+      "str": "野性猎人"
+    },
+    "description": "这具曾经的人体几乎无法辨认，四肢着地四处乱爬，它的指甲和牙齿都磨成了危险的尖刺。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 113,
+    "speed": 110,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "brown",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_cut": 2,
+    "melee_damage": [
+      {
+        "amount": 1,
+        "damage_type": "bash"
+      },
+      {
+        "amount": 1,
+        "damage_type": "cut"
+      }
+    ],
+    "dodge": 3,
+    "armor_bash": 3,
+    "vision_night": 5,
+    "harvest": "zombie",
+    "special_attacks": [
+      {
+        "id": "scratch",
+        "damage_max_instance": [
+          {
+            "damage_type": "cut",
+            "amount": 12
+          }
+        ]
+      },
+      {
+        "type": "leap",
+        "cooldown": 5,
+        "max_range": 5
+      },
+      {
+        "type": "bite",
+        "cooldown": 10,
+        "damage_max_instance": [
+          {
+            "damage_type": "stab",
+            "amount": 12,
+            "armor_multiplier": 0.7
+          }
+        ]
+      }
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_hunter",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "CLIMBS",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_mancroc",
+    "type": "MONSTER",
+    "name": {
+      "str": "僵尸鲷鱼"
+    },
+    "description": "这只穿着泳装的僵尸长着鳄鱼般的鼻子和一排排凸出的牙齿，潜伏在水中。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 150,
+    "speed": 100,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "light_green_cyan",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 3,
+    "melee_dice_sides": 5,
+    "melee_cut": 6,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "cut"
+      }
+    ],
+    "dodge": 2,
+    "armor_bash": 11,
+    "armor_cut": 10,
+    "vision_day": 25,
+    "vision_night": 5,
+    "harvest": "zombie",
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 10,
+        "accuracy": 6,
+        "damage_max_instance": [
+          {
+            "damage_type": "stab",
+            "amount": 8,
+            "armor_multiplier": 0.3
+          },
+          {
+            "damage_type": "bash",
+            "amount": 16,
+            "armor_multiplier": 0.3
+          }
+        ]
+      },
+      [
+        "GRAB",
+        20
+      ],
+      [
+        "GRAB_DRAG",
+        10
+      ]
+    ],
+    "death_drops": "mon_zombie_swimmer_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_mancroc",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "GRABS",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "SWIMS",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_master",
+    "type": "MONSTER",
+    "name": {
+      "str": "僵尸大师"
+    },
+    "description": "一旦成为人类，它的五官就绷紧了，它的嘴唇向后拉，露出不自然的笑容，在它那锐利的大眼睛下面露出一排排发黑的牙齿。它站得很高，动作流畅，控制严密。一种危险的感觉弥漫在它周围的空气中，落在它身上的光线似乎更加刺眼。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "diff": 20,
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 225,
+    "speed": 90,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "pink_red",
+    "aggression": 5,
+    "morale": 100,
+    "melee_skill": 5,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "melee_cut": 0,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "dodge": 4,
+    "armor_bash": 5,
+    "armor_cut": 2,
+    "vision_day": 50,
+    "vision_night": 5,
+    "harvest": "zombie",
+    "path_settings": {
+      "max_dist": 10
+    },
+    "special_attacks": [
+      [
+        "UPGRADE",
+        10
+      ]
+    ],
+    "anger_triggers": [
+      "HURT",
+      "PLAYER_CLOSE",
+      "PLAYER_WEAK"
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_master",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_necro",
+    "type": "MONSTER",
+    "name": {
+      "str": "僵尸亡灵法师"
+    },
+    "description": "一个扭曲的对人类形体的嘲弄，消瘦，黑皮肤，红眼。它看起来是痛苦的，唤醒了你内心深处的恐惧，甚至它周围的空气似乎更险恶，更黑暗，更危险的\n膜静脉覆盖了它的表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "diff": 20,
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 125,
+    "speed": 100,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "dark_gray",
+    "aggression": 5,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 3,
+    "melee_dice_sides": 6,
+    "melee_cut": 2,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "dodge": 2,
+    "armor_bash": 3,
+    "vision_day": 50,
+    "vision_night": 5,
+    "harvest": "zombie",
+    "path_settings": {
+      "max_dist": 10
+    },
+    "special_attacks": [
+      [
+        "RESURRECT",
+        0
+      ]
+    ],
+    "anger_triggers": [
+      "HURT",
+      "PLAYER_CLOSE",
+      "PLAYER_WEAK"
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_necro",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "PATH_AVOID_DANGER_1",
+      "PRIORITIZE_TARGETS",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_predator",
+    "type": "MONSTER",
+    "name": {
+      "str": "野性捕食者"
+    },
+    "description": "由于关节的位置和角度都很奇怪，这种人形生物以惊人的速度在大地上游荡。它的牙齿和手臂被磨成了细点，黑色的软泥从肌肉之间的切口渗出\n膜状静脉覆盖了它的大部分表面，这些表面在不停地跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 113,
+    "speed": 140,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "brown_green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 5,
+    "melee_dice": 4,
+    "melee_dice_sides": 4,
+    "melee_cut": 5,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "cut"
+      }
+    ],
+    "dodge": 5,
+    "armor_bash": 8,
+    "armor_cut": 5,
+    "vision_day": 45,
+    "vision_night": 15,
+    "harvest": "zombie",
+    "path_settings": {
+      "max_dist": 5
+    },
+    "special_attacks": [
+      {
+        "type": "leap",
+        "cooldown": 10,
+        "max_range": 8,
+        "min_consider_range": 3,
+        "max_consider_range": 7
+      },
+      {
+        "type": "bite",
+        "cooldown": 10,
+        "damage_max_instance": [
+          {
+            "damage_type": "stab",
+            "amount": 10,
+            "armor_multiplier": 0.2
+          }
+        ]
+      },
+      {
+        "id": "impale"
+      }
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_predator",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_screecher",
+    "type": "MONSTER",
+    "name": {
+      "str": "尖叫僵尸"
+    },
+    "description": "它的胸部是薄的，似乎肿了什么。一层厚厚的黑色软泥从它张开的嘴上滴落下来。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "diff": 2,
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 106,
+    "speed": 100,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "magenta_cyan",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 5,
+    "melee_dice": 3,
+    "melee_dice_sides": 4,
+    "melee_cut": 5,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "cut"
+      }
+    ],
+    "dodge": 2,
+    "armor_bash": 3,
+    "vision_day": 50,
+    "vision_night": 8,
+    "harvest": "zombie",
+    "special_attacks": [
+      [
+        "SHRIEK_ALERT",
+        20
+      ],
+      [
+        "SHRIEK_STUN",
+        1
+      ],
+      [
+        "scratch",
+        20
+      ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_screecher",
+    "flags": [
+      "SEES",
+      "KEENNOSE",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_thorny",
+    "type": "MONSTER",
+    "name": {
+      "str": "带刺狼蛛"
+    },
+    "description": "一个蹒跚而行的不死类人，身体上长满了混乱的超凡植被。荆棘蜷缩着身子，拖着脚，完全包裹着它的上半身，抽搐着，移动着，有着自己的生命，卷须尖上有一种麻痹性的刺痛。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "PLANT",
+      "ZOMBIE"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 100,
+    "speed": 50,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "veggy"
+    ],
+    "symbol": "Z",
+    "color": "light_green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 3,
+    "melee_dice": 2,
+    "melee_dice_sides": 3,
+    "melee_cut": 4,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "cut"
+      }
+    ],
+    "armor_bash": 5,
+    "armor_cut": 4,
+    "vision_night": 5,
+    "harvest": "zombie_thorny",
+    "attack_effs": [
+      {
+        "id": "paralyzepoison",
+        "duration": 33
+      }
+    ],
+    "special_attacks": [
+      [
+        "GRAB",
+        7
+      ],
+      [
+        "scratch",
+        20
+      ],
+      [
+        "PARA_STING",
+        30
+      ]
+    ],
+    "death_drops": "mon_zombie_thorny_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_thorny",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "FILTHY",
+      "PARALYZEVENOM"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_smoker",
+    "type": "MONSTER",
+    "name": {
+      "str": "吸烟者僵尸"
+    },
+    "description": "一具被熏黑扭曲的裸体人体，一条条的肉挂在身上，它不断散发着厚厚的、天鹅绒般的烟雾。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 94,
+    "speed": 110,
+    "emit_fields": [
+      {
+        "emit_id": "emit_sflesh_fleshling_maybe",
+        "delay": "1 s"
+      },
+      {
+        "emit_id": "emit_smoke_stream",
+        "delay": "1 s"
+      }
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "light_gray",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 1,
+    "melee_dice_sides": 6,
+    "melee_cut": 2,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "cut"
+      }
+    ],
+    "dodge": 4,
+    "armor_bash": 3,
+    "armor_fire": 5,
+    "vision_day": 50,
+    "vision_night": 3,
+    "harvest": "exempt",
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 5
+      },
+      [
+        "scratch",
+        15
+      ]
+    ],
+    "death_function": [
+      "DISINTEGRATE"
+    ],
+    "burn_into": "mon_zombie_smoker",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "HARDTOSHOOT",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_anklebiter",
+    "type": "MONSTER",
+    "name": {
+      "str": "踝关节"
+    },
+    "description": "这个可怖的变异小家伙看起来曾经是个孩子，但它巨大的张口现在更像是一只食肉动物。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE"
+    ],
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 44,
+    "speed": 105,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "z",
+    "color": "brown",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_cut": 2,
+    "melee_damage": [
+      {
+        "amount": 1,
+        "damage_type": "bash"
+      },
+      {
+        "amount": 1,
+        "damage_type": "cut"
+      }
+    ],
+    "armor_bash": 3,
+    "dodge": 3,
+    "harvest": "zombie",
+    "vision_day": 30,
+    "vision_night": 3,
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 2
+      }
+    ],
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [
+        [
+          "default_zombie_clothes",
+          100
+        ],
+        [
+          "child_items",
+          65
+        ]
+      ]
+    },
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_anklebiter",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_child",
+    "type": "MONSTER",
+    "name": {
+      "str": "僵尸小孩",
+      "str_pl": "僵尸孩子"
+    },
+    "description": "那只不过是个孩子，现在除了眼睛里饥饿的神情，已经没有什么不同了。你很难不觉得把它放下是在杀一个真正的孩子。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE"
+    ],
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 50,
+    "speed": 65,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "z",
+    "color": "light_green",
+    "aggression": 60,
+    "morale": 100,
+    "melee_skill": 2,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_cut": 2,
+    "melee_damage": [
+      {
+        "amount": 1,
+        "damage_type": "bash"
+      },
+      {
+        "amount": 1,
+        "damage_type": "cut"
+      }
+    ],
+    "armor_bash": 3,
+    "dodge": 2,
+    "vision_day": 30,
+    "vision_night": 3,
+    "harvest": "zombie",
+    "special_attacks": [
+      [
+        "scratch",
+        15
+      ]
+    ],
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [
+        [
+          "default_zombie_children_clothes",
+          100
+        ],
+        [
+          "child_items",
+          65
+        ]
+      ]
+    },
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_child",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "GUILT",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_creepy",
+    "type": "MONSTER",
+    "name": {
+      "str": "毛骨悚然的爬虫"
+    },
+    "description": "曾经是孩子的东西现在变成了皮肤变黑、眼睛粗大的变种野兽。这种可憎的丑恶的形式使它的人类起源的嘲弄。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 31,
+    "speed": 55,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "z",
+    "color": "dark_gray",
+    "aggression": 80,
+    "morale": 100,
+    "melee_skill": 2,
+    "melee_dice": 2,
+    "melee_dice_sides": 2,
+    "melee_cut": 1,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "armor_bash": 3,
+    "dodge": 1,
+    "vision_day": 10,
+    "vision_night": 10,
+    "harvest": "zombie",
+    "special_attacks": [
+      [
+        "SHRIEK",
+        5
+      ]
+    ],
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [
+        [
+          "default_zombie_clothes",
+          100
+        ],
+        [
+          "child_items",
+          65
+        ]
+      ]
+    },
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_creepy",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "CLIMBS",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_shriekling",
+    "type": "MONSTER",
+    "name": {
+      "str": "尖叫"
+    },
+    "description": "这具变异严重的儿童僵尸在四处奔跑时，四肢抽搐、连枷，看起来很痛苦。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE"
+    ],
+    "diff": 2,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 25,
+    "speed": 95,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "z",
+    "color": "magenta",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 2,
+    "melee_dice": 2,
+    "melee_dice_sides": 2,
+    "melee_cut": 1,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "armor_bash": 3,
+    "dodge": 1,
+    "vision_day": 30,
+    "vision_night": 5,
+    "harvest": "zombie",
+    "special_attacks": [
+      [
+        "SHRIEK",
+        5
+      ],
+      [
+        "scratch",
+        15
+      ]
+    ],
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [
+        [
+          "default_zombie_clothes",
+          100
+        ],
+        [
+          "child_items",
+          65
+        ]
+      ]
+    },
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_shriekling",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "GUILT",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_snotgobbler",
+    "type": "MONSTER",
+    "name": {
+      "str": "鼻涕虫"
+    },
+    "description": "这个肿胀的，黏糊糊的变种孩子看起来很糟糕，甚至对一个僵尸来说。也许这就是为什么它如此渴望拥抱。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 31,
+    "speed": 65,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "z",
+    "color": "pink",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_cut": 2,
+    "melee_damage": [
+      {
+        "amount": 1,
+        "damage_type": "bash"
+      },
+      {
+        "amount": 1,
+        "damage_type": "cut"
+      }
+    ],
+    "armor_bash": 4,
+    "dodge": 1,
+    "vision_day": 30,
+    "vision_night": 5,
+    "harvest": "zombie",
+    "special_attacks": [
+      [
+        "GRAB",
+        5
+      ]
+    ],
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [
+        [
+          "default_zombie_clothes",
+          100
+        ],
+        [
+          "child_items",
+          65
+        ]
+      ]
+    },
+    "death_function": [
+      "BOOMER"
+    ],
+    "burn_into": "mon_zombie_snotgobbler",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "GUILT",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_sproglodyte",
+    "type": "MONSTER",
+    "name": {
+      "str": "斜晶石"
+    },
+    "description": "这个蜷缩着的变种儿童的脸上长着一对巨大的黑眼睛，指尖末端有锋利的爪子。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 38,
+    "speed": 85,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "z",
+    "color": "light_gray",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 3,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_cut": 3,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "cut"
+      }
+    ],
+    "armor_bash": 3,
+    "dodge": 2,
+    "vision_day": 10,
+    "vision_night": 10,
+    "harvest": "zombie",
+    "special_attacks": [
+      [
+        "scratch",
+        10
+      ],
+      {
+        "type": "leap",
+        "cooldown": 10,
+        "max_range": 5
+      }
+    ],
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [
+        [
+          "default_zombie_clothes",
+          100
+        ],
+        [
+          "child_items",
+          65
+        ]
+      ]
+    },
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_sproglodyte",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "CLIMBS",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_waif",
+    "type": "MONSTER",
+    "name": {
+      "str": "嚎叫的流浪汉"
+    },
+    "description": "亡灵对世界末日的孩子们并不友好。这只不过是一层重新复活的皮肤膜，覆盖在脆弱的小骨头上。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE"
+    ],
+    "diff": 2,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 19,
+    "speed": 65,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "bone"
+    ],
+    "symbol": "z",
+    "color": "white",
+    "aggression": 80,
+    "morale": 100,
+    "melee_skill": 2,
+    "melee_dice": 2,
+    "melee_dice_sides": 2,
+    "melee_cut": 1,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "dodge": 2,
+    "armor_cut": 5,
+    "armor_bash": 3,
+    "vision_day": 30,
+    "vision_night": 5,
+    "harvest": "zombie",
+    "special_attacks": [
+      [
+        "SHRIEK",
+        15
+      ],
+      [
+        "scratch",
+        10
+      ]
+    ],
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [
+        [
+          "default_zombie_clothes",
+          100
+        ],
+        [
+          "child_items",
+          65
+        ]
+      ]
+    },
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_waif",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "GUILT",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "HARDTOSHOOT",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_brute_shocker",
+    "type": "MONSTER",
+    "name": {
+      "str": "令人震惊的畜生"
+    },
+    "description": "一头巨大的野兽身上布满了肉眼可见的疤痕，你只能猜测这就是“研究”。靠近它，你可以听到轻微的嗡嗡声，就像变压器的嗡嗡声。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "diff": 10,
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 344,
+    "speed": 110,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "white_cyan",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 3,
+    "melee_dice": 3,
+    "melee_dice_sides": 4,
+    "melee_damage": [
+      {
+        "damage_type": "electric",
+        "amount": 4
+      },
+      {
+        "damage_type": "bash",
+        "amount": 2
+      }
+    ],
+    "melee_cut": 2,
+    "armor_bash": 6,
+    "armor_cut": 8,
+    "vision_night": 3,
+    "luminance": 16,
+    "harvest": "CBM_SUBS",
+    "special_attacks": [
+      [
+        "SHOCKSTORM",
+        15
+      ],
+      [
+        "SMASH",
+        30
+      ]
+    ],
+    "special_when_hit": [
+      "ZAPBACK",
+      75
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_brute_shocker",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "ELECTRIC",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_electric",
+    "type": "MONSTER",
+    "name": {
+      "str": "令人震惊的僵尸"
+    },
+    "description": "一具浅蓝色的肉体，被电能劈啪作响。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "diff": 10,
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 106,
+    "speed": 105,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "light_cyan",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 1,
+    "melee_dice_sides": 3,
+    "melee_damage": [
+      {
+        "damage_type": "electric",
+        "amount": 8
+      },
+      {
+        "damage_type": "bash",
+        "amount": 2
+      }
+    ],
+    "melee_cut": 0,
+    "armor_bash": 3,
+    "dodge": 2,
+    "luminance": 8,
+    "harvest": "CBM_CIV",
+    "special_attacks": [
+      [
+        "SHOCKSTORM",
+        25
+      ]
+    ],
+    "special_when_hit": [
+      "ZAPBACK",
+      100
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_electric",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "ELECTRIC",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_nullfield",
+    "type": "MONSTER",
+    "name": {
+      "str": "白炽壳"
+    },
+    "description": "这个曾经的人类只能看到一个发光的白色轮廓，你必须眯着眼睛才能看到，披着一片噼啪作响的闪电场，像跳动的心脏一样跳动。它慢条斯理地走着，周围的雷雨迫不及待地跳到它能抓住的任何导电物上。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "diff": 2,
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 250,
+    "speed": 50,
+    "emit_fields": [
+      {
+        "emit_id": "emit_sflesh_fleshling_maybe",
+        "delay": "1 s"
+      },
+      {
+        "emit_id": "emit_shock_cloud",
+        "delay": "1 s"
+      }
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "i_cyan",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 5,
+    "melee_dice": 1,
+    "melee_dice_sides": 2,
+    "melee_damage": [
+      {
+        "damage_type": "electric",
+        "amount": 6
+      },
+      {
+        "damage_type": "bash",
+        "amount": 2
+      }
+    ],
+    "armor_bash": 3,
+    "vision_night": 3,
+    "luminance": 16,
+    "harvest": "CBM_SUBS",
+    "special_when_hit": [
+      "ZAPBACK",
+      75
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_nullfield",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "ABSORBS",
+      "WARM",
+      "POISON",
+      "ELECTRIC",
+      "NO_BREATHE",
+      "REVIVES",
+      "ELECTRIC_FIELD",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_static",
+    "type": "MONSTER",
+    "name": {
+      "str": "僵尸杀手"
+    },
+    "description": "一具非常苍白的尸体，有着你见过的最糟糕的静态头发。有时，你可以看到它周围的电火花。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 75,
+    "speed": 75,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "white",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 1,
+    "melee_dice_sides": 2,
+    "melee_damage": [
+      {
+        "damage_type": "electric",
+        "amount": 4
+      },
+      {
+        "damage_type": "bash",
+        "amount": 2
+      }
+    ],
+    "melee_cut": 0,
+    "armor_bash": 3,
+    "dodge": 2,
+    "luminance": 4,
+    "harvest": "zombie",
+    "special_when_hit": [
+      "ZAPBACK",
+      100
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_static",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "ELECTRIC",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_scientist",
+    "type": "MONSTER",
+    "name": {
+      "str": "僵尸科学家"
+    },
+    "description": "除了乌黑的眼睛，这个僵尸看起来不像大多数人那样腐烂和不人道。穿着破烂的实验服，它似乎有一丝觉悟——不是人类的觉悟，而是更险恶的东西。当你看它的时候，它的动作看起来就像木偶。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 100,
+    "speed": 75,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "white_cyan",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 3,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_cut": 2,
+    "melee_damage": [
+      {
+        "amount": 1,
+        "damage_type": "bash"
+      },
+      {
+        "amount": 1,
+        "damage_type": "cut"
+      }
+    ],
+    "armor_bash": 3,
+    "dodge": 1,
+    "vision_day": 50,
+    "vision_night": 3,
+    "harvest": "CBM_SCI",
+    "path_settings": {
+      "max_dist": 5
+    },
+    "special_attacks": [
+      [
+        "scratch",
+        20
+      ]
+    ],
+    "death_drops": "mon_zombie_scientist_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_scientist",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "ACIDPROOF",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "PATH_AVOID_DANGER_1",
+      "CAN_OPEN_DOORS",
+      "PRIORITIZE_TARGETS",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_boomer",
+    "type": "MONSTER",
+    "name": {
+      "str": "婴儿潮"
+    },
+    "description": "一个丰满的人体，膨胀得难以置信，层层堆积着脂肪。它散发出一股可怕的气味，一股腐烂的粉红色污泥从嘴里滴了出来。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "diff": 5,
+    "volume": "92500 ml",
+    "weight": "120 kg",
+    "hp": 50,
+    "speed": 55,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "pink",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 3,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_cut": 0,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "armor_bash": 3,
+    "vision_night": 3,
+    "harvest": "exempt",
+    "special_attacks": [
+      [
+        "BOOMER",
+        20
+      ],
+      [
+        "scratch",
+        20
+      ]
+    ],
+    "death_drops": "default_zombie_items",
+    "death_function": [
+      "BOOMER"
+    ],
+    "burn_into": "mon_boomer",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "BILE_BLOOD",
+      "PUSH_MON",
+      "PATH_AVOID_DANGER_1",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_boomer_huge",
+    "type": "MONSTER",
+    "name": {
+      "str": "巨大的婴儿潮"
+    },
+    "description": "这个婴儿潮一代，通常肿胀和准备爆裂，已加强和固化。从它嘴里滴下的胆汁似乎也发生了变化。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "diff": 5,
+    "volume": "92500 ml",
+    "weight": "120 kg",
+    "hp": 138,
+    "speed": 85,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "pink_white",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 1,
+    "melee_dice": 3,
+    "melee_dice_sides": 3,
+    "melee_cut": 0,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "armor_bash": 8,
+    "armor_cut": 5,
+    "vision_night": 3,
+    "harvest": "zombie",
+    "special_attacks": [
+      [
+        "BOOMER_GLOW",
+        20
+      ],
+      [
+        "scratch",
+        20
+      ]
+    ],
+    "death_drops": "default_zombie_items",
+    "death_function": [
+      "BOOMER_GLOW"
+    ],
+    "burn_into": "mon_boomer_huge",
+    "flags": [
+      "SEES",
+      "GOODHEARING",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "BILE_BLOOD",
+      "PUSH_MON",
+      "PATH_AVOID_DANGER_1",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_gas_zombie",
+    "type": "MONSTER",
+    "name": {
+      "str": "汽油僵尸"
+    },
+    "description": "一个巨大的臃肿的僵尸，似乎吃了汽油；烟雾和火焰从它的嘴里逃逸，燃料从它摇摇晃晃的身体泄漏。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "diff": 5,
+    "volume": "102500 ml",
+    "weight": "160 kg",
+    "hp": 113,
+    "speed": 25,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "dark_gray_red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 3,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_cut": 0,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "armor_bash": 3,
+    "vision_night": 3,
+    "luminance": 8,
+    "harvest": "exempt",
+    "special_attacks": [
+      [
+        "scratch",
+        20
+      ]
+    ],
+    "death_drops": "default_zombie_items",
+    "death_function": [
+      "CONFLAGRATION"
+    ],
+    "burn_into": "mon_gas_zombie",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "DRIPS_GASOLINE",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_gasbag",
+    "type": "MONSTER",
+    "name": {
+      "str": "臃肿的僵尸"
+    },
+    "description": "由于它灰色的皮肤因腐烂的气体而肿胀到几乎破裂，这个覆盖着囊肿的僵尸看起来像是在轻微的干扰下会猛烈地爆裂。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "HUMAN",
+      "ZOMBIE"
+    ],
+    "diff": 5,
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 19,
+    "speed": 80,
+    "emit_fields": [
+      {
+        "emit_id": "emit_sflesh_fleshling_maybe",
+        "delay": "1 s"
+      },
+      {
+        "emit_id": "emit_toxic_leak",
+        "delay": "1 s"
+      }
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "magenta_yellow",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 3,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_cut": 0,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "armor_bash": 3,
+    "vision_night": 3,
+    "harvest": "exempt",
+    "special_attacks": [
+      [
+        "SUICIDE",
+        20
+      ],
+      [
+        "scratch",
+        15
+      ]
+    ],
+    "death_drops": "default_zombie_items",
+    "death_function": [
+      "GAS"
+    ],
+    "burn_into": "mon_zombie_gasbag",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_soldier",
+    "type": "MONSTER",
+    "name": {
+      "str": "僵尸士兵"
+    },
+    "description": "一旦成为一名士兵，它会从头到脚穿上战斗装备，像僵尸一样稳稳当当。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE",
+      "HUMAN"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 125,
+    "speed": 80,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "light_green_green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 5,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "melee_cut": 0,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "dodge": 1,
+    "armor_bash": 15,
+    "armor_cut": 25,
+    "vision_day": 30,
+    "vision_night": 3,
+    "harvest": "zombie",
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 5,
+        "min_mul": 0.8
+      }
+    ],
+    "death_drops": "mon_zombie_soldier_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_soldier",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "ABSORBS",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_soldier_blackops_1",
+    "type": "MONSTER",
+    "name": {
+      "str": "黑行动僵尸"
+    },
+    "description": "这只士兵僵尸的皮肤散发出一种模糊的烟雾，模糊了它的轮廓，使得它的伪装在背景下更难看到。在黑暗中它几乎看不见。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE",
+      "HUMAN"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 150,
+    "speed": 90,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "light_green_green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "melee_cut": 0,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "dodge": 3,
+    "armor_bash": 15,
+    "armor_cut": 25,
+    "vision_day": 30,
+    "vision_night": 35,
+    "harvest": "zombie",
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 8,
+        "damage_max_instance": [
+          {
+            "damage_type": "stab",
+            "amount": 8,
+            "armor_multiplier": 0.8
+          }
+        ]
+      }
+    ],
+    "death_drops": "mon_zombie_soldier_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_soldier_blackops_1",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "ABSORBS",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_soldier_blackops_2",
+    "type": "MONSTER",
+    "name": {
+      "str": "猎人杀手僵尸"
+    },
+    "description": "可见的制服碎片暗示这个怪物曾经是个士兵。任何人都是看不见的，藏在活生生的阴影里。它以超乎寻常的流动性和优雅移动。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "copy-from": "mon_sflesh_zombie_soldier_blackops_1",
+    "relative": {
+      "hp": 55,
+      "speed": 10,
+      "melee_skill": 1,
+      "dodge": 1,
+      "vision_night": 15
+    },
+    "extend": {
+      "special_attacks": [
+        {
+          "id": "scratch",
+          "cooldown": 10,
+          "damage_max_instance": [
+            {
+              "damage_type": "bash",
+              "amount": 5,
+              "armor_multiplier": 0.5
+            }
+          ]
+        },
+        {
+          "type": "leap",
+          "cooldown": 10,
+          "max_range": 3
+        }
+      ],
+      "flags": [
+        "KEENNOSE"
+      ]
+    }
+  },
+  {
+    "id": "mon_sflesh_zombie_soldier_acid_1",
+    "type": "MONSTER",
+    "name": {
+      "str": "酸狙击手僵尸"
+    },
+    "description": "这个摇摇晃晃的士兵戴着一个燃烧过的防毒面具，现在已经粘在脸上了。通过融化的，胆汁结痂的口罩的破坏来某种硬化肉质的长鼻，与蒸汽腐蚀性液体泄漏的结束。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "copy-from": "mon_sflesh_zombie_soldier",
+    "diff": 20,
+    "relative": {
+      "hp": 50,
+      "speed": 10,
+      "melee_skill": 1,
+      "vision_day": 10,
+      "vision_night": 10
+    },
+    "extend": {
+      "special_attacks": [
+        [
+          "ACID_BARF",
+          10
+        ],
+        {
+          "type": "gun",
+          "cooldown": 15,
+          "move_cost": 90,
+          "gun_type": "acid_sniper",
+          "fake_skills": [
+            [
+              "gun",
+              4
+            ],
+            [
+              "rifle",
+              4
+            ]
+          ],
+          "fake_dex": 8,
+          "fake_per": 8,
+          "require_targeting_player": false,
+          "description": "The acid-sniper zombie launches a corrosive dart!",
+          "ranges": [
+            [
+              2,
+              20,
+              "DEFAULT"
+            ]
+          ]
+        }
+      ],
+      "death_function": [
+        "ACID"
+      ],
+      "flags": [
+        "ACIDPROOF",
+        "ACID_BLOOD"
+      ]
+    }
+  },
+  {
+    "id": "mon_sflesh_zombie_soldier_acid_2",
+    "type": "MONSTER",
+    "name": {
+      "str": "酸支持僵尸"
+    },
+    "description": "这个僵尸穿的似乎曾经是士兵的制服和盔甲，现在是一系列破裂和熔化的金属板，这些金属板与它的皮肤和加厚的兽皮融合在一起。它的脸和胳膊上长满了奇怪的变异管子，这些管子随着酸的滴落而跳动。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "copy-from": "mon_sflesh_zombie_soldier_acid_1",
+    "diff": 20,
+    "relative": {
+      "hp": 78,
+      "speed": -10,
+      "melee_skill": 2,
+      "armor_bash": 5
+    },
+    "extend": {
+      "special_attacks": [
+        [
+          "ACID_BARF",
+          5
+        ],
+        {
+          "id": "slam"
+        },
+        {
+          "type": "gun",
+          "cooldown": 4,
+          "move_cost": 50,
+          "gun_type": "acid_spray",
+          "fake_skills": [
+            [
+              "gun",
+              4
+            ],
+            [
+              "rifle",
+              4
+            ]
+          ],
+          "fake_dex": 8,
+          "fake_per": 8,
+          "require_targeting_player": false,
+          "description": "The acid-support zombie launches a hail of corrosive darts!",
+          "ranges": [
+            [
+              2,
+              8,
+              "DEFAULT"
+            ]
+          ]
+        }
+      ],
+      "death_function": [
+        "ACID"
+      ],
+      "flags": [
+        "ACIDPROOF",
+        "ACID_BLOOD"
+      ]
+    }
+  },
+  {
+    "id": "mon_sflesh_zombie_kevlar_1",
+    "type": "MONSTER",
+    "name": {
+      "str": "凯夫拉僵尸"
+    },
+    "description": "这个僵尸曾经穿着某种制服，里面缝着厚重的防弹材料。在这一点上，我们不可能知道它是什么样的制服：怪物的皮肤已经长在织物上，裂开并撕裂成碎片，把剩下的凯夫拉和其他装甲材料碎片变成了它的一部分兽皮。它的手，同样地，已经融合成大的皮革棍子。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE",
+      "HUMAN"
+    ],
+    "volume": "72500 ml",
+    "weight": "85500 g",
+    "hp": 188,
+    "speed": 80,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "light_green_white",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "melee_cut": 0,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "dodge": 1,
+    "armor_bash": 23,
+    "armor_cut": 30,
+    "vision_day": 30,
+    "vision_night": 5,
+    "harvest": "zombie_kevlar",
+    "special_attacks": [
+      {
+        "id": "slam",
+        "cooldown": 10,
+        "damage_max_instance": [
+          {
+            "damage_type": "bash",
+            "amount": 12
+          }
+        ]
+      },
+      [
+        "SMASH",
+        30
+      ]
+    ],
+    "death_drops": "mon_zombie_kevlar_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_kevlar_1",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "ABSORBS",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_kevlar_2",
+    "type": "MONSTER",
+    "name": {
+      "str": "凯夫拉尔绿巨人"
+    },
+    "description": "这个僵尸曾经穿着某种现在已经被撕碎的制服，里面缝着厚重的防弹材料。它已经长成了一个笨重的皮背野兽，它变异的皮肤呈现出一种奇怪的纹理，类似于嵌在里面的凯夫拉碎片。它的手臂扭曲成巨大的畸形骨头棒，拖在身后的地上。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE",
+      "HUMAN"
+    ],
+    "volume": "625000 ml",
+    "weight": "200 kg",
+    "hp": 375,
+    "speed": 75,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "light_green_white",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 8,
+    "melee_dice": 3,
+    "melee_dice_sides": 8,
+    "melee_cut": 0,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "dodge": 1,
+    "armor_bash": 33,
+    "armor_cut": 50,
+    "vision_day": 35,
+    "vision_night": 10,
+    "harvest": "zombie_kevlar",
+    "special_attacks": [
+      {
+        "id": "slam",
+        "cooldown": 12,
+        "damage_max_instance": [
+          {
+            "damage_type": "bash",
+            "amount": 35
+          }
+        ]
+      },
+      [
+        "LONGSWIPE",
+        20
+      ],
+      [
+        "SMASH",
+        20
+      ]
+    ],
+    "death_drops": "mon_zombie_kevlar_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_kevlar_2",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "ABSORBS",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_military_pilot",
+    "type": "MONSTER",
+    "name": {
+      "str": "僵尸军事飞行员"
+    },
+    "description": "一旦成为飞行员，它就穿着基本的军服，戴着飞行员太阳镜，戴着一顶看上去很结实的头盔。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE",
+      "HUMAN"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 113,
+    "speed": 85,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "light_green_green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_cut": 0,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "dodge": 1,
+    "armor_bash": 8,
+    "armor_cut": 5,
+    "vision_day": 35,
+    "vision_night": 5,
+    "harvest": "zombie",
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 5
+      },
+      [
+        "GRAB",
+        7
+      ],
+      [
+        "scratch",
+        20
+      ]
+    ],
+    "death_drops": "mon_zombie_military_pilot_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_military_pilot",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "ABSORBS",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "NOHEAD",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_bio_op",
+    "type": "MONSTER",
+    "name": {
+      "str": "僵尸生物操作员"
+    },
+    "description": "这名装甲士兵和增援士兵的仿生装置充满能量地发出噼啪声。更糟的是，它似乎还记得自己的训练。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE",
+      "HUMAN"
+    ],
+    "diff": 5,
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 150,
+    "speed": 95,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "red_cyan",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 7,
+    "melee_dice": 3,
+    "melee_dice_sides": 6,
+    "melee_damage": [
+      {
+        "damage_type": "electric",
+        "amount": 4
+      },
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "melee_cut": 0,
+    "dodge": 3,
+    "armor_bash": 13,
+    "armor_cut": 18,
+    "vision_day": 50,
+    "vision_night": 3,
+    "luminance": 4,
+    "harvest": "CBM_OP",
+    "special_attacks": [
+      [
+        "BIO_OP_TAKEDOWN",
+        20
+      ]
+    ],
+    "special_when_hit": [
+      "ZAPBACK",
+      75
+    ],
+    "death_drops": "mon_zombie_bio_op_death_drops",
+    "burn_into": "mon_zombie_bio_op",
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "ABSORBS",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "ACIDPROOF",
+      "ELECTRIC",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_survivor_elite",
+    "type": "MONSTER",
+    "name": {
+      "str": "老兵幸存者僵尸"
+    },
+    "description": "这个僵尸曾经是一个像你一样的幸存者，而且是一个很好的幸存者。不幸的是，他们没有做到，尽管定制，重装甲件，他们穿和装备，他们仍然拖着。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "copy-from": "mon_sflesh_zombie_survivor",
+    "color": "light_red_green",
+    "armor_bash": 18,
+    "armor_cut": 25,
+    "death_drops": "mon_zombie_survivor_elite_death_drops"
+  },
+  {
+    "id": "mon_sflesh_zombie_acidic",
+    "type": "MONSTER",
+    "name": {
+      "str": "酸性僵尸"
+    },
+    "description": "一个病态的死人。它的皮肤看起来特别薄，有一种粘稠的黄色液体流过清晰可见的静脉。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE",
+      "HUMAN"
+    ],
+    "diff": 5,
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 81,
+    "speed": 80,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "light_gray_yellow",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 3,
+    "melee_dice": 2,
+    "melee_dice_sides": 3,
+    "melee_cut": 0,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "armor_bash": 3,
+    "dodge": 1,
+    "vision_night": 3,
+    "harvest": "zombie",
+    "special_attacks": [
+      [
+        "ACID_BARF",
+        10
+      ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "ACID",
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_acidic",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "ABSORBS",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "ACIDPROOF",
+      "ACID_BLOOD",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_corrosive",
+    "type": "MONSTER",
+    "name": {
+      "str": "腐蚀性僵尸"
+    },
+    "description": "这个身体已经膨胀到巨大的比例，但仍然设法保持自己与半凝固酸在其臃肿的身体。它笨拙地四处移动，但会用大量的酸攻击。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE",
+      "HUMAN"
+    ],
+    "diff": 15,
+    "volume": "92500 ml",
+    "weight": "120 kg",
+    "hp": 175,
+    "speed": 75,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "yellow_white",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 1,
+    "melee_dice": 1,
+    "melee_dice_sides": 6,
+    "melee_cut": 0,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "armor_bash": 13,
+    "armor_cut": 2,
+    "armor_stab": 12,
+    "vision_night": 3,
+    "luminance": 0,
+    "harvest": "zombie",
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 5,
+        "move_cost": 50,
+        "gun_type": "acid_spit",
+        "fake_skills": [
+          [
+            "gun",
+            8
+          ],
+          [
+            "rifle",
+            8
+          ]
+        ],
+        "fake_dex": 8,
+        "fake_per": 8,
+        "require_targeting_player": false,
+        "description": "腐蚀性的僵尸吐出一团血酸！",
+        "ranges": [
+          [
+            2,
+            10,
+            "DEFAULT"
+          ]
+        ]
+      },
+      [
+        "ACID_BARF",
+        5
+      ]
+    ],
+    "special_when_hit": [
+      "ACIDSPLASH",
+      100
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "ACID",
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_corrosive",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "ABSORBS",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "ACIDPROOF",
+      "ACID_BLOOD",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_wretched",
+    "type": "MONSTER",
+    "name": {
+      "str": "可怜的呕吐者"
+    },
+    "description": "一具堕落的尸体，蹒跚而行。几堆垃圾和废料已经被整合到它的皮肤里，伤口周围散发着黑色黏液的气味。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE",
+      "HUMAN"
+    ],
+    "diff": 2,
+    "volume": "62500 ml",
+    "weight": "84500 g",
+    "hp": 69,
+    "speed": 65,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "looks_like": "mon_zombie_acidic",
+    "color": "dark_gray_yellow",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 2,
+    "melee_dice": 2,
+    "melee_dice_sides": 2,
+    "melee_cut": 1,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "armor_bash": 3,
+    "vision_day": 14,
+    "harvest": "zombie",
+    "special_attacks": [
+      [
+        "ACID_BARF",
+        22
+      ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "ACID",
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_wretched",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "ABSORBS",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "ACIDPROOF",
+      "ACID_BLOOD",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_dog",
+    "type": "MONSTER",
+    "name": {
+      "str": "僵尸狗"
+    },
+    "description": "狗的畸形的、有活力的尸体，一种强壮的野兽，很容易超过它的双腿朋友。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "dog",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE"
+    ],
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 56,
+    "speed": 105,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "d",
+    "color": "light_green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 1,
+    "melee_dice_sides": 6,
+    "melee_cut": 2,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "cut"
+      }
+    ],
+    "dodge": 1,
+    "vision_night": 4,
+    "armor_bash": 6,
+    "harvest": "zombie",
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 5
+      }
+    ],
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_dog",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_dog_skeleton",
+    "type": "MONSTER",
+    "name": {
+      "str": "骨瘦如柴的狗"
+    },
+    "description": "这只曾经的犬科动物已经蜕皮，露出融合了骨头和肋骨的甲壳。完全没有肉，这套骨骼的行军服似乎是由一个静脉和肌腱网控制的，这些血管和肌腱发出闪烁的黑色黏液。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "dog",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE"
+    ],
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 15,
+    "speed": 100,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "bone"
+    ],
+    "symbol": "d",
+    "color": "white",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 1,
+    "melee_dice_sides": 9,
+    "melee_cut": 6,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "cut"
+      }
+    ],
+    "dodge": 3,
+    "armor_bash": 3,
+    "armor_cut": 15,
+    "armor_stab": 30,
+    "armor_acid": 3,
+    "vision_night": 3,
+    "harvest": "mr_bones",
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 5
+      }
+    ],
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_dog_skeleton",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "ABSORBS",
+      "NO_BREATHE",
+      "HARDTOSHOOT",
+      "REVIVES",
+      "POISON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_dog_zombie_cop",
+    "type": "MONSTER",
+    "name": {
+      "str": "Z-9型"
+    },
+    "description": "执法中使用的德国牧羊犬的僵尸版本。它变形的身体被一个保护性的凯夫拉安全带包裹着。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "dog",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE"
+    ],
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 53,
+    "speed": 105,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "d",
+    "color": "blue",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 5,
+    "melee_dice": 2,
+    "melee_dice_sides": 5,
+    "melee_cut": 2,
+    "melee_damage": [
+      {
+        "amount": 1,
+        "damage_type": "bash"
+      },
+      {
+        "amount": 1,
+        "damage_type": "cut"
+      }
+    ],
+    "dodge": 1,
+    "armor_bash": 9,
+    "armor_cut": 6,
+    "vision_day": 50,
+    "vision_night": 4,
+    "harvest": "zombie",
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 5
+      }
+    ],
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [
+        [
+          "dog_cop",
+          40
+        ]
+      ]
+    },
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_dog_zombie_cop",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_dog_zombie_rot",
+    "type": "MONSTER",
+    "name": {
+      "str": "罗特韦勒"
+    },
+    "description": "刺鼻的气味伴随着这具狗的尸体。它的全身覆盖着一连串的脉冲状囊肿和粘液滴状溃疡。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "dog",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE"
+    ],
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 30,
+    "speed": 105,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "d",
+    "color": "yellow",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 1,
+    "melee_dice": 1,
+    "melee_dice_sides": 4,
+    "melee_cut": 2,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "cut"
+      }
+    ],
+    "armor_bash": 3,
+    "dodge": 1,
+    "vision_day": 30,
+    "vision_night": 4,
+    "harvest": "zombie",
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 2,
+        "accuracy": 4,
+        "no_infection_chance": 12
+      }
+    ],
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_dog_zombie_rot",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zolf",
+    "type": "MONSTER",
+    "name": {
+      "str": "冷酷的咆哮者"
+    },
+    "description": "僵尸狼。它的嘴上渗出一种黑色物质，覆盖着看起来凶恶的白色尖牙。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "dog",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE"
+    ],
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 60,
+    "speed": 116,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "w",
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 5,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_cut": 4,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "cut"
+      }
+    ],
+    "armor_bash": 3,
+    "dodge": 2,
+    "vision_night": 5,
+    "harvest": "zombie_fur",
+    "special_attacks": [
+      [
+        "HOWL",
+        10
+      ]
+    ],
+    "anger_triggers": [
+      "PLAYER_CLOSE",
+      "HURT"
+    ],
+    "fear_triggers": [
+      "FIRE"
+    ],
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zolf",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "KEENNOSE",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombear",
+    "type": "MONSTER",
+    "name": {
+      "str": "僵尸熊"
+    },
+    "description": "这只黑熊的眼睛里渗出黑色的油状液体，它的肉被撕破并留下疤痕。它一边走一边洗牌。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "dog",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE"
+    ],
+    "volume": "92500 ml",
+    "weight": "120 kg",
+    "hp": 225,
+    "speed": 120,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "B",
+    "color": "green",
+    "aggression": 50,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 4,
+    "melee_dice_sides": 6,
+    "melee_cut": 6,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "cut"
+      }
+    ],
+    "dodge": 2,
+    "armor_bash": 5,
+    "armor_cut": 2,
+    "vision_day": 30,
+    "vision_night": 5,
+    "harvest": "zombie_fur",
+    "anger_triggers": [
+      "PLAYER_CLOSE",
+      "HURT"
+    ],
+    "fear_triggers": [
+      "FIRE"
+    ],
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombear",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombie_pig",
+    "type": "MONSTER",
+    "name": {
+      "str": "溃烂的野猪"
+    },
+    "description": "从野猪身上下来的一种杂食性僵尸。现在到处都是黑色的黏液，而不是泥。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "dog",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 69,
+    "speed": 70,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "p",
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 5,
+    "melee_cut": 4,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "cut"
+      }
+    ],
+    "armor_bash": 3,
+    "dodge": 1,
+    "vision_day": 50,
+    "harvest": "zombie_leather",
+    "path_settings": {
+      "max_dist": 10
+    },
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 2
+      }
+    ],
+    "anger_triggers": [
+      "PLAYER_WEAK",
+      "PLAYER_CLOSE"
+    ],
+    "fear_triggers": [
+      "FIRE"
+    ],
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_pig",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "KEENNOSE",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zombeaver",
+    "type": "MONSTER",
+    "name": {
+      "str": "僵尸海狸"
+    },
+    "description": "这只长着墙眼的野兽侧面有一个大伤口，从中可以看到肋骨上有一些肉。这种可憎的东西最显著的特征是它张开的嘴上有巨大的门牙，奇怪的黑色黏液正从嘴里渗出。似乎它对树木不再感兴趣了，正在寻找一些温暖的肉来喂养。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "dog",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE"
+    ],
+    "volume": "20250 ml",
+    "weight": "20000 g",
+    "hp": 38,
+    "speed": 80,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "r",
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 1,
+    "melee_dice": 1,
+    "melee_dice_sides": 6,
+    "melee_cut": 6,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "cut"
+      }
+    ],
+    "armor_bash": 3,
+    "dodge": 2,
+    "vision_day": 30,
+    "vision_night": 5,
+    "harvest": "zombie_leather",
+    "anger_triggers": [
+      "PLAYER_CLOSE",
+      "HURT"
+    ],
+    "fear_triggers": [
+      "FIRE"
+    ],
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombeaver",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY",
+      "SWIMS"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zoose",
+    "type": "MONSTER",
+    "name": {
+      "str": "尖角恐怖"
+    },
+    "description": "这只曾经雄伟的麋鹿已经被感染致死。闪亮的绿色蜻蜓成群结队地聚集在大片化脓的皮肤上，皮肤已经脱落，剩下的皮毛是黑色的，上面布满了坏死的分泌物。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "horse",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE"
+    ],
+    "volume": "92500 ml",
+    "weight": "120 kg",
+    "hp": 263,
+    "speed": 140,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "M",
+    "color": "green",
+    "aggression": 50,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 3,
+    "melee_dice_sides": 4,
+    "melee_cut": 0,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "bash"
+      }
+    ],
+    "armor_bash": 9,
+    "armor_cut": 4,
+    "vision_day": 30,
+    "vision_night": 5,
+    "harvest": "zombie_leather",
+    "anger_triggers": [
+      "PLAYER_CLOSE",
+      "HURT"
+    ],
+    "fear_triggers": [
+      "FIRE"
+    ],
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zoose",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY"
+    ]
+  },
+  {
+    "id": "mon_sflesh_zougar",
+    "type": "MONSTER",
+    "name": {
+      "str": "腐烂的庞德"
+    },
+    "description": "一种外表正常的美洲狮，只是它的后腿肿胀，眼睛被黑色的粘液鼓起。\n膜状静脉覆盖了它的大部分表面，在不断跳动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "dog",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 81,
+    "speed": 126,
+    "emit_fields": [
+      "emit_sflesh_fleshling_maybe"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "C",
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 5,
+    "melee_cut": 6,
+    "melee_damage": [
+      {
+        "amount": 2,
+        "damage_type": "cut"
+      }
+    ],
+    "dodge": 2,
+    "armor_bash": 4,
+    "vision_day": 30,
+    "vision_night": 10,
+    "harvest": "zombie_fur",
+    "special_attacks": [
+      {
+        "type": "leap",
+        "cooldown": 10,
+        "max_range": 5
+      }
+    ],
+    "anger_triggers": [
+      "PLAYER_CLOSE",
+      "HURT"
+    ],
+    "fear_triggers": [
+      "FIRE"
+    ],
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zougar",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "WARM",
+      "KEENNOSE",
+      "GOODHEARING",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY"
+    ]
+  }
+]

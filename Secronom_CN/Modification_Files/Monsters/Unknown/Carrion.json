@@ -1,0 +1,246 @@
+[
+  {
+    "//": "Undead creatures that I've made with subtle inspiration to Scorn.",
+    "id": "mon_carrion",
+    "looks_like": "mon_twisted_body",
+    "type": "MONSTER",
+    "name": {
+      "str": "腐肉"
+    },
+    "description": "反复无常和可怕的，一个来自另一个世界毁灭维度的祸害。它没有明显的外观和严重畸形，但注意到作为一个坏死的皮肤肿块。",
+    "default_faction": "carrion",
+    "bodytype": "migo",
+    "species": [
+      "UNKNOWN"
+    ],
+    "volume": "92500 ml",
+    "weight": "120000 g",
+    "hp": 135,
+    "speed": 80,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "C",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 4,
+    "melee_dice_sides": 6,
+    "melee_cut": 1,
+    "dodge": 1,
+    "armor_bash": 4,
+    "armor_cut": 1,
+    "armor_stab": 1,
+    "armor_acid": 1,
+    "vision_day": 10,
+    "vision_night": 3,
+    "harvest": "zombie",
+    "path_settings": {
+      "max_dist": 5
+    },
+    "special_attacks": [
+      [
+        "SHRIEK",
+        32
+      ],
+      {
+        "type": "bite",
+        "cooldown": 5,
+        "min_mul": 1
+      },
+      [
+        "GRAB",
+        20
+      ]
+    ],
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "SWARMS",
+      "REVIVES",
+      "PUSH_MON",
+      "GRABS"
+    ]
+  },
+  {
+    "id": "mon_carrion_dismantler",
+    "copy-from": "mon_carrion",
+    "looks_like": "mon_twisted_body",
+    "type": "MONSTER",
+    "name": {
+      "str": "腐肉拆卸机"
+    },
+    "description": "杂草丛生的骨刃崇拜着这具腐肉的四肢，它在阳光下闪闪发光。更强壮，更坚韧，但比正常的更迟钝。",
+    "hp": 140,
+    "speed": 70,
+    "color": "light_red",
+    "melee_skill": 6,
+    "melee_dice": 1,
+    "melee_dice_sides": 6,
+    "melee_cut": 5,
+    "dodge": 1,
+    "armor_bash": 4,
+    "armor_cut": 1,
+    "armor_stab": 2,
+    "armor_acid": 1,
+    "special_attacks": [
+      [
+        "SHRIEK",
+        32
+      ],
+      {
+        "type": "bite",
+        "cooldown": 5,
+        "min_mul": 1
+      },
+      [
+        "GRAB",
+        33
+      ],
+      {
+        "id": "scratch",
+        "damage_max_instance": [
+          {
+            "damage_type": "cut",
+            "amount": 22
+          }
+        ]
+      }
+    ],
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "SWARMS",
+      "REVIVES",
+      "PUSH_MON"
+    ]
+  },
+  {
+    "id": "mon_carrion_orifice",
+    "copy-from": "mon_carrion",
+    "looks_like": "mon_twisted_body",
+    "type": "MONSTER",
+    "name": {
+      "str": "腐肉孔"
+    },
+    "description": "这具腐肉比其他的要大得多，它的口周围散落着大大的、张开的洞，因为口中衬着腐烂的骨质。",
+    "volume": "112500 ml",
+    "weight": "134000 g",
+    "hp": 185,
+    "speed": 60,
+    "color": "red",
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "melee_cut": 4,
+    "dodge": 1,
+    "armor_bash": 5,
+    "armor_cut": 2,
+    "armor_stab": 1,
+    "armor_acid": 1,
+    "special_attacks": [
+      [
+        "SHRIEK",
+        16
+      ],
+      {
+        "type": "bite",
+        "cooldown": 4
+      },
+      [
+        "GRAB",
+        22
+      ]
+    ],
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "SWARMS",
+      "PUSH_MON"
+    ]
+  },
+  {
+    "id": "mon_carrion_alpha",
+    "copy-from": "mon_carrion",
+    "looks_like": "mon_twisted_body",
+    "type": "MONSTER",
+    "name": {
+      "str": "腐肉监工"
+    },
+    "description": "一个更可怕的外观和一个令人厌恶的庞大的身体与各种各样的四肢和附属物，这腐肉领导包。当它主要的“眼睛”急切地掠过附近时，它的皮肤呈血丝色起伏。",
+    "volume": "176000 ml",
+    "weight": "160000 g",
+    "hp": 300,
+    "speed": 70,
+    "color": "red_white",
+    "melee_skill": 8,
+    "melee_dice": 3,
+    "melee_dice_sides": 3,
+    "melee_cut": 3,
+    "dodge": 1,
+    "armor_bash": 8,
+    "armor_cut": 3,
+    "armor_stab": 1,
+    "armor_acid": 1,
+    "vision_day": 30,
+    "vision_night": 9,
+    "special_attacks": [
+      [
+        "SHRIEK",
+        16
+      ],
+      {
+        "type": "bite",
+        "cooldown": 4
+      },
+      [
+        "GRAB",
+        22
+      ]
+    ],
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "PUSH_MON"
+    ]
+  }
+]

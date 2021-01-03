@@ -1,0 +1,1769 @@
+[
+  {
+    "//": "All crimson horrors are immune to stun and are resistant to impact damage, so beating them with blunt weapons aren't effective.",
+    "id": "mon_sflesh_surface_spawner",
+    "type": "MONSTER",
+    "name": {
+      "str": "眼芽"
+    },
+    "description": "一只眼球从地上来来回回地出现，偶尔会窥视周围。你可能想戳它。",
+    "default_faction": "secro_flesh",
+    "bodytype": "blob",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "4000 ml",
+    "weight": "1000 g",
+    "hp": 10,
+    "emit_fields": [
+      "emit_flesh_biome_immunity"
+    ],
+    "speed": 80,
+    "material": [
+      "flesh",
+      "bone"
+    ],
+    "symbol": "⭗",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 0,
+    "melee_dice": 0,
+    "melee_dice_sides": 0,
+    "melee_cut": 0,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_surface_spawner_target"
+        },
+        "//": "Since the player is walking on the flesh, this spell's cooldown should be VERY high.",
+        "cooldown": 225,
+        "monster_message": "%1$s扭动着，发出深红的恐怖来对抗%3$s！</color>"
+      }
+    ],
+    "harvest": "exempt",
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "STUN_IMMUNE",
+      "IMMOBILE"
+    ]
+  },
+  {
+    "id": "mon_sflesh_tendril",
+    "type": "MONSTER",
+    "name": {
+      "str": "肉卷须"
+    },
+    "description": "从地上长出的一条粗大的矿脉。它的顶端有一个带刺的鞭子。",
+    "default_faction": "secro_flesh",
+    "bodytype": "snake",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 45,
+    "speed": 80,
+    "material": [
+      "flesh",
+      "bone"
+    ],
+    "symbol": "⟆",
+    "emit_fields": [
+      "emit_flesh_biome_immunity"
+    ],
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 2,
+    "melee_cut": 4,
+    "armor_bash": 8,
+    "armor_stab": 2,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_tendril_lace"
+        },
+        "cooldown": 15,
+        "monster_message": "<color_light_red>%1$s斜杠%3$s！</color>"
+      }
+    ],
+    "harvest": "exempt",
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "NOHEAD",
+      "STUN_IMMUNE",
+      "IMMOBILE"
+    ]
+  },
+  {
+    "id": "mon_sflesh_jaw",
+    "type": "MONSTER",
+    "name": {
+      "str": "下颚肉"
+    },
+    "description": "一种形状奇特的孔口，是肉的一种生长物，周围有成排的骨头。它的小而有力的下颚可以使目标固定不动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "blob",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 45,
+    "emit_fields": [
+      "emit_flesh_biome_immunity"
+    ],
+    "speed": 80,
+    "material": [
+      "flesh",
+      "bone"
+    ],
+    "symbol": "☀",
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_cut": 2,
+    "armor_bash": 6,
+    "armor_stab": 4,
+    "special_attacks": [
+      {
+        "cooldown": 10,
+        "damage_max_instance": [
+          {
+            "amount": 9,
+            "armor_multiplier": 0.2,
+            "damage_type": "bash"
+          },
+          {
+            "amount": 3,
+            "armor_multiplier": 0.6,
+            "damage_type": "stab"
+          }
+        ],
+        "effects": [
+          {
+            "bp": "torso",
+            "duration": 1000,
+            "id": "grabbed"
+          }
+        ],
+        "type": "bite"
+      }
+    ],
+    "harvest": "exempt",
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "STUN_IMMUNE",
+      "NOHEAD",
+      "IMMOBILE"
+    ]
+  },
+  {
+    "id": "mon_sflesh_entrance",
+    "type": "MONSTER",
+    "name": {
+      "str": "脉孔"
+    },
+    "description": "一种从肉中伸出的大嘴，伴随着从侧面伸出的许多粘性卷须。",
+    "default_faction": "secro_flesh",
+    "bodytype": "blob",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "420 L",
+    "weight": "800000 g",
+    "hp": 450,
+    "speed": 80,
+    "material": [
+      "flesh",
+      "bone"
+    ],
+    "symbol": "☀",
+    "color": "red_magenta",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 8,
+    "melee_dice": 4,
+    "melee_dice_sides": 8,
+    "melee_cut": 4,
+    "armor_bash": 18,
+    "armor_cut": 8,
+    "armor_stab": 12,
+    "emit_fields": [
+      "emit_flesh_biome_immunity"
+    ],
+    "special_attacks": [
+      {
+        "cooldown": 10,
+        "damage_max_instance": [
+          {
+            "amount": 18,
+            "armor_multiplier": 0.2,
+            "damage_type": "bash"
+          },
+          {
+            "amount": 6,
+            "armor_multiplier": 0.6,
+            "damage_type": "stab"
+          }
+        ],
+        "effects": [
+          {
+            "bp": "torso",
+            "duration": 1000,
+            "id": "grabbed"
+          }
+        ],
+        "type": "bite"
+      }
+    ],
+    "harvest": "exempt",
+    "death_drops": "mon_sflesh_entrance_death_drop",
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "NOHEAD",
+      "STUN_IMMUNE",
+      "IMMOBILE"
+    ]
+  },
+  {
+    "//": "Destroying the sack is better than letting it hatch (killing itself). Destroying makes it spawn 2 parasytes, but if it hatches, it can spawn up to 5 parasytes and will spawn more if you don't bash the hatched flesh sack.",
+    "id": "mon_sflesh_sack",
+    "type": "MONSTER",
+    "name": {
+      "str": "肉袋"
+    },
+    "description": "附着在附近地形上的一种球状大脓液。不同于它张开的嘴，它以恒定的速度搏动，好像它要孵化。。。",
+    "default_faction": "secro_flesh",
+    "bodytype": "blob",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "92500 ml",
+    "weight": "120000 g",
+    "hp": 25,
+    "speed": 85,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "◈",
+    "emit_fields": [
+      "emit_flesh_sack_blind",
+      "emit_flesh_biome_immunity"
+    ],
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_cut": 6,
+    "armor_bash": 14,
+    "armor_cut": 4,
+    "armor_stab": 10,
+    "vision_day": 22,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_sack_target"
+        },
+        "cooldown": 0,
+        "monster_message": "<color_light_red>%1$s爆发，产生副细胞！</color>"
+      }
+    ],
+    "death_drops": "mon_sflesh_sack_death_drop",
+    "harvest": "exempt",
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "STUN_IMMUNE",
+      "NOHEAD",
+      "IMMOBILE",
+      "PACIFIST"
+    ]
+  },
+  {
+    "//": "Face hugger from the alien movie!",
+    "id": "mon_sflesh_parasyte",
+    "type": "MONSTER",
+    "name": {
+      "str": "副细胞"
+    },
+    "description": "尽管这只蝎子和蜘蛛的杂交体最近刚从麻袋里蹦出来，但它体弱而敏捷，跃进猎物中，显示出捕食的本性。",
+    "default_faction": "secro_flesh",
+    "bodytype": "spider",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "2000 ml",
+    "weight": "200 g",
+    "hp": 15,
+    "speed": 70,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⚵",
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "emit_fields": [
+      "emit_flesh_biome_immunity"
+    ],
+    "melee_skill": 2,
+    "melee_dice": 1,
+    "melee_dice_sides": 2,
+    "melee_cut": 2,
+    "dodge": 4,
+    "harvest": "zombie_meatslug",
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "STUN_IMMUNE",
+      "CLIMBS",
+      "PATH_AVOID_DANGER_2"
+    ]
+  },
+  {
+    "//": "Vein that deals cutting damage.",
+    "id": "mon_sflesh_vbeast",
+    "type": "MONSTER",
+    "name": {
+      "str": "脉兽"
+    },
+    "description": "一簇静脉形成可怕的、令人厌恶的蠕动。厚厚的膜状藤蔓状卷须从它跳动的核心伸出。",
+    "default_faction": "secro_flesh",
+    "bodytype": "migo",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "92500 ml",
+    "weight": "120000 g",
+    "hp": 140,
+    "emit_fields": [
+      "emit_flesh_biome_immunity"
+    ],
+    "speed": 85,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⨳",
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 0,
+    "melee_dice_sides": 4,
+    "melee_cut": 6,
+    "armor_bash": 10,
+    "armor_cut": 3,
+    "armor_stab": 8,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_vbeast_wlace"
+        },
+        "cooldown": 28,
+        "monster_message": "%1$s把卷须扫到%3$s上！</color>"
+      }
+    ],
+    "harvest": "exempt",
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SMELLS",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "STUN_IMMUNE",
+      "CLIMBS"
+    ]
+  },
+  {
+    "//": "Vein that deals bashing damage.",
+    "id": "mon_sflesh_vrumbler",
+    "type": "MONSTER",
+    "name": {
+      "str": "隆隆声"
+    },
+    "description": "密密麻麻的一组血管组成了一个爬行的梦魇。它的优势肢可以看到巨大的、聚集的核心，卷须似乎聚集在它周围。",
+    "default_faction": "secro_flesh",
+    "bodytype": "migo",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "92500 ml",
+    "weight": "120000 g",
+    "hp": 185,
+    "emit_fields": [
+      "emit_flesh_biome_immunity"
+    ],
+    "speed": 85,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⩮",
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 6,
+    "melee_dice_sides": 4,
+    "melee_cut": 0,
+    "armor_bash": 10,
+    "armor_cut": 3,
+    "armor_stab": 8,
+    "special_attacks": [
+      [
+        "flesh_vrumbler_thrash",
+        24
+      ]
+    ],
+    "harvest": "exempt",
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SMELLS",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "STUN_IMMUNE",
+      "CLIMBS"
+    ]
+  },
+  {
+    "//": "Like flesh sacks, but destroying or letting it hatch results the same.",
+    "id": "mon_sflesh_taken",
+    "type": "MONSTER",
+    "name": {
+      "str": "拿"
+    },
+    "description": "一种膜状的果肉荚，充满了腐烂的黄色液体。悬挂在天花板上的生物似乎被困在里面，但不知是什么。",
+    "default_faction": "secro_flesh",
+    "bodytype": "blob",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "92500 ml",
+    "weight": "120000 g",
+    "hp": 35,
+    "speed": 85,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⚱",
+    "emit_fields": [
+      "emit_flesh_taken_blind",
+      "emit_flesh_biome_immunity"
+    ],
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_cut": 6,
+    "armor_bash": 20,
+    "armor_cut": 8,
+    "armor_stab": 17,
+    "vision_day": 22,
+    "vision_night": 22,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_taken_target"
+        },
+        "cooldown": 10,
+        "monster_message": "<color_light_red>爆发，释放它的内容！</color>"
+      }
+    ],
+    "death_drops": "mon_sflesh_taken_death_drop",
+    "harvest": "exempt",
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "STUN_IMMUNE",
+      "IMMOBILE",
+      "NOHEAD",
+      "PACIFIST"
+    ]
+  },
+  {
+    "//": "This is the boss. It regenerates super fast, converts nearby terrains into biohazards, calls out new takens and will try to devour the target by suppressing them with the walls! Killing it won't bring the flesh terrains back to normal, but it is the queen, so crimson horrors will cease to exist... hopefully.",
+    "id": "mon_sflesh_flesh",
+    "type": "MONSTER",
+    "name": "flesh",
+    "description": "一块巨大的肉，在微弱的天鹅绒般的色调中跳动。厚厚的，众多的静脉穿过墙壁，在每一个跳动导致周围的肉波动。",
+    "default_faction": "secro_flesh",
+    "bodytype": "blob",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "100000 L",
+    "weight": "533525 kg",
+    "hp": 2200,
+    "speed": 85,
+    "material": [
+      "flesh",
+      "bone"
+    ],
+    "symbol": "⨷",
+    "color": "red_magenta",
+    "aggression": 100,
+    "morale": 100,
+    "emit_fields": [
+      "emit_flesh_biome_immunity",
+      "emit_down_immunity"
+    ],
+    "melee_skill": 10,
+    "melee_dice": 10,
+    "melee_dice_sides": 8,
+    "melee_cut": 0,
+    "armor_bash": 24,
+    "armor_cut": 12,
+    "armor_stab": 20,
+    "vision_day": 30,
+    "vision_night": 30,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_flesh_target"
+        },
+        "cooldown": 12,
+        "monster_message": "%1$s发抖！</color>"
+      }
+    ],
+    "regenerates": 20,
+    "death_drops": "mon_sflesh_flesh_death_drop",
+    "harvest": "meatslug",
+    "death_function": [
+      "SPLATTER",
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "STUN_IMMUNE",
+      "NOHEAD",
+      "IMMOBILE",
+      "PACIFIST",
+      "QUEEN"
+    ]
+  },
+  {
+    "id": "mon_sflesh_taken_potent",
+    "type": "MONSTER",
+    "name": {
+      "str": "拿"
+    },
+    "description": "一种膜状的果肉荚，充满了腐烂的黄色液体。从肉中发芽的生物，似乎被困在里面，但不知道它是什么。",
+    "default_faction": "secro_flesh",
+    "bodytype": "blob",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "92500 ml",
+    "weight": "120000 g",
+    "hp": 35,
+    "speed": 85,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⚱",
+    "emit_fields": [
+      "emit_flesh_taken_potent_blind",
+      "emit_flesh_biome_immunity"
+    ],
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_cut": 6,
+    "armor_bash": 20,
+    "armor_cut": 8,
+    "armor_stab": 17,
+    "vision_day": 22,
+    "vision_night": 22,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_taken_target"
+        },
+        "cooldown": 5,
+        "monster_message": "<color_light_red>爆发，释放它的内容！</color>"
+      }
+    ],
+    "death_drops": "mon_sflesh_taken_death_drop",
+    "harvest": "exempt",
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "STUN_IMMUNE",
+      "NOHEAD",
+      "IMMOBILE",
+      "PACIFIST"
+    ]
+  },
+  {
+    "//": "These walls will make obstacles as long as they live. They remain for 10-20 turns!",
+    "id": "mon_sflesh_flesh_wall",
+    "type": "MONSTER",
+    "name": {
+      "str": "肉壁"
+    },
+    "description": "被肉控制的厚厚的肉块。它慢慢地从墙上伸出，在路上形成肉质的屏障。",
+    "default_faction": "secro_flesh",
+    "bodytype": "blob",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "10000 L",
+    "weight": "23750 kg",
+    "hp": 200,
+    "speed": 10,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "☒",
+    "emit_fields": [
+      "emit_flesh_biome_immunity",
+      "emit_flesh_wall_limitation",
+      "emit_down_immunity"
+    ],
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_cut": 6,
+    "armor_bash": 30,
+    "armor_cut": 10,
+    "armor_stab": 25,
+    "vision_day": 30,
+    "vision_night": 30,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_wall_ing_target"
+        },
+        "cooldown": 5,
+        "monster_message": "%1$s发抖！</color>"
+      }
+    ],
+    "harvest": "exempt",
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "NOHEAD",
+      "STUN_IMMUNE",
+      "PACIFIST"
+    ]
+  },
+  {
+    "//": "A boss that resides in cities. It has weaker health and regenerates lesser, but it can attack directly with tentacles, which deals moderate to massive damage.",
+    "id": "mon_sflesh_flesh_city",
+    "looks_like": "mon_sflesh_flesh",
+    "type": "MONSTER",
+    "name": {
+      "str": "肉"
+    },
+    "description": "一块巨大的肉，在微弱的天鹅绒般的色调中跳动。厚厚的触须穿过墙壁，延伸到地面更远，在每一个有节奏的节拍导致所有相连的静脉脉搏。",
+    "default_faction": "secro_flesh",
+    "bodytype": "blob",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "75000 L",
+    "weight": "423525 kg",
+    "hp": 1100,
+    "speed": 85,
+    "material": [
+      "flesh",
+      "bone"
+    ],
+    "symbol": "⨷",
+    "color": "red_magenta",
+    "aggression": 100,
+    "morale": 100,
+    "emit_fields": [
+      "emit_flesh_biome_immunity",
+      "emit_down_immunity"
+    ],
+    "melee_skill": 10,
+    "melee_dice": 10,
+    "melee_dice_sides": 8,
+    "melee_cut": 0,
+    "armor_bash": 24,
+    "armor_cut": 12,
+    "armor_stab": 20,
+    "vision_day": 30,
+    "vision_night": 30,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_flesh_city_target"
+        },
+        "cooldown": 16,
+        "monster_message": "%1$s颤抖着，用它的触角敲打着一切！\n%1$s的卷须刺穿%3$s！</color>"
+      }
+    ],
+    "regenerates": 10,
+    "death_drops": "mon_sflesh_flesh_death_drop",
+    "harvest": "meatslug",
+    "death_function": [
+      "SPLATTER",
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "STUN_IMMUNE",
+      "NOHEAD",
+      "IMMOBILE",
+      "PACIFIST",
+      "QUEEN"
+    ]
+  },
+  {
+    "//": "Less threatening than previous variants. Can only perform a tentacle attack.",
+    "id": "mon_sflesh_flesh_weak",
+    "type": "MONSTER",
+    "name": "flesh",
+    "description": "一块巨大的肉，在微弱的天鹅绒般的色调中跳动。几条静脉从它的身体突出，与周围的墙壁相结合。",
+    "default_faction": "secro_flesh",
+    "bodytype": "blob",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "80000 L",
+    "weight": "221500 kg",
+    "hp": 700,
+    "speed": 85,
+    "material": [
+      "flesh",
+      "bone"
+    ],
+    "symbol": "⨷",
+    "color": "red_magenta",
+    "aggression": 100,
+    "morale": 100,
+    "emit_fields": [
+      "emit_flesh_biome_immunity",
+      "emit_down_immunity"
+    ],
+    "melee_skill": 10,
+    "melee_dice": 10,
+    "melee_dice_sides": 8,
+    "melee_cut": 0,
+    "armor_bash": 16,
+    "armor_cut": 10,
+    "armor_stab": 12,
+    "vision_day": 30,
+    "vision_night": 30,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_flesh_weak_target"
+        },
+        "cooldown": 10,
+        "monster_message": "%1$s在%3$s点击打一只触手！</color>"
+      }
+    ],
+    "regenerates": 4,
+    "death_drops": "mon_sflesh_flesh_weak_death_drop",
+    "harvest": "meatslug",
+    "death_function": [
+      "SPLATTER",
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "STUN_IMMUNE",
+      "NOHEAD",
+      "IMMOBILE",
+      "PACIFIST",
+      "QUEEN"
+    ]
+  },
+  {
+    "//": "This one creates a wall once then dies!",
+    "id": "mon_sflesh_flesh_wall_city",
+    "type": "MONSTER",
+    "name": {
+      "str": "肉壁"
+    },
+    "description": "被肉控制的厚厚的肉块。它慢慢地从墙上伸出，在路上形成肉质的屏障。",
+    "default_faction": "secro_flesh",
+    "bodytype": "blob",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "10000 L",
+    "weight": "23750 kg",
+    "hp": 200,
+    "speed": 10,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "☒",
+    "emit_fields": [
+      "emit_flesh_biome_immunity",
+      "emit_flesh_wall_limitation",
+      "emit_down_immunity"
+    ],
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_cut": 6,
+    "armor_bash": 30,
+    "armor_cut": 10,
+    "armor_stab": 25,
+    "vision_day": 30,
+    "vision_night": 30,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_wall_city_ing_target"
+        },
+        "cooldown": 5,
+        "monster_message": "%1$s发抖！</color>"
+      }
+    ],
+    "harvest": "exempt",
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "NOHEAD",
+      "STUN_IMMUNE",
+      "PACIFIST"
+    ]
+  },
+  {
+    "//": "Killing this monster will split flesh zombie(s), up to 9 of them! (3x3 tile from the location)",
+    "id": "mon_sflesh_zombie_turret",
+    "type": "MONSTER",
+    "name": {
+      "str": "堆积腐肉"
+    },
+    "description": "一种巨大的肉，边缘有许多腐烂的尸体。滴血从僵尸的嘴里渗出。",
+    "default_faction": "secro_flesh",
+    "species": [
+      "SFLESH",
+      "ABERRATION",
+      "ZOMBIE"
+    ],
+    "diff": 2,
+    "volume": "300 L",
+    "weight": "3125 kg",
+    "hp": 300,
+    "speed": 105,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⧻",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 3,
+    "melee_dice_sides": 8,
+    "melee_cut": 2,
+    "grab_strength": 2,
+    "armor_bash": 14,
+    "harvest": "zombie",
+    "special_attacks": [
+      [
+        "GRAB",
+        1
+      ],
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_zombie_turret_target"
+        },
+        "cooldown": 12,
+        "monster_message": "<color_light_red>%1$s脉冲…</color>"
+      }
+    ],
+    "death_drops": "mon_sflesh_zombie_turret_death_drop",
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "IMMOBILE",
+      "PACIFIST",
+      "FILTHY"
+    ]
+  },
+  {
+    "//": "Veinstalks pop up randomly in fleshed locations, and if possible, converts nearby tiles into flesh. They sprout back (dies after a minute) so don't worry about them devouring your world.",
+    "id": "mon_sflesh_veinstalk",
+    "type": "MONSTER",
+    "name": {
+      "str": "脉茎"
+    },
+    "description": "从地上长出的大而肉质的卷须。它以一只占优势的眼睛倾斜着，摇摆着，偶尔会向一个特定的方向抽搐。",
+    "default_faction": "secro_flesh2",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "diff": 10,
+    "volume": "500 L",
+    "weight": "5250 kg",
+    "hp": 305,
+    "speed": 100,
+    "emit_fields": [
+      "emit_flesh_biome_immunity",
+      "emit_down_immunity",
+      "emit_veinstalk_limiter",
+      "emit_veinstalk_crawler"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⨕",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 10,
+    "melee_dice": 10,
+    "melee_dice_sides": 10,
+    "melee_cut": 0,
+    "armor_bash": 6,
+    "vision_day": 60,
+    "harvest": "zombie",
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_veinstalk_spread_target"
+        },
+        "cooldown": 10,
+        "monster_message": "%1$s剧烈抽搐…</color>"
+      }
+    ],
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "IMMOBILE",
+      "PACIFIST",
+      "FILTHY"
+    ]
+  },
+  {
+    "//": "Short-lived, harmless monster passively spawned by veinstalks, which then gets targeted for activation of its spell (incase nothing else is seen).",
+    "id": "mon_sflesh_veinstalk_crawly",
+    "type": "MONSTER",
+    "name": {
+      "str": "匍匐卷须",
+      "str_pl": "匍匐卷须"
+    },
+    "description": "一种浓密的触手从水面上爬出来。当它们到达极限时，它们就会收缩并回到下面。",
+    "default_faction": "secro_flesh",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "5 L",
+    "weight": "15 kg",
+    "hp": 15,
+    "speed": 100,
+    "emit_fields": [
+      "emit_flesh_biome_immunity",
+      "emit_down_immunity",
+      "emit_veinstalk_limiter"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⟆",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 10,
+    "melee_dice": 10,
+    "melee_dice_sides": 10,
+    "melee_cut": 0,
+    "armor_bash": 3,
+    "harvest": "zombie",
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "IMMOBILE",
+      "PACIFIST",
+      "ABSORBS"
+    ]
+  },
+  {
+    "//": "Small, random pieces of crap from infected creatures!",
+    "id": "mon_sflesh_fleshling_tiny",
+    "type": "MONSTER",
+    "name": {
+      "str": "肉身"
+    },
+    "description": "一小块肉，通过跳跃或滑动的方式在地上移动。被肉体所吸引。",
+    "default_faction": "secro_flesh2",
+    "bodytype": "blob",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "200 ml",
+    "weight": "30 g",
+    "hp": 10,
+    "speed": 75,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "◇",
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "emit_fields": [
+      "emit_flesh_biome_immunity"
+    ],
+    "melee_skill": 2,
+    "melee_dice": 1,
+    "melee_dice_sides": 2,
+    "melee_cut": 2,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_fleshling_tiny_devour"
+        },
+        "cooldown": 50,
+        "monster_message": "%1$s吞噬%3$s…</color>"
+      }
+    ],
+    "harvest": "exempt",
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "STUN_IMMUNE",
+      "ABSORBS",
+      "PACIFIST"
+    ]
+  },
+  {
+    "id": "mon_sflesh_fleshling_smol",
+    "type": "MONSTER",
+    "name": {
+      "str": "小肉块"
+    },
+    "description": "比篮球还大的一小块肉。会吃掉附近的任何东西。",
+    "default_faction": "secro_flesh2",
+    "bodytype": "blob",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "1250 ml",
+    "weight": "170 g",
+    "hp": 20,
+    "speed": 65,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "◈",
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "emit_fields": [
+      "emit_flesh_biome_immunity"
+    ],
+    "melee_skill": 3,
+    "melee_dice": 2,
+    "melee_dice_sides": 3,
+    "melee_cut": 3,
+    "harvest": "exempt",
+    "death_function": [
+      "MELT"
+    ],
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_fleshling_smol_devour"
+        },
+        "cooldown": 75,
+        "monster_message": "%1$s吞噬%3$s…</color>"
+      }
+    ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "STUN_IMMUNE",
+      "ABSORBS",
+      "PACIFIST"
+    ]
+  },
+  {
+    "id": "mon_sflesh_fleshling_med",
+    "type": "MONSTER",
+    "name": {
+      "str": "肉块"
+    },
+    "description": "一块比狗大的肉。会吃掉附近的任何东西。",
+    "default_faction": "secro_flesh2",
+    "bodytype": "blob",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "17000 ml",
+    "weight": "12050 g",
+    "hp": 40,
+    "speed": 55,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "◆",
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "emit_fields": [
+      "emit_flesh_biome_immunity"
+    ],
+    "melee_skill": 4,
+    "melee_dice": 3,
+    "melee_dice_sides": 4,
+    "melee_cut": 4,
+    "harvest": "exempt",
+    "death_function": [
+      "MELT"
+    ],
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_fleshling_med_devour"
+        },
+        "cooldown": 100,
+        "monster_message": "%1$s吞噬%3$s…</color>"
+      }
+    ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "STUN_IMMUNE",
+      "ABSORBS",
+      "PACIFIST"
+    ]
+  },
+  {
+    "id": "mon_sflesh_fleshling_big",
+    "type": "MONSTER",
+    "name": {
+      "str": "大肉块"
+    },
+    "description": "一大块比人还大的肉。会吃掉附近的任何东西。",
+    "default_faction": "secro_flesh2",
+    "bodytype": "blob",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "99500 ml",
+    "weight": "640000 g",
+    "hp": 80,
+    "speed": 45,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "●",
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "emit_fields": [
+      "emit_flesh_biome_immunity"
+    ],
+    "melee_skill": 5,
+    "melee_dice": 4,
+    "melee_dice_sides": 5,
+    "melee_cut": 5,
+    "harvest": "exempt",
+    "death_function": [
+      "MELT"
+    ],
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_fleshling_big_devour"
+        },
+        "cooldown": 125,
+        "monster_message": "%1$s吞噬%3$s…</color>"
+      }
+    ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "STUN_IMMUNE",
+      "ABSORBS",
+      "PACIFIST"
+    ]
+  },
+  {
+    "id": "mon_sflesh_fleshling_huge",
+    "type": "MONSTER",
+    "name": {
+      "str": "肉丘"
+    },
+    "description": "腐肉一种巨大的腐肉团，大如驼鹿。它的身体已经肿胀和伸展，似乎慢慢恶化，但它无尽的饥饿仍然是明显的运动。",
+    "default_faction": "secro_flesh2",
+    "bodytype": "blob",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "386000 ml",
+    "weight": "386 kg",
+    "hp": 160,
+    "speed": 20,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⬤",
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "emit_fields": [
+      "emit_flesh_biome_immunity",
+      "emit_sflesh_fleshling_birth"
+    ],
+    "melee_skill": 8,
+    "melee_dice": 7,
+    "melee_dice_sides": 8,
+    "melee_cut": 8,
+    "harvest": "exempt",
+    "death_function": [
+      "MELT"
+    ],
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_fleshling_huge_devour"
+        },
+        "cooldown": 150,
+        "monster_message": "%1$s吞噬%3$s…</color>"
+      }
+    ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "STUN_IMMUNE",
+      "ABSORBS",
+      "PACIFIST"
+    ]
+  },
+  {
+    "id": "mon_sflesh_fleshling_stingy",
+    "type": "MONSTER",
+    "name": {
+      "str": "汞合金托管架"
+    },
+    "description": "一种由融合的四肢和附属物组成的腐烂的聚合体，已形成一种粗壮、蜿蜒的人形。它身体的几个部位充满了球状疣，似乎充满了嘶嘶作响的深红色酸。一条细长的、占优势的肢体像鞭子一样摆动，在自己周围自由地流动。它的顶端有一根带刺的毒刺，上面滴着一种强效的腐蚀性化合物。",
+    "default_faction": "secro_flesh3",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 120,
+    "speed": 75,
+    "emit_fields": [
+      "emit_flesh_biome_immunity"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "♪",
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 3,
+    "melee_dice_sides": 2,
+    "melee_cut": 5,
+    "melee_damage": [
+      {
+        "amount": 3,
+        "damage_type": "stab"
+      }
+    ],
+    "armor_bash": 12,
+    "armor_cut": 2,
+    "vision_night": 5,
+    "harvest": "exempt",
+    "attack_effs": [
+      {
+        "id": "secro_blood_acid",
+        "duration": 1
+      }
+    ],
+    "special_attacks": [
+      [
+        "GRAB",
+        10
+      ],
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_fleshling_stingy_target_random"
+        },
+        "cooldown": 30,
+        "monster_message": "%1$s在%3$s处闪烁时剧烈地抽搐！</color>"
+      }
+    ],
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "PUSH_MON"
+    ]
+  },
+  {
+    "id": "mon_sflesh_fleshling_ravagy",
+    "type": "MONSTER",
+    "name": {
+      "str": "汞合金破坏器"
+    },
+    "description": "一种巨大的人形生物，由若干未知生物的附属物融合而成，这些附属物在它的容器中反复出现。除了它的体形之外，还有长而不规则的骨骼覆盖在它的表面，扭曲的面容上有一个张开的下巴。迟钝，却反对巨大的危险。",
+    "default_faction": "secro_flesh3",
+    "bodytype": "human",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "127000 ml",
+    "weight": "98350 g",
+    "hp": 200,
+    "speed": 65,
+    "emit_fields": [
+      "emit_flesh_biome_immunity"
+    ],
+    "material": [
+      "flesh",
+      "bone"
+    ],
+    "symbol": "♯",
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 5,
+    "melee_dice_sides": 3,
+    "melee_cut": 2,
+    "armor_bash": 12,
+    "armor_cut": 2,
+    "vision_night": 5,
+    "harvest": "exempt",
+    "special_attacks": [
+      [
+        "GRAB",
+        10
+      ],
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_fleshling_ravagy_target"
+        },
+        "cooldown": 24,
+        "monster_message": "%1$s的骨头长出来了！</color>"
+      }
+    ],
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "PUSH_MON"
+    ]
+  },
+  {
+    "id": "mon_sflesh_fleshling_scavengy",
+    "type": "MONSTER",
+    "name": {
+      "str": "汞合金清除剂"
+    },
+    "description": "肉质融合体主要由纤细的附属物组成，胸部有搏动的核心。它发出不祥的光芒。温顺而谨慎，与其可怕的身材形成鲜明对比。",
+    "default_faction": "secro_flesh3",
+    "bodytype": "dog",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "30045 ml",
+    "weight": "22350 g",
+    "hp": 70,
+    "speed": 90,
+    "emit_fields": [
+      "emit_flesh_biome_immunity",
+      "emit_sflesh_fleshling_scavengy_forms"
+    ],
+    "material": [
+      "flesh"
+    ],
+    "symbol": "♮",
+    "color": "light_red",
+    "aggression": 5,
+    "morale": 20,
+    "melee_skill": 6,
+    "melee_dice": 3,
+    "melee_dice_sides": 2,
+    "melee_cut": 5,
+    "armor_bash": 12,
+    "armor_cut": 2,
+    "vision_day": 3,
+    "harvest": "exempt",
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_fleshling_scavengy_flee_target"
+        },
+        "cooldown": 3,
+        "monster_message": "%1$s从%3$s逃走了！</color>"
+      }
+    ],
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ABSORBS",
+      "STUMBLES",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "PUSH_MON"
+    ]
+  },
+  {
+    "id": "mon_sflesh_fleshling_scavengy_explosive",
+    "type": "MONSTER",
+    "name": {
+      "str": "肉身"
+    },
+    "description": "一小块肉，通过跳跃或滑动的方式在地上移动。它越靠近，心跳越快。",
+    "default_faction": "secro_flesh3",
+    "bodytype": "blob",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "2000 ml",
+    "weight": "1200 g",
+    "hp": 10,
+    "speed": 75,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "◇",
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "emit_fields": [
+      "emit_flesh_biome_immunity",
+      "emit_sflesh_fleshling_scavengy_forms_limit"
+    ],
+    "melee_skill": 2,
+    "melee_dice": 1,
+    "melee_dice_sides": 2,
+    "melee_cut": 2,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_fleshling_scavengy_explosive_pop_target"
+        },
+        "cooldown": 5,
+        "monster_message": "%1$s爆炸成血迹！</color>"
+      }
+    ],
+    "harvest": "exempt",
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "STUN_IMMUNE",
+      "PACIFIST"
+    ]
+  },
+  {
+    "id": "mon_sflesh_fleshling_scavengy_tent",
+    "type": "MONSTER",
+    "name": {
+      "str": "肉身"
+    },
+    "description": "一小块肉，通过跳跃或滑动的方式在地上移动。它越靠近，心跳越快。",
+    "default_faction": "secro_flesh3",
+    "bodytype": "blob",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "2000 ml",
+    "weight": "1200 g",
+    "hp": 10,
+    "speed": 75,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "◇",
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "emit_fields": [
+      "emit_flesh_biome_immunity",
+      "emit_sflesh_fleshling_scavengy_forms_limit"
+    ],
+    "melee_skill": 2,
+    "melee_dice": 1,
+    "melee_dice_sides": 2,
+    "melee_cut": 2,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_fleshling_scavengy_tent_tentsurprise"
+        },
+        "cooldown": 5,
+        "monster_message": "%1$s爆炸成一堆有叶片的触手！</color>"
+      }
+    ],
+    "harvest": "exempt",
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "STUN_IMMUNE",
+      "PACIFIST"
+    ]
+  },
+  {
+    "id": "mon_sflesh_fleshling_scavengy_sticky",
+    "type": "MONSTER",
+    "name": {
+      "str": "肉身"
+    },
+    "description": "一小块肉，通过跳跃或滑动的方式在地上移动。它越靠近，心跳越快。",
+    "default_faction": "secro_flesh3",
+    "bodytype": "blob",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "2000 ml",
+    "weight": "1200 g",
+    "hp": 10,
+    "speed": 75,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "◇",
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "emit_fields": [
+      "emit_flesh_biome_immunity",
+      "emit_sflesh_fleshling_scavengy_forms_limit"
+    ],
+    "melee_skill": 2,
+    "melee_dice": 1,
+    "melee_dice_sides": 2,
+    "melee_cut": 2,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_fleshling_scavengy_sticky_sg"
+        },
+        "cooldown": 5,
+        "monster_message": "<color_yellow>%1$s粘在%3$s上！</color>"
+      }
+    ],
+    "harvest": "exempt",
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "STUN_IMMUNE",
+      "PACIFIST"
+    ]
+  }
+]

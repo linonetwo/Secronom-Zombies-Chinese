@@ -1,0 +1,218 @@
+[
+  {
+    "id": "secro_flesh",
+    "name": "flesh",
+    "default": "secro_flesh",
+    "type": "ammunition_type"
+  },
+  {
+    "id": "secro_flesh_boneneedle",
+    "name": "bone needle",
+    "default": "secro_flesh_boneneedle",
+    "type": "ammunition_type"
+  },
+  {
+    "type": "AMMO",
+    "id": "secro_flesh",
+    "category": "fuel",
+    "price": 10,
+    "price_postapoc": 100,
+    "name": {
+      "str": "肉",
+      "str_pl": "肉食"
+    },
+    "symbol": "=",
+    "color": "red",
+    "description": "一块搏动着的，似乎还活着的肉。生物有机物有很多用途。",
+    "material": [
+      "secro_flesh_fuel"
+    ],
+    "phase": "solid",
+    "volume": "250 ml",
+    "weight": "90 g",
+    "ammo_type": "secro_flesh",
+    "count": 25,
+    "stack_size": 25
+  },
+  {
+    "type": "AMMO",
+    "id": "secro_flesh_boneneedle",
+    "price": 0,
+    "price_postapoc": 0,
+    "name": {
+      "str": "炮手创造-骨针"
+    },
+    "symbol": "=",
+    "color": "red",
+    "description": "利用肌肉的多功能细胞重建而成。这种生物有机针的尖端有一个锋利的末端，可以很容易地穿透肉和轻装甲的目标。",
+    "material": [
+      "bone"
+    ],
+    "volume": "80 ml",
+    "weight": "3 g",
+    "ammo_type": "secro_flesh_boneneedle",
+    "damage": {
+      "damage_type": "stab",
+      "amount": 8
+    },
+    "dispersion": 100,
+    "count": 20,
+    "stack_size": 20,
+    "loudness": 2,
+    "effects": [
+      "NOGIB",
+      "NEVER_MISFIRES",
+      "NON-FOULING"
+    ]
+  },
+  {
+    "id": "secro_flesh_container_devices",
+    "type": "MAGAZINE",
+    "category": "spare_parts",
+    "name": {
+      "str": "肉袋"
+    },
+    "description": "一个小的孔，有小的残余物用于储存。通常位于小型生物有机装置上。",
+    "weight": "190 g",
+    "volume": "430 ml",
+    "price": 1,
+    "price_postapoc": 1,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "%",
+    "color": "light_red",
+    "ammo_type": [
+      "secro_flesh"
+    ],
+    "capacity": 10,
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "rigid": true,
+        "ammo_restriction": {
+          "secro_flesh": 10
+        }
+      }
+    ],
+    "flags": [
+      "NO_SALVAGE",
+      "NO_UNLOAD"
+    ]
+  },
+  {
+    "id": "secro_flesh_container",
+    "type": "MAGAZINE",
+    "category": "spare_parts",
+    "name": {
+      "str": "肉渣"
+    },
+    "description": "一种袋状的口，用来消耗一种特殊的肉。与肉质血管永久结合。",
+    "weight": "190 g",
+    "volume": "430 ml",
+    "price": 1,
+    "price_postapoc": 1,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "%",
+    "color": "light_red",
+    "ammo_type": [
+      "secro_flesh"
+    ],
+    "capacity": 100,
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "rigid": true,
+        "ammo_restriction": {
+          "secro_flesh": 100
+        }
+      }
+    ],
+    "flags": [
+      "NO_SALVAGE",
+      "NO_UNLOAD"
+    ]
+  },
+  {
+    "id": "secro_flesh_container_pathogen",
+    "type": "MAGAZINE",
+    "category": "spare_parts",
+    "name": {
+      "str": "大量肉渣"
+    },
+    "description": "一个巨大的袋口，消耗一种特殊类型的肉。永久地结合到一个特定的血管上。",
+    "weight": "3200 g",
+    "volume": "5530 ml",
+    "price": 1,
+    "price_postapoc": 1,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "%",
+    "color": "light_red",
+    "ammo_type": [
+      "secro_flesh"
+    ],
+    "capacity": 1000,
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "rigid": true,
+        "ammo_restriction": {
+          "secro_flesh": 1000
+        }
+      }
+    ],
+    "flags": [
+      "NO_SALVAGE",
+      "NO_UNLOAD"
+    ]
+  },
+  {
+    "id": "secro_power_armor_battery",
+    "type": "TOOL_ARMOR",
+    "category": "spare_parts",
+    "name": {
+      "str": "辅助模块UPS",
+      "str_pl": "辅助模块UPS"
+    },
+    "description": "一种UPS，带有一个特别设计的超大容量电池，可用于所有Secronom模块类型。",
+    "weight": "1300 g",
+    "volume": "2425 ml",
+    "price": 30000,
+    "price_postapoc": 21000,
+    "material": [
+      "iron",
+      "plastic"
+    ],
+    "symbol": "=",
+    "color": "cyan",
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "holster": true,
+        "rigid": true,
+        "max_contains_volume": "20 L",
+        "max_contains_weight": "20 kg",
+        "item_restriction": [
+          "light_battery_cell",
+          "light_plus_battery_cell",
+          "light_minus_battery_cell",
+          "light_atomic_battery_cell",
+          "light_minus_atomic_battery_cell",
+          "light_minus_disposable_cell",
+          "light_disposable_cell"
+        ]
+      }
+    ],
+    "looks_like": "battery",
+    "flags": [
+      "USE_UPS",
+      "NO_SALVAGE",
+      "NO_UNLOAD",
+      "RECHARGE"
+    ]
+  }
+]

@@ -1,0 +1,329 @@
+[
+  {
+    "id": "mon_sflesh_camp_turret",
+    "type": "MONSTER",
+    "name": "flesh heap",
+    "description": "一堆团块状的肉，表面散布着几个管状孔。它的身体渗出血酸。",
+    "default_faction": "secro_flesh3",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "300 L",
+    "weight": "3125 kg",
+    "hp": 300,
+    "speed": 100,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⧻",
+    "emit_fields": [
+      "emit_down_immunity"
+    ],
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 3,
+    "melee_dice_sides": 8,
+    "melee_cut": 2,
+    "armor_bash": 5,
+    "harvest": "exempt",
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_camp_turret_target"
+        },
+        "cooldown": 8,
+        "monster_message": "<color_light_red>%1$s脉冲…</color>"
+      }
+    ],
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "IMMOBILE",
+      "PACIFIST"
+    ]
+  },
+  {
+    "id": "mon_sflesh_camp_turret_blade",
+    "type": "MONSTER",
+    "name": "flesh heap (blade)",
+    "description": "一堆被叶片核心浸透的肉。它的身体充满了成百上千的骨头，新的骨头还在不断生长。成长。",
+    "default_faction": "secro_flesh3",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "300 L",
+    "weight": "3125 kg",
+    "hp": 300,
+    "speed": 100,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⧻",
+    "emit_fields": [
+      "emit_down_immunity"
+    ],
+    "color": "red_white",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 3,
+    "melee_dice_sides": 8,
+    "melee_cut": 2,
+    "armor_bash": 12,
+    "armor_cut": 2,
+    "harvest": "exempt",
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_camp_turret_blade_target"
+        },
+        "cooldown": 6,
+        "monster_message": "<color_light_red>%1$s起伏"
+      }
+    ],
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "IMMOBILE",
+      "PACIFIST"
+    ]
+  },
+  {
+    "id": "mon_sflesh_camp_turret_tendril",
+    "type": "MONSTER",
+    "name": "flesh heap (tendril)",
+    "description": "充满卷须芯的一堆团块的肉。几根卷须在其表面不停地扭动，密度大小不一。",
+    "default_faction": "secro_flesh3",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "300 L",
+    "weight": "3125 kg",
+    "hp": 300,
+    "speed": 100,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⧻",
+    "emit_fields": [
+      "emit_down_immunity"
+    ],
+    "color": "red_green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 3,
+    "melee_dice_sides": 8,
+    "melee_cut": 2,
+    "armor_bash": 8,
+    "harvest": "exempt",
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_camp_turret_tendril_target"
+        },
+        "cooldown": 5,
+        "monster_message": "%1$s扭动！</color>"
+      }
+    ],
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "IMMOBILE",
+      "PACIFIST"
+    ]
+  },
+  {
+    "id": "mon_sflesh_camp_turret_mouth",
+    "type": "MONSTER",
+    "name": "flesh heap (mouthswell)",
+    "description": "一堆团块的肉，充满了口肿的核心。当它茫然地掠过周围的环境时，下颚的嘴形成了一个尖叫和尖叫的合唱团。",
+    "default_faction": "secro_flesh3",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "300 L",
+    "weight": "3125 kg",
+    "hp": 500,
+    "speed": 100,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⧻",
+    "emit_fields": [
+      "emit_down_immunity"
+    ],
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 3,
+    "melee_dice_sides": 8,
+    "melee_cut": 2,
+    "armor_bash": 10,
+    "harvest": "exempt",
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_camp_turret_mouth_target"
+        },
+        "cooldown": 30,
+        "monster_message": "<color_light_red>%1$s抖动不稳定…</color>"
+      }
+    ],
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "IMMOBILE",
+      "PACIFIST"
+    ]
+  },
+  {
+    "id": "mon_sflesh_camp_turret_unify",
+    "type": "MONSTER",
+    "name": "flesh heap (unifier)",
+    "description": "一堆团块的肉，里面有更统一的核心。它肿胀的部分不断跳动，伴随着无数蠕动的触角。",
+    "default_faction": "secro_flesh3",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "300 L",
+    "weight": "3125 kg",
+    "hp": 300,
+    "speed": 100,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⧻",
+    "emit_fields": [
+      "emit_down_immunity"
+    ],
+    "color": "red_yellow",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 3,
+    "melee_dice_sides": 8,
+    "melee_cut": 2,
+    "armor_bash": 12,
+    "armor_cut": 2,
+    "harvest": "exempt",
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_camp_turret_unify_target"
+        },
+        "cooldown": 35,
+        "monster_message": "%1$s发抖！</color>"
+      }
+    ],
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "IMMOBILE",
+      "PACIFIST"
+    ]
+  },
+  {
+    "id": "mon_sflesh_camp_turret_hravager",
+    "type": "MONSTER",
+    "name": "ravager flesh heap",
+    "description": "一堆混合着几个核心的肉。这种混合炮塔利用了卷须的无情攻击和刀片的形成尖锐的骨骼生长。",
+    "default_faction": "secro_flesh3",
+    "species": [
+      "SFLESH",
+      "ABERRATION"
+    ],
+    "volume": "300 L",
+    "weight": "3125 kg",
+    "hp": 300,
+    "speed": 100,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⧻",
+    "emit_fields": [
+      "emit_down_immunity"
+    ],
+    "color": "light_red_red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 3,
+    "melee_dice_sides": 8,
+    "melee_cut": 2,
+    "armor_bash": 12,
+    "armor_cut": 2,
+    "harvest": "exempt",
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_sflesh_camp_turret_hravager_target"
+        },
+        "cooldown": 8,
+        "monster_message": "%1$s疯狂地扭动着！</color>"
+      }
+    ],
+    "death_function": [
+      "MELT"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "IMMOBILE",
+      "PACIFIST"
+    ]
+  }
+]

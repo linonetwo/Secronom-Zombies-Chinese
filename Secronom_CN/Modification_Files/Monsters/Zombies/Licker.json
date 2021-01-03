@@ -1,0 +1,277 @@
+[
+  {
+    "id": "mon_zombie_lick",
+    "type": "MONSTER",
+    "name": {
+      "str": "舔僵尸"
+    },
+    "description": "一个敏捷的僵尸，从嘴里伸出细长的舌头。它又小又脆弱，敏捷的动作令人恐惧。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "SECROZED_2",
+      "HUMAN"
+    ],
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "harvest": "zombie",
+    "hp": 70,
+    "speed": 125,
+    "diff": 1,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⟆",
+    "color": "pink",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 4,
+    "melee_dice": 0,
+    "melee_dice_sides": 2,
+    "melee_cut": 4,
+    "armor_cut": 4,
+    "armor_bash": 2,
+    "armor_stab": 4,
+    "dodge": 4,
+    "special_attacks": [
+      [
+        "scratch",
+        6
+      ],
+      [
+        "GRAB",
+        10
+      ],
+      [
+        "LUNGE",
+        20
+      ],
+      {
+        "type": "leap",
+        "allow_no_target": false,
+        "cooldown": 10,
+        "max_range": 5
+      }
+    ],
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [
+        [
+          "default_zombie_clothes",
+          100
+        ],
+        [
+          "child_items",
+          65
+        ]
+      ]
+    },
+    "death_function": [
+      "NORMAL"
+    ],
+    "upgrades": {
+      "half_life": 14,
+      "into": "mon_zombie_mlick"
+    },
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "FILTHY",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "BONES",
+      "GROUP_MORALE",
+      "HARDTOSHOOT"
+    ]
+  },
+  {
+    "id": "mon_zombie_mlick",
+    "type": "MONSTER",
+    "name": {
+      "str": "舔僵尸"
+    },
+    "description": "它是一种一直占据统治地位的舔食动物，其外表非常漂亮，与之相比有着更多的区别：它的皮肤脱落成肉质的体形，爪子笨拙地竖起，舌头长得更长。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "SECROZED_2",
+      "HUMAN"
+    ],
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "harvest": "zombie",
+    "hp": 90,
+    "speed": 130,
+    "diff": 5,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⟆",
+    "color": "pink_red",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 5,
+    "melee_dice": 0,
+    "melee_dice_sides": 2,
+    "melee_cut": 6,
+    "armor_cut": 6,
+    "armor_bash": 4,
+    "armor_stab": 6,
+    "dodge": 5,
+    "special_attacks": [
+      [
+        "scratch",
+        4
+      ],
+      [
+        "GRAB",
+        6
+      ],
+      [
+        "LUNGE",
+        14
+      ],
+      {
+        "type": "leap",
+        "allow_no_target": false,
+        "cooldown": 10,
+        "max_range": 7
+      }
+    ],
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [
+        [
+          "default_zombie_clothes",
+          100
+        ],
+        [
+          "child_items",
+          65
+        ]
+      ]
+    },
+    "death_function": [
+      "NORMAL"
+    ],
+    "upgrades": {
+      "half_life": 20,
+      "into": "mon_zombie_xlick"
+    },
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "FILTHY",
+      "REVIVES",
+      "BONES",
+      "GROUP_MORALE",
+      "HARDTOSHOOT"
+    ]
+  },
+  {
+    "id": "mon_zombie_xlick",
+    "looks_like": "mon_zombie_mlick",
+    "type": "MONSTER",
+    "name": {
+      "str": "撕裂器"
+    },
+    "description": "覆盖着鲜嫩的深红色果肉，这只舔者已经达到了顶峰。除了更大、更坚韧的身体外，它灵活的刀刃般的舌头剧烈地扭动着寻找猎物。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "SECROZED_3",
+      "HUMAN"
+    ],
+    "volume": "95000 ml",
+    "weight": "100000 g",
+    "harvest": "zombie",
+    "hp": 125,
+    "speed": 135,
+    "diff": 15,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⚕",
+    "color": "red",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 6,
+    "melee_dice": 0,
+    "melee_dice_sides": 6,
+    "melee_cut": 6,
+    "armor_cut": 8,
+    "armor_bash": 4,
+    "armor_stab": 8,
+    "dodge": 5,
+    "special_attacks": [
+      [
+        "scratch",
+        5
+      ],
+      [
+        "GRAB",
+        5
+      ],
+      [
+        "LUNGE",
+        15
+      ],
+      {
+        "type": "leap",
+        "allow_no_target": false,
+        "cooldown": 9,
+        "max_range": 7
+      },
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_zombie_xlick_pstab"
+        },
+        "cooldown": 18,
+        "monster_message": "%1$s用舌头准确地刺%3$s！</color>"
+      }
+    ],
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [
+        [
+          "default_zombie_clothes",
+          100
+        ],
+        [
+          "child_items",
+          65
+        ]
+      ]
+    },
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "FILTHY",
+      "REVIVES",
+      "BONES",
+      "GROUP_MORALE",
+      "HARDTOSHOOT"
+    ]
+  }
+]

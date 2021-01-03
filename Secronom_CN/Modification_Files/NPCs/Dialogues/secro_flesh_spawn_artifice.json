@@ -1,0 +1,531 @@
+[
+  {
+    "id": "SECRO_FLESH_SPAWN_ARTIFICE_main",
+    "type": "talk_topic",
+    "dynamic_line": "*准备好它的编织者等待你的命令。",
+    "responses": [
+      {
+        "text": "我要你做点什么…",
+        "topic": "SECRO_FLESH_SPAWN_ARTIFICE_craft"
+      },
+      {
+        "text": "关于你的增援…",
+        "topic": "SECRO_FLESH_SPAWN_ARTIFICE_upgrade"
+      },
+      {
+        "text": "精心服务。",
+        "topic": "SECRO_FLESH_SPAWN_ARTIFICE_job"
+      },
+      {
+        "text": "别管了。",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "SECRO_FLESH_SPAWN_ARTIFICE_job",
+    "type": "talk_topic",
+    "dynamic_line": "*用它编织的卷须轻拍你：\n这个技巧创造了一个使用有机化合物的物体，比如肉和生物核心，而肉是主要成分。你将不得不给所有的成分的技巧，它会产生选定的项目在瞬间。它不能够从一开始就创建某些项目，但一些增强最终将允许它执行复杂的工艺。",
+    "responses": [
+      {
+        "text": "可以。",
+        "topic": "SECRO_FLESH_SPAWN_ARTIFICE_main"
+      }
+    ]
+  },
+  {
+    "id": "SECRO_FLESH_SPAWN_ARTIFICE_upgrade",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "and": [
+        "*stretches its weaving tendril towards you.",
+        {
+          "npc_has_effect": "secro_flesh_artifice_upgrade_weaver_max",
+          "no": {
+            "npc_has_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver1",
+            "no": "\n\n*75 flesh\n> Stronger Weavers\nStronger sets of weavers allow the artifice to craft tougher bio-organic materials.",
+            "yes": {
+              "npc_has_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver2",
+              "no": "\n\n*175 flesh\n> Advanced Weavers\nSeveral augmented weavers allow the artifice to craft intricate bio-organic materials.",
+              "yes": {
+                "npc_has_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver3",
+                "no": "\n\n*400 flesh\n> Hivemind Weavers\nArtifice's set of weavers now acts similar to the hivemind, making it capable to craft high-end bio-organic materials."
+              }
+            }
+          }
+        }
+      ]
+    },
+    "responses": [
+      {
+        "text": "[升级]强壮的织布者\n*用肉喂养技艺*",
+        "topic": "SECRO_FLESH_SPAWN_ARTIFICE_upgrade",
+        "condition": {
+          "and": [
+            {
+              "not": {
+                "npc_has_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver1"
+              }
+            },
+            {
+              "u_has_items": {
+                "item": "secro_flesh",
+                "count": 75
+              }
+            }
+          ]
+        },
+        "effect": [
+          {
+            "u_sell_item": "secro_flesh",
+            "count": 75
+          },
+          {
+            "npc_consume_item": "secro_flesh",
+            "count": 75
+          },
+          {
+            "npc_add_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver1"
+          }
+        ]
+      },
+      {
+        "text": "[升级]高级织布者\n*用肉喂养技艺*",
+        "topic": "SECRO_FLESH_SPAWN_ARTIFICE_upgrade",
+        "condition": {
+          "and": [
+            {
+              "npc_has_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver1"
+            },
+            {
+              "not": {
+                "npc_has_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver2"
+              }
+            },
+            {
+              "u_has_items": {
+                "item": "secro_flesh",
+                "count": 175
+              }
+            }
+          ]
+        },
+        "effect": [
+          {
+            "u_sell_item": "secro_flesh",
+            "count": 175
+          },
+          {
+            "npc_consume_item": "secro_flesh",
+            "count": 175
+          },
+          {
+            "npc_add_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver2"
+          }
+        ]
+      },
+      {
+        "text": "[升级]Hivemind Weavers \n*用肉喂养这个诡计*",
+        "topic": "SECRO_FLESH_SPAWN_ARTIFICE_upgrade",
+        "condition": {
+          "and": [
+            {
+              "npc_has_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver2"
+            },
+            {
+              "not": {
+                "npc_has_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver3"
+              }
+            },
+            {
+              "u_has_items": {
+                "item": "secro_flesh",
+                "count": 400
+              }
+            }
+          ]
+        },
+        "effect": [
+          {
+            "u_sell_item": "secro_flesh",
+            "count": 400
+          },
+          {
+            "npc_consume_item": "secro_flesh",
+            "count": 400
+          },
+          {
+            "npc_add_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver3"
+          },
+          {
+            "npc_add_effect": "secro_flesh_artifice_upgrade_weaver_max",
+            "duration": "PERMANENT"
+          }
+        ]
+      },
+      {
+        "text": "以后再说。",
+        "topic": "SECRO_FLESH_SPAWN_ARTIFICE_main"
+      }
+    ]
+  },
+  {
+    "id": "SECRO_FLESH_SPAWN_ARTIFICE_craft",
+    "type": "talk_topic",
+    "dynamic_line": "*需要您想要制作的物品类型。",
+    "responses": [
+      {
+        "text": "武器…",
+        "topic": "SECRO_FLESH_SPAWN_ARTIFICE_craft_weapon"
+      },
+      {
+        "text": "车辆部件…",
+        "topic": "SECRO_FLESH_SPAWN_ARTIFICE_craft_vp"
+      },
+      {
+        "text": "没有关系。",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "SECRO_FLESH_SPAWN_ARTIFICE_craft_weapon",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "and": [
+        "*taps you with its weaving tendril, which has given you information about its available crafts.\n",
+        {
+          "npc_has_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver2",
+          "yes": "\n*80 flesh\n*2 core (blade zombie)\n> bio-organic sword"
+        }
+      ]
+    },
+    "responses": [
+      {
+        "text": "【工艺】生物有机剑",
+        "topic": "SECRO_FLESH_SPAWN_ARTIFICE_craft_weapon",
+        "condition": {
+          "and": [
+            {
+              "npc_has_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver1"
+            },
+            {
+              "u_has_items": {
+                "item": "secro_flesh",
+                "count": 80
+              }
+            },
+            {
+              "u_has_items": {
+                "item": "secro_flesh_splicer_zombie_blade_ccore",
+                "count": 2
+              }
+            }
+          ]
+        },
+        "effect": [
+          {
+            "u_sell_item": "secro_flesh",
+            "count": 80
+          },
+          {
+            "npc_consume_item": "secro_flesh",
+            "count": 80
+          },
+          {
+            "u_sell_item": "secro_flesh_splicer_zombie_blade_ccore",
+            "count": 2
+          },
+          {
+            "npc_consume_item": "secro_flesh_splicer_zombie_blade_ccore",
+            "count": 2
+          },
+          {
+            "u_buy_item": "secro_flesh_bow_sword"
+          }
+        ]
+      },
+      {
+        "text": "以后再说。",
+        "topic": "SECRO_FLESH_SPAWN_ARTIFICE_main"
+      }
+    ]
+  },
+  {
+    "id": "SECRO_FLESH_SPAWN_ARTIFICE_craft_vp",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "and": [
+        "*taps you with its weaving tendril, which has given you information about its available crafts.\n",
+        "\n*8 flesh\n> small flesh heap\n",
+        {
+          "npc_has_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver1",
+          "yes": "\n*24 flesh\n> flesh heap\n"
+        },
+        {
+          "npc_has_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver1",
+          "yes": "\n*72 flesh]\n> large flesh heap\n"
+        },
+        {
+          "npc_has_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver2",
+          "yes": "\n*216 flesh\n> ossified flesh heap\n"
+        },
+        {
+          "npc_has_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver1",
+          "yes": "\n*300 flesh\n> flesh frame\n"
+        },
+        {
+          "npc_has_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver2",
+          "yes": "\n*500 flesh\n> hivemind residue\n"
+        },
+        {
+          "npc_has_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver2",
+          "yes": "\n*75 flesh\n> hivemind controls\n"
+        },
+        {
+          "npc_has_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver3",
+          "yes": "\n*800 flesh\n> hivemind core\n"
+        }
+      ]
+    },
+    "responses": [
+      {
+        "text": "[工艺]小肉堆",
+        "topic": "SECRO_FLESH_SPAWN_ARTIFICE_craft_vp",
+        "condition": {
+          "u_has_items": {
+            "item": "secro_flesh",
+            "count": 8
+          }
+        },
+        "effect": [
+          {
+            "u_sell_item": "secro_flesh",
+            "count": 8
+          },
+          {
+            "npc_consume_item": "secro_flesh",
+            "count": 8
+          },
+          {
+            "u_buy_item": "secro_flesh_plate_small"
+          }
+        ]
+      },
+      {
+        "text": "[工艺]肉堆",
+        "topic": "SECRO_FLESH_SPAWN_ARTIFICE_craft_vp",
+        "condition": {
+          "and": [
+            {
+              "npc_has_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver1"
+            },
+            {
+              "u_has_items": {
+                "item": "secro_flesh",
+                "count": 24
+              }
+            }
+          ]
+        },
+        "effect": [
+          {
+            "u_sell_item": "secro_flesh",
+            "count": 24
+          },
+          {
+            "npc_consume_item": "secro_flesh",
+            "count": 24
+          },
+          {
+            "u_buy_item": "secro_flesh_plate"
+          }
+        ]
+      },
+      {
+        "text": "[工艺]大肉堆",
+        "topic": "SECRO_FLESH_SPAWN_ARTIFICE_craft_vp",
+        "condition": {
+          "and": [
+            {
+              "npc_has_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver1"
+            },
+            {
+              "u_has_items": {
+                "item": "secro_flesh",
+                "count": 72
+              }
+            }
+          ]
+        },
+        "effect": [
+          {
+            "u_sell_item": "secro_flesh",
+            "count": 72
+          },
+          {
+            "npc_consume_item": "secro_flesh",
+            "count": 72
+          },
+          {
+            "u_buy_item": "secro_flesh_plate_large"
+          }
+        ]
+      },
+      {
+        "text": "【工艺】骨化肉堆",
+        "topic": "SECRO_FLESH_SPAWN_ARTIFICE_craft_vp",
+        "condition": {
+          "and": [
+            {
+              "npc_has_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver2"
+            },
+            {
+              "u_has_items": {
+                "item": "secro_flesh",
+                "count": 216
+              }
+            }
+          ]
+        },
+        "effect": [
+          {
+            "u_sell_item": "secro_flesh",
+            "count": 216
+          },
+          {
+            "npc_consume_item": "secro_flesh",
+            "count": 216
+          },
+          {
+            "u_buy_item": "secro_flesh_wheel"
+          }
+        ]
+      },
+      {
+        "text": "[工艺]肉架",
+        "topic": "SECRO_FLESH_SPAWN_ARTIFICE_craft_vp",
+        "condition": {
+          "and": [
+            {
+              "npc_has_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver1"
+            },
+            {
+              "u_has_items": {
+                "item": "secro_flesh",
+                "count": 300
+              }
+            }
+          ]
+        },
+        "effect": [
+          {
+            "u_sell_item": "secro_flesh",
+            "count": 300
+          },
+          {
+            "npc_consume_item": "secro_flesh",
+            "count": 300
+          },
+          {
+            "u_buy_item": "secro_flesh_frame"
+          }
+        ]
+      },
+      {
+        "text": "[工艺]蜂心残渣",
+        "topic": "SECRO_FLESH_SPAWN_ARTIFICE_craft_vp",
+        "condition": {
+          "and": [
+            {
+              "npc_has_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver2"
+            },
+            {
+              "u_has_items": {
+                "item": "secro_flesh",
+                "count": 500
+              }
+            }
+          ]
+        },
+        "effect": [
+          {
+            "u_sell_item": "secro_flesh",
+            "count": 500
+          },
+          {
+            "npc_consume_item": "secro_flesh",
+            "count": 500
+          },
+          {
+            "u_buy_item": "secro_flesh_fuel_bunker"
+          }
+        ]
+      },
+      {
+        "text": "[工艺]蜂巢思维控制",
+        "topic": "SECRO_FLESH_SPAWN_ARTIFICE_craft_vp",
+        "condition": {
+          "and": [
+            {
+              "npc_has_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver2"
+            },
+            {
+              "u_has_items": {
+                "item": "secro_flesh",
+                "count": 75
+              }
+            }
+          ]
+        },
+        "effect": [
+          {
+            "u_sell_item": "secro_flesh",
+            "count": 75
+          },
+          {
+            "npc_consume_item": "secro_flesh",
+            "count": 75
+          },
+          {
+            "u_buy_item": "secro_vehicle_controls"
+          }
+        ]
+      },
+      {
+        "text": "[工艺]蜂巢思维核心",
+        "topic": "SECRO_FLESH_SPAWN_ARTIFICE_craft_vp",
+        "condition": {
+          "and": [
+            {
+              "npc_has_trait": "SECRONOM_FLESH_SPAWN_ARTIFICE_weaver3"
+            },
+            {
+              "u_has_items": {
+                "item": "secro_flesh",
+                "count": 800
+              }
+            }
+          ]
+        },
+        "effect": [
+          {
+            "u_sell_item": "secro_flesh",
+            "count": 800
+          },
+          {
+            "npc_consume_item": "secro_flesh",
+            "count": 800
+          },
+          {
+            "u_buy_item": "secro_vehicle_engine"
+          }
+        ]
+      },
+      {
+        "text": "以后再说。",
+        "topic": "SECRO_FLESH_SPAWN_ARTIFICE_main"
+      }
+    ]
+  }
+]

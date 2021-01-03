@@ -1,0 +1,305 @@
+[
+  {
+    "aggression": 100,
+    "armor_acid": 1,
+    "armor_bash": 3,
+    "armor_cut": 2,
+    "armor_fire": 1,
+    "attack_cost": 125,
+    "color": "light_green",
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "default_faction": "zombie",
+    "description": "一个人的身体，不同于它的大，厚和病态变形的下巴，在黑色的软泥滴。",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY",
+      "BONES"
+    ],
+    "harvest": "zombie",
+    "hp": 70,
+    "diff": 1,
+    "id": "mon_zombie_mouth",
+    "material": [
+      "flesh"
+    ],
+    "melee_cut": 3,
+    "melee_dice": 1,
+    "melee_dice_sides": 3,
+    "melee_skill": 4,
+    "morale": 100,
+    "name": "mouthswell zombie",
+    "special_attacks": [
+      {
+        "cooldown": 10,
+        "damage_max_instance": [
+          {
+            "amount": 8,
+            "armor_multiplier": 0.7,
+            "damage_type": "stab"
+          }
+        ],
+        "type": "bite"
+      }
+    ],
+    "species": [
+      "ZOMBIE",
+      "SECROZED_1",
+      "HUMAN"
+    ],
+    "speed": 100,
+    "symbol": "<",
+    "type": "MONSTER",
+    "upgrades": {
+      "half_life": 12,
+      "into_group": "GROUP_MOUTH_UPGRADE"
+    },
+    "volume": "62500 ml",
+    "weight": "81500 g"
+  },
+  {
+    "aggression": 100,
+    "armor_acid": 1,
+    "armor_bash": 7,
+    "armor_cut": 3,
+    "armor_fire": 1,
+    "attack_cost": 150,
+    "color": "light_green",
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "default_faction": "zombie",
+    "description": "这具尸体因其破裂的腹部张大的嘴巴而独树一帜，构成了巨大的威胁。",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY",
+      "BONES"
+    ],
+    "grab_strength": 2,
+    "harvest": "zombie",
+    "hp": 125,
+    "diff": 5,
+    "id": "mon_zombie_bellymouth",
+    "material": [
+      "flesh"
+    ],
+    "melee_cut": 3,
+    "melee_dice": 3,
+    "melee_dice_sides": 4,
+    "melee_skill": 4,
+    "morale": 100,
+    "name": "bellymouth zombie",
+    "special_attacks": [
+      {
+        "cooldown": 3,
+        "damage_max_instance": [
+          {
+            "amount": 4,
+            "armor_multiplier": 0.4,
+            "damage_type": "cut"
+          },
+          {
+            "amount": 6,
+            "armor_multiplier": 0.6,
+            "damage_type": "stab"
+          }
+        ],
+        "min_mul": 0.3,
+        "type": "bite"
+      }
+    ],
+    "species": [
+      "ZOMBIE",
+      "SECROZED_1",
+      "HUMAN"
+    ],
+    "speed": 90,
+    "symbol": "⪕",
+    "type": "MONSTER",
+    "upgrades": {
+      "half_life": 16,
+      "into_group": "GROUP_MOUTH_UPGRADEX"
+    },
+    "volume": "62500 ml",
+    "weight": "81500 g"
+  },
+  {
+    "aggression": 100,
+    "armor_acid": 1,
+    "armor_bash": 5,
+    "armor_cut": 3,
+    "armor_fire": 1,
+    "attack_cost": 150,
+    "color": "green",
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "default_faction": "zombie",
+    "description": "令人毛骨悚然的尖牙在它的整个嘴脸上游动，\n个大到足以容纳很多空间，",
+    "dodge": 1,
+    "flags": [
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY",
+      "BONES"
+    ],
+    "harvest": "zombie",
+    "hp": 110,
+    "diff": 5,
+    "id": "mon_zombie_omouth",
+    "material": [
+      "flesh"
+    ],
+    "melee_cut": 3,
+    "melee_dice": 3,
+    "melee_dice_sides": 3,
+    "melee_skill": 4,
+    "morale": 100,
+    "name": "roundelmouth zombie",
+    "special_attacks": [
+      {
+        "cooldown": 15,
+        "damage_max_instance": [
+          {
+            "amount": 7,
+            "armor_multiplier": 0.6,
+            "damage_type": "bash"
+          },
+          {
+            "amount": 7,
+            "armor_multiplier": 0.6,
+            "damage_type": "stab"
+          }
+        ],
+        "effects": [
+          {
+            "bp": "torso",
+            "duration": 1000,
+            "id": "grabbed"
+          }
+        ],
+        "type": "bite"
+      }
+    ],
+    "species": [
+      "ZOMBIE",
+      "SECROZED_1",
+      "HUMAN"
+    ],
+    "speed": 95,
+    "symbol": "⪦",
+    "type": "MONSTER",
+    "upgrades": {
+      "half_life": 16,
+      "into_group": "GROUP_MOUTH_UPGRADEX"
+    },
+    "volume": "62500 ml",
+    "weight": "81500 g"
+  },
+  {
+    "//": "Perfectly strong biter!",
+    "aggression": 100,
+    "armor_acid": 2,
+    "armor_bash": 8,
+    "armor_cut": 12,
+    "armor_fire": 2,
+    "attack_cost": 200,
+    "color": "red_green",
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "default_faction": "zombie",
+    "description": "大嘴鳗一种大而贪婪的鳗鱼，长着一张类似于七鳃鳗的长嘴。由于它粗糙而厚的皮肤能够承受极端的身体冲击，它专注于啃咬它不幸的目标。",
+    "dodge": 1,
+    "flags": [
+      "HEARS",
+      "KEENNOSE",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY",
+      "BONES"
+    ],
+    "grab_strength": 4,
+    "harvest": "zombie",
+    "hp": 405,
+    "diff": 15,
+    "id": "mon_zombie_suctionmouth",
+    "material": [
+      "flesh"
+    ],
+    "melee_cut": 3,
+    "melee_dice": 3,
+    "melee_dice_sides": 5,
+    "melee_skill": 6,
+    "morale": 100,
+    "name": "sucker",
+    "special_attacks": [
+      {
+        "cooldown": 30,
+        "damage_max_instance": [
+          {
+            "amount": 20,
+            "armor_multiplier": 0.2,
+            "damage_type": "bash"
+          },
+          {
+            "amount": 20,
+            "armor_multiplier": 0.4,
+            "damage_type": "cut"
+          },
+          {
+            "amount": 20,
+            "armor_multiplier": 0.6,
+            "damage_type": "stab"
+          }
+        ],
+        "effects": [
+          {
+            "bp": "torso",
+            "duration": 1000,
+            "id": "grabbed"
+          }
+        ],
+        "type": "bite"
+      }
+    ],
+    "species": [
+      "ZOMBIE",
+      "SECROZED_3",
+      "HUMAN"
+    ],
+    "speed": 80,
+    "symbol": "⪃",
+    "type": "MONSTER",
+    "volume": "92500 ml",
+    "weight": "120000 g"
+  }
+]

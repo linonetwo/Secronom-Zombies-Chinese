@@ -1,0 +1,19 @@
+[
+  {
+    "type": "scenario",
+    "id": "secro_project",
+    "name": "Secronom项目-实验",
+    "points": -2,
+    "description": "Secronom团队已经委托你测试他们的新技术。他们把你送到野外，让你独自一人。这值得冒险吗？",
+    "start_name": "荒野",
+    "allowed_locs": [
+      "sloc_field"
+    ],
+    "professions": [
+      "secro_prof_vesselrecruit"
+    ],
+    "flags": [
+      "LONE_START"
+    ]
+  }
+]

@@ -1,0 +1,308 @@
+[
+  {
+    "//": "This zombie type has slow attack speed.",
+    "aggression": 100,
+    "armor_acid": 1,
+    "armor_bash": 2,
+    "armor_cut": 4,
+    "armor_fire": 1,
+    "attack_cost": 150,
+    "color": "light_green",
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "default_faction": "zombie",
+    "description": "一具正常的尸体，其中一只手臂变异成了一把骨刀。它的锋利程度不足以切开皮肤，但足以留下瘀伤。",
+    "diff": 1,
+    "dodge": 1,
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "STUMBLES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY",
+      "BONES"
+    ],
+    "harvest": "zombie",
+    "hp": 85,
+    "id": "mon_zombie_blade",
+    "material": [
+      "flesh"
+    ],
+    "melee_cut": 0,
+    "melee_damage": [
+      {
+        "amount": 4,
+        "damage_type": "bash"
+      }
+    ],
+    "melee_dice": 3,
+    "melee_dice_sides": 4,
+    "melee_skill": 4,
+    "morale": 100,
+    "name": {
+      "str": "刀锋僵尸"
+    },
+    "special_attacks": [
+      [
+        "swordbash",
+        25
+      ],
+      [
+        "swordbashtrip",
+        50
+      ]
+    ],
+    "species": [
+      "ZOMBIE",
+      "SECROZED_1",
+      "HUMAN"
+    ],
+    "speed": 95,
+    "symbol": "⫰",
+    "type": "MONSTER",
+    "upgrades": {
+      "half_life": 12,
+      "into_group": "GROUP_BLADED_UPGRADE"
+    },
+    "volume": "62500 ml",
+    "weight": "81500 g"
+  },
+  {
+    "aggression": 100,
+    "armor_acid": 1,
+    "armor_bash": 4,
+    "armor_cut": 4,
+    "armor_fire": 2,
+    "attack_cost": 150,
+    "color": "green",
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "default_faction": "zombie",
+    "description": "一具腐烂的尸体，带有明显的骨头剑，被光源击中时会发光。",
+    "dodge": 1,
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "STUMBLES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY",
+      "BONES"
+    ],
+    "harvest": "zombie",
+    "hp": 130,
+    "id": "mon_zombie_sharpblade",
+    "material": [
+      "flesh"
+    ],
+    "melee_cut": 4,
+    "melee_damage": [
+      {
+        "amount": 3,
+        "damage_type": "cut"
+      }
+    ],
+    "diff": 5,
+    "melee_dice": 1,
+    "melee_dice_sides": 4,
+    "melee_skill": 6,
+    "morale": 100,
+    "name": {
+      "str": "利刃僵尸"
+    },
+    "special_attacks": [
+      [
+        "swordslashshp",
+        20
+      ],
+      [
+        "swordslashtrip",
+        30
+      ]
+    ],
+    "species": [
+      "ZOMBIE",
+      "SECROZED_1",
+      "HUMAN"
+    ],
+    "speed": 90,
+    "symbol": "⚸",
+    "type": "MONSTER",
+    "vision_day": 30,
+    "vision_night": 10,
+    "upgrades": {
+      "half_life": 10,
+      "into_group": "GROUP_BLADED_UPGRADEX"
+    },
+    "volume": "62500 ml",
+    "weight": "81500 g"
+  },
+  {
+    "aggression": 100,
+    "armor_acid": 1,
+    "armor_bash": 4,
+    "armor_cut": 4,
+    "armor_fire": 2,
+    "attack_cost": 150,
+    "color": "green",
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "default_faction": "zombie",
+    "description": "拖着这把腐烂的剑，显然这把武器的重量使可怜的死者背上了沉重的负担。",
+    "dodge": 1,
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "STUMBLES",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY",
+      "BONES"
+    ],
+    "harvest": "zombie",
+    "hp": 125,
+    "id": "mon_zombie_serratedblade",
+    "material": [
+      "flesh"
+    ],
+    "melee_cut": 4,
+    "melee_damage": [
+      {
+        "amount": 1,
+        "damage_type": "cut"
+      },
+      {
+        "amount": 2,
+        "damage_type": "stab"
+      }
+    ],
+    "diff": 5,
+    "melee_dice": 1,
+    "melee_dice_sides": 4,
+    "melee_skill": 6,
+    "morale": 100,
+    "name": {
+      "str": "锯齿刃僵尸"
+    },
+    "special_attacks": [
+      [
+        "swordslashsrt",
+        22
+      ],
+      [
+        "swordslashtrip",
+        30
+      ]
+    ],
+    "species": [
+      "ZOMBIE",
+      "SECROZED_1",
+      "HUMAN"
+    ],
+    "speed": 80,
+    "symbol": "⚷",
+    "type": "MONSTER",
+    "vision_day": 30,
+    "vision_night": 10,
+    "upgrades": {
+      "half_life": 10,
+      "into_group": "GROUP_BLADED_UPGRADEX"
+    },
+    "volume": "62500 ml",
+    "weight": "81500 g"
+  },
+  {
+    "aggression": 100,
+    "armor_acid": 1,
+    "armor_bash": 4,
+    "armor_cut": 12,
+    "armor_fire": 2,
+    "armor_stab": 10,
+    "attack_cost": 175,
+    "color": "light_green_white",
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "default_faction": "zombie",
+    "description": "一具令人惊愕的尸体，伴随着一条长度类似中世纪剑的直刃手臂。敏捷的，看起来很有天赋的前锋，眼睛盯着一个点，好像是在寻找不幸的受害者的弱点。",
+    "dodge": 3,
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY",
+      "BONES"
+    ],
+    "harvest": "zombie",
+    "hp": 200,
+    "id": "mon_zombie_razor",
+    "material": [
+      "flesh"
+    ],
+    "melee_cut": 6,
+    "melee_damage": [
+      {
+        "amount": 7,
+        "damage_type": "cut"
+      }
+    ],
+    "diff": 15,
+    "melee_dice": 1,
+    "melee_dice_sides": 6,
+    "melee_skill": 8,
+    "morale": 100,
+    "name": {
+      "str": "剃刀"
+    },
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_zombie_razor_dslash_target"
+        },
+        "cooldown": 22,
+        "monster_message": "%1$s发动了猛烈的攻击！"
+      },
+      [
+        "swordslashshp",
+        10
+      ]
+    ],
+    "species": [
+      "ZOMBIE",
+      "SECROZED_3",
+      "HUMAN"
+    ],
+    "speed": 90,
+    "symbol": "⫰",
+    "type": "MONSTER",
+    "vision_day": 30,
+    "volume": "62500 ml",
+    "weight": "81500 g"
+  }
+]

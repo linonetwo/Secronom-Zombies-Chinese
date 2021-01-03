@@ -1,0 +1,353 @@
+[
+  {
+    "id": "mon_zombie_unify",
+    "type": "MONSTER",
+    "name": "unifier zombie",
+    "description": "一具严重变异的粗犷尸体成功地将其肮脏的血液繁殖成一种厚厚的物质，肉眼可以看到它肿胀的暗红色血管。一种巨大的、肉质的物质从双手拍打着。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "SECROZED_2"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "harvest": "zombie",
+    "hp": 155,
+    "speed": 85,
+    "material": [
+      "flesh"
+    ],
+    "attack_effs": [
+      {
+        "id": "unify_bloodslow",
+        "duration": 120,
+        "chance": 25
+      }
+    ],
+    "diff": 1,
+    "symbol": "☾",
+    "color": "magenta",
+    "aggression": 10,
+    "morale": 50,
+    "melee_skill": 2,
+    "melee_dice": 4,
+    "melee_dice_sides": 2,
+    "melee_cut": 0,
+    "armor_bash": 2,
+    "armor_cut": 3,
+    "armor_stab": 2,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_zombie_unify_bv_target"
+        },
+        "cooldown": 45,
+        "monster_message": "%1$s的手下产生了一条血管！</color>"
+      }
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "anger_triggers": [
+      "FRIEND_DIED",
+      "FRIEND_ATTACKED"
+    ],
+    "upgrades": {
+      "half_life": 14,
+      "into": "mon_zombie_unity"
+    },
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "BONES",
+      "FILTHY",
+      "GROUP_MORALE"
+    ]
+  },
+  {
+    "id": "mon_zombie_unity",
+    "type": "MONSTER",
+    "name": "unity zombie",
+    "description": "从头部到脚，这具尸体的血脉迅速排出厚厚的血液，形成一个外层，用于攻击和防御。一个巨大的物体围绕着它的躯干共振，在每一个节拍中，滴下一滴渗出的黑色液体。",
+    "default_faction": "zombie",
+    "harvest": "zombie",
+    "species": [
+      "ZOMBIE",
+      "SECROZED_2"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 205,
+    "speed": 75,
+    "diff": 15,
+    "material": [
+      "flesh"
+    ],
+    "attack_effs": [
+      {
+        "id": "unity_bloodslow",
+        "duration": 120,
+        "chance": 50
+      }
+    ],
+    "symbol": "☪",
+    "color": "pink",
+    "aggression": 10,
+    "morale": 50,
+    "melee_skill": 4,
+    "melee_dice": 4,
+    "melee_dice_sides": 2,
+    "melee_cut": 0,
+    "armor_cut": 5,
+    "armor_bash": 10,
+    "armor_stab": 5,
+    "attack_cost": 250,
+    "//": "slow attack speed, so don't worry.",
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "anger_triggers": [
+      "FRIEND_DIED",
+      "FRIEND_ATTACKED"
+    ],
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_zombie_unity_bv_target"
+        },
+        "cooldown": 60,
+        "monster_message": "血管从%1$s的核心出现了！</color>"
+      }
+    ],
+    "upgrades": {
+      "half_life": 20,
+      "into_group": "GROUP_UNIFIER_UPGRADEX"
+    },
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "BONES",
+      "FILTHY",
+      "GROUP_MORALE",
+      "PLASTIC"
+    ]
+  },
+  {
+    "id": "mon_zombie_hemo",
+    "type": "MONSTER",
+    "name": "hemofiend",
+    "looks_like": "mon_zombie_unity",
+    "description": "杂草丛生的血管在诡异的深红色血液中发光。一具又大又可怕的尸体，对它的面容和对生命液体的操纵来说只是一场噩梦。",
+    "default_faction": "zombie",
+    "harvest": "zombie",
+    "species": [
+      "ZOMBIE",
+      "SECROZED_3"
+    ],
+    "volume": "92500 ml",
+    "weight": "120000 g",
+    "hp": 380,
+    "diff": 15,
+    "speed": 70,
+    "material": [
+      "flesh"
+    ],
+    "attack_effs": [
+      {
+        "id": "unity_bloodslow",
+        "duration": 120
+      }
+    ],
+    "symbol": "☪",
+    "color": "red_magenta",
+    "aggression": 10,
+    "morale": 50,
+    "melee_skill": 6,
+    "melee_dice": 6,
+    "melee_dice_sides": 4,
+    "melee_cut": 0,
+    "armor_cut": 8,
+    "armor_bash": 22,
+    "armor_stab": 10,
+    "attack_cost": 325,
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "anger_triggers": [
+      "FRIEND_DIED",
+      "FRIEND_ATTACKED"
+    ],
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_zombie_hemo_bwave"
+        },
+        "cooldown": 60,
+        "monster_message": "%1$s控制自己的血液并把它送到%3$s！</color>\n<color_yellow>有几条血管从%1$s的身体里冒出来！</color>"
+      }
+    ],
+    "regenerates": 2,
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "BONES",
+      "FILTHY",
+      "GROUP_MORALE",
+      "PLASTIC"
+    ]
+  },
+  {
+    "id": "mon_zombie_bloodvessel",
+    "type": "MONSTER",
+    "name": "blood vessel",
+    "description": "完全由血液制成的有生命的物质，粘性太大，不能以有限的速度移动。它不稳定地跳动。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE"
+    ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 20,
+    "speed": 50,
+    "material": [
+      "flesh"
+    ],
+    "attack_effs": [
+      {
+        "id": "unity_bloodslow",
+        "duration": 120,
+        "chance": 25
+      }
+    ],
+    "diff": 5,
+    "attack_cost": 300,
+    "harvest": "exempt",
+    "symbol": "&",
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 2,
+    "melee_cut": 0,
+    "armor_bash": 20,
+    "death_function": [
+      "MELT"
+    ],
+    "regenerates": 3,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_zombie_bloodvessel_explo_target"
+        },
+        "cooldown": 120,
+        "monster_message": "血管爆炸了！</color>"
+      }
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "ELECTRIC",
+      "ACIDPROOF",
+      "NO_BREATHE",
+      "PLASTIC"
+    ]
+  },
+  {
+    "id": "mon_zombie_bloodfiend",
+    "type": "MONSTER",
+    "name": "blood fiend",
+    "description": "一种由增厚的血液制成的大而活跃的物质。它身体臃肿的部分看起来反复无常，心跳加快。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE"
+    ],
+    "volume": "92500 ml",
+    "weight": "120000 g",
+    "hp": 40,
+    "speed": 40,
+    "diff": 50,
+    "material": [
+      "flesh"
+    ],
+    "attack_effs": [
+      {
+        "id": "unity_bloodslow",
+        "duration": 120,
+        "chance": 50
+      }
+    ],
+    "attack_cost": 325,
+    "harvest": "exempt",
+    "symbol": "&",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 4,
+    "melee_dice_sides": 4,
+    "melee_cut": 0,
+    "armor_bash": 24,
+    "death_function": [
+      "MELT"
+    ],
+    "regenerates": 5,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_zombie_bloodfiend_explo_target"
+        },
+        "cooldown": 120,
+        "monster_message": "血妖爆发了！</color>"
+      }
+    ],
+    "looks_like": "mon_zombie_bloodvessel",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "ELECTRIC",
+      "ACIDPROOF",
+      "NO_BREATHE",
+      "PLASTIC"
+    ]
+  }
+]

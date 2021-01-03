@@ -1,0 +1,292 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_vector",
+    "looks_like": "t_fungus",
+    "name": "矢量床",
+    "description": "浓密的淡蓝色树叶低垂在地上，随风摇摆。",
+    "symbol": ".",
+    "light_emitted": 1,
+    "color": "light_blue",
+    "move_cost": 3,
+    "flags": [
+      "TRANSPARENT",
+      "FLAMMABLE_ASH",
+      "DIGGABLE",
+      "NOCOLLIDE",
+      "VECTOR",
+      "EMITTER"
+    ],
+    "emissions": [
+      "secro_vector_small"
+    ],
+    "bash": {
+      "sound": "smash",
+      "ter_set": "t_null",
+      "str_min": 20,
+      "str_max": 400,
+      "str_min_supported": 50
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_shrub_vector",
+    "looks_like": "t_shrub_fungal",
+    "name": "矢量灌木",
+    "description": "一种灌木的模糊回忆，树枝和叶子的大的外生物在媒介灰尘中开花。",
+    "symbol": "#",
+    "color": "blue",
+    "move_cost": 8,
+    "emissions": [
+      "secro_vector_smol_seeding"
+    ],
+    "light_emitted": 3,
+    "coverage": 40,
+    "flags": [
+      "TRANSPARENT",
+      "CONTAINER",
+      "FLAMMABLE_ASH",
+      "THIN_OBSTACLE",
+      "PLACE_ITEM",
+      "SHRUB",
+      "VECTOR",
+      "EMITTER",
+      "SHORT"
+    ],
+    "bash": {
+      "str_min": 4,
+      "str_max": 60,
+      "sound": "crunch.",
+      "sound_fail": "oof!",
+      "ter_set": "t_vector"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_vector_young",
+    "looks_like": "t_tree_fungal_young",
+    "name": "幼树",
+    "description": "一种不成熟的树，被媒介灰尘侵扰。",
+    "symbol": "1",
+    "emissions": [
+      "secro_vector_smol_seeding"
+    ],
+    "color": "blue",
+    "light_emitted": 3,
+    "move_cost": 4,
+    "flags": [
+      "TRANSPARENT",
+      "FLAMMABLE_ASH",
+      "NOITEM",
+      "VECTOR",
+      "YOUNG",
+      "EMITTER",
+      "REDUCE_SCENT"
+    ],
+    "bash": {
+      "str_min": 4,
+      "str_max": 50,
+      "sound": "crunch!",
+      "sound_fail": "oof!",
+      "ter_set": "t_vector"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_vector",
+    "looks_like": "t_tree_fungal",
+    "name": "向量树",
+    "description": "受媒介尘埃的侵扰，这棵树用它的叶子、树皮条纹和落下的星光照亮周围的环境。",
+    "symbol": "7",
+    "color": "light_blue",
+    "light_emitted": 10,
+    "move_cost": 0,
+    "coverage": 80,
+    "emissions": [
+      "secro_vector_smol_seeding"
+    ],
+    "flags": [
+      "FLAMMABLE_ASH",
+      "NOITEM",
+      "VECTOR",
+      "EMITTER",
+      "TREE",
+      "REDUCE_SCENT"
+    ],
+    "bash": {
+      "str_min": 40,
+      "str_max": 180,
+      "sound": "crunch!",
+      "sound_fail": "oof!",
+      "ter_set": "t_vector"
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_floral_vector",
+    "looks_like": "f_lily",
+    "name": "花载体",
+    "description": "一朵曾经五颜六色的花，现在只是一个单色的蓝色在各个角度。",
+    "symbol": "f",
+    "color": "blue",
+    "move_cost_mod": 0,
+    "emissions": [
+      "secro_vector_smol_seeding"
+    ],
+    "required_str": -1,
+    "light_emitted": 2,
+    "flags": [
+      "TRANSPARENT",
+      "TINY",
+      "FLAMMABLE_ASH",
+      "NOCOLLIDE",
+      "FLOWER",
+      "VECTOR",
+      "EMITTER"
+    ],
+    "bash": {
+      "str_min": 2,
+      "str_max": 6,
+      "sound": "oof!.",
+      "sound_fail": "whish."
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_ladder",
+    "name": "梯子",
+    "description": "通过垂直方向的梯子。",
+    "symbol": "x",
+    "color": "dark_gray",
+    "move_cost": 2,
+    "flags": [
+      "TRANSPARENT",
+      "GOES_DOWN",
+      "GOES_UP",
+      "PLACE_ITEM",
+      "DIFFICULT_Z"
+    ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_ramp_down",
+    "name": "坡道（下行）",
+    "description": "向下的斜坡。",
+    "symbol": ">",
+    "color": "white",
+    "move_cost": 2,
+    "flags": [
+      "TRANSPARENT",
+      "PLACE_ITEM",
+      "GOES_DOWN",
+      "SEEN_FROM_ABOVE"
+    ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_ramp_up",
+    "name": "坡道（上行）",
+    "description": "向上的斜坡。",
+    "symbol": "<",
+    "color": "white",
+    "move_cost": 2,
+    "flags": [
+      "TRANSPARENT",
+      "PLACE_ITEM",
+      "RAMP",
+      "GOES_UP"
+    ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_metal_hatch_c",
+    "name": "封闭式金属舱口",
+    "description": "与下面的结构相连的封闭的金属舱口。",
+    "symbol": "+",
+    "color": "cyan",
+    "move_cost": 2,
+    "flags": [
+      "TRANSPARENT"
+    ],
+    "open": "t_secro_metal_hatch_o",
+    "bash": {
+      "str_min": 30,
+      "str_max": 210,
+      "str_min_blocked": 40,
+      "str_max_blocked": 240,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "ter_set": "t_ladder_down",
+      "items": [
+        {
+          "item": "steel_chunk",
+          "count": [
+            1,
+            4
+          ]
+        },
+        {
+          "item": "scrap",
+          "count": [
+            3,
+            12
+          ]
+        },
+        {
+          "item": "hinge",
+          "count": [
+            1,
+            2
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_metal_hatch_o",
+    "name": "打开金属舱口",
+    "description": "一个打开的金属舱口，与下面的结构相连。它展示了一组向下的空心梯子。",
+    "symbol": ">",
+    "looks_like": "t_door_metal_o",
+    "color": "cyan",
+    "move_cost": 2,
+    "flags": [
+      "TRANSPARENT",
+      "GOES_DOWN"
+    ],
+    "close": "t_secro_metal_hatch_c",
+    "bash": {
+      "str_min": 20,
+      "str_max": 210,
+      "str_min_blocked": 30,
+      "str_max_blocked": 240,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "ter_set": "t_ladder_down",
+      "items": [
+        {
+          "item": "steel_chunk",
+          "count": [
+            1,
+            4
+          ]
+        },
+        {
+          "item": "scrap",
+          "count": [
+            3,
+            12
+          ]
+        },
+        {
+          "item": "hinge",
+          "count": [
+            1,
+            2
+          ]
+        }
+      ]
+    }
+  }
+]

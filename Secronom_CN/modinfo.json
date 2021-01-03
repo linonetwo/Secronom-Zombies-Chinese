@@ -1,0 +1,16 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "secronom",
+    "name": "<color_light_red>Secronom</color>",
+    "authors": [
+      "Axema Vales"
+    ],
+    "description": "\n<color_red>将您的灾难体验带入地狱般的噩梦…对萌新极其不友好</color>",
+    "version": "<color_light_green>V1.9 - 12/26/2020</color>",
+    "category": "content",
+    "dependencies": [
+      "dda"
+    ]
+  }
+]

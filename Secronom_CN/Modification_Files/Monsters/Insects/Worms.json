@@ -1,0 +1,286 @@
+[
+  {
+    "id": "mon_zombieworm_noxeater",
+    "type": "MONSTER",
+    "name": "noxious eater",
+    "description": "一种大而松弛的蠕虫，在它的小口中排列着数百颗可怕的牙齿。它喜欢吃坏死的肉。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "WORM",
+      "SECROZED_1"
+    ],
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "harvest": "zombie",
+    "hp": 40,
+    "speed": 60,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⟆",
+    "color": "pink",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 4,
+    "melee_dice": 1,
+    "melee_dice_sides": 4,
+    "melee_cut": 2,
+    "dodge": 1,
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 12,
+        "accuracy": 4,
+        "damage_max_instance": [
+          {
+            "damage_type": "stab",
+            "amount": 8,
+            "armor_multiplier": 0.3
+          },
+          {
+            "damage_type": "bash",
+            "amount": 8,
+            "armor_multiplier": 0.3
+          }
+        ]
+      }
+    ],
+    "death_function": [
+      "NORMAL"
+    ],
+    "anger_triggers": [
+      "HURT"
+    ],
+    "upgrades": {
+      "half_life": 6,
+      "into_group": "GROUP_NOX_UPGRADE"
+    },
+    "flags": [
+      "DIGS",
+      "CAN_DIG",
+      "HEARS",
+      "GOODHEARING",
+      "WARM"
+    ]
+  },
+  {
+    "//": "More on dealing bite damage.",
+    "id": "mon_zombieworm_gravedigger",
+    "type": "MONSTER",
+    "name": "grave digger",
+    "description": "一种巨大的深红色蠕虫，它的厚皮像坚硬的橡胶。在它的四尖牙下，有成千上万颗贪婪的牙齿。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "SECROWORM"
+    ],
+    "volume": "875000 ml",
+    "weight": "200000 g",
+    "harvest": "zombie",
+    "hp": 525,
+    "speed": 30,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⚕",
+    "color": "red",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 8,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "melee_cut": 6,
+    "dodge": 1,
+    "armor_bash": 18,
+    "armor_cut": 4,
+    "armor_stab": 1,
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 27,
+        "accuracy": 8,
+        "damage_max_instance": [
+          {
+            "damage_type": "stab",
+            "amount": 30,
+            "armor_multiplier": 0.4
+          },
+          {
+            "damage_type": "bash",
+            "amount": 30,
+            "armor_multiplier": 0.4
+          }
+        ]
+      }
+    ],
+    "anger_triggers": [
+      "HURT"
+    ],
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "DIGS",
+      "CAN_DIG",
+      "HEARS",
+      "GOODHEARING",
+      "SMELLS",
+      "WARM",
+      "PLASTIC"
+    ]
+  },
+  {
+    "//": "More on dealing ranged damage.",
+    "id": "mon_zombieworm_wriggly",
+    "type": "MONSTER",
+    "name": "writhing horror",
+    "description": "一种巨大的蠕虫，有数百条触角，不断地从它病态的淡红色皮肤上缠绕。在它松软的头下露出一排邪恶的牙齿，深深地伴随着紧凑的卷须。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "SECROWORM"
+    ],
+    "volume": "875000 ml",
+    "weight": "200000 g",
+    "harvest": "zombie",
+    "hp": 710,
+    "speed": 20,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "☤",
+    "color": "light_red",
+    "aggression": 50,
+    "morale": 50,
+    "dodge": 1,
+    "melee_skill": 10,
+    "melee_dice": 2,
+    "melee_dice_sides": 8,
+    "melee_cut": 4,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_zombieworm_wriggly_target"
+        },
+        "cooldown": 40,
+        "monster_message": "%1$s的触须穿透%3$s！"
+      },
+      {
+        "type": "bite",
+        "cooldown": 22,
+        "accuracy": 7,
+        "damage_max_instance": [
+          {
+            "damage_type": "stab",
+            "amount": 23,
+            "armor_multiplier": 0.5
+          },
+          {
+            "damage_type": "bash",
+            "amount": 23,
+            "armor_multiplier": 0.2
+          }
+        ]
+      }
+    ],
+    "armor_bash": 8,
+    "armor_cut": 1,
+    "armor_stab": 1,
+    "death_function": [
+      "NORMAL"
+    ],
+    "anger_triggers": [
+      "HURT"
+    ],
+    "flags": [
+      "DIGS",
+      "CAN_DIG",
+      "HEARS",
+      "SMELLS",
+      "GOODHEARING",
+      "WARM"
+    ]
+  },
+  {
+    "//": "Both deals damage and inflicts debuff.",
+    "id": "mon_zombieworm_mawy",
+    "type": "MONSTER",
+    "name": "sinister maw",
+    "description": "一种巨大的蠕虫，其起源很神秘。它闪闪发光的白色表面描绘了它狡猾的本性，但一旦它试图大饱口福，它的胃部就能输送出一股网状的肉，内口可以从远处进食。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "SECROWORM"
+    ],
+    "volume": "875000 ml",
+    "weight": "200000 g",
+    "harvest": "zombie",
+    "hp": 440,
+    "speed": 35,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⨛",
+    "color": "white",
+    "aggression": 50,
+    "morale": 50,
+    "emit_fields": [
+      "emit_mawy_web_immunity"
+    ],
+    "melee_skill": 10,
+    "melee_dice": 4,
+    "melee_dice_sides": 6,
+    "melee_cut": 4,
+    "vision_day": 7,
+    "vision_night": 1,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_zombieworm_mawy_target_random"
+        },
+        "cooldown": 22,
+        "monster_message": "<color_yellow>%1$s将其孔口指向%3$s…</color>"
+      },
+      {
+        "type": "bite",
+        "cooldown": 16,
+        "accuracy": 5,
+        "damage_max_instance": [
+          {
+            "damage_type": "stab",
+            "amount": 20,
+            "armor_multiplier": 0.75,
+            "damage_multiplier": 0.75
+          },
+          {
+            "damage_type": "bash",
+            "amount": 20,
+            "armor_multiplier": 0.5
+          }
+        ]
+      }
+    ],
+    "armor_bash": 12,
+    "armor_cut": 2,
+    "armor_stab": 2,
+    "dodge": 2,
+    "death_function": [
+      "NORMAL"
+    ],
+    "anger_triggers": [
+      "HURT"
+    ],
+    "flags": [
+      "DIGS",
+      "CAN_DIG",
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WEBWALK",
+      "WARM"
+    ]
+  }
+]
