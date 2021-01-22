@@ -91,8 +91,8 @@
   {
     "id": "mon_zombie_thicktendrils",
     "type": "MONSTER",
-    "name": "thick tendril zombie",
-    "description": "一对扩大的触角触地，似乎是因为它的重量是一个讨厌的尸体。",
+    "name": "tendril zombie",
+    "description": "一种卷须僵尸，其触角对因进一步变异而变厚。",
     "default_faction": "zombie",
     "species": [
       "ZOMBIE",
@@ -182,8 +182,8 @@
   {
     "id": "mon_zombie_tendricles",
     "type": "MONSTER",
-    "name": "tendricle zombie",
-    "description": "凶猛的长触须覆盖着这具尸体腐烂的皮肤，较短的一对卷须顶端有锋利的骨头。",
+    "name": "tendril zombie",
+    "description": "一具看起来很虚弱的尸体，长着愤怒的长触角，覆盖着腐烂的皮肤。它的卷须对顶端有锋利的骨头。",
     "default_faction": "zombie",
     "species": [
       "ZOMBIE",

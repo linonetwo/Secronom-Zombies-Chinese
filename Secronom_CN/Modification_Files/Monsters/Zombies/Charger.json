@@ -74,7 +74,7 @@
   {
     "id": "mon_zombie_charger_spike",
     "type": "MONSTER",
-    "name": "spiky charger zombie",
+    "name": "charger zombie",
     "description": "一只曾经粗壮的僵尸，现在已经被皮肤下突出的骨钉所覆盖，然而它厚实的变异手臂却被更大的骨钉所压倒。",
     "default_faction": "zombie",
     "species": [
@@ -135,7 +135,7 @@
   {
     "id": "mon_zombie_charger_plate",
     "type": "MONSTER",
-    "name": "plated charger zombie",
+    "name": "charger zombie",
     "description": "一具巨大的尸体，其皮肤钙化成一层，像一个贝壳，其目的是保护下面的四肢。它使它的动作变得僵硬，几乎听不到皮肤的摩擦声。",
     "default_faction": "zombie",
     "species": [

@@ -121,7 +121,7 @@
     "melee_skill": 6,
     "morale": 100,
     "name": {
-      "str": "利刃僵尸"
+      "str": "刀锋僵尸"
     },
     "special_attacks": [
       [
@@ -163,7 +163,7 @@
       "NORMAL"
     ],
     "default_faction": "zombie",
-    "description": "拖着这把腐烂的剑，显然这把武器的重量使可怜的死者背上了沉重的负担。",
+    "description": "它拖着锯齿状的骨剑四处游荡，显然这把武器的重量使可怜的死者背上了沉重的负担。",
     "dodge": 1,
     "flags": [
       "SEES",
@@ -201,7 +201,7 @@
     "melee_skill": 6,
     "morale": 100,
     "name": {
-      "str": "锯齿刃僵尸"
+      "str": "刀锋僵尸"
     },
     "special_attacks": [
       [

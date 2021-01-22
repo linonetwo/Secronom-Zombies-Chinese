@@ -2465,5 +2465,10 @@
   "[DEBUG] Complete Perimeter Walls\nDefenses": "[调试]完成围墙\n防御",
   "[DEBUG] Complete Turrets\n(flesh heap, all coords, far orientation)\nDefenses": "[调试]完成炮塔\n（肉堆，所有坐标，远方位）",
   "*can't build right now, as it is currently working on a structure.": "*无法立即生成，因为它当前正在处理结构。",
-  "*readies its tendrils, awaiting your order.": "*准备好它的卷须，等待你的命令。"
+  "*readies its tendrils, awaiting your order.": "*准备好它的卷须，等待你的命令。",
+  "Dragging its serrated bone sword around, apparently the weight of this weapon burdens the pitiful deceased.": "它拖着锯齿状的骨剑四处游荡，显然这把武器的重量使可怜的死者背上了沉重的负担。",
+  "A tendril zombie with its tentacle pairs thickened from further mutation.": "一种卷须僵尸，其触角对因进一步变异而变厚。",
+  "A longer set of arms struggles this zombie to walk nor run, but now it is used to jump and taking down the unexpecting target from afar.": "一组较长的武器挣扎着让这个僵尸行走或奔跑，但现在它被用来从远处跳跃并击落未预料到的目标。",
+  "A frail-looking corpse with raging long tentacles covering its rotten skin. Its tendril pairs are tipped with a sharp bone.": "一具看起来很虚弱的尸体，长着愤怒的长触角，覆盖着腐烂的皮肤。它的卷须对顶端有锋利的骨头。",
+  "This arachnid's symmetric arms has mutated, causing its already deformed nails curve into unearthly sharpened filth.": "这种蛛形纲动物对称的手臂发生了变异，导致它已经变形的指甲弯成了不寻常的尖锐的污垢。"
 }

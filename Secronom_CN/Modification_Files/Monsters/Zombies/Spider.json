@@ -81,8 +81,8 @@
   {
     "id": "mon_zombie_spoderhug",
     "type": "MONSTER",
-    "name": "longarm spider zombie",
-    "description": "一组较长的手臂挣扎着让这个僵尸行走或奔跑，但现在它被用来跳得更远，并击落未预料到的目标。",
+    "name": "spider zombie",
+    "description": "一组较长的武器挣扎着让这个僵尸行走或奔跑，但现在它被用来从远处跳跃并击落未预料到的目标。",
     "default_faction": "zombie",
     "species": [
       "ZOMBIE",
@@ -169,8 +169,8 @@
   {
     "id": "mon_zombie_spodertickle",
     "type": "MONSTER",
-    "name": "claw spider zombie",
-    "description": "这种蛛形纲动物对称的手臂发生了变异，变形的指甲弯成了不寻常的尖锐的污垢。",
+    "name": "spider zombie",
+    "description": "这种蛛形纲动物对称的手臂发生了变异，导致它已经变形的指甲弯成了不寻常的尖锐的污垢。",
     "default_faction": "zombie",
     "species": [
       "ZOMBIE",
