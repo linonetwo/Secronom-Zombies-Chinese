@@ -2,7 +2,9 @@
   {
     "id": "mon_zombieworm_noxeater",
     "type": "MONSTER",
-    "name": "noxious eater",
+    "name": {
+      "str": "毒食者"
+    },
     "description": "一种大而松弛的蠕虫，在它的小口中排列着数百颗可怕的牙齿。它喜欢吃坏死的肉。",
     "default_faction": "zombie",
     "species": [
@@ -10,6 +12,7 @@
       "WORM",
       "SECROZED_1"
     ],
+    "bodytype": "snake",
     "volume": "30000 ml",
     "weight": "40750 g",
     "harvest": "zombie",
@@ -53,11 +56,10 @@
       "HURT"
     ],
     "upgrades": {
-      "half_life": 6,
+      "half_life": 14,
       "into_group": "GROUP_NOX_UPGRADE"
     },
     "flags": [
-      "DIGS",
       "CAN_DIG",
       "HEARS",
       "GOODHEARING",
@@ -68,13 +70,16 @@
     "//": "More on dealing bite damage.",
     "id": "mon_zombieworm_gravedigger",
     "type": "MONSTER",
-    "name": "grave digger",
+    "name": {
+      "str": "掘墓人"
+    },
     "description": "一种巨大的深红色蠕虫，它的厚皮像坚硬的橡胶。在它的四尖牙下，有成千上万颗贪婪的牙齿。",
     "default_faction": "zombie",
     "species": [
       "ZOMBIE",
       "SECROWORM"
     ],
+    "bodytype": "snake",
     "volume": "875000 ml",
     "weight": "200000 g",
     "harvest": "zombie",
@@ -95,7 +100,17 @@
     "armor_bash": 18,
     "armor_cut": 4,
     "armor_stab": 1,
+    "vision_day": 10,
+    "vision_night": 2,
     "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_zombieworm_gravedigger_destroy_target"
+        },
+        "cooldown": 15,
+        "monster_message": "<color\\u洋红>%1$s蹂躏！</color>"
+      },
       {
         "type": "bite",
         "cooldown": 27,
@@ -120,27 +135,37 @@
     "death_function": [
       "NORMAL"
     ],
+    "upgrades": {
+      "half_life": 20,
+      "into_group": "GROUP_GRAVEDIGGER_UPGRADEX"
+    },
     "flags": [
       "DIGS",
       "CAN_DIG",
+      "SEES",
       "HEARS",
       "GOODHEARING",
       "SMELLS",
       "WARM",
-      "PLASTIC"
+      "PLASTIC",
+      "BASHES",
+      "DESTROYS"
     ]
   },
   {
     "//": "More on dealing ranged damage.",
     "id": "mon_zombieworm_wriggly",
     "type": "MONSTER",
-    "name": "writhing horror",
+    "name": {
+      "str": "扭动的恐怖"
+    },
     "description": "一种巨大的蠕虫，有数百条触角，不断地从它病态的淡红色皮肤上缠绕。在它松软的头下露出一排邪恶的牙齿，深深地伴随着紧凑的卷须。",
     "default_faction": "zombie",
     "species": [
       "ZOMBIE",
       "SECROWORM"
     ],
+    "bodytype": "snake",
     "volume": "875000 ml",
     "weight": "200000 g",
     "harvest": "zombie",
@@ -158,14 +183,16 @@
     "melee_dice": 2,
     "melee_dice_sides": 8,
     "melee_cut": 4,
+    "vision_day": 16,
+    "vision_night": 4,
     "special_attacks": [
       {
         "type": "spell",
         "spell_data": {
-          "id": "mon_zombieworm_wriggly_target"
+          "id": "mon_zombieworm_wriggly_destroy_target"
         },
-        "cooldown": 40,
-        "monster_message": "<color_yellow>%1$s's tentacles pierces through %3$s</color>%1$s的触须穿透%3$s！"
+        "cooldown": 30,
+        "monster_message": "%1$s的目标是%3$s！</color>"
       },
       {
         "type": "bite",
@@ -197,23 +224,29 @@
     "flags": [
       "DIGS",
       "CAN_DIG",
+      "SEES",
       "HEARS",
       "SMELLS",
       "GOODHEARING",
-      "WARM"
+      "WARM",
+      "BASHES",
+      "DESTROYS"
     ]
   },
   {
     "//": "Both deals damage and inflicts debuff.",
     "id": "mon_zombieworm_mawy",
     "type": "MONSTER",
-    "name": "sinister maw",
+    "name": {
+      "str": "恶肚"
+    },
     "description": "一种巨大的蠕虫，其起源很神秘。它闪闪发光的白色表面描绘了它狡猾的本性，但一旦它试图大饱口福，它的胃部就能输送出一股网状的肉，内口可以从远处进食。",
     "default_faction": "zombie",
     "species": [
       "ZOMBIE",
       "SECROWORM"
     ],
+    "bodytype": "snake",
     "volume": "875000 ml",
     "weight": "200000 g",
     "harvest": "zombie",
@@ -226,23 +259,20 @@
     "color": "white",
     "aggression": 50,
     "morale": 50,
-    "emit_fields": [
-      "emit_mawy_web_immunity"
-    ],
     "melee_skill": 10,
     "melee_dice": 4,
     "melee_dice_sides": 6,
     "melee_cut": 4,
-    "vision_day": 7,
-    "vision_night": 1,
+    "vision_day": 16,
+    "vision_night": 4,
     "special_attacks": [
       {
         "type": "spell",
         "spell_data": {
-          "id": "mon_zombieworm_mawy_target_random"
+          "id": "mon_zombieworm_mawy_destroy_target"
         },
-        "cooldown": 22,
-        "monster_message": "<color_yellow>%1$s将其孔口指向%3$s…</color>"
+        "cooldown": 24,
+        "monster_message": "<color\\u yellow>%1$s蹂躏，然后将其孔口指向%3$s…</color>"
       },
       {
         "type": "bite",
@@ -280,7 +310,93 @@
       "HEARS",
       "SMELLS",
       "WEBWALK",
-      "WARM"
+      "WARM",
+      "BASHES",
+      "DESTROYS"
+    ]
+  },
+  {
+    "//": "Only evolves from grave digger. Can destroy nearby terrains.",
+    "id": "mon_zombieworm_onger",
+    "looks_like": "mon_yugg",
+    "type": "MONSTER",
+    "name": {
+      "str": "狼人"
+    },
+    "description": "一种像汽车一样宽的灾难性蠕虫，其身体的其余部分隐藏在下面。它对尸体的过度消耗一定导致了它进一步的变异。",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE",
+      "SECROWORM"
+    ],
+    "bodytype": "snake",
+    "volume": "1000000 ml",
+    "weight": "375000 g",
+    "harvest": "zombie",
+    "hp": 1005,
+    "speed": 20,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "⚕",
+    "color": "white_red",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 10,
+    "melee_dice": 4,
+    "melee_dice_sides": 8,
+    "melee_cut": 8,
+    "armor_bash": 24,
+    "armor_cut": 10,
+    "armor_stab": 6,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_zombieworm_onger_destroy_target"
+        },
+        "cooldown": 12,
+        "monster_message": "当它发出刺耳的尖叫声时，%1$s就会被毁坏！</color>"
+      },
+      {
+        "type": "bite",
+        "cooldown": 50,
+        "accuracy": 5,
+        "damage_max_instance": [
+          {
+            "damage_type": "stab",
+            "amount": 40,
+            "armor_multiplier": 0.5
+          },
+          {
+            "damage_type": "bash",
+            "amount": 40,
+            "armor_multiplier": 0.4
+          }
+        ]
+      }
+    ],
+    "anger_triggers": [
+      "HURT"
+    ],
+    "death_function": [
+      "NORMAL"
+    ],
+    "vision_day": 24,
+    "vision_night": 4,
+    "flags": [
+      "DIGS",
+      "CAN_DIG",
+      "HEARS",
+      "SEES",
+      "GOODHEARING",
+      "SMELLS",
+      "WARM",
+      "PLASTIC",
+      "STUN_IMMUNE",
+      "PUSH_VEH",
+      "PUSH_MON",
+      "DESTROYS"
     ]
   }
 ]

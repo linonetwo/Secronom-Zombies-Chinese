@@ -626,17 +626,6 @@
   },
   {
     "type": "effect_type",
-    "id": "secro_gorepit_dmg_immune",
-    "max_duration": 1,
-    "removes_effects": [
-      "secro_gorepit_wall_dmg"
-    ],
-    "blocks_effects": [
-      "secro_gorepit_wall_dmg"
-    ]
-  },
-  {
-    "type": "effect_type",
     "id": "secro_cordev_corrupt",
     "name": [
       "腐败的"
@@ -1060,17 +1049,6 @@
         -1
       ]
     }
-  },
-  {
-    "type": "effect_type",
-    "id": "secro_mawy_web_immune",
-    "max_duration": 1,
-    "removes_effects": [
-      "secro_mawy_web"
-    ],
-    "blocks_effects": [
-      "secro_mawy_web"
-    ]
   },
   {
     "type": "effect_type",
@@ -1698,19 +1676,6 @@
   },
   {
     "type": "effect_type",
-    "id": "secro_flesh_biome_immune",
-    "max_duration": 1,
-    "removes_effects": [
-      "secro_flesh_biome",
-      "secro_blood_acid"
-    ],
-    "blocks_effects": [
-      "secro_flesh_biome",
-      "secro_blood_acid"
-    ]
-  },
-  {
-    "type": "effect_type",
     "id": "secro_flesh_wall_limit",
     "name": [
       "熔化"
@@ -2119,6 +2084,78 @@
     }
   },
   {
+    "type": "effect_type",
+    "id": "mon_szombie_vessel_arma_biters",
+    "name": [
+      "武器-咬人者"
+    ],
+    "show_in_info": true,
+    "max_duration": 20,
+    "base_mods": {
+      "bash_mod": [
+        8
+      ],
+      "cut_mod": [
+        8
+      ],
+      "speed_mod": [
+        -15
+      ]
+    },
+    "removes_effects": [
+      "mon_szombie_vessel_arma_tents",
+      "mon_szombie_vessel_arma_blades"
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "mon_szombie_vessel_arma_tents",
+    "name": [
+      "武器-触角"
+    ],
+    "show_in_info": true,
+    "max_duration": 20,
+    "base_mods": {
+      "hit_mod": [
+        3
+      ],
+      "bash_mod": [
+        4
+      ],
+      "speed_mod": [
+        15
+      ]
+    },
+    "removes_effects": [
+      "mon_szombie_vessel_arma_biters",
+      "mon_szombie_vessel_arma_blades"
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "mon_szombie_vessel_arma_blades",
+    "name": [
+      "武器-刀片"
+    ],
+    "show_in_info": true,
+    "max_duration": 20,
+    "base_mods": {
+      "hit_mod": [
+        2
+      ],
+      "cut_mod": [
+        10
+      ],
+      "speed_mod": [
+        -5
+      ]
+    },
+    "removes_effects": [
+      "mon_szombie_vessel_arma_biters",
+      "mon_szombie_vessel_arma_tents"
+    ]
+  },
+  {
     "//": "Effects for notifying the player. This method is a bit unstable...",
     "type": "effect_type",
     "id": "mon_zombie_swarmer_evo_savage_tension_target_random_YES",
@@ -2403,6 +2440,36 @@
     "type": "effect_type",
     "id": "mon_sflesh_camp_turret_hravager_thrust_YES",
     "apply_message": "<color_pink>The ravager flesh heap rakes at its target!</color>",
+    "rating": "mixed"
+  },
+  {
+    "type": "effect_type",
+    "id": "mon_szombie_vessel_biters_YES",
+    "apply_message": "<color_pink>Large gaping biters were formed in both of the vessel experimental's arms!</color>",
+    "rating": "mixed"
+  },
+  {
+    "type": "effect_type",
+    "id": "mon_szombie_vessel_tents_YES",
+    "apply_message": "<color_pink>Slender tentacles burst out of the vessel experimental's body!</color>",
+    "rating": "mixed"
+  },
+  {
+    "type": "effect_type",
+    "id": "mon_szombie_vessel_blades_YES",
+    "apply_message": "<color_pink>Bone blades protrudes from the vessel experimental arms!</color>",
+    "rating": "mixed"
+  },
+  {
+    "type": "effect_type",
+    "id": "mon_szombie_vessel_spitter_YES",
+    "apply_message": "<color_light_red>Its spitter armament shoots a glob of blood acid!</color>",
+    "rating": "mixed"
+  },
+  {
+    "type": "effect_type",
+    "id": "mon_szombie_vessel_spitter_cs_YES",
+    "apply_message": "<color_red>Its spitter armament showers blood acid!</color>",
     "rating": "mixed"
   },
   {

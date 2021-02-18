@@ -2,7 +2,9 @@
   {
     "id": "mon_bot_secroinforcer",
     "type": "MONSTER",
-    "name": "reinforcer bot",
+    "name": {
+      "str": "增强剂机器人"
+    },
     "description": "一种大型盘旋机器人。它的内部空间有各种各样的战斗机器人，周期性地激活它们并将它们部署到战场上。",
     "default_faction": "bot",
     "species": [
@@ -69,7 +71,9 @@
   {
     "id": "mon_bot_secroshocker",
     "type": "MONSTER",
-    "name": "shocker bot",
+    "name": {
+      "str": "令人震惊的机器人"
+    },
     "description": "陀螺球一种陀螺球，包裹在噼啪作响的可视放电中，金属体下附有锯片。",
     "default_faction": "bot",
     "species": [
@@ -138,7 +142,9 @@
   {
     "id": "mon_bot_secroriflewalker",
     "type": "MONSTER",
-    "name": "walker bot",
+    "name": {
+      "str": "步行机器人"
+    },
     "description": "一种四条腿的防暴机器人，头部装有自动M4A1步枪。它的脚上有塔泽，用于近战和/或制服目标。",
     "default_faction": "bot",
     "species": [
@@ -226,7 +232,9 @@
   {
     "id": "mon_bot_secrolauncher",
     "type": "MONSTER",
-    "name": "launcher bot",
+    "name": {
+      "str": "启动程序bot"
+    },
     "description": "部署直升机的自动导弹。它从舱口发射一枚寻的导弹，释放后激活它们。",
     "default_faction": "bot",
     "species": [
@@ -287,7 +295,9 @@
     "id": "mon_bot_secromissile",
     "//": "goes BOOM to the target when nearby fire.",
     "type": "MONSTER",
-    "name": "SS homing missile",
+    "name": {
+      "str": "SS寻的导弹"
+    },
     "description": "一枚热追踪导弹，正在向无助的目标爆炸的途中。",
     "default_faction": "bot",
     "species": [

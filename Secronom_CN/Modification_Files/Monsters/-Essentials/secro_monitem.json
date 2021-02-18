@@ -3,7 +3,9 @@
     "//": "Maximum of 2 clingers clinging on player's feet.",
     "id": "clinger_clinging",
     "type": "ARMOR",
-    "name": "<color_magenta>clinger</color>",
+    "name": {
+      "str": "<color\\u洋红>clinger</color>"
+    },
     "description": "一个严重妨碍你反应的肮脏的腐烂的生物。启动以将其拔出。",
     "weight": "1300 g",
     "volume": "500 ml",
@@ -75,7 +77,9 @@
     "id": "sflesh_bio",
     "copy-from": "flesh",
     "type": "COMESTIBLE",
-    "name": "flesh chunk",
+    "name": {
+      "str": "肉块"
+    },
     "description": "从融化的肉中取出的新鲜肉块，你可以分辨出它的珍贵内脏。既粗糙又奇怪，但具有再生的特性，可以在吃东西时修复深深的伤口。",
     "weight": "436 g",
     "volume": "500 ml",
@@ -188,7 +192,9 @@
     "volume": "500 ml",
     "spoils_in": "1 day",
     "type": "COMESTIBLE",
-    "name": "cooked flesh chunk",
+    "name": {
+      "str": "熟肉块"
+    },
     "description": "这是一块刚煮过的肉，虽然它的再生特性已经显著减弱，味道也一样。",
     "symbol": "%",
     "color": "red",
@@ -293,7 +299,9 @@
     "id": "sflesh_bio_smoked",
     "copy-from": "sflesh_bio_cooked",
     "type": "COMESTIBLE",
-    "name": "smoked flesh chunk",
+    "name": {
+      "str": "烟熏肉块"
+    },
     "description": "一块为了保存而被熏过的恶心的肉。",
     "symbol": "%",
     "color": "red",

@@ -4,7 +4,9 @@
     "id": "mon_vector",
     "looks_like": "mon_fungaloid",
     "type": "MONSTER",
-    "name": "vector",
+    "name": {
+      "str": "矢量"
+    },
     "description": "一种轻快的，近10英尺高的淡蓝色植物，有明亮的宽叶子，茎和枝上有不规则的条纹，在移动时剧烈地抽搐。微弱但令人愉快的景象，灰尘颗粒笼罩着生物，闪烁像一个星星的夜空。",
     "default_faction": "vector",
     "species": [
@@ -82,7 +84,9 @@
   {
     "id": "mon_vector_sprout",
     "type": "MONSTER",
-    "name": "vector sprout",
+    "name": {
+      "str": "媒介芽"
+    },
     "looks_like": "mon_fungaloid_young",
     "default_faction": "vector",
     "description": "摇曳的豆芽，像人一样高。未成熟时，它的叶子和粗枝上散发出闪烁的微粒气味。",
@@ -153,7 +157,9 @@
     "id": "mon_vector_sprig",
     "type": "MONSTER",
     "looks_like": "mon_fungaloid_young",
-    "name": "vector sprig",
+    "name": {
+      "str": "矢量枝"
+    },
     "description": "一种扭曲的深蓝色茎，有拳头大小的叶子。",
     "volume": "750 ml",
     "weight": "1000 g",
@@ -197,7 +203,9 @@
   {
     "id": "mon_vector_spore",
     "type": "MONSTER",
-    "name": "vector spore",
+    "name": {
+      "str": "载体孢子"
+    },
     "looks_like": "mon_spore",
     "description": "一种紧密的灰尘，轻轻地飘浮在空气中。",
     "volume": "750 ml",
@@ -258,7 +266,9 @@
   {
     "id": "mon_vector_seedler",
     "type": "MONSTER",
-    "name": "vector bloom",
+    "name": {
+      "str": "矢量水华"
+    },
     "looks_like": "mon_fungal_blossom",
     "description": "一种在树枝末端有独特花朵的载体。偶尔起伏，它会把更细的灰尘送到周围。",
     "default_faction": "vector",
@@ -333,7 +343,9 @@
     "id": "mon_vector_stinger",
     "type": "MONSTER",
     "looks_like": "mon_fungaloid",
-    "name": "vector stinger",
+    "name": {
+      "str": "矢量毒刺"
+    },
     "description": "长刺覆盖着这种病媒的树皮。它的叶子比较薄，但是很快就会渗进去。",
     "default_faction": "vector",
     "species": [
@@ -399,7 +411,9 @@
     "id": "mon_vector_tree",
     "type": "MONSTER",
     "looks_like": "mon_fungaloid_seeder",
-    "name": "vector tree",
+    "name": {
+      "str": "向量树"
+    },
     "description": "一种年老的病媒，比普通的橡树更高更大。几乎不动，密集的藤蔓覆盖着它厚厚的树皮，每当风呼啸，它的星光尘埃蔓延得更远。",
     "default_faction": "vector",
     "species": [

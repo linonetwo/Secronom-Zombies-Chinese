@@ -3,7 +3,9 @@
     "id": "laser_rifle_secrodragon",
     "type": "GUN",
     "reload_noise_volume": 10,
-    "name": "SS laser rifle",
+    "name": {
+      "str": "SS激光步枪"
+    },
     "description": "虽然它被认为不如A7激光步枪，党卫军激光步枪显示效率在弹幕射击廉价的UPS费用，以及其重量和体积减少。",
     "weight": "520 g",
     "volume": "750 ml",
@@ -37,7 +39,9 @@
   {
     "id": "SS_grenade_launchersecrodragon",
     "type": "GUN",
-    "name": "SS grenade launcher",
+    "name": {
+      "str": "SS榴弹发射器"
+    },
     "description": "一个简单的榴弹发射器，用于特殊的党卫军榴弹。",
     "weight": "2654 g",
     "volume": "1500 ml",
@@ -74,7 +78,9 @@
   {
     "id": "SS_pershield",
     "type": "GUN",
-    "name": "perimeter shield",
+    "name": {
+      "str": "周边防护罩"
+    },
     "description": "它向任何接近装备了它的实体的人发送一个极具破坏性的电流。可能也会让用户震惊。",
     "weight": "10000 g",
     "volume": "2500 ml",
@@ -109,7 +115,9 @@
     "id": "squirtler_bulb",
     "type": "GUN",
     "copy-from": "fake_item",
-    "name": "squirting bulb",
+    "name": {
+      "str": "喷射灯泡"
+    },
     "description": "喷射器的灯泡。",
     "flags": [
       "NEVER_JAMS"

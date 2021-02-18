@@ -3,7 +3,9 @@
     "//": "Support-type zed who assists allies by healing them.",
     "id": "mon_zombie_skittyweavy",
     "type": "MONSTER",
-    "name": "skittering weaver",
+    "name": {
+      "str": "快走织工"
+    },
     "description": "一种变异的生物，大小像猫，外表像虱子和甲虫的杂交体。它的前肢形成了一对奇怪的弯曲针头，针尖上有一个开口，下颚流着口水。",
     "default_faction": "zombie",
     "species": [
@@ -43,6 +45,10 @@
         "monster_message": "<color_light_red>%1$s flees from %3$s!</color>\n<color_yellow>%1$s从%3$s逃走了！</color>\n<color_yellow>然后%1$s匆忙注射它的针！</color>"
       }
     ],
+    "upgrades": {
+      "half_life": 12,
+      "into_group": "GROUP_SKITTYWEAVY_UPGRADE"
+    },
     "death_function": [
       "NORMAL"
     ],
@@ -62,7 +68,9 @@
   {
     "id": "mon_zombie_skittyweavy_repleshy",
     "type": "MONSTER",
-    "name": "replenishing weaver",
+    "name": {
+      "str": "补纬机"
+    },
     "description": "一种卑鄙的昆虫，被膜壳保护着。它和它的前身有相似的特点，只是它的体积变大了。",
     "default_faction": "zombie",
     "species": [
@@ -121,7 +129,9 @@
   {
     "id": "mon_zombie_skittyweavy_sickly",
     "type": "MONSTER",
-    "name": "plague weaver",
+    "name": {
+      "str": "鼠疫编织者"
+    },
     "description": "甲壳虫一种变异严重的昆虫，有几条细长的四肢从其膜状甲壳虫壳向外伸展。在每个角度都变形了，一个独特的长鼻滴下了一种令人陶醉的物质。",
     "default_faction": "zombie",
     "species": [

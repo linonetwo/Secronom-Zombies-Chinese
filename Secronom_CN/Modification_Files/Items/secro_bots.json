@@ -2,7 +2,9 @@
   {
     "id": "bot_secro_laserturret_mod",
     "type": "TOOL",
-    "name": "inactive laser beam turret",
+    "name": {
+      "str": "非活动激光束转台"
+    },
     "description": "停用的SDP-L1炮塔。用来放置它。",
     "volume": "60000 ml",
     "weight": "172 kg",

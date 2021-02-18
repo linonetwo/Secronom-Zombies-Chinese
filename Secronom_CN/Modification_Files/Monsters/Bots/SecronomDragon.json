@@ -26,7 +26,9 @@
   {
     "id": "mon_secrodragon_sleep",
     "type": "MONSTER",
-    "name": "secronom dragon",
+    "name": {
+      "str": "次龙"
+    },
     "description": "一条不活跃的网龙，被关在一个装满绿色液体的不可摧毁的管子里。它紧锁的嘴咆哮着，而下面不断的哔哔声几乎听不见。",
     "default_faction": "bot",
     "species": [
@@ -94,7 +96,9 @@
   {
     "id": "mon_secrodragon_woke",
     "type": "MONSTER",
-    "name": "secronom dragon",
+    "name": {
+      "str": "次龙"
+    },
     "description": "这种身披铠甲的爬行动物有自己的目的：消灭它。\n它是技术进步的产物，仅仅使用仿生学，再加上庞大的武器装备，形成了“救世主”。",
     "default_faction": "bot",
     "species": [

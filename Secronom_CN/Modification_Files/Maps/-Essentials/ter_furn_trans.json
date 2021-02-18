@@ -45,6 +45,36 @@
   },
   {
     "type": "ter_furn_transform",
+    "id": "vectorize_weak",
+    "fail_message": "这里没有可以矢量化的有机地形。",
+    "terrain": [
+      {
+        "result": "t_vector",
+        "valid_terrain": [
+          "t_dirt"
+        ],
+        "message": "这里的地面已经矢量化了。"
+      },
+      {
+        "result": "t_shrub_vector",
+        "valid_flags": [
+          "SHRUB"
+        ],
+        "message": "这里的灌木已经矢量化了。"
+      }
+    ],
+    "furniture": [
+      {
+        "result": "f_floral_vector",
+        "valid_flags": [
+          "FLOWER"
+        ],
+        "message": "The flowers here has been vectorized."
+      }
+    ]
+  },
+  {
+    "type": "ter_furn_transform",
     "id": "vectocide",
     "fail_message": "这里没有矢量化的地形。",
     "terrain": [
@@ -329,6 +359,39 @@
           "S_FLESH"
         ],
         "message": "The biohazards has been neutralized!"
+      }
+    ]
+  },
+  {
+    "type": "ter_furn_transform",
+    "id": "secro_wormonger_destroy",
+    "fail_message": "这里没有什么可摧毁的。",
+    "terrain": [
+      {
+        "result": [
+          [
+            "t_dirt",
+            2
+          ],
+          "t_dirtmound"
+        ],
+        "valid_flags": [
+          "FLAT"
+        ],
+        "message": "这里的土地被破坏了。"
+      },
+      {
+        "result": [
+          [
+            "t_dirt",
+            5
+          ],
+          "t_dirtmound"
+        ],
+        "valid_flags": [
+          "ROAD"
+        ],
+        "message": "这里的土地被破坏了。"
       }
     ]
   },

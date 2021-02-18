@@ -3,7 +3,9 @@
     "//": "This is notable for being infectious.",
     "id": "mon_zombie_scourge",
     "type": "MONSTER",
-    "name": "scourge zombie",
+    "name": {
+      "str": "天灾僵尸"
+    },
     "description": "一个渗出脓液的容器摇摇晃晃地走着，在路上滴着肮脏的液体。",
     "default_faction": "zombie",
     "species": [
@@ -65,7 +67,9 @@
   {
     "id": "mon_zombie_defile",
     "type": "MONSTER",
-    "name": "zombie defiler",
+    "name": {
+      "str": "僵尸亵渎者"
+    },
     "description": "一具严重变形的尸体，不断地从肿胀的脸颊吐出黑色的软泥，一股无尽的脓液在周围发芽。",
     "default_faction": "zombie",
     "species": [
@@ -127,7 +131,9 @@
   {
     "id": "mon_zombie_leptiosa",
     "type": "MONSTER",
-    "name": "lepotitsa",
+    "name": {
+      "str": "莱波蒂察"
+    },
     "description": "一具肿胀的伊科尔尸体，因为它的整个身体被坏死的组织包裹着。除了仰卧着巨大的驼峰外，它的皮肤上布满了肉质的洞，每一个洞都散发出一种微妙的气体。",
     "default_faction": "zombie",
     "species": [

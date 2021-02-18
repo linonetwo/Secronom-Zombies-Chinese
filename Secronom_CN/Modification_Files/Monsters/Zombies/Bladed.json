@@ -280,14 +280,6 @@
       "str": "剃刀"
     },
     "special_attacks": [
-      {
-        "type": "spell",
-        "spell_data": {
-          "id": "mon_zombie_razor_dslash_target"
-        },
-        "cooldown": 22,
-        "monster_message": "%1$s发动了猛烈的攻击！"
-      },
       [
         "swordslashshp",
         10

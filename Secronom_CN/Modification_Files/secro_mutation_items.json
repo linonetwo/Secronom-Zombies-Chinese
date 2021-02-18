@@ -51,7 +51,9 @@
     "id": "SECRO_BLADE_SHARP_THRESHOLD_item",
     "type": "GENERIC",
     "category": "secro_cores",
-    "name": "<color_light_green>blade core</color>",
+    "name": {
+      "str": "<color\\u light\\u green>刀芯</color>"
+    },
     "description": "这个核心提供了暂时的被动效果。与其他核心堆叠。\n攻击速度：<color_light_green>+3%</color>",
     "weight": "3 g",
     "volume": "3 ml",
@@ -86,7 +88,9 @@
     "id": "SECRO_BLADE_SERRATED_THRESHOLD_item",
     "type": "GENERIC",
     "category": "secro_cores",
-    "name": "<color_light_green>blade core</color>",
+    "name": {
+      "str": "<color\\u light\\u green>刀芯</color>"
+    },
     "description": "这个核心提供了暂时的被动效果。与其他核心堆叠。\n攻击速度：<color_red>-3%</color>",
     "weight": "3 g",
     "volume": "3 ml",

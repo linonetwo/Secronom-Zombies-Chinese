@@ -5,7 +5,9 @@
     "looks_like": "secro_flesh",
     "symbol": "o",
     "color": "red",
-    "name": "flesh core",
+    "name": {
+      "str": "肉心"
+    },
     "description": "肉的膜状核心。非常柔软，黏糊糊的，似乎不会自行腐烂。",
     "material": [
       "flesh"

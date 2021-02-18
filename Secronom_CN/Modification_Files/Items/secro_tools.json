@@ -10,7 +10,9 @@
       "glass",
       "plastic"
     ],
-    "name": "SP - flesh injector",
+    "name": {
+      "str": "SP-喷油器"
+    },
     "price": 5000,
     "price_postapoc": 100,
     "pocket_data": [

@@ -3,7 +3,9 @@
     "//": "This zombie should path from brute zombie, and much like a hulk... Only difference is its armor, damage and speed gain.",
     "id": "mon_zombie_titan",
     "type": "MONSTER",
-    "name": "titan",
+    "name": {
+      "str": "泰坦"
+    },
     "description": "一个肿胀的身体覆盖着厚厚的外骨骼板和突出的骨头，躺在它隆起的肌肉下面。",
     "default_faction": "zombie",
     "species": [
@@ -87,7 +89,9 @@
   {
     "id": "mon_zombie_blacktitan",
     "type": "MONSTER",
-    "name": "black titan",
+    "name": {
+      "str": "黑泰坦"
+    },
     "description": "巨大的肌肉团，已经从高端突变中去饱和，而它的外骨骼和腐烂的组织结合在一起。",
     "default_faction": "zombie",
     "species": [

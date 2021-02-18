@@ -3,7 +3,9 @@
     "//": "A monster that appears as a humanoid creature (and is friendly to that specie... before dying). It has several disorienting abilities with a chance to immobilize nearby creatures, while draining the stamina of the target.",
     "id": "mon_shifter",
     "type": "MONSTER",
-    "name": "shapeshifter",
+    "name": {
+      "str": "变形者"
+    },
     "description": "一个不人道的生物，笼罩在迷茫的气氛中。它的外观是一个完全的谜，也不是它的真实本质。",
     "default_faction": "shifter",
     "species": [
@@ -62,7 +64,9 @@
     "looks_like": "mon_shifter",
     "id": "mon_shifter_illu",
     "type": "MONSTER",
-    "name": "shapeshifter",
+    "name": {
+      "str": "变形者"
+    },
     "description": "一个不人道的生物，笼罩在迷茫的气氛中。它的外观是一个完全的谜，也不是它的真实本质。",
     "default_faction": "shifter",
     "species": [
@@ -119,7 +123,9 @@
     "//": "We copy some of the vanilla zeds.",
     "id": "mon_shifter_zombie",
     "type": "MONSTER",
-    "name": "zombie",
+    "name": {
+      "str": "僵尸"
+    },
     "description": "一个人的身体，随着它的移动而摇摆，一种不可阻挡的愤怒从它油乎乎的黑眼睛里看得出来。仔细一看，它的面容偶尔会模糊。",
     "copy-from": "mon_zombie",
     "looks_like": "mon_zombie",
@@ -137,7 +143,9 @@
   {
     "id": "mon_shifter_zombie_rot",
     "type": "MONSTER",
-    "name": "decayed zombie",
+    "name": {
+      "str": "腐烂的僵尸"
+    },
     "description": "一具曾经死去的人类尸体。它的变色肿胀的肉布满了溃烂的伤口和开放性溃疡。仔细一看，它的面容偶尔会模糊。",
     "copy-from": "mon_zombie_rot",
     "looks_like": "mon_zombie_rot",

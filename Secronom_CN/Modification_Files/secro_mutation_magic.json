@@ -2,7 +2,9 @@
   {
     "type": "SPELL",
     "id": "SECRO_TENDRIL_TENT_THRESHOLD_item",
-    "name": "<color_light_red>Tendril Core</color>",
+    "name": {
+      "str": "<color\\u light\\u red>卷须芯</color>"
+    },
     "description": "激活这个核心，使你的卷须暂时变形为一个强大的武器。",
     "message": "你的卷须流动着巨大的力量！",
     "flags": [
@@ -25,7 +27,9 @@
   {
     "type": "SPELL",
     "id": "SECRO_BLADE_SHARP_THRESHOLD_core",
-    "name": "Core",
+    "name": {
+      "str": "核心"
+    },
     "description": "由一种突变或特征所产生的咒语，被动或主动。如果你看到了这一点，那就改读这一条：\n“你的刀锋核心变为主动，提供被动效果。”",
     "flags": [
       "SILENT",
@@ -44,7 +48,9 @@
   {
     "id": "SECRO_BLADE_SHARP_THRESHOLD_arcatk",
     "type": "SPELL",
-    "name": "Arc Slash",
+    "name": {
+      "str": "弧斜线"
+    },
     "description": "由一种突变或特征所产生的咒语，被动或主动。如果你看到了这一点，那就改读这一条：\n“划过一条宽弧，对所有受影响的生物造成切割伤害。”",
     "flags": [
       "SILENT",
@@ -72,7 +78,9 @@
   {
     "type": "SPELL",
     "id": "SECRO_BLADE_SERRATED_THRESHOLD_core",
-    "name": "Core",
+    "name": {
+      "str": "核心"
+    },
     "description": "由一种突变或特征所产生的咒语，被动或主动。如果你看到了这一点，那就改读这一条：\n“你的刀锋核心变为主动，提供被动效果。”",
     "flags": [
       "SILENT",
@@ -91,7 +99,9 @@
   {
     "id": "SECRO_TITAN_spike",
     "type": "SPELL",
-    "name": "Spikes",
+    "name": {
+      "str": "尖刺"
+    },
     "description": "由一种突变或特征所产生的咒语，被动或主动。如果你看到了这一点，那就读一读：\n“你的骨头长出来伤害攻击者，造成轻微的刺伤。”",
     "flags": [
       "SILENT",
@@ -111,7 +121,9 @@
   {
     "id": "SECRO_TITAN_NOTOK_spike",
     "type": "SPELL",
-    "name": "Great Spikes",
+    "name": {
+      "str": "大尖刺"
+    },
     "description": "由一种突变或特征所产生的咒语，被动或主动。如果你看到了这一点，那就改读这一条：\n“你的骨头长出来伤害攻击者，造成刺伤伤害。”",
     "flags": [
       "SILENT",
@@ -131,7 +143,9 @@
   {
     "id": "SECRO_LICKER_ATK_THRESHOLD_stabatk",
     "type": "SPELL",
-    "name": "Lasher Thrust",
+    "name": {
+      "str": "冲击器推力"
+    },
     "description": "由一种突变或特征所产生的咒语，被动或主动。如果你看到了这一点，那就改读这一条：\n“用户将舌头伸向目标，刺穿目标，造成刺伤伤害。”",
     "flags": [
       "SILENT",
@@ -154,7 +168,9 @@
   {
     "id": "SECRO_LICKER_DEF_THRESHOLD_effbashatk",
     "type": "SPELL",
-    "name": "Lush Licks",
+    "name": {
+      "str": "郁郁葱葱的舔"
+    },
     "description": "由一种突变或特征所产生的咒语，被动或主动。如果你看到了这一点，那就改读这一条：\n“用户用舌头攻击目标，造成重击伤害并诱捕他们。”",
     "flags": [
       "SILENT",
@@ -179,7 +195,9 @@
   {
     "id": "SECRO_UNKNOWN_HAIR_SUCK_succ",
     "type": "SPELL",
-    "name": "Suck",
+    "name": {
+      "str": "糟透了"
+    },
     "description": "由一种突变或特征所产生的咒语，被动或主动。如果你看到了这一点，那就改读这一条：\n“用户的长鼻朝目标射击并吮吸。”",
     "flags": [
       "SILENT",
@@ -207,7 +225,9 @@
   {
     "id": "SECRO_UNKNOWN_HAIR_SUCK_succ_er",
     "type": "SPELL",
-    "name": "Succ - Heal",
+    "name": {
+      "str": "成功-治愈"
+    },
     "description": "由一种突变或特征所产生的咒语，被动或主动。如果你看到了这个，那就改读这个：\n“你吸吮了目标，治愈了你2点。”",
     "flags": [
       "SILENT",
@@ -225,7 +245,9 @@
   {
     "id": "SECRO_UNKNOWN_HAIR_SUCK_succ_ed",
     "type": "SPELL",
-    "name": "Succ - Damage",
+    "name": {
+      "str": "成功-伤害"
+    },
     "description": "由一种突变或特征所产生的咒语，被动或主动。如果你看到了这个，那就改读这个：\n“你吸了他们-造成5点伤害。”",
     "flags": [
       "SILENT",
@@ -246,7 +268,9 @@
   {
     "id": "SECRONOM_FLESH_BIO_spread_near",
     "type": "SPELL",
-    "name": "Devour",
+    "name": {
+      "str": "吞食"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者引导肉身扩散到附近的瓷砖上。”",
     "flags": [
       "SILENT",
@@ -266,7 +290,9 @@
   {
     "id": "SECRONOM_FLESH_BIO_spread_far",
     "type": "SPELL",
-    "name": "Devour",
+    "name": {
+      "str": "吞食"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'施法者引导肉身扩散到附近的瓷砖上。这种扩散范围更广",
     "flags": [
       "SILENT",
@@ -286,7 +312,9 @@
   {
     "id": "SECRONOM_FLESH_BIO_spread_veryveryfar",
     "type": "SPELL",
-    "name": "Devour",
+    "name": {
+      "str": "吞食"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'施法者引导肉身扩散到附近的瓷砖上。这种扩散范围更广",
     "flags": [
       "SILENT",
@@ -306,7 +334,9 @@
   {
     "id": "SECRONOM_FLESH_BIO_spreadier_near",
     "type": "SPELL",
-    "name": "Devour",
+    "name": {
+      "str": "吞食"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者引导肉身扩散到附近的瓷砖上。”",
     "flags": [
       "SILENT",
@@ -326,7 +356,9 @@
   {
     "id": "SECRONOM_FLESH_BIO_spreadier_far",
     "type": "SPELL",
-    "name": "Devour",
+    "name": {
+      "str": "吞食"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'施法者引导肉身扩散到附近的瓷砖上。这种扩散范围更广",
     "flags": [
       "SILENT",
@@ -346,7 +378,9 @@
   {
     "id": "SECRONOM_FLESH_BIO_spreadier_veryveryfar",
     "type": "SPELL",
-    "name": "Devour",
+    "name": {
+      "str": "吞食"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'施法者引导肉身扩散到附近的瓷砖上。这种扩散范围更广",
     "flags": [
       "SILENT",
@@ -366,7 +400,9 @@
   {
     "id": "SECRONOM_FLESH_BIO_spreadiest_near",
     "type": "SPELL",
-    "name": "Devour",
+    "name": {
+      "str": "吞食"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者引导肉身扩散到附近的瓷砖上。”",
     "flags": [
       "SILENT",
@@ -386,7 +422,9 @@
   {
     "id": "SECRONOM_FLESH_BIO_spreadiest_far",
     "type": "SPELL",
-    "name": "Devour",
+    "name": {
+      "str": "吞食"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'施法者引导肉身扩散到附近的瓷砖上。这种扩散范围更广",
     "flags": [
       "SILENT",
@@ -406,7 +444,9 @@
   {
     "id": "SECRONOM_FLESH_BIO_spreadiest_veryveryfar",
     "type": "SPELL",
-    "name": "Devour",
+    "name": {
+      "str": "吞食"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'施法者引导肉身扩散到附近的瓷砖上。这种扩散范围更广",
     "flags": [
       "SILENT",
@@ -426,7 +466,9 @@
   {
     "id": "SECRONOM_FLESH_BIO_disable",
     "type": "SPELL",
-    "name": "Disable",
+    "name": {
+      "str": "禁用"
+    },
     "description": "由一种突变或特征所产生的咒语，被动或主动。如果你看到了这一点，那就读一读：\n“你什么都不是，只是个建筑工人……”",
     "flags": [
       "SILENT",
@@ -443,7 +485,9 @@
   {
     "id": "SECRONOM_FLESH_BIO_check",
     "type": "SPELL",
-    "name": "Check Player",
+    "name": {
+      "str": "检查播放器"
+    },
     "description": "由一种突变或特征所产生的咒语，被动或主动。如果你看到了这个，那就改读这个：\n“你检查播放器是否与你相邻。”",
     "flags": [
       "SILENT",
@@ -465,7 +509,9 @@
   {
     "type": "SPELL",
     "id": "SECRONOM_FLESH_BIO_check_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "目标由物品施法。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "message": "",
     "extra_effects": [
@@ -497,7 +543,9 @@
   {
     "id": "SECRONOM_FLESH_BIO_construction_pp_furnbuild",
     "type": "SPELL",
-    "name": "Build",
+    "name": {
+      "str": "建造"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n“施法者在标记点建造”",
     "flags": [
       "SILENT",

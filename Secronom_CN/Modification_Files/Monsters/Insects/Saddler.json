@@ -3,7 +3,9 @@
     "//": "This is an insect, a manipulating alien parasite similar to the half-life's head crab. Due to coding limitations, things are lot more complicated.",
     "id": "mon_insect_saddler_brood",
     "type": "MONSTER",
-    "name": "saddler broodmother",
+    "name": {
+      "str": "马鞍育儿母"
+    },
     "description": "恶魔般的巨大马鞍，有无数绿色多毛的细长腿，覆盖整个马鞍底部。在它们下面产生一种沉重的，怪异的声音，很像从婴儿鞍没有生产…但是。",
     "default_faction": "saddler",
     "species": [
@@ -62,7 +64,9 @@
   {
     "id": "mon_insect_saddler_baby_potent",
     "type": "MONSTER",
-    "name": "baby saddler",
+    "name": {
+      "str": "婴儿鞍"
+    },
     "description": "一个腐坏的，不成熟的马鞍，当它虚弱的四肢没有命令地抽搐时经常绊倒。",
     "default_faction": "saddler",
     "species": [
@@ -122,7 +126,9 @@
   {
     "id": "mon_insect_saddler_baby",
     "type": "MONSTER",
-    "name": "baby saddler",
+    "name": {
+      "str": "婴儿鞍"
+    },
     "description": "一个腐坏的，不成熟的马鞍，当它虚弱的四肢没有命令地抽搐时经常绊倒。",
     "default_faction": "saddler",
     "species": [
@@ -172,7 +178,9 @@
   {
     "id": "mon_insect_saddler",
     "type": "MONSTER",
-    "name": "saddler",
+    "name": {
+      "str": "马鞍"
+    },
     "description": "一种类似外星人的昆虫，与它的几条细长的四肢、豆状的眼睛和瘦削的皮毛不同。它驼背的头和巨大的底部裂缝表明它的器官并没有动物性的功能。",
     "default_faction": "saddler",
     "species": [
@@ -231,7 +239,9 @@
   {
     "id": "mon_insect_saddler_brute",
     "type": "MONSTER",
-    "name": "saddler brute",
+    "name": {
+      "str": "马鞍兽"
+    },
     "description": "马鞍有一个巨大的驼峰和两倍于前代的四肢。与其他人不同，它的原始本能更倾向于凶猛的攻击。",
     "default_faction": "saddler",
     "species": [
@@ -292,7 +302,9 @@
   {
     "id": "mon_insect_saddler_scout",
     "type": "MONSTER",
-    "name": "saddler scout",
+    "name": {
+      "str": "马鞍侦察兵"
+    },
     "description": "马鞍一种细长的鞍形物，当它在锋利的四肢中移动时，会流口水。它体弱多病，擅长一路冲刺，达到预期目标。",
     "default_faction": "saddler",
     "species": [
@@ -352,7 +364,9 @@
     "//": "Saddlers are stronger when they manipulate a creature. Living, sentient creatures (humans, which are rare for saddlers to seek for) possesses more raw strength than undeads (zeds are common due to cataclysm).",
     "id": "mon_saddler_infected",
     "type": "MONSTER",
-    "name": "infected saddler",
+    "name": {
+      "str": "感染的马鞍"
+    },
     "description": "曾经是人类，现在一条粗壮的血管屈服于寄生恶魔。整个马鞍下的爪子都被咬了。它痛苦地呻吟着，当它靠近它的时候，听到了一些低沉的、听不见的咕哝声。",
     "default_faction": "saddler",
     "species": [
@@ -424,7 +438,9 @@
   {
     "id": "mon_saddler_infected_brute",
     "type": "MONSTER",
-    "name": "infected brute",
+    "name": {
+      "str": "受感染的畜生"
+    },
     "description": "一个驼背的人被残忍的马鞍手控制了。它被玷污的爪子散发着鲜血的臭味，暗示着它的突然改变导致了它增厚的皮肤层可见的小缺陷。",
     "default_faction": "saddler",
     "species": [
@@ -495,7 +511,9 @@
   {
     "id": "mon_saddler_infected_scout",
     "type": "MONSTER",
-    "name": "infected scout",
+    "name": {
+      "str": "受感染的侦察兵"
+    },
     "description": "一个被感染的人，身体纤细，看起来很灵活，爪子弯曲成一对可怕的尖刀。然而致命的是，它的改变会导致宿主的肌肉和内脏变得致密，这使得它的重要末端变得非常脆弱。",
     "default_faction": "saddler",
     "species": [
@@ -567,7 +585,9 @@
   {
     "id": "mon_zombie_saddler_infected",
     "type": "MONSTER",
-    "name": "zombie saddler",
+    "name": {
+      "str": "僵尸马鞍"
+    },
     "description": "一具大而瘦的头上滴着黑色黏液的尸体，还有一对吓人的利爪。不知道马鞍匠是如何操纵这个不死生物的大脑的，但它的感官肯定是迟钝的，身体的变化也被放大了，不像活人的。",
     "default_faction": "saddler",
     "species": [
@@ -637,7 +657,9 @@
   {
     "id": "mon_zombie_saddler_infected_brute",
     "type": "MONSTER",
-    "name": "zombie brute",
+    "name": {
+      "str": "僵尸畜生"
+    },
     "description": "一个粗犷的僵尸，有一个大的马鞍头，手变成了多骨的爪子。它的身体可以承受多次打击，但它僵硬的皮肤使它的动作看起来像是残废了。",
     "default_faction": "saddler",
     "species": [
@@ -706,7 +728,9 @@
   {
     "id": "mon_zombie_saddler_infected_scout",
     "type": "MONSTER",
-    "name": "zombie scout",
+    "name": {
+      "str": "僵尸侦察兵"
+    },
     "description": "一具瘦长的尸体，头上有一个细长的马鞍，手臂是平均长度的两倍，尖上有凶残锋利的爪子。尽管它瘦弱的身躯，但它灵活的动作超过了大部分目标。",
     "default_faction": "saddler",
     "species": [
@@ -774,7 +798,9 @@
     "//": "The product of a saddler after being manipulated.",
     "id": "mon_zombie_saddler_used",
     "type": "MONSTER",
-    "name": "headless zombie",
+    "name": {
+      "str": "无头僵尸"
+    },
     "description": "无头行尸走肉。它的手变成了锋利的爪子，伤口上有黑色的黏液在跳动。",
     "default_faction": "zombie",
     "species": [
@@ -827,7 +853,9 @@
   {
     "id": "mon_zombie_saddler_brute_used",
     "type": "MONSTER",
-    "name": "headless brute",
+    "name": {
+      "str": "无头畜生"
+    },
     "description": "粗壮无头的身体。它有一个非常厚的皮肤和一套杂草丛生的指甲，描绘这具尸体曾经变异。",
     "default_faction": "zombie",
     "species": [
@@ -882,7 +910,9 @@
   {
     "id": "mon_zombie_saddler_scout_used",
     "type": "MONSTER",
-    "name": "headless scout",
+    "name": {
+      "str": "无头侦察兵"
+    },
     "description": "一种无头的僵尸，身体细长，手臂锋利，看起来是变异的产物。",
     "default_faction": "zombie",
     "species": [

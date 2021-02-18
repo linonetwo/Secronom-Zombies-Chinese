@@ -69,7 +69,9 @@
   {
     "type": "SPELL",
     "id": "secro_missionkey_sampler_enigma_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "目标由物品施法。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "message": "<color_dark_gray>采样器套件开始扫描…\n<color_light_green>采样器套件粉碎变形者！",
     "extra_effects": [
@@ -99,7 +101,9 @@
   {
     "id": "secro_missionkey_sampler_enigma_shifter",
     "type": "SPELL",
-    "name": "Scan",
+    "name": {
+      "str": "扫描"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n'项目扫描目标…'",
     "flags": [
       "SILENT",
@@ -125,7 +129,9 @@
   {
     "type": "SPELL",
     "id": "secro_missionkey_sampler_enigma_shifter_yeah",
-    "name": "Collect",
+    "name": {
+      "str": "收集"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n提供了一种不饱和的树脂",
     "flags": [
       "SILENT",

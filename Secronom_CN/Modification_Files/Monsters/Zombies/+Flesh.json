@@ -16,9 +16,6 @@
     "volume": "4000 ml",
     "weight": "1000 g",
     "hp": 10,
-    "emit_fields": [
-      "emit_flesh_biome_immunity"
-    ],
     "speed": 80,
     "material": [
       "flesh",
@@ -78,9 +75,6 @@
       "bone"
     ],
     "symbol": "⟆",
-    "emit_fields": [
-      "emit_flesh_biome_immunity"
-    ],
     "color": "light_red",
     "aggression": 100,
     "morale": 100,
@@ -130,9 +124,6 @@
     "volume": "30000 ml",
     "weight": "40750 g",
     "hp": 45,
-    "emit_fields": [
-      "emit_flesh_biome_immunity"
-    ],
     "speed": 80,
     "material": [
       "flesh",
@@ -219,9 +210,6 @@
     "armor_bash": 18,
     "armor_cut": 8,
     "armor_stab": 12,
-    "emit_fields": [
-      "emit_flesh_biome_immunity"
-    ],
     "special_attacks": [
       {
         "cooldown": 10,
@@ -285,8 +273,7 @@
     ],
     "symbol": "◈",
     "emit_fields": [
-      "emit_flesh_sack_blind",
-      "emit_flesh_biome_immunity"
+      "emit_flesh_sack_blind"
     ],
     "color": "light_red",
     "aggression": 100,
@@ -350,9 +337,6 @@
     "color": "light_red",
     "aggression": 100,
     "morale": 100,
-    "emit_fields": [
-      "emit_flesh_biome_immunity"
-    ],
     "melee_skill": 2,
     "melee_dice": 1,
     "melee_dice_sides": 2,
@@ -390,9 +374,6 @@
     "volume": "92500 ml",
     "weight": "120000 g",
     "hp": 140,
-    "emit_fields": [
-      "emit_flesh_biome_immunity"
-    ],
     "speed": 85,
     "material": [
       "flesh"
@@ -448,9 +429,6 @@
     "volume": "92500 ml",
     "weight": "120000 g",
     "hp": 185,
-    "emit_fields": [
-      "emit_flesh_biome_immunity"
-    ],
     "speed": 85,
     "material": [
       "flesh"
@@ -508,8 +486,7 @@
     ],
     "symbol": "⚱",
     "emit_fields": [
-      "emit_flesh_taken_blind",
-      "emit_flesh_biome_immunity"
+      "emit_flesh_taken_blind"
     ],
     "color": "light_red",
     "aggression": 100,
@@ -574,7 +551,6 @@
     "aggression": 100,
     "morale": 100,
     "emit_fields": [
-      "emit_flesh_biome_immunity",
       "emit_down_immunity"
     ],
     "melee_skill": 10,
@@ -637,8 +613,7 @@
     ],
     "symbol": "⚱",
     "emit_fields": [
-      "emit_flesh_taken_potent_blind",
-      "emit_flesh_biome_immunity"
+      "emit_flesh_taken_potent_blind"
     ],
     "color": "light_red",
     "aggression": 100,
@@ -701,7 +676,6 @@
     ],
     "symbol": "☒",
     "emit_fields": [
-      "emit_flesh_biome_immunity",
       "emit_flesh_wall_limitation",
       "emit_down_immunity"
     ],
@@ -769,7 +743,6 @@
     "aggression": 100,
     "morale": 100,
     "emit_fields": [
-      "emit_flesh_biome_immunity",
       "emit_down_immunity"
     ],
     "melee_skill": 10,
@@ -835,7 +808,6 @@
     "aggression": 100,
     "morale": 100,
     "emit_fields": [
-      "emit_flesh_biome_immunity",
       "emit_down_immunity"
     ],
     "melee_skill": 10,
@@ -899,7 +871,6 @@
     ],
     "symbol": "☒",
     "emit_fields": [
-      "emit_flesh_biome_immunity",
       "emit_flesh_wall_limitation",
       "emit_down_immunity"
     ],
@@ -1021,7 +992,6 @@
     "hp": 305,
     "speed": 100,
     "emit_fields": [
-      "emit_flesh_biome_immunity",
       "emit_down_immunity",
       "emit_veinstalk_limiter",
       "emit_veinstalk_crawler"
@@ -1084,7 +1054,6 @@
     "hp": 15,
     "speed": 100,
     "emit_fields": [
-      "emit_flesh_biome_immunity",
       "emit_down_immunity",
       "emit_veinstalk_limiter"
     ],
@@ -1138,9 +1107,6 @@
     "color": "light_red",
     "aggression": 100,
     "morale": 100,
-    "emit_fields": [
-      "emit_flesh_biome_immunity"
-    ],
     "melee_skill": 2,
     "melee_dice": 1,
     "melee_dice_sides": 2,
@@ -1194,9 +1160,6 @@
     "color": "light_red",
     "aggression": 100,
     "morale": 100,
-    "emit_fields": [
-      "emit_flesh_biome_immunity"
-    ],
     "melee_skill": 3,
     "melee_dice": 2,
     "melee_dice_sides": 3,
@@ -1250,9 +1213,6 @@
     "color": "light_red",
     "aggression": 100,
     "morale": 100,
-    "emit_fields": [
-      "emit_flesh_biome_immunity"
-    ],
     "melee_skill": 4,
     "melee_dice": 3,
     "melee_dice_sides": 4,
@@ -1306,9 +1266,6 @@
     "color": "light_red",
     "aggression": 100,
     "morale": 100,
-    "emit_fields": [
-      "emit_flesh_biome_immunity"
-    ],
     "melee_skill": 5,
     "melee_dice": 4,
     "melee_dice_sides": 5,
@@ -1363,7 +1320,6 @@
     "aggression": 100,
     "morale": 100,
     "emit_fields": [
-      "emit_flesh_biome_immunity",
       "emit_sflesh_fleshling_birth"
     ],
     "melee_skill": 8,
@@ -1412,9 +1368,6 @@
     "weight": "81500 g",
     "hp": 120,
     "speed": 75,
-    "emit_fields": [
-      "emit_flesh_biome_immunity"
-    ],
     "material": [
       "flesh"
     ],
@@ -1488,9 +1441,6 @@
     "weight": "98350 g",
     "hp": 200,
     "speed": 65,
-    "emit_fields": [
-      "emit_flesh_biome_immunity"
-    ],
     "material": [
       "flesh",
       "bone"
@@ -1554,7 +1504,6 @@
     "hp": 70,
     "speed": 90,
     "emit_fields": [
-      "emit_flesh_biome_immunity",
       "emit_sflesh_fleshling_scavengy_forms"
     ],
     "material": [
@@ -1623,7 +1572,6 @@
     "aggression": 100,
     "morale": 100,
     "emit_fields": [
-      "emit_flesh_biome_immunity",
       "emit_sflesh_fleshling_scavengy_forms_limit"
     ],
     "melee_skill": 2,
@@ -1679,7 +1627,6 @@
     "aggression": 100,
     "morale": 100,
     "emit_fields": [
-      "emit_flesh_biome_immunity",
       "emit_sflesh_fleshling_scavengy_forms_limit"
     ],
     "melee_skill": 2,
@@ -1735,7 +1682,6 @@
     "aggression": 100,
     "morale": 100,
     "emit_fields": [
-      "emit_flesh_biome_immunity",
       "emit_sflesh_fleshling_scavengy_forms_limit"
     ],
     "melee_skill": 2,

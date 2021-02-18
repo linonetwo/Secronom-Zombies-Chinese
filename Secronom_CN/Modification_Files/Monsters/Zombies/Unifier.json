@@ -2,7 +2,9 @@
   {
     "id": "mon_zombie_unify",
     "type": "MONSTER",
-    "name": "unifier zombie",
+    "name": {
+      "str": "统一僵尸"
+    },
     "description": "一具严重变异的粗犷尸体成功地将其肮脏的血液繁殖成一种厚厚的物质，肉眼可以看到它肿胀的暗红色血管。一种巨大的、肉质的物质从双手拍打着。",
     "default_faction": "zombie",
     "species": [
@@ -76,7 +78,9 @@
   {
     "id": "mon_zombie_unity",
     "type": "MONSTER",
-    "name": "unity zombie",
+    "name": {
+      "str": "统一僵尸"
+    },
     "description": "从头部到脚，这具尸体的血脉迅速排出厚厚的血液，形成一个外层，用于攻击和防御。一个巨大的物体围绕着它的躯干共振，在每一个节拍中，滴下一滴渗出的黑色液体。",
     "default_faction": "zombie",
     "harvest": "zombie",
@@ -153,7 +157,9 @@
   {
     "id": "mon_zombie_hemo",
     "type": "MONSTER",
-    "name": "hemofiend",
+    "name": {
+      "str": "血魔"
+    },
     "looks_like": "mon_zombie_unity",
     "description": "杂草丛生的血管在诡异的深红色血液中发光。一具又大又可怕的尸体，对它的面容和对生命液体的操纵来说只是一场噩梦。",
     "default_faction": "zombie",
@@ -226,7 +232,9 @@
   {
     "id": "mon_zombie_bloodvessel",
     "type": "MONSTER",
-    "name": "blood vessel",
+    "name": {
+      "str": "血管"
+    },
     "description": "完全由血液制成的有生命的物质，粘性太大，不能以有限的速度移动。它不稳定地跳动。",
     "default_faction": "zombie",
     "species": [
@@ -289,7 +297,9 @@
   {
     "id": "mon_zombie_bloodfiend",
     "type": "MONSTER",
-    "name": "blood fiend",
+    "name": {
+      "str": "血妖"
+    },
     "description": "一种由增厚的血液制成的大而活跃的物质。它身体臃肿的部分看起来反复无常，心跳加快。",
     "default_faction": "zombie",
     "species": [

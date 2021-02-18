@@ -36,7 +36,9 @@
   {
     "id": "mon_sflesh_taken_bear",
     "type": "MONSTER",
-    "name": "black bear",
+    "name": {
+      "str": "黑熊"
+    },
     "description": "美国黑熊。大型杂食食性食腐动物，它有强大的爪子和下巴，是一个有效的伏击猎人。大多数人在人类面前都很害羞，但他们对自己的幼崽非常保护。\n受肉食的侵扰，这个曾经的生物不再是动物，而是嗜血的恶魔。",
     "default_faction": "secro_flesh",
     "bodytype": "bear",
@@ -95,7 +97,9 @@
   {
     "id": "mon_sflesh_taken_rat",
     "type": "MONSTER",
-    "name": "black rat",
+    "name": {
+      "str": "黑鼠"
+    },
     "description": "黑鼠，一种杂食性啮齿动物，有纯黑色皮毛和长而粗糙的尾巴。它是瘟疫、饥荒和疥疮的先兆，有时会聚集在死人或垂死的人身上。\n受肉食的侵扰，这个曾经的生物不再是动物，而是嗜血的恶魔。",
     "default_faction": "secro_flesh",
     "bodytype": "pig",
@@ -153,7 +157,9 @@
   {
     "id": "mon_sflesh_taken_cougar",
     "type": "MONSTER",
-    "name": "cougar",
+    "name": {
+      "str": "美洲狮"
+    },
     "description": "东部美洲狮，一种大型猫科食肉动物。一度被认为在这个地区已经灭绝的物种，保护工作成功地恢复了欣欣向荣的种群。这种捕食者动作迅速，沉默寡言，可以用有力的跳跃和猛扑进行远距离攻击，用致命的爪子抓住猎物，然后用巨大的尖牙进行最后一击。\n受肉食的侵扰，这个曾经的生物不再是动物，而是嗜血的恶魔。",
     "default_faction": "secro_flesh",
     "bodytype": "dog",
@@ -218,7 +224,9 @@
   {
     "id": "mon_sflesh_taken_moose",
     "type": "MONSTER",
-    "name": "moose",
+    "name": {
+      "str": "驼鹿"
+    },
     "description": "东部驼鹿，现存最大的鹿种。虽然除非愤怒，否则它们不会有攻击性，但交配季节会让公牛变得脾气暴躁。\n受肉食的侵扰，这个曾经的生物不再是动物，而是嗜血的恶魔。",
     "default_faction": "secro_flesh",
     "bodytype": "horse",
@@ -322,7 +330,9 @@
   {
     "id": "mon_sflesh_boar_wild_piglet",
     "type": "MONSTER",
-    "name": "wild boar piglet",
+    "name": {
+      "str": "野猪仔猪"
+    },
     "description": "这种野生杂食动物最初并非原产于美国，是从狩猎保护区逃出的欧亚野猪和在野外放养的野猪的杂交种。在过去的几十年里，美国的人口猛增。\n受肉食的侵扰，这个曾经的生物不再是动物，而是嗜血的恶魔。",
     "default_faction": "secro_flesh",
     "bodytype": "pig",
@@ -380,7 +390,9 @@
   {
     "id": "mon_sflesh_boar_wild",
     "type": "MONSTER",
-    "name": "wild boar",
+    "name": {
+      "str": "野猪"
+    },
     "description": "这种野生杂食动物最初并非原产于美国，是从狩猎保护区逃出的欧亚野猪和在野外放养的野猪的杂交种。在过去的几十年里，美国的人口猛增。\n受肉食的侵扰，这个曾经的生物不再是动物，而是嗜血的恶魔。",
     "looks_like": "mon_pig",
     "default_faction": "secro_flesh",

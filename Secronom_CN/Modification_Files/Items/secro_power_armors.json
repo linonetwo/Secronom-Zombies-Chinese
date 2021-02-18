@@ -77,15 +77,15 @@
           "values": [
             {
               "value": "DEXTERITY",
-              "add": 1
+              "add": 2
             },
             {
               "value": "BONUS_DODGE",
-              "add": 1
+              "add": 2
             },
             {
               "value": "ATTACK_SPEED",
-              "multiply": 0.025
+              "multiply": 0.05
             }
           ]
         }
@@ -179,15 +179,15 @@
           "values": [
             {
               "value": "DEXTERITY",
-              "add": 1
+              "add": 2
             },
             {
               "value": "BONUS_DODGE",
-              "add": 1
+              "add": 2
             },
             {
               "value": "ATTACK_SPEED",
-              "multiply": 0.025
+              "multiply": 0.05
             }
           ]
         }
@@ -211,7 +211,7 @@
     "name": {
       "str": "肉容器"
     },
-    "description": "利用最新技术进步而产生的一种复杂的战斗服。Secronom外骨骼类型的“血管”利用了肉体的适应性细胞结构和它对人的思维作出反应的能力，但由于它的极度不稳定，佩戴者被迫用肉体喂养它，如果没有，它会一点一点地吞噬它们。受限于界面特性，由于其变形和成形能力，它擅长处理任何情况。\n\n Secronom外骨骼类型“血管”提供：\n<color_white>体魄再生：<color_light_green>+3%</color>",
+    "description": "利用最新技术进步而产生的一种复杂的战斗服。Secronom外骨骼类型的“血管”利用了肉体的适应性细胞结构和它对人的思维作出反应的能力，但由于它的极度不稳定，佩戴者被迫用肉体喂养它，如果没有，它会一点一点地吞噬它们。受限于界面特性，由于其变形和成形能力，它擅长处理任何情况。\n\n Secronom外骨骼类型“血管”提供：\n体魄再生：<color\\u light\\u green>+5%</color>",
     "weight": "18400 g",
     "volume": "21 L",
     "price": 32300000,
@@ -281,15 +281,131 @@
           "values": [
             {
               "value": "REGEN_STAMINA",
-              "multiply": 0.015
+              "multiply": 0.05
             },
             {
               "value": "MAX_HP",
-              "multiply": 0.025
+              "multiply": 0.05
             },
             {
               "value": "METABOLISM",
-              "multiply": -0.125
+              "multiply": -0.25
+            }
+          ],
+          "ench_effects": [
+            {
+              "effect": "secro_power_armor_flesh_devouring_note",
+              "intensity": 1
+            }
+          ]
+        }
+      ]
+    },
+    "qualities": [
+      [
+        "SECRO_FLESH_MORPHING",
+        1
+      ],
+      [
+        "SECRO_FLESH_REFORMING",
+        1
+      ]
+    ],
+    "flags": [
+      "WATERPROOF",
+      "STURDY",
+      "ELECTRIC_IMMUNE",
+      "NO_UNLOAD",
+      "SUN_GLASSES",
+      "OVERSIZE"
+    ]
+  },
+  {
+    "id": "secro_power_armor_flesh_unstable",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": {
+      "str": "肉血管<color\\u light\\u red>（不稳定）</color>"
+    },
+    "description": "利用最新技术进步而产生的一种复杂的战斗服。Secronom外骨骼类型的“血管”利用了肉体的适应性细胞结构和它对人的思维作出反应的能力，但由于它的极度不稳定，佩戴者被迫用肉体喂养它，如果没有，它会一点一点地吞噬它们。受限于界面特性，由于其变形和成形能力，它擅长处理任何情况。\n\n Secronom外骨骼类型“血管”提供：\n体魄再生：<color\\u light\\u green>+2%</color>",
+    "weight": "18400 g",
+    "volume": "21 L",
+    "price": 2300000,
+    "price_postapoc": 30000,
+    "to_hit": 1,
+    "bashing": 1,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "[",
+    "looks_like": "power_armor_light",
+    "color": "red",
+    "covers": [
+      "torso",
+      "arm_l",
+      "arm_r",
+      "hand_l",
+      "hand_r",
+      "leg_l",
+      "leg_r",
+      "foot_l",
+      "foot_r",
+      "head",
+      "eyes",
+      "mouth"
+    ],
+    "coverage": 100,
+    "encumbrance": 50,
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "5 L",
+        "max_contains_weight": "10 kg",
+        "moves": 85
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "5 L",
+        "max_contains_weight": "10 kg",
+        "moves": 85
+      },
+      {
+        "pocket_type": "MAGAZINE",
+        "rigid": true,
+        "ammo_restriction": {
+          "secro_flesh": 100
+        }
+      }
+    ],
+    "warmth": 30,
+    "material_thickness": 28,
+    "environmental_protection": 6,
+    "power_armor": true,
+    "charges_per_use": 50,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "secro_power_armor_flesh_morphform_list",
+      "no_fail": true,
+      "need_worn": true,
+      "level": 0
+    },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            {
+              "value": "REGEN_STAMINA",
+              "multiply": 0.02
+            },
+            {
+              "value": "MAX_HP",
+              "multiply": 0.03
+            },
+            {
+              "value": "METABOLISM",
+              "multiply": -0.01
             }
           ],
           "ench_effects": [
@@ -397,19 +513,19 @@
           "values": [
             {
               "value": "STRENGTH",
-              "add": 1
+              "add": 2
             },
             {
               "value": "ATTACK_SPEED",
-              "multiply": 0.015
+              "multiply": 0.03
             },
             {
               "value": "MAX_HP",
-              "multiply": 0.0375
+              "multiply": 0.075
             },
             {
               "value": "METABOLISM",
-              "multiply": 0.01
+              "multiply": -0.02
             }
           ],
           "ench_effects": [
@@ -518,23 +634,23 @@
           "values": [
             {
               "value": "STRENGTH",
-              "add": 2
+              "add": 4
             },
             {
               "value": "MOVE_COST",
-              "multiply": 0.0375
+              "multiply": 0.075
             },
             {
               "value": "SPEED",
-              "multiply": -0.025
+              "multiply": -0.05
             },
             {
               "value": "MAX_HP",
-              "multiply": 0.6125
+              "multiply": 0.125
             },
             {
               "value": "METABOLISM",
-              "multiply": -0.025
+              "multiply": -0.05
             }
           ],
           "ench_effects": [
@@ -572,7 +688,7 @@
     "name": {
       "str": "血脉“敏捷”"
     },
-    "description": "利用最新技术进步而产生的一种复杂的战斗服。Secronom外骨骼类型“血管（敏捷）”是突变转移的结果，具有更细的纤维和肉蹼。它大大减少的物理保护也使得它比任何其他类型的船都要轻：该船专注于提高穿戴者的速度，以便超越敌人。像所有其他的肉质血管一样，它需要佩戴者用肉来喂养它。\n\n Secronom外骨骼类型“Vessel（Agile）”提供：\n<color_white>速度：<color_light_green>+10<color>",
+    "description": "利用最新技术进步而产生的一种复杂的战斗服。Secronom外骨骼类型“血管（敏捷）”是突变转移的结果，具有更细的纤维和肉蹼。它大大减少的物理保护也使得它比任何其他类型的船都要轻；该船的重点是提高佩戴者的速度，以便超越敌人。像所有其他的肉质血管一样，它需要佩戴者用肉来喂养它。\n\n Secronom外骨骼类型“Vessel（Agile）”提供：\n<color\\u white>速度：<color\\u light\\u green>+10%</color>",
     "weight": "12450 g",
     "volume": "13 L",
     "price": 32300000,
@@ -623,7 +739,7 @@
       }
     ],
     "warmth": 30,
-    "material_thickness": 28,
+    "material_thickness": 22,
     "environmental_protection": 8,
     "power_armor": true,
     "charges_per_use": 10,
@@ -642,23 +758,23 @@
           "values": [
             {
               "value": "SPEED",
-              "add": 5
+              "multiply": 0.1
             },
             {
               "value": "ATTACK_SPEED",
-              "multiply": 0.5
+              "multiply": 0.1
             },
             {
               "value": "MOVE_COST",
-              "multiply": -0.25
+              "multiply": -0.05
             },
             {
               "value": "REGEN_STAMINA",
-              "multiply": 0.375
+              "multiply": 0.075
             },
             {
               "value": "METABOLISM",
-              "multiply": -0.005
+              "multiply": -0.01
             }
           ],
           "ench_effects": [
@@ -766,15 +882,15 @@
           "values": [
             {
               "value": "PERCEPTION",
-              "add": 2
+              "add": 4
             },
             {
               "value": "SIGHT_RANGE",
-              "multiply": 0.25
+              "multiply": 0.05
             },
             {
               "value": "METABOLISM",
-              "multiply": -0.005
+              "multiply": -0.01
             }
           ],
           "ench_effects": [
@@ -891,16 +1007,15 @@
           "values": [
             {
               "value": "ARMOR_BIO",
-              "add": -1,
-              "multiply": 0.025
+              "add": -1
             },
             {
               "value": "MAX_HP",
-              "multiply": 0.025
+              "multiply": 0.05
             },
             {
               "value": "METABOLISM",
-              "multiply": -0.0375
+              "multiply": -0.075
             }
           ],
           "ench_effects": [

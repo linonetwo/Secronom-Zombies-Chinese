@@ -1011,7 +1011,6 @@
     "morale": 100,
     "emit_fields": [
       "emit_down_immunity",
-      "emit_gorepit_main",
       "emit_gorepit_edge",
       "emit_gorepit_passive_summon"
     ],

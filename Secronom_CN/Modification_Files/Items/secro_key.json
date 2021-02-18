@@ -30,7 +30,9 @@
   {
     "id": "secro_id_fvvault_open",
     "type": "SPELL",
-    "name": "Identify",
+    "name": {
+      "str": "识别"
+    },
     "description": "物品交换到门的读卡器。如果成功，打开特定的门。",
     "flags": [
       "SILENT",
@@ -50,7 +52,9 @@
   {
     "id": "secro_id_frroom_open",
     "type": "SPELL",
-    "name": "Identify",
+    "name": {
+      "str": "识别"
+    },
     "description": "物品交换到门的读卡器。如果成功，打开特定的门。",
     "flags": [
       "SILENT",

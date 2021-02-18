@@ -60,7 +60,9 @@
   {
     "id": "secro_power_armor_flesh_infect_or",
     "type": "SPELL",
-    "name": "Transmit",
+    "name": {
+      "str": "传输"
+    },
     "description": "由物品施法。如果你看到了这个，那就读一读这个：\n“这个项目标志着附近的深红色恐怖，暗示着佩戴者是友好的。”",
     "message": "",
     "flags": [
@@ -191,7 +193,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_infect_or_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "目标由物品施法。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "message": "",
     "extra_effects": [
@@ -222,7 +226,9 @@
   {
     "id": "secro_power_armor_flesh_infect_traverse",
     "type": "SPELL",
-    "name": "Traverse",
+    "name": {
+      "str": "横移"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n“物品暂时恢复肉身地形的感染，同时平滑肉肉。”",
     "flags": [
       "SILENT",
@@ -242,7 +248,9 @@
   {
     "id": "secro_power_armor_flesh_devour_note",
     "type": "SPELL",
-    "name": "Devour",
+    "name": {
+      "str": "吞食"
+    },
     "description": "由物品施法。如果你看到了这一点，那就改读这一条：\n“物品会激活一段时间，试着让它的用户大饱眼福。”",
     "message": "",
     "flags": [
@@ -270,7 +278,9 @@
   {
     "id": "secro_power_armor_flesh_devour",
     "type": "SPELL",
-    "name": "Devour",
+    "name": {
+      "str": "吞食"
+    },
     "description": "由物品施法。如果你看到了这一点，那就改读这一条：\n“物品会激活一段时间，试着让它的用户大饱眼福。”",
     "message": "",
     "flags": [
@@ -301,7 +311,9 @@
   {
     "id": "secro_power_armor_module_vessel_act_link",
     "type": "SPELL",
-    "name": "Link",
+    "name": {
+      "str": "链接"
+    },
     "description": "由物品施法。如果你看到了这一点，那就改读这一条：\n“物品会向西服传送一个信号，暂时保护使用者不受持续的伤害。”",
     "message": "",
     "flags": [
@@ -320,7 +332,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_feed_give",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "由物品施法。如果您看到这个，那么请阅读以下内容：\n“Item提供了一个用于选择变形分支的对象。”",
     "message": "",
     "flags": [
@@ -340,7 +354,9 @@
   {
     "id": "secro_power_armor_feed",
     "type": "SPELL",
-    "name": "Feed",
+    "name": {
+      "str": "饲料"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n“物品消耗你的肉体。”",
     "message": "<color_light_green>你让血管消耗你的肉。</color>",
     "flags": [
@@ -361,7 +377,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_morphform_list",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n“Item提供变形/表单列表以供激活。”",
     "message": "",
     "flags": [
@@ -428,7 +446,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_fite_morphform_list",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n“Item提供变形/表单列表以供激活。”",
     "message": "",
     "flags": [
@@ -471,7 +491,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_tank_morphform_list",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n“Item提供变形/表单列表以供激活。”",
     "message": "",
     "flags": [
@@ -502,7 +524,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_coward_morphform_list",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n“Item提供变形/表单列表以供激活。”",
     "message": "",
     "flags": [
@@ -529,7 +553,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_gun_morphform_list",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n“Item提供变形/表单列表以供激活。”",
     "message": "",
     "flags": [
@@ -564,7 +590,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_infect_morphform_list",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n“Item提供变形/表单列表以供激活。”",
     "message": "",
     "flags": [
@@ -587,7 +615,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_morph_fite_blades_give",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "由物品施法。如果您看到这个，那么请阅读以下内容：\n“Item提供了一个用于选择变形分支的对象。”",
     "message": "",
     "flags": [
@@ -607,7 +637,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_morphed_fite_blades_give",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "由物品施法。如果你看到这个，那就读这个：\n'项目提供了所选的变形分支。'",
     "message": "<color_light_green>变形成功！</color>",
     "flags": [
@@ -628,7 +660,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_morph_fite_tentacles_give",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "由物品施法。如果您看到这个，那么请阅读以下内容：\n“Item提供了一个用于选择变形分支的对象。”",
     "message": "",
     "flags": [
@@ -648,7 +682,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_morphed_fite_tentacles_give",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "由物品施法。如果你看到这个，那就读这个：\n'项目提供了所选的变形分支。'",
     "message": "<color_light_green>变形成功！</color>",
     "flags": [
@@ -669,7 +705,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_morph_fite_fleshpound_give",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "由物品施法。如果您看到这个，那么请阅读以下内容：\n“Item提供了一个用于选择变形分支的对象。”",
     "message": "",
     "flags": [
@@ -689,7 +727,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_morphed_fite_fleshpound_give",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "由物品施法。如果你看到这个，那就读这个：\n'项目提供了所选的变形分支。'",
     "message": "<color_light_green>变形成功！</color>",
     "flags": [
@@ -710,7 +750,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_morph_fite_jawarms_give",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "由物品施法。如果您看到这个，那么请阅读以下内容：\n“Item提供了一个用于选择变形分支的对象。”",
     "message": "",
     "flags": [
@@ -730,7 +772,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_morphed_fite_jawarms_give",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "由物品施法。如果你看到这个，那就读这个：\n'项目提供了所选的变形分支。'",
     "message": "<color_light_green>变形成功！</color>",
     "flags": [
@@ -751,7 +795,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_morph_gun_spit_give",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "由物品施法。如果您看到这个，那么请阅读以下内容：\n“Item提供了一个用于选择变形分支的对象。”",
     "message": "",
     "flags": [
@@ -771,7 +817,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_morphed_gun_spit_give",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "由物品施法。如果你看到这个，那就读这个：\n'项目提供了所选的变形分支。'",
     "message": "<color_light_green>变形成功！</color>",
     "flags": [
@@ -792,7 +840,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_morph_gun_bonelance_give",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "由物品施法。如果您看到这个，那么请阅读以下内容：\n“Item提供了一个用于选择变形分支的对象。”",
     "message": "",
     "flags": [
@@ -812,7 +862,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_morphed_gun_bonelance_give",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "由物品施法。如果你看到这个，那就读这个：\n'项目提供了所选的变形分支。'",
     "message": "<color_light_green>变形成功！</color>",
     "flags": [
@@ -833,7 +885,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_morph_jugg_bonespikes_give",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "由物品施法。如果您看到这个，那么请阅读以下内容：\n“Item提供了一个用于选择变形分支的对象。”",
     "message": "",
     "flags": [
@@ -853,7 +907,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_morphed_jugg_bonespikes_give",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "由物品施法。如果你看到这个，那就读这个：\n'项目提供了所选的变形分支。'",
     "message": "<color_light_green>变形成功！</color>",
     "flags": [
@@ -874,7 +930,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_morph_coward_powerlegs_give",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "由物品施法。如果您看到这个，那么请阅读以下内容：\n“Item提供了一个用于选择变形分支的对象。”",
     "message": "",
     "flags": [
@@ -894,7 +952,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_morphed_coward_powerlegs_give",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "由物品施法。如果你看到这个，那就读这个：\n'项目提供了所选的变形分支。'",
     "message": "<color_light_green>变形成功！</color>",
     "flags": [
@@ -915,7 +975,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_create_fite_bspear_give",
-    "name": "Form",
+    "name": {
+      "str": "形式"
+    },
     "description": "由物品施法。如果您看到这个，那么请阅读以下内容：\n“Item提供了一个用于选择形成分支的对象。”",
     "message": "",
     "flags": [
@@ -935,7 +997,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_created_fite_bspear_give",
-    "name": "Form",
+    "name": {
+      "str": "形式"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n'项目提供了所选的成型分支。'",
     "message": "<color_light_green>成型成功！</color>",
     "flags": [
@@ -956,7 +1020,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_create_gun_bonerifle_give",
-    "name": "Form",
+    "name": {
+      "str": "形式"
+    },
     "description": "由物品施法。如果您看到这个，那么请阅读以下内容：\n“Item提供了一个用于选择形成分支的对象。”",
     "message": "",
     "flags": [
@@ -976,7 +1042,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_created_gun_bonerifle_give",
-    "name": "Form",
+    "name": {
+      "str": "形式"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n'项目提供了所选的成型分支。'",
     "message": "<color_light_green>成型成功！</color>",
     "flags": [
@@ -997,7 +1065,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_created_gun_bonerifle_ammo_give",
-    "name": "Form",
+    "name": {
+      "str": "形式"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n'项目提供了所选的成型分支。'",
     "message": "<color_light_green>成型成功！</color>",
     "extra_effects": [
@@ -1023,7 +1093,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_create_jugg_bpick_give",
-    "name": "Form",
+    "name": {
+      "str": "形式"
+    },
     "description": "由物品施法。如果您看到这个，那么请阅读以下内容：\n“Item提供了一个用于选择形成分支的对象。”",
     "message": "",
     "flags": [
@@ -1043,7 +1115,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_created_jugg_bpick_give",
-    "name": "Form",
+    "name": {
+      "str": "形式"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n'项目提供了所选的成型分支。'",
     "message": "<color_light_green>成型成功！</color>",
     "flags": [
@@ -1064,7 +1138,9 @@
   {
     "id": "secro_power_armor_flesh_morphed_fite_blades_lowcut",
     "type": "SPELL",
-    "name": "Slash",
+    "name": {
+      "str": "斜线"
+    },
     "description": "由物品施法。如果你看到了这一点，那就改读这一条：\n“用户对目标执行一个基本的斜杠，造成很小的切割伤害。”",
     "message": "",
     "flags": [
@@ -1086,7 +1162,9 @@
   {
     "id": "secro_power_armor_flesh_morphed_fite_blades_highcut",
     "type": "SPELL",
-    "name": "Slice",
+    "name": {
+      "str": "切片"
+    },
     "description": "由物品施法。如果你看到了这一点，那就改读这一条：\n“用户对目标进行高冲量猛砍，造成切割伤害。”",
     "message": "",
     "flags": [
@@ -1108,7 +1186,9 @@
   {
     "id": "secro_power_armor_flesh_morphed_fite_tentacles_lowstab",
     "type": "SPELL",
-    "name": "Inject",
+    "name": {
+      "str": "注入"
+    },
     "description": "由物品施法。如果你看到的是一个小小的血管，你会看到它在刺伤目标",
     "message": "",
     "flags": [
@@ -1134,7 +1214,9 @@
   {
     "id": "secro_power_armor_flesh_morphed_fite_tentacles_highstab",
     "type": "SPELL",
-    "name": "Inject",
+    "name": {
+      "str": "注入"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n“血肉血管扭曲的静脉注入目标，造成刺伤伤害并诱捕他们。”",
     "message": "",
     "flags": [
@@ -1161,7 +1243,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_morphed_fite_tentacles_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "目标由物品施法。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "message": "你的触手剧烈地扭动！",
     "extra_effects": [
@@ -1195,7 +1279,9 @@
   {
     "id": "secro_power_armor_flesh_morphed_gun_spit_cs",
     "type": "SPELL",
-    "name": "Crimson Shower",
+    "name": {
+      "str": "深红色淋浴"
+    },
     "description": "血肉血管的唾沫器发出一股血酸流，造成轻微的酸伤害并产生血酸场。",
     "message": "",
     "flags": [
@@ -1228,7 +1314,9 @@
   {
     "id": "secro_power_armor_flesh_morphed_gun_spit_as_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "message": "",
     "flags": [
@@ -1246,7 +1334,9 @@
   {
     "id": "secro_power_armor_flesh_morphed_gun_spit_as",
     "type": "SPELL",
-    "name": "Acid Spit",
+    "name": {
+      "str": "酸液"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n“血肉之躯的唾沫军向目标射出一团血酸，造成酸伤害。”",
     "message": "",
     "flags": [
@@ -1279,7 +1369,9 @@
   {
     "id": "secro_power_armor_flesh_morphed_gun_spit_as_target",
     "type": "SPELL",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "目标由物品施法。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "message": "",
     "flags": [
@@ -1303,7 +1395,9 @@
   {
     "id": "secro_power_armor_flesh_morphed_gun_bonelance_bonespike",
     "type": "SPELL",
-    "name": "Bone Spike",
+    "name": {
+      "str": "骨钉"
+    },
     "description": "由物品施法。如果你看到了这个，那就读一下这个：\n“肉血管的骨头发射器阿曼特向目标喷出一大块钙化物质。”",
     "message": "",
     "flags": [
@@ -1330,7 +1424,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_morphed_gun_bonelance_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "目标由物品施法。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "message": "",
     "extra_effects": [
@@ -1360,7 +1456,9 @@
   {
     "id": "secro_power_armor_flesh_morphed_jugg_bonespikes_lowstab",
     "type": "SPELL",
-    "name": "React",
+    "name": {
+      "str": "反应"
+    },
     "description": "由物品施法。如果你看到了这个，那么读一下这个：\n“肉血管的骨刺反应，对攻击者造成刺伤。”",
     "message": "",
     "flags": [
@@ -1382,7 +1480,9 @@
   {
     "id": "secro_power_armor_flesh_morphed_jugg_bonespikes_highstab",
     "type": "SPELL",
-    "name": "Retaliate",
+    "name": {
+      "str": "报复"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这篇：\n“肉血管的骨刺会做出恶毒的反应，造成刺伤并击昏攻击者。”",
     "message": "",
     "flags": [
@@ -1407,7 +1507,9 @@
   {
     "id": "secro_power_armor_flesh_morphed_jugg_bonespikes_skeletaloutburst",
     "type": "SPELL",
-    "name": "Skeletal Outburst",
+    "name": {
+      "str": "骨骼突出"
+    },
     "description": "由物品施法。如果你看到了这个，那就读这个：\n的用户通过它的血肉管道。一段时间后，骨钉生长并向外突出，刺穿附近的目标。不准确，但致命",
     "message": "",
     "flags": [
@@ -1435,7 +1537,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_morphed_jugg_bonespikes_skeletaloutburst_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "目标由物品施法。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "message": "",
     "extra_effects": [
@@ -1465,7 +1569,9 @@
   {
     "id": "secro_power_armor_flesh_morphed_jugg_bonespikes_skeletaloutburst_pay",
     "type": "SPELL",
-    "name": "Cost",
+    "name": {
+      "str": "成本"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n“付出代价！！！”",
     "message": "<color_light_green>你的血管里突然冒出几根骨刺！</color>",
     "flags": [
@@ -1497,7 +1603,9 @@
   {
     "id": "secro_power_armor_flesh_morphed_fite_fleshpound_powpunch",
     "type": "SPELL",
-    "name": "Powerpunch",
+    "name": {
+      "str": "强力冲床"
+    },
     "description": "由物品施法。如果你看到了这个，那就读这篇：\n“肉身船的肉身球会造成毁灭性的打击，造成巨大的重击伤害，并对所有回合造成眩晕。”",
     "message": "",
     "flags": [
@@ -1523,7 +1631,9 @@
   {
     "id": "secro_power_armor_flesh_morphed_coward_powerlegs_powkick",
     "type": "SPELL",
-    "name": "Powerkick",
+    "name": {
+      "str": "动力踢"
+    },
     "description": "由物品施法。如果你看到了这一点，那就改读这一条：\n“用户对目标进行毁灭性的踢腿，造成巨大的打击伤害，并对目标施晕数回合。”",
     "message": "",
     "flags": [
@@ -1548,7 +1658,9 @@
   {
     "id": "secro_power_armor_flesh_morphed_fite_jawarms_lowdmg",
     "type": "SPELL",
-    "name": "Bite",
+    "name": {
+      "str": "咬"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n“肉船的下颚咬伤目标，造成刺伤伤害。”",
     "message": "",
     "flags": [
@@ -1570,7 +1682,9 @@
   {
     "id": "secro_power_armor_flesh_morphed_fite_jawarms_highdmg",
     "type": "SPELL",
-    "name": "Crunch",
+    "name": {
+      "str": "嚼"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n“肉船的下颚咬人者凶猛地咬住目标，造成很高的刺伤伤害。”",
     "message": "",
     "flags": [
@@ -1592,7 +1706,9 @@
   {
     "id": "secro_power_armor_flesh_created_gun_bonerifle_pay_head",
     "type": "SPELL",
-    "name": "Cost",
+    "name": {
+      "str": "成本"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n“付出代价！！！”",
     "message": "",
     "flags": [
@@ -1614,7 +1730,9 @@
   {
     "id": "secro_power_armor_flesh_created_gun_bonerifle_pay_torso",
     "type": "SPELL",
-    "name": "Cost",
+    "name": {
+      "str": "成本"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n“付出代价！！！”",
     "message": "",
     "flags": [
@@ -1636,7 +1754,9 @@
   {
     "id": "secro_power_armor_flesh_created_gun_bonerifle_pay_larm",
     "type": "SPELL",
-    "name": "Cost",
+    "name": {
+      "str": "成本"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n“付出代价！！！”",
     "message": "",
     "flags": [
@@ -1658,7 +1778,9 @@
   {
     "id": "secro_power_armor_flesh_created_gun_bonerifle_pay_rarm",
     "type": "SPELL",
-    "name": "Cost",
+    "name": {
+      "str": "成本"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n“付出代价！！！”",
     "message": "",
     "flags": [
@@ -1680,7 +1802,9 @@
   {
     "id": "secro_power_armor_flesh_created_gun_bonerifle_pay_lleg",
     "type": "SPELL",
-    "name": "Cost",
+    "name": {
+      "str": "成本"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n“付出代价！！！”",
     "message": "",
     "flags": [
@@ -1702,7 +1826,9 @@
   {
     "id": "secro_power_armor_flesh_created_gun_bonerifle_pay_rleg",
     "type": "SPELL",
-    "name": "Cost",
+    "name": {
+      "str": "成本"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n“付出代价！！！”",
     "message": "",
     "flags": [
@@ -1724,7 +1850,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_flesh_created_gun_bonerifle_cost_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "目标由物品施法。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "message": "",
     "extra_effects": [
@@ -1770,7 +1898,9 @@
   {
     "type": "SPELL",
     "id": "secro_flesh_splicer_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "目标由物品施法。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "message": "<color_dark_gray>生物有机拼接器的触角开始剧烈扭动…\n<color_light_green>生物有机拼接器耙%3$s！",
     "extra_effects": [
@@ -1835,7 +1965,9 @@
   {
     "id": "secro_flesh_splicer_zombie_blade",
     "type": "SPELL",
-    "name": "Scan",
+    "name": {
+      "str": "扫描"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n'项目扫描目标…'",
     "flags": [
       "SILENT",
@@ -1864,7 +1996,9 @@
   {
     "type": "SPELL",
     "id": "secro_flesh_splicer_zombie_blade_yeah",
-    "name": "Collect",
+    "name": {
+      "str": "收集"
+    },
     "description": "由物品施法。如果你看到了这个，那就读这个：\n提供了特定的DNA",
     "flags": [
       "SILENT",
@@ -1892,7 +2026,9 @@
   {
     "id": "secro_flesh_splicer_zombie_WALKINGPOTATO",
     "type": "SPELL",
-    "name": "Scan",
+    "name": {
+      "str": "扫描"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n'项目扫描目标…'",
     "flags": [
       "SILENT",
@@ -1921,7 +2057,9 @@
   {
     "type": "SPELL",
     "id": "secro_flesh_splicer_zombie_WALKINGPOTATO_yeah",
-    "name": "Collect",
+    "name": {
+      "str": "收集"
+    },
     "description": "由物品施法。如果你看到了这个，那就读这个：\n提供了特定的DNA",
     "flags": [
       "SILENT",
@@ -1949,7 +2087,9 @@
   {
     "id": "secro_flesh_splicer_zombie_mouth",
     "type": "SPELL",
-    "name": "Scan",
+    "name": {
+      "str": "扫描"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n'项目扫描目标…'",
     "flags": [
       "SILENT",
@@ -1978,7 +2118,9 @@
   {
     "type": "SPELL",
     "id": "secro_flesh_splicer_zombie_mouth_yeah",
-    "name": "Collect",
+    "name": {
+      "str": "收集"
+    },
     "description": "由物品施法。如果你看到了这个，那就读这个：\n提供了特定的DNA",
     "flags": [
       "SILENT",
@@ -2006,7 +2148,9 @@
   {
     "id": "secro_flesh_splicer_zombie_tendril",
     "type": "SPELL",
-    "name": "Scan",
+    "name": {
+      "str": "扫描"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n'项目扫描目标…'",
     "flags": [
       "SILENT",
@@ -2035,7 +2179,9 @@
   {
     "type": "SPELL",
     "id": "secro_flesh_splicer_zombie_tendril_yeah",
-    "name": "Collect",
+    "name": {
+      "str": "收集"
+    },
     "description": "由物品施法。如果你看到了这个，那就读这个：\n提供了特定的DNA",
     "flags": [
       "SILENT",
@@ -2063,7 +2209,9 @@
   {
     "id": "secro_flesh_splicer_zombie_titan",
     "type": "SPELL",
-    "name": "Scan",
+    "name": {
+      "str": "扫描"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n'项目扫描目标…'",
     "flags": [
       "SILENT",
@@ -2090,7 +2238,9 @@
   {
     "type": "SPELL",
     "id": "secro_flesh_splicer_zombie_titan_yeah",
-    "name": "Collect",
+    "name": {
+      "str": "收集"
+    },
     "description": "由物品施法。如果你看到了这个，那就读这个：\n提供了特定的DNA",
     "flags": [
       "SILENT",
@@ -2116,7 +2266,9 @@
   {
     "id": "secro_flesh_splicer_zombie_unify",
     "type": "SPELL",
-    "name": "Scan",
+    "name": {
+      "str": "扫描"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n'项目扫描目标…'",
     "flags": [
       "SILENT",
@@ -2144,7 +2296,9 @@
   {
     "type": "SPELL",
     "id": "secro_flesh_splicer_zombie_unify_yeah",
-    "name": "Collect",
+    "name": {
+      "str": "收集"
+    },
     "description": "由物品施法。如果你看到了这个，那就读这个：\n提供了特定的DNA",
     "flags": [
       "SILENT",
@@ -2171,7 +2325,9 @@
   {
     "id": "secro_flesh_transmitter_commands",
     "type": "SPELL",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "目标由物品施法。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "message": "",
     "flags": [
@@ -2203,7 +2359,9 @@
   {
     "type": "SPELL",
     "id": "secro_flesh_transmitter_command_follow_item",
-    "name": "Item Command",
+    "name": {
+      "str": "Item命令"
+    },
     "description": "由物品施法。如果您看到了这个，那么请阅读以下内容：\n'提供item命令。'",
     "flags": [
       "SILENT",
@@ -2223,7 +2381,9 @@
   {
     "type": "SPELL",
     "id": "secro_flesh_transmitter_command_follow",
-    "name": "Follow",
+    "name": {
+      "str": "跟随"
+    },
     "description": "由物品施法。如果你看到了这个，那就读这个：\n“汞合金开始跟着你。”",
     "message": "发报机狂转！",
     "flags": [
@@ -2248,7 +2408,9 @@
   {
     "type": "SPELL",
     "id": "secro_flesh_transmitter_command_followall_item",
-    "name": "Item Command",
+    "name": {
+      "str": "Item命令"
+    },
     "description": "由物品施法。如果您看到了这个，那么请阅读以下内容：\n'提供item命令。'",
     "flags": [
       "SILENT",
@@ -2268,7 +2430,9 @@
   {
     "type": "SPELL",
     "id": "secro_flesh_transmitter_command_followall",
-    "name": "Follow",
+    "name": {
+      "str": "跟随"
+    },
     "description": "由物品施法。如果你看到了这一点，那就改读这一条：\n“所有附近的汞合金都开始跟着你。”",
     "message": "发报机狂转！",
     "flags": [
@@ -2293,7 +2457,9 @@
   {
     "type": "SPELL",
     "id": "secro_flesh_transmitter_command_attack_item",
-    "name": "Item Command",
+    "name": {
+      "str": "Item命令"
+    },
     "description": "由物品施法。如果您看到了这个，那么请阅读以下内容：\n'提供item命令。'",
     "flags": [
       "SILENT",
@@ -2313,7 +2479,9 @@
   {
     "type": "SPELL",
     "id": "secro_flesh_transmitter_command_attack",
-    "name": "Attack",
+    "name": {
+      "str": "攻击"
+    },
     "description": "由物品施法。如果你看到了这一点，那就改读这一条：\n“汞合金将开始巡逻并攻击附近的敌人。”",
     "message": "发报机狂转！",
     "flags": [
@@ -2338,7 +2506,9 @@
   {
     "type": "SPELL",
     "id": "secro_flesh_transmitter_command_attackall_item",
-    "name": "Item Command",
+    "name": {
+      "str": "Item命令"
+    },
     "description": "由物品施法。如果您看到了这个，那么请阅读以下内容：\n'提供item命令。'",
     "flags": [
       "SILENT",
@@ -2358,7 +2528,9 @@
   {
     "type": "SPELL",
     "id": "secro_flesh_transmitter_command_attackall",
-    "name": "Attack",
+    "name": {
+      "str": "攻击"
+    },
     "description": "由物品施法。如果你看到了这一点，那就改读这一条：\n“所有附近的汞合金开始攻击敌人。”",
     "message": "发报机狂转！",
     "flags": [
@@ -2383,7 +2555,9 @@
   {
     "id": "secro_flesh_mod_tendril_ench_sweep",
     "type": "SPELL",
-    "name": "Sweep",
+    "name": {
+      "str": "扫掠"
+    },
     "description": "由物品施法。如果你看到了这一点，那就改读这一条：\n“改装武器释放出几根卷须，疯狂地摆动到附近造成重击伤害。”",
     "message": "",
     "flags": [
@@ -2408,7 +2582,9 @@
   {
     "id": "secro_flesh_mod_tendril_ench_target",
     "type": "SPELL",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "目标由物品施法。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "message": "",
     "flags": [
@@ -2433,7 +2609,9 @@
   {
     "id": "secro_flesh_mod_tendril_ench_slam",
     "type": "SPELL",
-    "name": "Slam",
+    "name": {
+      "str": "猛击"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n“改装武器的卷须压缩，然后猛击目标，造成重击伤害和眩晕。”",
     "message": "",
     "flags": [
@@ -2457,7 +2635,9 @@
   {
     "id": "secro_flesh_mod_tendril_ench_thrust",
     "type": "SPELL",
-    "name": "Thrust",
+    "name": {
+      "str": "推力"
+    },
     "description": "由物品施法。如果你看到了这个，那就改读这个：\n“改装武器的卷须刺向目标，造成刺伤和眩晕。”",
     "message": "",
     "flags": [
@@ -2481,7 +2661,9 @@
   {
     "id": "secro_power_armor_module_electric_act_shockdischarge",
     "type": "SPELL",
-    "name": "Electric Discharge",
+    "name": {
+      "str": "放电"
+    },
     "description": "由物品施法。如果你看到了这一点，那就改读这一条：\n“用户的电动手套在撞击时会产生高电流，造成轻微的电损伤，并将其轨道炸开。”",
     "message": "",
     "flags": [
@@ -2506,7 +2688,9 @@
   {
     "id": "secro_power_armor_module_electric_act_highshockdischarge",
     "type": "SPELL",
-    "name": "Overcharged Shock",
+    "name": {
+      "str": "过充冲击"
+    },
     "description": "由物品施法。如果你看到了这一点，那么请阅读以下内容：\n“用户的电动手套会产生一个非常高功率的电流，随机地在附近形成拱形，对受影响的目标造成电伤害和打击。”",
     "message": "",
     "flags": [
@@ -2537,7 +2721,9 @@
   {
     "type": "SPELL",
     "id": "secro_power_armor_module_electric_act_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "目标由物品施法。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "message": "",
     "extra_effects": [
@@ -2569,7 +2755,9 @@
   {
     "id": "secro_power_armor_module_pulsar_act_pulse",
     "type": "SPELL",
-    "name": "Pulse",
+    "name": {
+      "str": "脉搏"
+    },
     "description": "由物品施法。如果你看到了这一点，那就改读这一条：\n“用户的冲击波发生器产生一个冲击波脉冲。”",
     "message": "",
     "effect": "area_push",

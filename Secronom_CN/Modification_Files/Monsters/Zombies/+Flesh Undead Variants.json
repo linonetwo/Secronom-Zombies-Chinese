@@ -325,8 +325,7 @@
     "hp": 88,
     "speed": 95,
     "emit_fields": [
-      "emit_sflesh_fleshling_maybe",
-      "emit_flesh_biome_immunity"
+      "emit_sflesh_fleshling_maybe"
     ],
     "material": [
       "flesh"

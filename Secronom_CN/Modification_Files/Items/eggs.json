@@ -2,7 +2,9 @@
   {
     "type": "COMESTIBLE",
     "id": "saddler_egg",
-    "name": "saddler egg",
+    "name": {
+      "str": "马鞍蛋"
+    },
     "weight": "110 g",
     "color": "green",
     "comestible_type": "FOOD",
@@ -20,7 +22,9 @@
   {
     "type": "TOOL",
     "id": "hatchingsaddleregg",
-    "name": "cracked saddler egg",
+    "name": {
+      "str": "裂马鞍蛋"
+    },
     "weight": "110 g",
     "color": "green",
     "symbol": "o",
@@ -52,7 +56,9 @@
     "looks_like": "hatchingsaddleregg",
     "symbol": ",",
     "color": "green",
-    "name": "hatched saddler egg",
+    "name": {
+      "str": "孵化马鞍蛋"
+    },
     "description": "马鞍子孵出的蛋。它仍然覆盖着黏糊糊的绿色黏液，但你看不出它有什么用处，只能扔掉。",
     "material": [
       "egg"

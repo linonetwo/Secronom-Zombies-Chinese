@@ -41,6 +41,10 @@
         "monster_message": "<color_red>%1$s捕捉附近怪物的强大威力！</color>"
       }
     ],
+    "upgrades": {
+      "half_life": 12,
+      "into_group": "GROUP_REVENANT_UPGRADE"
+    },
     "death_drops": "default_zombie_death_drops",
     "death_function": [
       "NORMAL"

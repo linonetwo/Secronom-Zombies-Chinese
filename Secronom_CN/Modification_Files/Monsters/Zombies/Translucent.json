@@ -2,7 +2,9 @@
   {
     "id": "mon_zombie_translucent",
     "type": "MONSTER",
-    "name": "translucent zombie",
+    "name": {
+      "str": "半透明僵尸"
+    },
     "description": "酸液覆盖着它的全身，这具狂暴的尸体每走一步都在摇摆，吐着肮脏的废物，它绿色的、浅色的眼睛不知从哪里顺从地凝视着。",
     "default_faction": "zombie",
     "species": [
@@ -76,7 +78,9 @@
   {
     "id": "mon_zombie_pellucid",
     "type": "MONSTER",
-    "name": "pellucid zombie",
+    "name": {
+      "str": "透明僵尸"
+    },
     "description": "无法辨认的脸上滴着不友好的液体。这只僵尸的皮肤变薄了，变成了光线的转移，随着年龄的增长，可能是胃酸倒流的结果。仔细观察，这些静脉主要由绿色的辉光组成。",
     "default_faction": "zombie",
     "species": [

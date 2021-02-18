@@ -2,7 +2,9 @@
   {
     "id": "mon_sflesh_camp_turret",
     "type": "MONSTER",
-    "name": "flesh heap",
+    "name": {
+      "str": "堆积腐肉"
+    },
     "description": "一堆团块状的肉，表面散布着几个管状孔。它的身体渗出血酸。",
     "default_faction": "secro_flesh3",
     "species": [
@@ -56,7 +58,9 @@
   {
     "id": "mon_sflesh_camp_turret_blade",
     "type": "MONSTER",
-    "name": "flesh heap (blade)",
+    "name": {
+      "str": "肉堆（刀）"
+    },
     "description": "一堆被叶片核心浸透的肉。它的身体充满了成百上千的骨头，新的骨头还在不断生长。成长。",
     "default_faction": "secro_flesh3",
     "species": [
@@ -111,7 +115,9 @@
   {
     "id": "mon_sflesh_camp_turret_tendril",
     "type": "MONSTER",
-    "name": "flesh heap (tendril)",
+    "name": {
+      "str": "肉堆（卷须）"
+    },
     "description": "充满卷须芯的一堆团块的肉。几根卷须在其表面不停地扭动，密度大小不一。",
     "default_faction": "secro_flesh3",
     "species": [
@@ -165,7 +171,9 @@
   {
     "id": "mon_sflesh_camp_turret_mouth",
     "type": "MONSTER",
-    "name": "flesh heap (mouthswell)",
+    "name": {
+      "str": "肉堆（口红）"
+    },
     "description": "一堆团块的肉，充满了口肿的核心。当它茫然地掠过周围的环境时，下颚的嘴形成了一个尖叫和尖叫的合唱团。",
     "default_faction": "secro_flesh3",
     "species": [
@@ -219,7 +227,9 @@
   {
     "id": "mon_sflesh_camp_turret_unify",
     "type": "MONSTER",
-    "name": "flesh heap (unifier)",
+    "name": {
+      "str": "肉堆（统一者）"
+    },
     "description": "一堆团块的肉，里面有更统一的核心。它肿胀的部分不断跳动，伴随着无数蠕动的触角。",
     "default_faction": "secro_flesh3",
     "species": [
@@ -274,7 +284,9 @@
   {
     "id": "mon_sflesh_camp_turret_hravager",
     "type": "MONSTER",
-    "name": "ravager flesh heap",
+    "name": {
+      "str": "掠夺者肉堆"
+    },
     "description": "一堆混合着几个核心的肉。这种混合炮塔利用了卷须的无情攻击和刀片的形成尖锐的骨骼生长。",
     "default_faction": "secro_flesh3",
     "species": [

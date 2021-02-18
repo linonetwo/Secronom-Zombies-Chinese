@@ -8,7 +8,9 @@
   {
     "id": "SSxgrenade",
     "type": "AMMO",
-    "name": "SSx grenade",
+    "name": {
+      "str": "SSx手榴弹"
+    },
     "description": "带数字10秒计时器的圆形金属X型手榴弹。",
     "weight": "200 g",
     "volume": "500 ml",
@@ -47,7 +49,9 @@
   {
     "id": "SSxgrenadeact",
     "type": "TOOL",
-    "name": "SSx grenade",
+    "name": {
+      "str": "SSx手榴弹"
+    },
     "description": "一枚圆形金属X型手榴弹，带有数字10秒计时器，目前正在计时。",
     "weight": "200 g",
     "volume": "500 ml",
@@ -73,7 +77,9 @@
   {
     "id": "SSygrenade",
     "type": "AMMO",
-    "name": "SSy grenade",
+    "name": {
+      "str": "SSy手榴弹"
+    },
     "description": "带数字10秒计时器的圆形金属Y型手榴弹。",
     "weight": "300 g",
     "volume": "500 ml",
@@ -112,7 +118,9 @@
   {
     "id": "SSygrenadeact",
     "type": "TOOL",
-    "name": "SSy grenade",
+    "name": {
+      "str": "SSy手榴弹"
+    },
     "description": "一枚圆形金属Y型手榴弹，带有数字10秒计时器，目前正在计时。",
     "weight": "300 g",
     "volume": "500 ml",
@@ -138,7 +146,9 @@
   {
     "id": "SSzgrenade",
     "type": "AMMO",
-    "name": "SSz grenade",
+    "name": {
+      "str": "SSz手榴弹"
+    },
     "description": "带数字10秒计时器的圆形金属Z型手榴弹。",
     "weight": "400 g",
     "volume": "500 ml",
@@ -177,7 +187,9 @@
   {
     "id": "SSzgrenadeact",
     "type": "TOOL",
-    "name": "SSz grenade",
+    "name": {
+      "str": "SSz手榴弹"
+    },
     "description": "一枚圆形金属Z型手榴弹，带有数字10秒计时器，目前正在计时。",
     "weight": "400 g",
     "volume": "500 ml",
@@ -204,7 +216,9 @@
     "id": "SSimpactgrenade",
     "type": "TOOL",
     "category": "weapons",
-    "name": "SS grenade",
+    "name": {
+      "str": "SS手榴弹"
+    },
     "description": "圆形金属手榴弹。",
     "weight": "240 g",
     "volume": "500 ml",
@@ -232,7 +246,9 @@
     "id": "SSimpactgrenadeact",
     "type": "TOOL",
     "category": "weapons",
-    "name": "SS grenade",
+    "name": {
+      "str": "SS手榴弹"
+    },
     "description": "圆形金属手榴弹。就要爆炸了。",
     "weight": "240 g",
     "volume": "500 ml",
@@ -269,7 +285,9 @@
   {
     "id": "bot_secroinforcer",
     "type": "TOOL",
-    "name": "reinforcer bot",
+    "name": {
+      "str": "增强剂机器人"
+    },
     "description": "这是一个不活跃的增强机器人。",
     "weight": "16225 g",
     "volume": "1000 ml",
@@ -298,7 +316,9 @@
   {
     "id": "bot_secroshocker",
     "type": "TOOL",
-    "name": "shocker bot",
+    "name": {
+      "str": "令人震惊的机器人"
+    },
     "description": "这是一个不活动的震动机器人。",
     "weight": "1454 g",
     "volume": "500 ml",
@@ -327,7 +347,9 @@
   {
     "id": "bot_secroriflewalker",
     "type": "TOOL",
-    "name": "walker bot",
+    "name": {
+      "str": "步行机器人"
+    },
     "description": "这是一个不活动的步行机器人。",
     "weight": "1454 g",
     "volume": "500 ml",
@@ -356,7 +378,9 @@
   {
     "id": "bot_secrolauncher",
     "type": "TOOL",
-    "name": "launcher bot",
+    "name": {
+      "str": "启动程序bot"
+    },
     "description": "这是一个非活动的启动程序bot。",
     "weight": "1454 g",
     "volume": "500 ml",
@@ -385,7 +409,9 @@
   {
     "id": "bot_secromissile",
     "type": "TOOL",
-    "name": "SS homing missile",
+    "name": {
+      "str": "SS寻的导弹"
+    },
     "description": "这是一枚静止的SS寻的导弹。",
     "weight": "324 g",
     "volume": "250 ml",
@@ -414,7 +440,9 @@
   {
     "id": "saddler_detach",
     "type": "TOOL",
-    "name": "saddler",
+    "name": {
+      "str": "马鞍"
+    },
     "description": "这个马鞍就要脱离它死去的主人了。",
     "volume": "4000 ml",
     "weight": "4000 g",
@@ -441,7 +469,9 @@
   {
     "id": "saddler_brute_detach",
     "type": "TOOL",
-    "name": "saddler brute",
+    "name": {
+      "str": "马鞍兽"
+    },
     "description": "这个马鞍兽即将脱离它死去的主人。",
     "volume": "4000 ml",
     "weight": "4000 g",
@@ -468,7 +498,9 @@
   {
     "id": "saddler_scout_detach",
     "type": "TOOL",
-    "name": "saddler brute",
+    "name": {
+      "str": "马鞍兽"
+    },
     "description": "这个马鞍兽即将脱离它死去的主人。",
     "volume": "4000 ml",
     "weight": "4000 g",
@@ -495,7 +527,9 @@
   {
     "id": "relinquish_revive",
     "type": "TOOL",
-    "name": "relinquished zombie's body",
+    "name": {
+      "str": "放弃了僵尸的尸体"
+    },
     "description": "一具尸体，即将复活…",
     "volume": "1 ml",
     "weight": "1 g",
@@ -522,7 +556,9 @@
   {
     "id": "veinhole_gap",
     "type": "TOOL",
-    "name": "writhing tendrils",
+    "name": {
+      "str": "扭动的卷须"
+    },
     "description": "静脉孔周围的触手，现在从过度伤害中撤退。",
     "volume": "200 L",
     "weight": "200000 g",
@@ -544,7 +580,9 @@
   {
     "id": "veinhole_gap_act",
     "type": "TOOL",
-    "name": "writhing tendrils",
+    "name": {
+      "str": "扭动的卷须"
+    },
     "description": "静脉孔周围的触手，现在从过度伤害中撤退。",
     "volume": "200 L",
     "weight": "200000 g",
@@ -568,7 +606,9 @@
   {
     "id": "flesh_sack_death",
     "type": "TOOL",
-    "name": "hatched flesh sack",
+    "name": {
+      "str": "孵化肉袋"
+    },
     "description": "产生副细胞的肉袋。",
     "volume": "1 ml",
     "weight": "1 g",
@@ -595,7 +635,9 @@
   {
     "id": "flesh_taken_death",
     "type": "TOOL",
-    "name": "hatched taken",
+    "name": {
+      "str": "带阴影的"
+    },
     "description": "这部电影的内容是由电影改编的。",
     "volume": "1 ml",
     "weight": "1 g",
@@ -622,7 +664,9 @@
   {
     "id": "flesh_death",
     "type": "TOOL",
-    "name": "melting flesh",
+    "name": {
+      "str": "溶质果肉"
+    },
     "description": "肉正在除虫。你不确定它是否还活着…",
     "volume": "1000 L",
     "weight": "23000 kg",
@@ -644,7 +688,9 @@
   {
     "id": "flesh_death_act",
     "type": "TOOL",
-    "name": "melting flesh",
+    "name": {
+      "str": "溶质果肉"
+    },
     "description": "肉正在除虫。你不确定它是否还活着…",
     "volume": "200 L",
     "weight": "200000 g",
@@ -668,7 +714,9 @@
   {
     "id": "flesh_heap_death",
     "type": "TOOL",
-    "name": "melting flesh heap",
+    "name": {
+      "str": "融化的肉堆"
+    },
     "description": "肉堆分裂了它的联合体。",
     "volume": "1 ml",
     "weight": "1 g",
@@ -695,7 +743,9 @@
   {
     "id": "shifter_shift",
     "type": "TOOL",
-    "name": "shadow",
+    "name": {
+      "str": "阴影"
+    },
     "description": "一个正在形成的阴影…超凡脱俗的。",
     "volume": "4000 ml",
     "weight": "4000 g",

@@ -3,10 +3,14 @@
     "//": "Every spell that a monster casts are explained here. There's no way of telling you the description in-game, and here we are, reading infos about 'em at this file! Since monsters can only have one spell in their special attacks (and idk if this is intentional to the devs), I tend to combine them... Combo (combination) spell and a regular one, casted in an instance!",
     "id": "sacrifice_spell",
     "type": "SPELL",
-    "name": "Sacrifice",
+    "name": {
+      "str": "牺牲"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者造成瞬间死亡伤害，在施法时牺牲自己。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
@@ -27,13 +31,18 @@
   {
     "type": "SPELL",
     "id": "secro_spell_null",
-    "name": "null",
+    "name": {
+      "str": "无效的"
+    },
     "description": "无效的…别理这个。",
     "valid_targets": [
       "none"
     ],
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "message": "",
     "effect": "attack",
@@ -42,10 +51,14 @@
   {
     "type": "SPELL",
     "id": "mon_summon_tentawraith_tent",
-    "name": "Summon Tentacles",
+    "name": {
+      "str": "召唤触手"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读这篇：\n“施法者的触角爆发从地上长出3个触角。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "HOSTILE_SUMMON",
       "NO_PROJECTILE"
     ],
@@ -68,10 +81,14 @@
   {
     "id": "mon_zombie_tentawraith_twist",
     "type": "SPELL",
-    "name": "Twisted Strike",
+    "name": {
+      "str": "扭曲打击"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么改为阅读这一条：\n'施法者的触角爆发以紧凑的触角刺穿离施法者最近的目标，造成中度刺伤伤害，并造成昏迷1回合。'",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_DURATION"
     ],
@@ -94,10 +111,14 @@
   {
     "id": "mon_zombie_tentawraith_outburst",
     "type": "SPELL",
-    "name": "Tentacle Outburst",
+    "name": {
+      "str": "触角突出"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'施法者将其身体弯曲几圈，用触角触地，然后在目标下方猛烈爆发，造成刺伤伤害，并对其半径范围内受影响的生物施加持续3圈的不稳定立足点。'",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_AOE"
     ],
@@ -130,10 +151,14 @@
   {
     "id": "mon_zombie_tentawraith_tent_pmis",
     "type": "SPELL",
-    "name": "Pin Missile",
+    "name": {
+      "str": "Pin导弹"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就读一读：\n“施法者快速摆动四肢，将针状弹丸射出锥形，对目标造成刺伤。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_AOE"
     ],
@@ -155,10 +180,14 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_titan_charge",
-    "name": "Charging Stance",
+    "name": {
+      "str": "充电姿势"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这篇：\n“施法者将自己设置为守卫姿态，在获得爆发速度的同时阻挡物理伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
@@ -175,7 +204,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_titan_charge_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -185,27 +216,30 @@
       }
     ],
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ground",
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_range": 69,
-    "max_range": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 69
   },
   {
     "id": "mon_zombie_pellucid_aburst",
     "type": "SPELL",
-    "name": "Acid Burst",
+    "name": {
+      "str": "酸爆"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这篇：\n“施法者的酸球剧烈爆炸，对周围所有生物造成酸伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_AOE"
     ],
@@ -231,10 +265,14 @@
   {
     "id": "mon_zombie_pellucid_aburst_point",
     "type": "SPELL",
-    "name": "Acid Glob",
+    "name": {
+      "str": "酸球"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n'施法者向目标射出一口浓缩酸球，造成一点酸伤害。'",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -258,10 +296,14 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_unify_bv",
-    "name": "Summon Blood Vessel",
+    "name": {
+      "str": "召唤血管"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者通过它的手来制造血管。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "HOSTILE_SUMMON",
       "RANDOM_TARGET",
       "NO_PROJECTILE"
@@ -283,7 +325,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_unify_bv_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -292,12 +336,13 @@
       }
     ],
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -307,10 +352,14 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_unity_bv",
-    "name": "Summon 2 Blood Vessels",
+    "name": {
+      "str": "召唤2条血管"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读这篇：\n“施法者通过核心通道创造2条血管。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "HOSTILE_SUMMON",
       "RANDOM_TARGET",
       "NO_PROJECTILE"
@@ -332,7 +381,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_unity_bv_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -342,12 +393,12 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -359,10 +410,14 @@
   {
     "type": "SPELL",
     "id": "mon_summon_hemo_bv",
-    "name": "Summon 2 Blood Vessels",
+    "name": {
+      "str": "召唤2条血管"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读这个：\n“施法者的血波在附近创造了2条血管。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "HOSTILE_SUMMON",
       "RANDOM_TARGET",
       "NO_PROJECTILE"
@@ -383,10 +438,14 @@
   {
     "type": "SPELL",
     "id": "mon_summon_hemo_bf",
-    "name": "Summon Blood Fiend",
+    "name": {
+      "str": "召唤血妖"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n“施法者的血波在附近创造了一个血妖。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "HOSTILE_SUMMON",
       "RANDOM_TARGET",
       "NO_PROJECTILE"
@@ -407,10 +466,14 @@
   {
     "id": "mon_zombie_hemo_bcurl",
     "type": "SPELL",
-    "name": "Blood Curl",
+    "name": {
+      "str": "血卷"
+    },
     "description": "怪物施法的。如果你看到了这个，那么改为读这篇：\n'当目标在附近时，施法者操纵一些血波的血液进入目标，施加更多的血腥。这是铸造3次",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DURATION",
       "RANDOM_TARGET",
       "NO_PROJECTILE"
@@ -429,10 +492,14 @@
   {
     "id": "mon_zombie_hemo_bwave",
     "type": "SPELL",
-    "name": "Blood Wave",
+    "name": {
+      "str": "血波"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n'施法者通过其周围的血液打击一个圆锥体的大面积区域，造成中等的重击伤害，并对所有受影响的生物进行血洗。'",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_AOE",
       "RANDOM_DURATION"
@@ -482,10 +549,14 @@
   {
     "id": "mon_zombie_bloodvessel_explo",
     "type": "SPELL",
-    "name": "Explode",
+    "name": {
+      "str": "爆炸"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n“施法者爆炸，对所有受影响的生物造成重击伤害和血洗。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_AOE",
       "RANDOM_DURATION"
@@ -513,7 +584,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_bloodvessel_explo_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -526,12 +599,13 @@
       }
     ],
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -541,10 +615,14 @@
   {
     "id": "mon_zombie_bloodfiend_explo",
     "type": "SPELL",
-    "name": "Explode",
+    "name": {
+      "str": "爆炸"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者猛烈爆炸，对所有受影响的生物造成重击伤害和血洗。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_AOE",
       "RANDOM_DURATION"
@@ -572,7 +650,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_bloodfiend_explo_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -585,12 +665,13 @@
       }
     ],
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -600,10 +681,14 @@
   {
     "id": "mon_zombie_nightwail_shroud",
     "type": "SPELL",
-    "name": "Enshroud",
+    "name": {
+      "str": "圈套"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么改读这一条：\n'如果施法者的目标在附近，目标被阴影包围，造成很小的真实伤害并使他们失明。'",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_DURATION",
       "NO_PROJECTILE"
@@ -626,10 +711,14 @@
   {
     "type": "SPELL",
     "id": "mon_summon_nightwail_shadow",
-    "name": "Summon Shadow",
+    "name": {
+      "str": "召唤幽影"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读这篇：\n‘施法者的阴影分裂了一小块，创造了一个独立的阴影。’",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "HOSTILE_SUMMON",
       "RANDOM_DURATION",
       "NO_PROJECTILE"
@@ -655,10 +744,14 @@
   {
     "id": "mon_zombie_nightwail_shadow_lshadow",
     "type": "SPELL",
-    "name": "Lingering Shadow",
+    "name": {
+      "str": "挥之不去的影子"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这篇：\n“施法者的不祥诅咒对目标造成轻而持续的真实伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DURATION",
       "NO_PROJECTILE"
     ],
@@ -683,10 +776,14 @@
   {
     "id": "mon_zombie_nightwail_shadow_curse",
     "type": "SPELL",
-    "name": "Ominous Curse",
+    "name": {
+      "str": "不祥的诅咒"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n'目标受到不祥诅咒的折磨，受到轻微的真实伤害。'",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_DURATION",
       "NO_PROJECTILE"
@@ -709,7 +806,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_nightwail_shadow_curse_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -721,12 +820,13 @@
       }
     ],
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -736,10 +836,14 @@
   {
     "id": "mon_zombie_xlick_writhes",
     "type": "SPELL",
-    "name": "Writhing Slash",
+    "name": {
+      "str": "扭动斜杠"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么改为阅读这一条：\n'如果施法者的目标在精确刺伤后在附近，施法者的舌头会横扫目标，造成切割伤害，并对受影响的生物施加不稳定的立足点。这是铸造两次",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_AOE",
       "RANDOM_DURATION"
@@ -764,10 +868,14 @@
   {
     "id": "mon_zombie_xlick_pstab",
     "type": "SPELL",
-    "name": "Precision Stab",
+    "name": {
+      "str": "精密刺刀"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这篇：\n“施法者伸出可怕的舌头迅速击中目标，造成中等的刺伤伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -793,10 +901,14 @@
   {
     "id": "mon_zombie_leptiosa_gasb",
     "type": "SPELL",
-    "name": "Gas Burst",
+    "name": {
+      "str": "瓦斯爆炸"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n“如果施法者的目标是近距离的，施法者会在一个宽而短的圆锥体中发出一股强烈的酸性气体，对所有受影响的生物造成中度的酸性伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_AOE"
     ],
@@ -818,10 +930,14 @@
   {
     "id": "mon_zombie_leptiosa_ngas",
     "type": "SPELL",
-    "name": "Noxious Gas",
+    "name": {
+      "str": "有毒气体"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者引导自己的身体产生酸性气体，并将其以一个窄锥状传送给目标，对所有受影响的生物造成持续的酸性伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_AOE",
       "RANDOM_DURATION"
@@ -852,10 +968,14 @@
   {
     "id": "mon_ayenel_locko_b",
     "type": "SPELL",
-    "name": "Lock On",
+    "name": {
+      "str": "锁定"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者瞪着目标，造成定向障碍。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
@@ -873,10 +993,14 @@
   {
     "id": "mon_ayenel_locko_s",
     "type": "SPELL",
-    "name": "Lock On",
+    "name": {
+      "str": "锁定"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者瞪着目标，造成定向障碍。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
@@ -894,10 +1018,14 @@
   {
     "id": "mon_ayenel_locko_g",
     "type": "SPELL",
-    "name": "Lock On",
+    "name": {
+      "str": "锁定"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者瞪着目标，造成定向障碍。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
@@ -915,10 +1043,14 @@
   {
     "id": "mon_ayenel_locko_v",
     "type": "SPELL",
-    "name": "Lock On",
+    "name": {
+      "str": "锁定"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者瞪着目标，造成定向障碍。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
@@ -948,10 +1080,14 @@
   {
     "id": "mon_fleshweaver_vexpl",
     "type": "SPELL",
-    "name": "Vein Explosion",
+    "name": {
+      "str": "脉爆"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就读一读：\n“撕裂的韧带内部爆炸，对目标造成额外的生物伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "NO_PROJECTILE"
     ],
@@ -972,10 +1108,14 @@
   {
     "id": "mon_fleshweaver_vscratch",
     "type": "SPELL",
-    "name": "Volatile Scratch",
+    "name": {
+      "str": "挥发性划痕"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这篇：\n“施法者用充满挥发性体液的爪子抓伤目标，造成中度切割伤害，持续几圈。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_DURATION",
       "NO_PROJECTILE"
@@ -1003,12 +1143,17 @@
   {
     "id": "mon_maneater_pullb",
     "type": "SPELL",
-    "name": "Pull Blood",
+    "name": {
+      "str": "抽血"
+    },
     "description": "怪物施法的。如果你看到这个，那就读这篇：\n'施法者的吸血吸进了血场。这是铸造3次",
     "effect": "area_pull",
     "shape": "blast",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "self",
@@ -1024,11 +1169,15 @@
   {
     "id": "mon_maneater_bsuck",
     "type": "SPELL",
-    "name": "Blood Suck",
+    "name": {
+      "str": "吸血"
+    },
     "//": "Even if there's no blood field nearby, it still heals...",
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n'来自施法者的更多藤蔓在附近扫来扫去，收集并吸吮施法者疗愈的血田。'",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "NO_PROJECTILE"
     ],
@@ -1056,10 +1205,14 @@
   {
     "id": "mon_maneater_fbite",
     "type": "SPELL",
-    "name": "Floral Bite",
+    "name": {
+      "str": "花咬"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n“当向上靠近时，施法者向目标发出嘎吱声，造成额外的中度切割伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "NO_PROJECTILE"
     ],
@@ -1080,10 +1233,14 @@
   {
     "id": "mon_maneater_vslash",
     "type": "SPELL",
-    "name": "Vine Slash",
+    "name": {
+      "str": "葡萄藤斜线"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就读一读：\n“施法者用它锋利的鞭子状藤蔓从远处击中目标，造成轻微的切割伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -1110,10 +1267,14 @@
   {
     "type": "SPELL",
     "id": "mon_summon_nautilus_pedo",
-    "name": "Summon 4 Nautilus Torpedos",
+    "name": {
+      "str": "召唤4个鹦鹉螺鱼雷"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读一读这个：\n“施法者施放苏瓦夫后，制造了4个鹦鹉螺鱼雷。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "HOSTILE_SUMMON",
       "RANDOM_DURATION",
       "NO_PROJECTILE"
@@ -1135,10 +1296,14 @@
   {
     "id": "mon_zombie_nautilus_sewave",
     "type": "SPELL",
-    "name": "Sewave",
+    "name": {
+      "str": "塞瓦夫"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就读一读：\n“施法者沉入水中，在一个非常大的圆锥体中产生地震波，造成寒冷伤害，并对受影响的生物施加不稳定的基础。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_AOE",
       "RANDOM_DURATION"
@@ -1168,10 +1333,14 @@
   {
     "id": "mon_zombie_nautilus_pedo_restraint",
     "type": "SPELL",
-    "name": "Restraint",
+    "name": {
+      "str": "约束"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读读这个：\n“施法者会自动锁定，降低目标的敏捷性。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DURATION",
       "NO_PROJECTILE"
     ],
@@ -1190,7 +1359,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_nautilus_pedo_restraint_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -1202,12 +1373,13 @@
       }
     ],
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -1217,10 +1389,14 @@
   {
     "id": "mon_zombie_stray_w_leaf_stro1_lace",
     "type": "SPELL",
-    "name": "Lacerate",
+    "name": {
+      "str": "撕裂"
+    },
     "description": "怪物施法的。如果你看到附近有一个施法者在砍，那么这个是一个中等伤害的施法者。这是铸造两次",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -1237,10 +1413,14 @@
   {
     "id": "mon_zombie_stray_w_leaf_stro1_razorl",
     "type": "SPELL",
-    "name": "Razor Leaf",
+    "name": {
+      "str": "飞叶快刀"
+    },
     "description": "（被施法的）怪物。如果你看到了这一点，那就改读这一条：\n“施法者用锋利的叶子将目标切成一行，造成中等的切割伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_AOE"
     ],
@@ -1269,10 +1449,14 @@
   {
     "id": "mon_zombie_stray_w_leaf_stro2_sscent",
     "type": "SPELL",
-    "name": "Sweet Scent",
+    "name": {
+      "str": "香甜气息"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“花开伴随着野性的爆发，在同一地区传播催眠花粉。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_AOE"
     ],
     "valid_targets": [
@@ -1293,10 +1477,14 @@
   {
     "id": "mon_zombie_stray_w_leaf_stro2_wildo",
     "type": "SPELL",
-    "name": "Wild Outgrowth",
+    "name": {
+      "str": "野生生长"
+    },
     "description": "（被施法的）怪物。如果你看到了这一点，那么请阅读这一条：\n“施法者引导其身体在目标下方产生扭曲的根和藤蔓的爆发，造成中等的刺伤伤害并诱捕所有受影响的生物。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_AOE",
       "RANDOM_DURATION"
@@ -1330,10 +1518,14 @@
   {
     "type": "SPELL",
     "id": "mon_summon_stray_w_leaf_stro3_triffid",
-    "name": "Summon 2 Triffids",
+    "name": {
+      "str": "召唤2个三叉戟"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n“施法者通过它的手创造并发射出2个三叉戟，以及野生生物。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "HOSTILE_SUMMON",
       "RANDOM_DURATION",
       "NO_PROJECTILE"
@@ -1361,10 +1553,14 @@
   {
     "id": "mon_zombie_stray_w_acid_stro2_atouch",
     "type": "SPELL",
-    "name": "Acid Touch",
+    "name": {
+      "str": "酸味"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n“当接近时，施法者会用多余的血划伤目标，造成酸伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "NO_PROJECTILE"
     ],
@@ -1383,10 +1579,14 @@
   {
     "id": "mon_zombie_stray_w_acid_stro2_acoat",
     "type": "SPELL",
-    "name": "Acid Coat",
+    "name": {
+      "str": "酸性涂层"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者通过它的手从身体中提取大量的酸性液体，然后以短而宽的线条将其发送到目标，造成持续时间较长的中度酸性伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_AOE",
       "RANDOM_DURATION"
@@ -1422,10 +1622,14 @@
   {
     "id": "mon_zombie_stray_w_acid_stro3_asweep",
     "type": "SPELL",
-    "name": "Sweepidic",
+    "name": {
+      "str": "扫掠的"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“如果目标在附近，施法者会在一个小圆锥体中清扫一些多余的液体，对所有生物造成很小的伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_AOE"
     ],
@@ -1451,10 +1655,14 @@
   {
     "id": "mon_zombie_stray_w_acid_stro3_arain",
     "type": "SPELL",
-    "name": "Acid Rain",
+    "name": {
+      "str": "酸雨"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者将其全身输送很长时间，产生大量腐蚀性体液，并将其输送到目标上方，然后爆炸，对附近所有生物造成巨大的酸伤害，这种伤害会在时间内持续。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_AOE",
       "RANDOM_DURATION"
@@ -1490,10 +1698,14 @@
   {
     "id": "mon_unknown_unknown_portal_carrion",
     "type": "SPELL",
-    "name": "Portal",
+    "name": {
+      "str": "门户"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这篇：\n'一个多维门户是由坍塌形成的。这个入口引领腐肉种族走向世界",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
@@ -1513,10 +1725,14 @@
   {
     "id": "mon_unknown_unknown_gcollapse_carrion",
     "type": "SPELL",
-    "name": "Gravitational Collapse",
+    "name": {
+      "str": "引力坍缩"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n'在通灵了大量时间后，施法者的引力场崩溃，产生了一颗超新星，对所有生物造成巨大的重击伤害。闪闪发光的物体分散开来，照亮了整个地区",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_AOE"
     ],
@@ -1543,7 +1759,9 @@
   {
     "type": "SPELL",
     "id": "mon_unknown_unknown_carrion_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -1560,12 +1778,13 @@
       }
     ],
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -1575,10 +1794,14 @@
   {
     "id": "mon_unknown_unknown_portal_vector",
     "type": "SPELL",
-    "name": "Portal",
+    "name": {
+      "str": "门户"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这篇：\n'一个多维门户是由坍塌形成的。这个门户引领着媒介种族走向世界",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
@@ -1606,10 +1829,14 @@
   {
     "id": "mon_unknown_unknown_gcollapse_vector",
     "type": "SPELL",
-    "name": "Gravitational Collapse",
+    "name": {
+      "str": "引力坍缩"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n'在通灵了大量时间后，施法者的引力场崩溃，产生了一颗超新星，对所有生物造成巨大的重击伤害。闪闪发光的物体分散开来，照亮了整个地区",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_AOE"
     ],
@@ -1641,7 +1868,9 @@
   {
     "type": "SPELL",
     "id": "mon_unknown_unknown_vector_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -1658,12 +1887,13 @@
       }
     ],
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "hostile"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -1673,10 +1903,14 @@
   {
     "id": "mon_vector_rize_smol",
     "type": "SPELL",
-    "name": "Vectorize",
+    "name": {
+      "str": "矢量化"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“一股媒介尘埃从施法者身上扩散开来，将附近的草地和灌木丛等有机地形转化为感染。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "IGNORE_WALLS",
       "NO_PROJECTILE"
     ],
@@ -1687,8 +1921,8 @@
     "effect": "ter_transform",
     "shape": "blast",
     "effect_str": "vectorize",
-    "min_aoe": 1,
-    "max_aoe": 1,
+    "min_aoe": 2,
+    "max_aoe": 2,
     "field_id": "fd_vector_haze",
     "min_field_intensity": 2,
     "max_field_intensity": 2
@@ -1696,7 +1930,9 @@
   {
     "type": "SPELL",
     "id": "mon_vector_rize_smol_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "message": "<npcname>锁定了目标…",
     "extra_effects": [
@@ -1707,27 +1943,29 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_range": 70,
-    "max_range": 70,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 70
   },
   {
     "id": "mon_vector_rize_big",
     "type": "SPELL",
-    "name": "Vectorize",
+    "name": {
+      "str": "矢量化"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“一股媒介尘埃从施法者身上扩散开来，将附近的草地和灌木丛等有机地形转化为感染。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "IGNORE_WALLS",
       "NO_PROJECTILE"
     ],
@@ -1747,7 +1985,9 @@
   {
     "type": "SPELL",
     "id": "mon_vector_rize_big_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "message": "<npcname>锁定了目标…",
     "extra_effects": [
@@ -1758,67 +1998,61 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_range": 70,
-    "max_range": 70,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 70
   },
   {
     "type": "SPELL",
     "id": "mon_zombie_fake_poly_ichorus",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这篇：\n“施法者猛烈地变形为伊科罗斯。”",
     "flags": [
       "SILENT",
-      "PERMANENT",
-      "HOSTILE_SUMMON",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ground"
+      "self"
     ],
-    "min_damage": 1,
-    "max_damage": 1,
-    "min_aoe": 2,
-    "max_aoe": 2,
-    "effect": "summon",
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_zombie_ichorus"
   },
   {
     "type": "SPELL",
     "id": "mon_zombie_fake_poly_ichorus_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
-        "//": "To successfully morph, it kills itself.",
-        "id": "sacrifice_spell",
-        "hit_self": true
-      },
-      {
-        "//": "Then place the monster beside them.",
         "id": "mon_zombie_fake_poly_ichorus",
         "hit_self": true
       }
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -1828,35 +2062,35 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_fake_poly_psyrus",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这篇：\n“施法者暴力变形为一个psyrus。”",
     "flags": [
       "SILENT",
-      "PERMANENT",
-      "HOSTILE_SUMMON",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ground"
+      "self"
     ],
-    "min_damage": 1,
-    "max_damage": 1,
+    "min_damage": 999999,
+    "max_damage": 999999,
     "min_aoe": 2,
     "max_aoe": 2,
-    "effect": "summon",
+    "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_zombie_psyrus"
   },
   {
     "type": "SPELL",
     "id": "mon_zombie_fake_poly_psyrus_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
-      {
-        "id": "sacrifice_spell",
-        "hit_self": true
-      },
       {
         "id": "mon_zombie_fake_poly_psyrus",
         "hit_self": true
@@ -1864,12 +2098,12 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -1879,10 +2113,14 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_uruxis_spawn",
-    "name": "Cursed Lands",
+    "name": {
+      "str": "被诅咒的土地"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这篇：\n“施法者通道本身，制造了一个挥之不去的诅咒，在它的区域召唤宙斯，同时用黑雾笼罩施法者来治疗和保护。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_AOE",
       "RANDOM_DURATION",
@@ -1908,7 +2146,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_uruxis_spawn_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -1918,28 +2158,30 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_range": 70,
-    "max_range": 70,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 70
   },
   {
     "//": "This gives the player (ONLY) a worn debuff item.",
     "type": "SPELL",
     "id": "mon_zombie_cling_cling",
-    "name": "Cling",
+    "name": {
+      "str": "附着于"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者跳到目标的脚上，伤害了他们的整体机动性。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "PERMANENT"
     ],
     "extra_effects": [
@@ -1960,12 +2202,17 @@
   {
     "id": "mon_zombie_nocturne_spush",
     "type": "SPELL",
-    "name": "Shadow Push",
+    "name": {
+      "str": "影子推力"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者用它的阴影推动目标。”",
     "effect": "area_push",
     "shape": "blast",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "self",
@@ -1979,10 +2226,14 @@
   {
     "id": "mon_zombie_nocturne_sburst",
     "type": "SPELL",
-    "name": "Shadow Burst",
+    "name": {
+      "str": "暗影爆发"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者发出一道阴影波，造成中度打击伤害，造成不稳定的立足点并击退他们。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_AOE",
       "RANDOM_DURATION"
@@ -2010,10 +2261,14 @@
   {
     "id": "mon_zombie_nocturne_sstrike",
     "type": "SPELL",
-    "name": "Sinister Strike",
+    "name": {
+      "str": "险恶攻击"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就读一读：\n'施法者产生一个紧凑的阴影，形成一个轮廓，爪子浸透在阴影中，然后击中目标，造成中度切割伤害并造成失明。'",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_DURATION"
     ],
@@ -2034,10 +2289,14 @@
   {
     "id": "mon_zombie_nocturne_nsweep",
     "type": "SPELL",
-    "name": "Nocturnal Sweep",
+    "name": {
+      "str": "夜间扫描"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这篇：\n“施法者敏捷地在附近砍伤，对周围的生物造成中等程度的切割伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -2054,12 +2313,17 @@
   {
     "id": "mon_zombie_nocturne_spull",
     "type": "SPELL",
-    "name": "Shadow Pull",
+    "name": {
+      "str": "影子牵引"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n“施法者引导其身体向目标发射错误的阴影，然后将它们拉进来。”",
     "effect": "area_pull",
     "shape": "blast",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "self",
@@ -2074,7 +2338,9 @@
     "//": "Combo: pull foes x aoe (aoe is 5) -> circular attack -> ranged attack -> push foes x aoe. Pulling the player doesn't work, but affects other creatures... slightly and buggy.",
     "type": "SPELL",
     "id": "mon_zombie_nocturne_spull_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -2115,27 +2381,29 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_range": 4,
-    "max_range": 4,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 4
   },
   {
     "id": "mon_zombie_fleshmonger_refleshs",
     "type": "SPELL",
-    "name": "Refleshing Strike",
+    "name": {
+      "str": "回流打击"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就读这篇：\n“施法者刺伤了一个随机的盟友，给他们注射了所有多余的肉，可以治愈大量的健康，增加他们的体重。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_TARGET",
       "RANDOM_DAMAGE",
       "RANDOM_DURATION"
@@ -2158,10 +2426,14 @@
   {
     "id": "mon_zombie_fleshmonger_reflesh",
     "type": "SPELL",
-    "name": "Reflesh",
+    "name": {
+      "str": "刷新"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者射出卷须，刺穿附近的盟友，然后给他们注射额外的肉，治愈适量的生命。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_AOE"
     ],
@@ -2184,10 +2456,15 @@
   {
     "id": "mon_zombie_fleshmonger_fchunk",
     "type": "SPELL",
-    "name": "Flesh Chunk",
+    "name": {
+      "str": "肉块"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n‘施法者拿走了一大块自己的肉，对自己造成了巨大的伤害。’",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "self"
@@ -2207,7 +2484,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_fleshmonger_reflesh_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -2217,326 +2496,29 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_range": 12,
-    "max_range": 12,
-    "min_duration": 1,
-    "max_duration": 1
-  },
-  {
-    "id": "mon_zombie_razor_bstep",
-    "type": "SPELL",
-    "name": "Back Step",
-    "description": "怪物施法的。如果你看到了这个，那就读这个：\n“施法者从目标后退。”",
-    "effect": "area_push",
-    "shape": "blast",
-    "flags": [
-      "SILENT"
-    ],
-    "valid_targets": [
-      "self"
-    ],
-    "min_range": 2,
-    "max_range": 2,
-    "min_aoe": 2,
-    "max_aoe": 2
-  },
-  {
-    "id": "mon_zombie_razor_wslash",
-    "type": "SPELL",
-    "name": "Wide Slash",
-    "description": "怪物施法的。如果你看到了这一点，那就读这一条：\n'施法者执行水平斜杠，以宽而短的弧线对受影响的生物造成中度切割伤害，然后后退。'",
-    "flags": [
-      "SILENT",
-      "RANDOM_DAMAGE",
-      "RANDOM_AOE"
-    ],
-    "valid_targets": [
-      "hostile"
-    ],
-    "effect": "attack",
-    "shape": "cone",
-    "extra_effects": [
-      {
-        "id": "mon_zombie_razor_bstep"
-      }
-    ],
-    "min_damage": 9,
-    "max_damage": 15,
-    "min_aoe": 60,
-    "max_aoe": 90,
-    "min_range": 1,
-    "max_range": 1,
-    "damage_type": "cut"
-  },
-  {
-    "id": "mon_zombie_razor_dslash_head",
-    "type": "SPELL",
-    "name": "Weakpoint Strike",
-    "description": "怪物施法的。如果你看到了这个，那么改读这个：\n“施法者击中弱点，应用无意识2回合。”",
-    "flags": [
-      "SILENT"
-    ],
-    "affected_body_parts": [
-      "head"
-    ],
-    "valid_targets": [
-      "hostile",
-      "ground"
-    ],
-    "effect_str": "stunned",
-    "effect": "attack",
-    "shape": "blast",
-    "extra_effects": [
-      {
-        "id": "mon_zombie_razor_wslash"
-      }
-    ],
-    "min_damage": 21,
-    "max_damage": 21,
-    "min_range": 1,
-    "max_range": 1,
-    "min_duration": 225,
-    "max_duration": 225,
-    "damage_type": "cut"
-  },
-  {
-    "id": "mon_zombie_razor_dslash_torso",
-    "type": "SPELL",
-    "name": "Weakpoint Strike",
-    "description": "怪物施法的。如果你看到了这个，那么改读这个：\n“施法者击中弱点，应用无意识2回合。”",
-    "flags": [
-      "SILENT"
-    ],
-    "affected_body_parts": [
-      "torso"
-    ],
-    "valid_targets": [
-      "hostile",
-      "ground"
-    ],
-    "effect_str": "stunned",
-    "effect": "attack",
-    "shape": "blast",
-    "extra_effects": [
-      {
-        "id": "mon_zombie_razor_wslash"
-      }
-    ],
-    "min_damage": 21,
-    "max_damage": 21,
-    "min_range": 1,
-    "max_range": 1,
-    "min_duration": 225,
-    "max_duration": 225,
-    "damage_type": "cut"
-  },
-  {
-    "id": "mon_zombie_razor_dslash_larm",
-    "type": "SPELL",
-    "name": "Weakpoint Strike",
-    "description": "怪物施法的。如果你看到了这个，那么改读这个：\n“施法者击中弱点，应用无意识2回合。”",
-    "flags": [
-      "SILENT"
-    ],
-    "affected_body_parts": [
-      "arm_l"
-    ],
-    "valid_targets": [
-      "hostile",
-      "ground"
-    ],
-    "effect_str": "stunned",
-    "effect": "attack",
-    "shape": "blast",
-    "extra_effects": [
-      {
-        "id": "mon_zombie_razor_wslash"
-      }
-    ],
-    "min_damage": 21,
-    "max_damage": 21,
-    "min_range": 1,
-    "max_range": 1,
-    "min_duration": 225,
-    "max_duration": 225,
-    "damage_type": "cut"
-  },
-  {
-    "id": "mon_zombie_razor_dslash_rarm",
-    "type": "SPELL",
-    "name": "Weakpoint Strike",
-    "description": "怪物施法的。如果你看到了这个，那么改读这个：\n“施法者击中弱点，应用无意识2回合。”",
-    "flags": [
-      "SILENT"
-    ],
-    "affected_body_parts": [
-      "arm_r"
-    ],
-    "valid_targets": [
-      "hostile",
-      "ground"
-    ],
-    "effect_str": "stunned",
-    "effect": "attack",
-    "shape": "blast",
-    "extra_effects": [
-      {
-        "id": "mon_zombie_razor_wslash"
-      }
-    ],
-    "min_damage": 21,
-    "max_damage": 21,
-    "min_range": 1,
-    "max_range": 1,
-    "min_duration": 225,
-    "max_duration": 225,
-    "damage_type": "cut"
-  },
-  {
-    "id": "mon_zombie_razor_dslash_lleg",
-    "type": "SPELL",
-    "name": "Weakpoint Strike",
-    "description": "怪物施法的。如果你看到了这个，那么改读这个：\n“施法者击中弱点，应用无意识2回合。”",
-    "flags": [
-      "SILENT"
-    ],
-    "affected_body_parts": [
-      "leg_l"
-    ],
-    "valid_targets": [
-      "hostile",
-      "ground"
-    ],
-    "effect_str": "stunned",
-    "effect": "attack",
-    "shape": "blast",
-    "extra_effects": [
-      {
-        "id": "mon_zombie_razor_wslash"
-      }
-    ],
-    "min_damage": 21,
-    "max_damage": 21,
-    "min_range": 1,
-    "max_range": 1,
-    "min_duration": 225,
-    "max_duration": 225,
-    "damage_type": "cut"
-  },
-  {
-    "id": "mon_zombie_razor_dslash_rleg",
-    "type": "SPELL",
-    "name": "Weakpoint Strike",
-    "description": "怪物施法的。如果你看到了这个，那么改读这个：\n“施法者击中弱点，应用无意识2回合。”",
-    "flags": [
-      "SILENT"
-    ],
-    "affected_body_parts": [
-      "leg_r"
-    ],
-    "valid_targets": [
-      "hostile",
-      "ground"
-    ],
-    "effect_str": "stunned",
-    "effect": "attack",
-    "shape": "blast",
-    "extra_effects": [
-      {
-        "id": "mon_zombie_razor_wslash"
-      }
-    ],
-    "min_damage": 21,
-    "max_damage": 21,
-    "min_range": 1,
-    "max_range": 1,
-    "min_duration": 225,
-    "max_duration": 225,
-    "damage_type": "cut"
-  },
-  {
-    "id": "mon_zombie_razor_dslash",
-    "type": "SPELL",
-    "name": "Deceitful Slash",
-    "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'的施法者用假斜杠迷惑目标，然后有力地挥向弱点，造成巨大的切割伤害并造成昏迷2回合。如果目标是玩家或NPC，斜杠会击中随机的肢体",
-    "flags": [
-      "SILENT",
-      "WONDER"
-    ],
-    "valid_targets": [
-      "hostile"
-    ],
-    "effect": "attack",
-    "shape": "blast",
-    "extra_effects": [
-      {
-        "id": "mon_zombie_razor_dslash_head"
-      },
-      {
-        "id": "mon_zombie_razor_dslash_torso"
-      },
-      {
-        "id": "mon_zombie_razor_dslash_larm"
-      },
-      {
-        "id": "mon_zombie_razor_dslash_rarm"
-      },
-      {
-        "id": "mon_zombie_razor_dslash_lleg"
-      },
-      {
-        "id": "mon_zombie_razor_dslash_rleg"
-      }
-    ],
-    "min_damage": 1,
-    "max_damage": 1,
-    "min_range": 1,
-    "max_range": 1,
-    "damage_type": "cut"
-  },
-  {
-    "//": "Combo: strong attack -> wide attack -> backstep (push self).",
-    "type": "SPELL",
-    "id": "mon_zombie_razor_dslash_target",
-    "name": "a spell",
-    "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
-    "extra_effects": [
-      {
-        "id": "mon_zombie_razor_dslash"
-      }
-    ],
-    "flags": [
-      "SILENT",
-      "NO_PROJECTILE"
-    ],
-    "valid_targets": [
-      "ally",
-      "hostile"
-    ],
-    "effect": "attack",
-    "shape": "blast",
-    "effect_str": "secro_magic_target",
-    "min_range": 1,
-    "max_range": 1,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 12
   },
   {
     "id": "mon_zombieworm_wriggly_tstab",
     "type": "SPELL",
-    "name": "Tentacle Stab",
+    "name": {
+      "str": "触手刺"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'的施法者发出一个触角来刺穿它的目标，造成一个小的随机刺伤。这是铸造4次",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -2554,10 +2536,15 @@
   {
     "id": "mon_zombieworm_wriggly_tflurry",
     "type": "SPELL",
-    "name": "Tentacle Flurry",
+    "name": {
+      "str": "触角慌乱"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者引导身体，使触角向四面八方向外伸展，对所有受影响的生物造成刺伤伤害。”",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile",
@@ -2574,7 +2561,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombieworm_wriggly_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -2595,27 +2584,29 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_range": 3,
-    "max_range": 3,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 3
   },
   {
     "type": "SPELL",
     "id": "mon_zombie_gorepit_spawn",
-    "name": "Gorespawn",
+    "name": {
+      "str": "戈雷斯帕恩"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就读这一条：\n“施法者通过自身的通道更积极地发出巨大的卷须，使地面产生共振，从而对其范围内的所有生物产生不稳定的基础。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DURATION",
       "NO_PROJECTILE"
     ],
@@ -2639,10 +2630,14 @@
   {
     "id": "mon_zombie_gorepit_tdestruct",
     "type": "SPELL",
-    "name": "Terrestrial Destruction",
+    "name": {
+      "str": "陆地破坏"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者摧毁邻近的地形，摧毁它们，导致深坑。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "IGNORE_WALLS",
       "NO_PROJECTILE"
     ],
@@ -2659,10 +2654,14 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_gorepit_tdisturb",
-    "name": "Tendril Disturbance",
+    "name": {
+      "str": "卷须障碍"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“通过感应附近的目标，施法者在目标附近发送1-2个触角。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "HOSTILE_SUMMON",
       "RANDOM_DAMAGE",
       "PERMANENT",
@@ -2684,7 +2683,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_gorepit_spawn_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -2701,26 +2702,29 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_range": 40,
-    "max_range": 40,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 40
   },
   {
     "id": "mon_zombie_gorepit_tent_slam",
     "type": "SPELL",
-    "name": "Tentacle Slam",
+    "name": {
+      "str": "触手猛击"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n‘施法者猛击目标，造成重击伤害。’",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -2738,10 +2742,14 @@
   {
     "id": "mon_zombie_gorepit_tent_smash",
     "type": "SPELL",
-    "name": "Tentacle Smash",
+    "name": {
+      "str": "触手粉碎"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者将自己猛击在地，造成重击伤害，并对受影响的生物施加不稳定的立足点。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -2765,7 +2773,9 @@
     "//": "Notes are unnecessary for this spell.",
     "type": "SPELL",
     "id": "mon_zombie_gorepit_tent_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "extra_effects": [
       {
@@ -2783,29 +2793,33 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_damage": 1,
     "max_damage": 1,
     "min_range": 3,
-    "max_range": 3,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 3
   },
   {
     "id": "mon_zombie_cordev_mincem_heal",
     "type": "SPELL",
-    "name": "Mincemeat Heal",
+    "name": {
+      "str": "肉末"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n“施法者被60治愈。”",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "self"
@@ -2819,10 +2833,14 @@
   {
     "id": "mon_zombie_cordev_mincem",
     "type": "SPELL",
-    "name": "Mincemeat",
+    "name": {
+      "str": "肉末"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这篇：\n“施法者食人，吞食自己或邻近的随机盟友，治疗施法者50%的伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_TARGET"
     ],
     "valid_targets": [
@@ -2846,7 +2864,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_cordev_mincem_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -2856,27 +2876,30 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_range": 4,
-    "max_range": 4,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 4
   },
   {
     "id": "mon_zombie_cordev_mincem_target_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -2890,17 +2913,19 @@
     ],
     "effect_str": "mon_zombie_cordev_mincem_target_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "id": "mon_zombie_cordev_whip",
     "type": "SPELL",
-    "name": "Whipslash",
+    "name": {
+      "str": "鞭子"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'施法者的易变肿块发出一个错误的卷须，击中目标，造成切割伤害。这是随机铸造2至4次",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -2917,7 +2942,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_cordev_whip_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "extra_effects": [
       {
@@ -2926,31 +2953,34 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "RANDOM_DAMAGE",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_damage": 2,
     "max_damage": 4,
     "min_range": 4,
-    "max_range": 4,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 4
   },
   {
     "id": "mon_zombie_cordev_whip_target_random_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -2964,17 +2994,19 @@
     ],
     "effect_str": "mon_zombie_cordev_whip_target_random_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "id": "mon_zombie_cordev_corrupt",
     "type": "SPELL",
-    "name": "Corrupt",
+    "name": {
+      "str": "腐败的"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者的咬臂者在目标区域吐出一种腐蚀性的粘性液体，这种液体会潜入并不断伤害所有站在上面的生物。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_AOE"
     ],
     "valid_targets": [
@@ -2995,10 +3027,15 @@
   {
     "id": "mon_zombie_cordev_corrupt_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -3012,17 +3049,20 @@
     ],
     "effect_str": "mon_zombie_cordev_corrupt_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "id": "mon_zombie_cordev_texplode_stun",
     "type": "SPELL",
-    "name": "Core Stun",
+    "name": {
+      "str": "核心眩晕"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这篇：\n“施法者惊呆了。”",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "self"
@@ -3036,10 +3076,15 @@
   {
     "id": "mon_zombie_cordev_texplode_dmg",
     "type": "SPELL",
-    "name": "Core Damage",
+    "name": {
+      "str": "堆芯损伤"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者承受巨大的生物伤害，同时持续受到爆炸的伤害和致残效果。”",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "self"
@@ -3055,10 +3100,14 @@
   {
     "id": "mon_zombie_cordev_texplode",
     "type": "SPELL",
-    "name": "Core Explosion",
+    "name": {
+      "str": "堆芯爆炸"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'施法者的躯干突然爆炸，散开一大片腐蚀的酸液，造成巨大的冲击伤害，影响范围内所有生物。施法者随后变得残废，使其在很长一段时间内减速并失去知觉",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_AOE",
       "RANDOM_DAMAGE"
     ],
@@ -3091,7 +3140,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_cordev_texplode_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -3101,27 +3152,30 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_range": 4,
-    "max_range": 4,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 4
   },
   {
     "id": "mon_zombie_cordev_texplode_target_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -3135,15 +3189,15 @@
     ],
     "effect_str": "mon_zombie_cordev_texplode_target_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "//": "Spammed by the devourer...",
     "type": "SPELL",
     "id": "mon_zombie_cordev_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "extra_effects": [
       {
@@ -3224,29 +3278,32 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_damage": 1,
     "max_damage": 1,
     "min_range": 4,
-    "max_range": 4,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 4
   },
   {
     "id": "mon_zombie_fleshysnaky_pmissile",
     "type": "SPELL",
-    "name": "Pin Missile",
+    "name": {
+      "str": "Pin导弹"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么读一下这一条：\n'施法者向目标发射针状刺，造成刺伤伤害。随机铸造2到7次",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -3263,7 +3320,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_fleshysnaky_pmissile_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "extra_effects": [
       {
@@ -3272,30 +3331,34 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "RANDOM_DAMAGE",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_damage": 2,
     "max_damage": 7,
     "min_range": 10,
-    "max_range": 10,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 10
   },
   {
     "id": "mon_zombie_fleshysnaky_pmissile_target_random_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -3309,17 +3372,19 @@
     ],
     "effect_str": "mon_zombie_fleshysnaky_pmissile_target_random_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "id": "mon_zombie_fleshysnaky_sbomb",
     "type": "SPELL",
-    "name": "Spike Bombardment",
+    "name": {
+      "str": "尖峰轰击"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者射出射向天空的尖刺，然后落入目标，对一个区域内所有受影响的生物造成中度刺伤。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -3339,10 +3404,15 @@
   {
     "id": "mon_zombie_fleshysnaky_sbomb_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -3356,17 +3426,19 @@
     ],
     "effect_str": "mon_zombie_fleshysnaky_sbomb_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "id": "mon_zombie_fleshysnaky_hails",
     "type": "SPELL",
-    "name": "Hail of Spikes",
+    "name": {
+      "str": "尖刺的冰雹"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者引导自己朝各个方向发射刺，对周围所有受影响的生物造成中等程度的刺伤伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -3384,10 +3456,15 @@
   {
     "id": "mon_zombie_fleshysnaky_hails_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -3402,17 +3479,19 @@
     ],
     "effect_str": "mon_zombie_fleshysnaky_hails_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "id": "mon_zombie_fleshysnaky_ppoint",
     "type": "SPELL",
-    "name": "Pressure Point",
+    "name": {
+      "str": "压力点"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者向目标吐出毒牙，对一条线内所有受影响的生物造成刺伤伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -3430,10 +3509,15 @@
   {
     "id": "mon_zombie_fleshysnaky_ppoint_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -3447,17 +3531,20 @@
     ],
     "effect_str": "mon_zombie_fleshysnaky_ppoint_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "id": "mon_zombie_fleshysnaky_rage",
     "type": "SPELL",
-    "name": "Rage",
+    "name": {
+      "str": "愤怒"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者的愤怒会增强，每次施法时都会大幅提高其速度。”",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "self"
@@ -3471,7 +3558,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_fleshysnaky_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "extra_effects": [
       {
@@ -3495,26 +3584,27 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_damage": 1,
     "max_damage": 1,
     "min_range": 10,
-    "max_range": 10,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 10
   },
   {
     "type": "SPELL",
     "id": "mon_zombie_fleshysnaky_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -3527,27 +3617,30 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_range": 22,
-    "max_range": 22,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 22
   },
   {
     "id": "mon_zombie_akin_sattach_foe",
     "type": "SPELL",
-    "name": "Siphoning Attachtment",
+    "name": {
+      "str": "虹吸附件"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者的副卷须锁定在目标上，施加减益效果，只要它附着在目标上，减益效果就会增强。”",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -3564,10 +3657,14 @@
   {
     "id": "mon_zombie_akin_lsattach_ally",
     "type": "SPELL",
-    "name": "Life Siphoning Attachtment",
+    "name": {
+      "str": "生命虹吸附件"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么读这一个代替：\n'施法者的副卷须锁紧在一个盟友目标上，只要它是附加的，应用强化的buff。这是铸造两次",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_TARGET"
     ],
     "valid_targets": [
@@ -3585,7 +3682,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_akin_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -3600,28 +3699,30 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_range": 7,
-    "max_range": 7,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 7
   },
   {
     "//": "All of the equinox's spell doesn't specifically target any creature in sight, but possesses high damage if one got hit. It only focuses on making fields to its surroundings to maximize the summoning ability.",
     "id": "mon_zombie_equinox_ndischarge",
     "type": "SPELL",
-    "name": "Necrotic Discharge",
+    "name": {
+      "str": "坏死性分泌物"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就读这一条：\n'施法者从一个任意区域的空隙中用力射出一团坏疽的肉，对一条线内的所有生物造成巨大的打击伤害。'",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_AOE",
       "RANDOM_TARGET"
@@ -3655,10 +3756,15 @@
   {
     "id": "mon_zombie_equinox_ndischarge_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -3672,17 +3778,19 @@
     ],
     "effect_str": "mon_zombie_equinox_ndischarge_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "id": "mon_zombie_equinox_nimplode",
     "type": "SPELL",
-    "name": "Necrotic Implosion",
+    "name": {
+      "str": "坏死内爆"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n'施法者通过它的内部肉体通道，然后突然在内部爆发。这次爆炸将一些肉从缝隙中向外释放，形成一系列陨石从天空坠落。所有被击中的生物都会受到巨大的打击伤害，同时在它们下面形成一个强大的活肉。这是随机铸造20至40倍",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_TARGET"
     ],
@@ -3713,7 +3821,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_equinox_nimplode_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "extra_effects": [
       {
@@ -3722,30 +3832,34 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "RANDOM_DAMAGE",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_damage": 20,
     "max_damage": 40,
     "min_range": 24,
-    "max_range": 24,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 24
   },
   {
     "id": "mon_zombie_equinox_nimplode_target_random_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -3759,14 +3873,14 @@
     ],
     "effect_str": "mon_zombie_equinox_nimplode_target_random_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "type": "SPELL",
     "id": "mon_zombie_equinox_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "extra_effects": [
       {
@@ -3784,29 +3898,32 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_damage": 1,
     "max_damage": 1,
     "min_range": 24,
-    "max_range": 24,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 24
   },
   {
     "type": "SPELL",
     "id": "mon_zombie_equinox_summon_necros",
-    "name": "Summon Necros",
+    "name": {
+      "str": "召唤亡灵"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读这篇：\n“施法者从一个缝隙里射出一个亡灵。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "HOSTILE_SUMMON",
       "PERMANENT",
       "NO_PROJECTILE"
@@ -3825,10 +3942,14 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_equinox_summon_necros_stab",
-    "name": "Summon Necros Impaler",
+    "name": {
+      "str": "召唤亡灵穿刺者"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这篇：\n“施法者从一个缺口内射出一个亡灵穿刺者。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "HOSTILE_SUMMON",
       "PERMANENT",
       "NO_PROJECTILE"
@@ -3847,10 +3968,14 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_equinox_summon_necros_cut",
-    "name": "Summon Necros Slicer",
+    "name": {
+      "str": "召唤亡灵切片机"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读这篇：\n“施法者从一个缝隙里射出一个坏死切片器。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "HOSTILE_SUMMON",
       "PERMANENT",
       "NO_PROJECTILE"
@@ -3869,10 +3994,14 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_equinox_summon_necros_emit",
-    "name": "Summon Necros Pollutant",
+    "name": {
+      "str": "召唤亡灵"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读这篇：\n“施法者从一个缝隙里射出一个坏死的污染物。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "HOSTILE_SUMMON",
       "PERMANENT",
       "NO_PROJECTILE"
@@ -3891,7 +4020,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_equinox_summon_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "extra_effects": [
       {
@@ -3941,27 +4072,28 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "RANDOM_DAMAGE",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_damage": 1,
     "max_damage": 4,
     "min_range": 24,
-    "max_range": 24,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 24
   },
   {
     "type": "SPELL",
     "id": "mon_zombie_equinox_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -3973,28 +4105,31 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_range": 32,
-    "max_range": 32,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 32
   },
   {
     "id": "mon_zombie_charger_charge",
     "type": "SPELL",
-    "name": "Charge!",
+    "name": {
+      "str": "冲锋！"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者获得冲力，提高移动速度，命中几率和冲击伤害。”",
     "//": "Momentum's a short duration haste, accuracy and bonus bash damage. Max intensity after casting the spell. Momentum is also a unique stat modifier that differs to the type of charger.",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "self"
@@ -4014,12 +4149,17 @@
     "//": "Let's push the charger back from the player. This does work SOMETIMES, and this'll prevent the glitch to occur.",
     "id": "mon_zombie_charger_charge_push",
     "type": "SPELL",
-    "name": "Stop",
+    "name": {
+      "str": "住手"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n‘施法者停在目标旁边。’",
     "effect": "area_push",
     "shape": "blast",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "self"
@@ -4028,14 +4168,43 @@
     "max_aoe": 1
   },
   {
+    "//": "Try to push aside everything in its path. Destination is the target's position (will not follow the target)",
+    "id": "mon_zombie_charger_charge_pushy",
+    "type": "SPELL",
+    "name": {
+      "str": "推"
+    },
+    "description": "怪物施法的。如果你看到了这个，那就改读这个：\n‘施法者推动它的路径。’",
+    "effect": "area_push",
+    "shape": "blast",
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
+    ],
+    "valid_targets": [
+      "ally",
+      "hostile",
+      "ground"
+    ],
+    "min_aoe": 2,
+    "max_aoe": 2
+  },
+  {
     "id": "mon_zombie_charger_charge_pull",
     "type": "SPELL",
-    "name": "Charge",
+    "name": {
+      "str": "充电"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读这个：\n'施法者冲向目标。这是在15到25次之间随机铸造的",
     "effect": "area_pull",
     "shape": "blast",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "self"
@@ -4046,6 +4215,10 @@
       },
       {
         "id": "mon_zombie_charger_charge_push"
+      },
+      {
+        "id": "mon_zombie_charger_charge_pushy",
+        "hit_self": true
       }
     ],
     "min_aoe": 13,
@@ -4054,7 +4227,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_charger_charge_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施放一个法术",
     "extra_effects": [
       {
@@ -4063,29 +4238,33 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
-      "self"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_damage": 15,
     "max_damage": 25,
     "min_range": 13,
-    "max_range": 13,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 13
   },
   {
     "id": "mon_zombie_charger_spike_charge",
     "type": "SPELL",
-    "name": "Charge!",
+    "name": {
+      "str": "冲锋！"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者获得冲力，提高移动速度，命中几率和冲击伤害。”",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "self"
@@ -4104,12 +4283,17 @@
   {
     "id": "mon_zombie_charger_spike_charge_pull",
     "type": "SPELL",
-    "name": "Charge",
+    "name": {
+      "str": "充电"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读这个：\n'施法者冲向目标。这是随机铸造20至30次",
     "effect": "area_pull",
     "shape": "blast",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "self"
@@ -4120,6 +4304,10 @@
       },
       {
         "id": "mon_zombie_charger_charge_push"
+      },
+      {
+        "id": "mon_zombie_charger_charge_pushy",
+        "hit_self": true
       }
     ],
     "min_aoe": 15,
@@ -4128,7 +4316,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_charger_spike_charge_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施放一个法术",
     "extra_effects": [
       {
@@ -4137,29 +4327,33 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
-      "self"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_damage": 20,
     "max_damage": 30,
     "min_range": 15,
-    "max_range": 15,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 15
   },
   {
     "id": "mon_zombie_charger_plate_charge",
     "type": "SPELL",
-    "name": "Charge!",
+    "name": {
+      "str": "冲锋！"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者获得冲力，提高移动速度，命中几率和冲击伤害。”",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "self"
@@ -4178,12 +4372,17 @@
   {
     "id": "mon_zombie_charger_plate_charge_pull",
     "type": "SPELL",
-    "name": "Charge",
+    "name": {
+      "str": "充电"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读这个：\n'施法者冲向目标。这是随机铸造10至15次",
     "effect": "area_pull",
     "shape": "blast",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "self"
@@ -4194,6 +4393,10 @@
       },
       {
         "id": "mon_zombie_charger_charge_push"
+      },
+      {
+        "id": "mon_zombie_charger_charge_pushy",
+        "hit_self": true
       }
     ],
     "min_aoe": 8,
@@ -4202,7 +4405,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_charger_plate_charge_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施放一个法术",
     "extra_effects": [
       {
@@ -4211,29 +4416,33 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
-      "self"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_damage": 10,
     "max_damage": 15,
     "min_range": 8,
-    "max_range": 8,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 8
   },
   {
     "id": "mon_zombie_charger_vanguard_charge",
     "type": "SPELL",
-    "name": "Charge!",
+    "name": {
+      "str": "冲锋！"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者获得冲力，提高移动速度，命中几率和冲击伤害。”",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "self"
@@ -4252,12 +4461,17 @@
   {
     "id": "mon_zombie_charger_vanguard_charge_pull",
     "type": "SPELL",
-    "name": "Charge",
+    "name": {
+      "str": "充电"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读这个：\n'施法者冲向目标。这是在30到50次之间随机铸造的",
     "effect": "area_pull",
     "shape": "blast",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "self"
@@ -4268,6 +4482,10 @@
       },
       {
         "id": "mon_zombie_charger_charge_push"
+      },
+      {
+        "id": "mon_zombie_charger_charge_pushy",
+        "hit_self": true
       }
     ],
     "min_aoe": 20,
@@ -4276,7 +4494,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_charger_vanguard_charge_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施放一个法术",
     "extra_effects": [
       {
@@ -4285,29 +4505,32 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
-      "self"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_damage": 30,
     "max_damage": 50,
     "min_range": 20,
-    "max_range": 20,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 20
   },
   {
     "id": "mon_zombieworm_mawy_crunch",
     "type": "SPELL",
-    "name": "Crunch",
+    "name": {
+      "str": "嚼"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就读一读：\n“施法者从远处咬伤目标，造成中等的刺伤伤害，并在目标身上留下厚厚的网。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -4329,10 +4552,15 @@
   {
     "id": "mon_zombieworm_mawy_crunch_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -4346,17 +4574,20 @@
     ],
     "effect_str": "mon_zombieworm_mawy_crunch_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "id": "mon_zombieworm_mawy_web_target_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -4365,17 +4596,19 @@
     "shape": "blast",
     "effect_str": "mon_zombieworm_mawy_web_target_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "id": "mon_zombieworm_mawy_web_low",
     "type": "SPELL",
-    "name": "Web Spit",
+    "name": {
+      "str": "网吐"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n‘施法者向目标吐出肉网。’",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_AOE"
     ],
     "valid_targets": [
@@ -4395,10 +4628,14 @@
   {
     "id": "mon_zombieworm_mawy_web_med",
     "type": "SPELL",
-    "name": "Web Spit",
+    "name": {
+      "str": "网吐"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n‘施法者向目标吐出肉网。’",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_AOE"
     ],
     "valid_targets": [
@@ -4418,10 +4655,14 @@
   {
     "id": "mon_zombieworm_mawy_web_high",
     "type": "SPELL",
-    "name": "Web Spit",
+    "name": {
+      "str": "网吐"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n‘施法者向目标吐出肉网。’",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_AOE"
     ],
     "valid_targets": [
@@ -4441,7 +4682,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombieworm_mawy_web_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -4459,25 +4702,25 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_range": 7,
-    "max_range": 7,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 7
   },
   {
     "//": "Sinister maw either bites you or lay around its trap.",
     "type": "SPELL",
     "id": "mon_zombieworm_mawy_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施放一个法术",
     "extra_effects": [
       {
@@ -4489,6 +4732,8 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER"
     ],
     "valid_targets": [
@@ -4499,17 +4744,19 @@
     "min_damage": 1,
     "max_damage": 1,
     "min_range": 7,
-    "max_range": 7,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 7
   },
   {
     "type": "SPELL",
     "id": "mon_zombie_summon_stomach",
-    "name": "Pus Eruption",
+    "name": {
+      "str": "脓疹"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读这篇：\n“施法者的脓液爆炸，释放出一群寄生虫。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "HOSTILE_SUMMON",
       "PERMANENT",
       "NO_PROJECTILE"
@@ -4528,10 +4775,14 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_summon_move",
-    "name": "Pus Eruption",
+    "name": {
+      "str": "脓疹"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读这篇：\n“施法者的脓液爆炸，释放出一群寄生虫。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "HOSTILE_SUMMON",
       "PERMANENT",
       "NO_PROJECTILE"
@@ -4550,10 +4801,14 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_summon_int",
-    "name": "Pus Eruption",
+    "name": {
+      "str": "脓疹"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读这篇：\n“施法者的脓液爆炸，释放出一群寄生虫。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "HOSTILE_SUMMON",
       "PERMANENT",
       "NO_PROJECTILE"
@@ -4572,10 +4827,14 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_summon_pain",
-    "name": "Pus Eruption",
+    "name": {
+      "str": "脓疹"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读这篇：\n“施法者的脓液爆炸，释放出一群寄生虫。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "HOSTILE_SUMMON",
       "PERMANENT",
       "NO_PROJECTILE"
@@ -4594,7 +4853,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_grubby_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施放一个法术",
     "extra_effects": [
       {
@@ -4616,6 +4877,8 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "RANDOM_DAMAGE"
     ],
@@ -4632,7 +4895,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_slimy_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施放一个法术",
     "extra_effects": [
       {
@@ -4654,6 +4919,8 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "RANDOM_DAMAGE"
     ],
@@ -4670,7 +4937,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_glut_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施放一个法术",
     "extra_effects": [
       {
@@ -4692,12 +4961,14 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "RANDOM_DAMAGE",
       "RANDOM_TARGET"
     ],
     "valid_targets": [
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -4709,10 +4980,15 @@
   {
     "id": "mon_zombie_glut_bexplode",
     "type": "SPELL",
-    "name": "Bloated Explosion",
+    "name": {
+      "str": "膨胀爆炸"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就读这一条：\n“施法者使一条肢体爆炸，然后释放出所有的寄生虫，使自己产生致残效果，并失去它的大小。”",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "self"
@@ -4729,7 +5005,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_glut_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -4741,31 +5019,34 @@
       }
     ],
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_range": 10,
-    "max_range": 10,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 10
   },
   {
     "//": "Lets make secronom dragon even more destructive!",
     "id": "mon_secrodragon_barrier",
     "type": "SPELL",
-    "name": "Barrier",
+    "name": {
+      "str": "屏障"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'施法者创造了一个天生的力场，推动附近的敌人。这是铸造5次",
     "effect": "area_push",
     "shape": "blast",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile",
@@ -4777,7 +5058,9 @@
   {
     "type": "SPELL",
     "id": "mon_secrodragon_barrier_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施放一个法术",
     "extra_effects": [
       {
@@ -4787,10 +5070,12 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER"
     ],
     "valid_targets": [
-      "self"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -4800,10 +5085,15 @@
   {
     "id": "mon_secrodragon_barrier_target_random_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -4817,17 +5107,19 @@
     ],
     "effect_str": "mon_secrodragon_barrier_target_random_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "id": "mon_secrodragon_edischarge",
     "type": "SPELL",
-    "name": "Electric Discharge",
+    "name": {
+      "str": "放电"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'的施法者产生一个电流，随机产生火花，产生一条线，对所有被击中的生物造成电伤害。这是随机铸造6至12次",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_TARGET"
     ],
@@ -4860,7 +5152,9 @@
   {
     "type": "SPELL",
     "id": "mon_secrodragon_edischarge_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施放一个法术",
     "extra_effects": [
       {
@@ -4869,11 +5163,13 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -4883,10 +5179,15 @@
   {
     "id": "mon_secrodragon_edischarge_target_random_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -4900,14 +5201,14 @@
     ],
     "effect_str": "mon_secrodragon_edischarge_target_random_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "type": "SPELL",
     "id": "mon_secrodragon_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施放一个法术",
     "extra_effects": [
       {
@@ -4922,10 +5223,12 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER"
     ],
     "valid_targets": [
-      "ground"
+      "none"
     ],
     "effect": "none",
     "shape": "blast",
@@ -4937,10 +5240,15 @@
   {
     "id": "mon_zombie_swarmer_evo_savage_tension_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -4949,17 +5257,20 @@
     "shape": "blast",
     "effect_str": "mon_zombie_swarmer_evo_savage_tension_target_random_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "id": "mon_zombie_swarmer_evo_savage_tension",
     "type": "SPELL",
-    "name": "Tension",
+    "name": {
+      "str": "紧张"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这篇：\n“施法者变异，获得临时战斗加成。”",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "extra_effects": [
       {
@@ -4979,7 +5290,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_swarmer_evo_savage_tension_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施放一个法术",
     "extra_effects": [
       {
@@ -5001,10 +5314,12 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER"
     ],
     "valid_targets": [
-      "ground"
+      "none"
     ],
     "effect": "none",
     "shape": "blast",
@@ -5016,10 +5331,15 @@
   {
     "id": "mon_zombie_swarmer_evo_virulent_precision",
     "type": "SPELL",
-    "name": "Precision",
+    "name": {
+      "str": "精密度"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者的感官通过聚焦目标而变得敏锐，提高攻击的准确性和移动速度。”",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "self"
@@ -5033,7 +5353,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_swarmer_evo_virulent_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -5042,12 +5364,13 @@
       }
     ],
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -5057,10 +5380,14 @@
   {
     "id": "mon_zombie_revenant_withdraw",
     "type": "SPELL",
-    "name": "Withdraw",
+    "name": {
+      "str": "撤回"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n“施法者然后与目标保持距离。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DURATION"
     ],
     "valid_targets": [
@@ -5075,10 +5402,14 @@
   {
     "id": "mon_zombie_revenant_trigger",
     "type": "SPELL",
-    "name": "Trigger",
+    "name": {
+      "str": "触发"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读这篇：\n“施法者释放附近怪物的潜在威力，提高他们的战斗能力。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
@@ -5096,7 +5427,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_revenant_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -5109,12 +5442,13 @@
       }
     ],
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -5124,10 +5458,14 @@
   {
     "id": "mon_zombie_revenant_forsaken_dilute",
     "type": "SPELL",
-    "name": "Dilute",
+    "name": {
+      "str": "稀释"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者顺从地盯着目标，造成负战斗加成。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
@@ -5144,7 +5482,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_revenant_forsaken_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -5156,12 +5496,13 @@
       }
     ],
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -5171,10 +5512,14 @@
   {
     "id": "mon_zombie_revenant_allure_incite",
     "type": "SPELL",
-    "name": "Incite",
+    "name": {
+      "str": "煽动"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就读这一条：\n“施法者通过手指传播其刺激性粘液，使受感染生物的粘液迅速增长，从而增加宿主的体重，获得战斗加值，但使其遭受过度增长的痛苦。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
@@ -5192,7 +5537,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_revenant_allure_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -5205,12 +5552,13 @@
       }
     ],
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -5220,10 +5568,15 @@
   {
     "id": "mon_zombie_skittyweavy_flee_panic",
     "type": "SPELL",
-    "name": "Panic",
+    "name": {
+      "str": "恐慌"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者的懦弱本能使自己陷入恐慌，显著提高了速度和闪避几率。”",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "self"
@@ -5237,10 +5590,14 @@
   {
     "id": "mon_zombie_skittyweavy_flee",
     "type": "SPELL",
-    "name": "Flee",
+    "name": {
+      "str": "逃走"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n‘施法者避免与目标接触。’",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DURATION"
     ],
     "valid_targets": [
@@ -5256,10 +5613,14 @@
     "//": "Weaver could also heal itself!",
     "id": "mon_zombie_skittyweavy_heal",
     "type": "SPELL",
-    "name": "Heal",
+    "name": {
+      "str": "治愈"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'施法者注入自己或邻近的盟友，治愈他们。",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_TARGET",
       "RANDOM_DAMAGE",
       "NO_PROJECTILE"
@@ -5278,7 +5639,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_skittyweavy_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -5295,12 +5658,12 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -5310,10 +5673,14 @@
   {
     "id": "mon_zombie_skittyweavy_repleshy_heal",
     "type": "SPELL",
-    "name": "Heal",
+    "name": {
+      "str": "治愈"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'施法者注入自己或邻近的盟友，治愈他们。",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_TARGET",
       "RANDOM_DAMAGE",
       "NO_PROJECTILE"
@@ -5332,7 +5699,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_skittyweavy_repleshy_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -5349,12 +5718,12 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -5364,10 +5733,14 @@
   {
     "id": "mon_zombie_skittyweavy_sickly_heal",
     "type": "SPELL",
-    "name": "Heal",
+    "name": {
+      "str": "治愈"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'施法者注入自己或邻近的盟友，治愈他们。",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_TARGET",
       "RANDOM_DAMAGE",
       "RANDOM_DURATION",
@@ -5390,7 +5763,9 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_skittyweavy_sickly_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -5407,12 +5782,12 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -5422,10 +5797,14 @@
   {
     "type": "SPELL",
     "id": "mon_insect_saddler_brood_birth",
-    "name": "Birth",
+    "name": {
+      "str": "出生"
+    },
     "description": "怪物施法的。如果你看到这个，那就读这篇：\n'卡斯特生下2-5个婴儿马鞍。这些马鞍充满了隐藏的潜能，一旦他们感觉到周围的危险，他们就有能力更快地成长为一个成熟的战斗马鞍",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "HOSTILE_SUMMON",
       "RANDOM_DAMAGE",
       "PERMANENT",
@@ -5445,7 +5824,9 @@
   {
     "type": "SPELL",
     "id": "mon_insect_saddler_brood_birth_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -5455,12 +5836,12 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -5470,10 +5851,15 @@
   {
     "id": "mon_insect_saddler_baby_potent_grow_null_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -5482,43 +5868,48 @@
     "shape": "blast",
     "extra_effects": [
       {
-        "id": "secro_spell_null",
+        "id": "sacrifice_spell",
         "hit_self": true
       }
     ],
     "effect_str": "mon_insect_saddler_baby_potent_grow_null_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "type": "SPELL",
     "id": "mon_insect_saddler_baby_potent_grow_scout",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n“施法者变成了马鞍侦察兵。”",
     "flags": [
       "SILENT",
-      "HOSTILE_SUMMON",
-      "PERMANENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ground"
+      "self"
     ],
-    "min_damage": 1,
-    "max_damage": 1,
-    "effect": "summon",
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_insect_saddler_scout"
   },
   {
     "id": "mon_insect_saddler_baby_potent_grow_scout_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -5533,37 +5924,42 @@
     ],
     "effect_str": "mon_insect_saddler_baby_potent_grow_scout_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "type": "SPELL",
     "id": "mon_insect_saddler_baby_potent_grow_brute",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这篇：\n“施法者变成了马鞍兽。”",
     "flags": [
       "SILENT",
-      "HOSTILE_SUMMON",
-      "PERMANENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ground"
+      "self"
     ],
-    "min_damage": 1,
-    "max_damage": 1,
-    "effect": "summon",
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_insect_saddler_brute"
   },
   {
     "id": "mon_insect_saddler_baby_potent_grow_brute_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -5578,37 +5974,42 @@
     ],
     "effect_str": "mon_insect_saddler_baby_potent_grow_brute_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "type": "SPELL",
     "id": "mon_insect_saddler_baby_potent_grow",
-    "name": "Morph",
+    "name": {
+      "str": "变形"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n“施法者变成了马鞍。”",
     "flags": [
       "SILENT",
-      "HOSTILE_SUMMON",
-      "PERMANENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ground"
+      "self"
     ],
-    "min_damage": 1,
-    "max_damage": 1,
-    "effect": "summon",
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_insect_saddler"
   },
   {
     "id": "mon_insect_saddler_baby_potent_grow_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -5623,14 +6024,14 @@
     ],
     "effect_str": "mon_insect_saddler_baby_potent_grow_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "type": "SPELL",
     "id": "mon_insect_saddler_baby_potent_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "extra_effects": [
       {
@@ -5666,44 +6067,41 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_damage": 1,
     "max_damage": 1,
     "min_range": 10,
-    "max_range": 10,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 10
   },
   {
     "type": "SPELL",
     "id": "mon_insect_saddler_baby_potent_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
-      {
-        "id": "sacrifice_spell",
-        "hit_self": true
-      },
       {
         "id": "mon_insect_saddler_baby_potent_target_random"
       }
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -5713,10 +6111,14 @@
   {
     "id": "mon_sflesh_tendril_lace",
     "type": "SPELL",
-    "name": "Lacerate",
+    "name": {
+      "str": "撕裂"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n“施法者鞭打目标，造成切割伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -5733,10 +6135,14 @@
   {
     "id": "mon_sflesh_vbeast_wlace",
     "type": "SPELL",
-    "name": "Wide Lacerate",
+    "name": {
+      "str": "宽裂口"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读这篇：\n“施法者以一个大圆锥体鞭打目标，造成切割伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_AOE"
     ],
@@ -5756,10 +6162,14 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_surface_spawner_tendril",
-    "name": "Summon Flesh Tendrils",
+    "name": {
+      "str": "召唤肉须"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者通过自身通道来提醒肉体，召唤肉体卷须作为回应。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "HOSTILE_SUMMON",
       "RANDOM_DAMAGE",
       "RANDOM_DURATION",
@@ -5784,10 +6194,14 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_surface_spawner_jaw",
-    "name": "Summon Jawed Fleshes",
+    "name": {
+      "str": "召唤下颚肉"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者通过自身通道来提醒肉身，称下颚肉为回应。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "HOSTILE_SUMMON",
       "RANDOM_DAMAGE",
       "RANDOM_DURATION",
@@ -5812,7 +6226,9 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_surface_spawner_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -5826,13 +6242,13 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "min_damage": 1,
     "max_damage": 1,
@@ -5844,10 +6260,14 @@
   {
     "id": "mon_sflesh_entrance_open",
     "type": "SPELL",
-    "name": "Veinhole Death",
+    "name": {
+      "str": "静脉孔死亡"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者的死亡留下了一个洞，作为进入肉体内部的入口。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "IGNORE_WALLS",
       "NO_PROJECTILE"
     ],
@@ -5868,10 +6288,14 @@
   {
     "id": "mon_sflesh_sack_hatch",
     "type": "SPELL",
-    "name": "Hatch",
+    "name": {
+      "str": "舱口"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者舱口，使自己成为一个舱口袋。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "IGNORE_WALLS",
       "NO_PROJECTILE"
     ],
@@ -5887,10 +6311,14 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_sack_birth",
-    "name": "Birth",
+    "name": {
+      "str": "出生"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这篇：\n“卡斯特孵化器，将新生的副细胞送入田野。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "HOSTILE_SUMMON",
       "RANDOM_DAMAGE",
       "PERMANENT",
@@ -5910,7 +6338,9 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_sack_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -5927,12 +6357,13 @@
       }
     ],
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -5942,7 +6373,9 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_taken_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -5951,12 +6384,13 @@
       }
     ],
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -5966,10 +6400,14 @@
   {
     "id": "mon_sflesh_flesh_bioacc",
     "type": "SPELL",
-    "name": "Accurate Biohazard",
+    "name": {
+      "str": "精确的生物危害"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n“施法者准确地将目标下方的肉体转化为生物危害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "IGNORE_WALLS",
       "NO_PROJECTILE"
     ],
@@ -5989,10 +6427,14 @@
   {
     "id": "mon_sflesh_flesh_bio",
     "type": "SPELL",
-    "name": "Biohazard",
+    "name": {
+      "str": "生物危害"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n“施法者将目标下方的肉体转化为生物危害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "IGNORE_WALLS",
       "NO_PROJECTILE"
     ],
@@ -6012,10 +6454,14 @@
   {
     "id": "mon_sflesh_flesh_bio_bone",
     "type": "SPELL",
-    "name": "Cleanse",
+    "name": {
+      "str": "净化"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读这篇：\n“施法者清除多余陷阱的区域。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
@@ -6032,10 +6478,14 @@
   {
     "id": "mon_sflesh_flesh_bio_tent",
     "type": "SPELL",
-    "name": "Cleanse",
+    "name": {
+      "str": "净化"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读这篇：\n“施法者清除多余陷阱的区域。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "IGNORE_WALLS",
       "NO_PROJECTILE"
     ],
@@ -6053,10 +6503,14 @@
   {
     "id": "mon_sflesh_flesh_trap",
     "type": "SPELL",
-    "name": "Flesh Augmentation",
+    "name": {
+      "str": "增肌"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n“施法者将目标的位置转换成一个增强陷阱，使其适合生物危害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "IGNORE_WALLS",
       "NO_PROJECTILE"
     ],
@@ -6074,10 +6528,14 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_flesh_taken",
-    "name": "Swarm of the Taken",
+    "name": {
+      "str": "成群结队的人"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'施法者通过通灵自身将其能量带进能量场。它们从下面冒出来，这使它们更加强大",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "HOSTILE_SUMMON",
       "RANDOM_TARGET",
       "PERMANENT",
@@ -6097,7 +6555,9 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_flesh_taken_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -6112,13 +6572,15 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_TARGET",
       "WONDER",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ground"
+      "none"
     ],
     "min_damage": 1,
     "max_damage": 3,
@@ -6130,7 +6592,9 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_flesh_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -6155,12 +6619,13 @@
       }
     ],
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -6170,11 +6635,15 @@
   {
     "id": "mon_sflesh_flesh_bio_death",
     "type": "SPELL",
-    "name": "Fleshed Collapse",
+    "name": {
+      "str": "肉质崩塌"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这篇：\n“施法者之死导致所有陷阱失效，变得不活跃和看不见。”",
     "message": "<color_light_green>随着肉的融化，周围的生物危害已经恢复正常……</color>\n<color_dark_gray>肉是活的，但它的普遍控制在很大程度上阻碍了它。</color>",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "IGNORE_WALLS",
       "NO_PROJECTILE"
     ],
@@ -6193,10 +6662,14 @@
   {
     "id": "mon_sflesh_wall_ing",
     "type": "SPELL",
-    "name": "Fortify",
+    "name": {
+      "str": "加固"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者在其位置上创建一堵墙。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "IGNORE_WALLS",
       "NO_PROJECTILE"
     ],
@@ -6212,7 +6685,9 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_wall_ing_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -6221,12 +6696,13 @@
       }
     ],
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -6236,7 +6712,9 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_wall_city_ing_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -6249,12 +6727,13 @@
       }
     ],
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -6264,10 +6743,14 @@
   {
     "id": "mon_sflesh_flesh_city_thrash",
     "type": "SPELL",
-    "name": "Thrash",
+    "name": {
+      "str": "鞭打"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者周围厚厚的触角猛击该区域，对所有受影响的生物造成中度打击伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -6292,10 +6775,14 @@
   {
     "id": "mon_sflesh_flesh_city_fturmoil",
     "type": "SPELL",
-    "name": "Fleshed Turmoil",
+    "name": {
+      "str": "充实的混乱"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就读一读这篇：\n“施法者释放了塔的破坏性湍流——所有隐藏在肉体下的触手都会冲向整个区域，造成无意识并对所有受影响的生物造成巨大的冲击伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_DURATION",
       "NO_PROJECTILE"
@@ -6326,10 +6813,15 @@
   {
     "id": "mon_sflesh_flesh_city_fturmoil_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -6343,14 +6835,14 @@
     ],
     "effect_str": "mon_sflesh_flesh_city_fturmoil_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "type": "SPELL",
     "id": "mon_sflesh_flesh_city_fturmoil_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -6404,13 +6896,15 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_TARGET",
       "WONDER",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "min_damage": 1,
     "max_damage": 1,
@@ -6422,10 +6916,15 @@
   {
     "id": "mon_sflesh_flesh_city_tthrust_head",
     "type": "SPELL",
-    "name": "Tendril Thrust",
+    "name": {
+      "str": "卷须推力"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n‘施法者用触角刺穿目标，造成刺伤伤害。’",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "affected_body_parts": [
       "head"
@@ -6445,10 +6944,15 @@
   {
     "id": "mon_sflesh_flesh_city_tthrust_torso",
     "type": "SPELL",
-    "name": "Tendril Thrust",
+    "name": {
+      "str": "卷须推力"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n‘施法者用触角刺穿目标，造成刺伤伤害。’",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "affected_body_parts": [
       "torso"
@@ -6468,10 +6972,15 @@
   {
     "id": "mon_sflesh_flesh_city_tthrust_larm",
     "type": "SPELL",
-    "name": "Tendril Thrust",
+    "name": {
+      "str": "卷须推力"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n‘施法者用触角刺穿目标，造成刺伤伤害。’",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "affected_body_parts": [
       "arm_l"
@@ -6491,10 +7000,15 @@
   {
     "id": "mon_sflesh_flesh_city_tthrust_rarm",
     "type": "SPELL",
-    "name": "Tendril Thrust",
+    "name": {
+      "str": "卷须推力"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n‘施法者用触角刺穿目标，造成刺伤伤害。’",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "affected_body_parts": [
       "arm_r"
@@ -6514,10 +7028,15 @@
   {
     "id": "mon_sflesh_flesh_city_tthrust_lleg",
     "type": "SPELL",
-    "name": "Tendril Thrust",
+    "name": {
+      "str": "卷须推力"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n‘施法者用触角刺穿目标，造成刺伤伤害。’",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "affected_body_parts": [
       "leg_l"
@@ -6537,10 +7056,15 @@
   {
     "id": "mon_sflesh_flesh_city_tthrust_rleg",
     "type": "SPELL",
-    "name": "Tendril Thrust",
+    "name": {
+      "str": "卷须推力"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n‘施法者用触角刺穿目标，造成刺伤伤害。’",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "affected_body_parts": [
       "leg_r"
@@ -6560,10 +7084,14 @@
   {
     "id": "mon_sflesh_flesh_city_tthrust",
     "type": "SPELL",
-    "name": "Tendril Thrust",
+    "name": {
+      "str": "卷须推力"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'的施法者形成几个针状触须，打击目标，击中一个随机的肢体。这是从1到4随机铸造的",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER"
     ],
     "valid_targets": [
@@ -6599,7 +7127,9 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_flesh_city_tthrust_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -6608,13 +7138,15 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_TARGET",
       "WONDER",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "min_damage": 1,
     "max_damage": 4,
@@ -6626,10 +7158,14 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_flesh_city_wall",
-    "name": "Compress",
+    "name": {
+      "str": "压缩"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就读一读：\n“施法者直接从塔上劈下一大块肉，形成一堵肉墙。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "HOSTILE_SUMMON",
       "RANDOM_TARGET",
       "PERMANENT",
@@ -6649,7 +7185,9 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_flesh_city_wall_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -6658,13 +7196,15 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_TARGET",
       "WONDER",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ground"
+      "none"
     ],
     "min_damage": 1,
     "max_damage": 2,
@@ -6676,7 +7216,9 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_flesh_city_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -6712,28 +7254,30 @@
       }
     ],
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_range": 10,
-    "max_range": 10,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 10
   },
   {
     "id": "mon_sflesh_flesh_weak_thrash",
     "type": "SPELL",
-    "name": "Thrash",
+    "name": {
+      "str": "鞭打"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者周围厚厚的触角猛击该区域，对所有受影响的生物造成中度打击伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -6750,7 +7294,9 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_flesh_weak_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -6758,28 +7304,30 @@
       }
     ],
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_range": 15,
-    "max_range": 15,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 15
   },
   {
     "id": "mon_sflesh_zombie_turret_aspit",
     "type": "SPELL",
-    "name": "Acid Spit",
+    "name": {
+      "str": "酸液"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'施法者向目标喷出一团酸液，造成酸液伤害，并在其下方产生血酸。随机铸造2到4次",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -6800,7 +7348,9 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_zombie_turret_aspit_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -6809,11 +7359,13 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "WONDER"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "min_damage": 2,
     "max_damage": 4,
@@ -6825,10 +7377,15 @@
   {
     "id": "mon_sflesh_zombie_turret_aspit_target_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile",
@@ -6843,17 +7400,19 @@
     ],
     "effect_str": "mon_sflesh_zombie_turret_aspit_target_YES",
     "min_aoe": 10,
-    "max_aoe": 10,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 10
   },
   {
     "id": "mon_sflesh_zombie_turret_adischarge",
     "type": "SPELL",
-    "name": "Acid Discharge",
+    "name": {
+      "str": "酸排放"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者通过核心通道，产生大量的酸并最终排出，对所有受影响的生物造成酸伤害，并在周围产生血酸。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -6875,10 +7434,15 @@
   {
     "id": "mon_sflesh_zombie_turret_adischarge_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile",
@@ -6894,14 +7458,14 @@
     ],
     "effect_str": "mon_sflesh_zombie_turret_adischarge_YES",
     "min_aoe": 10,
-    "max_aoe": 10,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 10
   },
   {
     "type": "SPELL",
     "id": "mon_sflesh_zombie_turret_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -6916,11 +7480,13 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "WONDER"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "min_damage": 1,
     "max_damage": 1,
@@ -6932,10 +7498,15 @@
   {
     "id": "mon_sflesh_zombie_spitter_cspread",
     "type": "SPELL",
-    "name": "Corrosive Spread",
+    "name": {
+      "str": "腐蚀性扩散"
+    },
     "description": "怪物施法的。如果你看到这个，那就读这篇：\n“施法者的血酸扩散得更远。”",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile",
@@ -6956,10 +7527,15 @@
     "//": "In order to recreate the SPIT special attack, we used a spell... Downside is, it is perfectly accurate.",
     "id": "mon_sflesh_zombie_spitter_cspit",
     "type": "SPELL",
-    "name": "Corrosive Spit",
+    "name": {
+      "str": "腐蚀性唾沫"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n'施法者将一团浓缩的酸液喷到目标上，在撞击时爆炸，在一大片区域内产生血酸。'",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile",
@@ -6983,10 +7559,14 @@
   {
     "id": "mon_sflesh_veinstalk_spread_near",
     "type": "SPELL",
-    "name": "Devour",
+    "name": {
+      "str": "散布"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者引导肉身扩散到附近的瓷砖上。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "IGNORE_WALLS",
       "NO_PROJECTILE"
     ],
@@ -7003,10 +7583,14 @@
   {
     "id": "mon_sflesh_veinstalk_spread_far",
     "type": "SPELL",
-    "name": "Devour",
+    "name": {
+      "str": "散布"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'施法者引导肉身扩散到附近的瓷砖上。这种扩散范围更广",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "IGNORE_WALLS",
       "NO_PROJECTILE"
     ],
@@ -7023,7 +7607,9 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_veinstalk_spread_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "message": "<npcname>锁定了目标…",
     "extra_effects": [
@@ -7038,27 +7624,30 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_range": 70,
-    "max_range": 70,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 70
   },
   {
     "id": "mon_secro_turret_hpdown",
     "type": "SPELL",
-    "name": "Energy Consumption",
+    "name": {
+      "str": "能源消耗"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n“施法者的射击消耗了他们的生命。”",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "self"
@@ -7071,10 +7660,14 @@
   {
     "id": "mon_secro_electurret_elecshock",
     "type": "SPELL",
-    "name": "Electroshock",
+    "name": {
+      "str": "电击"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者释放出一个高电流，震惊了附近所有的生物。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -7095,7 +7688,9 @@
   {
     "type": "SPELL",
     "id": "mon_secro_electurret_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -7105,12 +7700,12 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -7120,10 +7715,14 @@
   {
     "id": "mon_secro_gravturret_energize",
     "type": "SPELL",
-    "name": "Energize",
+    "name": {
+      "str": "激励"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'施法者用其完全累积的磁场射击目标，形成一个能磁化任何生物的通电区域，使它们在其aoe中完全固定10圈。'",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
@@ -7144,10 +7743,15 @@
   {
     "id": "mon_secro_laserturret_heatray",
     "type": "SPELL",
-    "name": "Heat Ray",
+    "name": {
+      "str": "热射线"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者用集中的热射线射击，穿透目标。”",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile",
@@ -7165,10 +7769,15 @@
   {
     "id": "mon_secro_laserturret_mod_heatray",
     "type": "SPELL",
-    "name": "Heat Ray",
+    "name": {
+      "str": "热射线"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者用集中的热射线射击，穿透目标。”",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile",
@@ -7192,10 +7801,14 @@
   {
     "id": "mon_shifter_stun",
     "type": "SPELL",
-    "name": "Blackout",
+    "name": {
+      "str": "停电"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这篇：\n“施法者的环绕光环剧烈扭曲，导致附近的生物失去知觉1-3圈。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "NO_PROJECTILE"
     ],
@@ -7213,10 +7826,15 @@
   {
     "id": "mon_shifter_stun_target_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -7231,14 +7849,14 @@
     ],
     "effect_str": "mon_shifter_stun_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "type": "SPELL",
     "id": "mon_shifter_stun_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -7259,11 +7877,13 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ground"
+      "none"
     ],
     "min_damage": 1,
     "max_damage": 1,
@@ -7275,10 +7895,15 @@
   {
     "id": "mon_shifter_distress",
     "type": "SPELL",
-    "name": "Distress",
+    "name": {
+      "str": "危难"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者压倒性的存在会影响目标有知觉的生物，降低它们的耐力。”",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -7292,10 +7917,14 @@
   {
     "id": "mon_shifter_target_atk_onslaught_dmgcutlow",
     "type": "SPELL",
-    "name": "Slash",
+    "name": {
+      "str": "斜线"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n“施法者疯狂地砍向目标，造成轻微的切割伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -7303,19 +7932,6 @@
     ],
     "effect": "attack",
     "shape": "blast",
-    "affected_body_parts": [
-      "head",
-      "torso",
-      "mouth",
-      "eyes",
-      "arm_l",
-      "arm_r",
-      "hand_r",
-      "hand_l",
-      "leg_l",
-      "foot_l",
-      "foot_r"
-    ],
     "min_damage": 4,
     "max_damage": 8,
     "min_range": 2,
@@ -7325,10 +7941,15 @@
   {
     "id": "mon_shifter_target_atk_onslaught_dmgcutlow_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -7342,17 +7963,19 @@
     ],
     "effect_str": "mon_shifter_target_atk_onslaught_dmgcutlow_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "id": "mon_shifter_target_atk_onslaught_dmgcuthigh",
     "type": "SPELL",
-    "name": "Mince",
+    "name": {
+      "str": "切碎"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这篇：\n“施法者用致命一击切割目标，造成切割伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -7382,10 +8005,15 @@
   {
     "id": "mon_shifter_target_atk_onslaught_dmgcuthigh_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -7399,17 +8027,19 @@
     ],
     "effect_str": "mon_shifter_target_atk_onslaught_dmgcuthigh_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "id": "mon_shifter_target_atk_onslaught_dmgpure",
     "type": "SPELL",
-    "name": "Mental Harrowing",
+    "name": {
+      "str": "心痛"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这篇：\n“施法者撕碎目标的形而上学的自我，造成纯粹的伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
@@ -7422,17 +8052,20 @@
     "shape": "blast",
     "effect_str": "mon_shifter_onslaught_dmgpure_dmg",
     "min_range": 2,
-    "max_range": 2,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 2
   },
   {
     "id": "mon_shifter_target_atk_onslaught_dmgpure_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -7446,17 +8079,19 @@
     ],
     "effect_str": "mon_shifter_target_atk_onslaught_dmgpure_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "type": "SPELL",
     "id": "mon_shifter_target_atk_onslaught_illu",
-    "name": "Deceit",
+    "name": {
+      "str": "欺骗"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“卡斯特很快就形成了自己的轮廓。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "PERMANENT",
       "HOSTILE_SUMMON",
       "RANDOM_TARGET",
@@ -7476,10 +8111,15 @@
   {
     "id": "mon_shifter_target_atk_onslaught_illu_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -7498,14 +8138,14 @@
     ],
     "effect_str": "mon_shifter_target_atk_onslaught_illu_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "type": "SPELL",
     "id": "mon_shifter_target_atk_onslaught",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "extra_effects": [
       {
@@ -7544,27 +8184,28 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "RANDOM_DAMAGE",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_damage": 2,
     "max_damage": 4,
     "min_range": 12,
-    "max_range": 12,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 12
   },
   {
     "id": "mon_shifter_target_atk_onslaught_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "valid_targets": [
       "hostile"
@@ -7583,8 +8224,6 @@
     "effect_str": "mon_shifter_target_atk_illu_YES",
     "min_aoe": 69,
     "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1,
     "min_range": 4,
     "max_range": 4,
     "sound_description": "a disconcerting shriek!"
@@ -7592,10 +8231,14 @@
   {
     "id": "mon_shifter_target_atk_tp",
     "type": "SPELL",
-    "name": "Shift",
+    "name": {
+      "str": "班次"
+    },
     "description": "怪物施法的。\n：如果你看到的是这个目标，那么你读的是这个",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_TARGET"
     ],
     "valid_targets": [
@@ -7609,10 +8252,14 @@
   {
     "type": "SPELL",
     "id": "mon_shifter_target_atk_illu",
-    "name": "Deceit",
+    "name": {
+      "str": "欺骗"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读一读：\n“卡斯特形成了自己的轮廓。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "PERMANENT",
       "HOSTILE_SUMMON",
       "RANDOM_TARGET",
@@ -7632,7 +8279,9 @@
   {
     "type": "SPELL",
     "id": "mon_shifter_target_atk_illu_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "extra_effects": [
       {
@@ -7641,17 +8290,18 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "RANDOM_DAMAGE",
       "RANDOM_TARGET",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_damage": 1,
     "max_damage": 3,
     "min_range": 4,
@@ -7660,10 +8310,15 @@
   {
     "id": "mon_shifter_target_atk_illu_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -7681,14 +8336,14 @@
     ],
     "effect_str": "mon_shifter_target_atk_illu_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "type": "SPELL",
     "id": "mon_shifter_target_atk_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "extra_effects": [
       {
@@ -7712,26 +8367,27 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_damage": 1,
     "max_damage": 1,
     "min_range": 12,
-    "max_range": 12,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 12
   },
   {
     "type": "SPELL",
     "id": "mon_shifter_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -7746,12 +8402,12 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -7761,10 +8417,14 @@
   {
     "id": "mon_shifter_illu_target_atk_blind",
     "type": "SPELL",
-    "name": "Enshroud",
+    "name": {
+      "str": "圈套"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者冲进一团黑暗，使目标失明。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DURATION",
       "NO_PROJECTILE"
     ],
@@ -7783,10 +8443,15 @@
   {
     "id": "mon_shifter_illu_target_atk_blind_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -7804,14 +8469,14 @@
     ],
     "effect_str": "mon_shifter_target_atk_illu_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "type": "SPELL",
     "id": "mon_shifter_illu_target_atk_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "extra_effects": [
       {
@@ -7835,26 +8500,27 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_damage": 1,
     "max_damage": 1,
     "min_range": 3,
-    "max_range": 3,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 3
   },
   {
     "type": "SPELL",
     "id": "mon_shifter_illu_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -7863,12 +8529,12 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -7878,10 +8544,14 @@
   {
     "id": "mon_sflesh_fleshling_stap",
     "type": "SPELL",
-    "name": "Satisfied",
+    "name": {
+      "str": "满意的"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n“施法者变得温顺。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DURATION"
     ],
     "valid_targets": [
@@ -7896,10 +8566,14 @@
   {
     "id": "mon_sflesh_fleshling_grow",
     "type": "SPELL",
-    "name": "Grow",
+    "name": {
+      "str": "成长"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n“施法者在吞食后制造质量。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DURATION"
     ],
     "valid_targets": [
@@ -7914,33 +8588,33 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_tiny_evo",
-    "name": "Grow",
+    "name": {
+      "str": "成长"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读这篇：\n“施法者成长为一个小肉团。”",
     "flags": [
       "SILENT",
-      "PERMANENT",
-      "HOSTILE_SUMMON",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ground"
+      "self"
     ],
-    "min_damage": 1,
-    "max_damage": 1,
-    "effect": "summon",
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_fleshling_smol"
   },
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_tiny_evo_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
-      {
-        "id": "sacrifice_spell",
-        "hit_self": true
-      },
       {
         "id": "mon_sflesh_fleshling_tiny_evo",
         "hit_self": true
@@ -7948,12 +8622,12 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -7963,7 +8637,9 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_tiny_evo_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "extra_effects": [
       {
@@ -8002,29 +8678,32 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_damage": 1,
     "max_damage": 1,
     "min_range": 1,
-    "max_range": 1,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 1
   },
   {
     "id": "mon_sflesh_fleshling_tiny_devour",
     "type": "SPELL",
-    "name": "Devour",
+    "name": {
+      "str": "吞食"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n“施法者吞噬目标，造成生物伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -8054,33 +8733,33 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_smol_evo",
-    "name": "Grow",
+    "name": {
+      "str": "成长"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读这篇：\n“施法者成长为一个小肉团。”",
     "flags": [
       "SILENT",
-      "PERMANENT",
-      "HOSTILE_SUMMON",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ground"
+      "self"
     ],
-    "min_damage": 1,
-    "max_damage": 1,
-    "effect": "summon",
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_fleshling_med"
   },
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_smol_evo_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
-      {
-        "id": "sacrifice_spell",
-        "hit_self": true
-      },
       {
         "id": "mon_sflesh_fleshling_smol_evo",
         "hit_self": true
@@ -8088,12 +8767,12 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -8103,7 +8782,9 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_smol_evo_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "extra_effects": [
       {
@@ -8157,29 +8838,32 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_damage": 1,
     "max_damage": 1,
     "min_range": 1,
-    "max_range": 1,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 1
   },
   {
     "id": "mon_sflesh_fleshling_smol_devour",
     "type": "SPELL",
-    "name": "Devour",
+    "name": {
+      "str": "吞食"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n“施法者吞噬目标，造成生物伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -8209,33 +8893,33 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_med_evo",
-    "name": "Grow",
+    "name": {
+      "str": "成长"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读这篇：\n“施法者成长为一个小肉团。”",
     "flags": [
       "SILENT",
-      "PERMANENT",
-      "HOSTILE_SUMMON",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ground"
+      "self"
     ],
-    "min_damage": 1,
-    "max_damage": 1,
-    "effect": "summon",
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_fleshling_big"
   },
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_med_evo_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
-      {
-        "id": "sacrifice_spell",
-        "hit_self": true
-      },
       {
         "id": "mon_sflesh_fleshling_med_evo",
         "hit_self": true
@@ -8243,12 +8927,12 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -8258,7 +8942,9 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_med_evo_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "extra_effects": [
       {
@@ -8327,29 +9013,32 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_damage": 1,
     "max_damage": 1,
     "min_range": 1,
-    "max_range": 1,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 1
   },
   {
     "id": "mon_sflesh_fleshling_med_devour",
     "type": "SPELL",
-    "name": "Devour",
+    "name": {
+      "str": "吞食"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n“施法者吞噬目标，造成生物伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -8379,33 +9068,33 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_big_evo",
-    "name": "Grow",
+    "name": {
+      "str": "成长"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读这篇：\n“施法者成长为一个小肉团。”",
     "flags": [
       "SILENT",
-      "PERMANENT",
-      "HOSTILE_SUMMON",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ground"
+      "self"
     ],
-    "min_damage": 1,
-    "max_damage": 1,
-    "effect": "summon",
+    "min_damage": 999999,
+    "max_damage": 999999,
+    "effect": "targeted_polymorph",
     "shape": "blast",
     "effect_str": "mon_sflesh_fleshling_huge"
   },
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_big_evo_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
-      {
-        "id": "sacrifice_spell",
-        "hit_self": true
-      },
       {
         "id": "mon_sflesh_fleshling_big_evo",
         "hit_self": true
@@ -8413,12 +9102,12 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -8428,7 +9117,9 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_big_evo_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "extra_effects": [
       {
@@ -8527,29 +9218,32 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_damage": 1,
     "max_damage": 1,
     "min_range": 1,
-    "max_range": 1,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 1
   },
   {
     "id": "mon_sflesh_fleshling_big_devour",
     "type": "SPELL",
-    "name": "Devour",
+    "name": {
+      "str": "吞食"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n“施法者吞噬目标，造成生物伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -8579,10 +9273,14 @@
   {
     "id": "mon_sflesh_fleshling_huge_devour",
     "type": "SPELL",
-    "name": "Devour",
+    "name": {
+      "str": "吞食"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n“施法者吞噬目标，造成生物伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -8609,10 +9307,14 @@
   {
     "id": "mon_sflesh_fleshling_stingy_bb",
     "type": "SPELL",
-    "name": "Blood Bile",
+    "name": {
+      "str": "血胆汁"
+    },
     "description": "怪物施法的。如果你看到了这个，那就读这篇：\n“施法者弹出一个球茎状疣，在目标周围散布血酸场，造成一点酸伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_AOE"
     ],
     "valid_targets": [
@@ -8636,10 +9338,15 @@
   {
     "id": "mon_sflesh_fleshling_stingy_bb_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -8653,17 +9360,19 @@
     ],
     "effect_str": "mon_sflesh_fleshling_stingy_bb_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "id": "mon_sflesh_fleshling_stingy_whiplash",
     "type": "SPELL",
-    "name": "Whiplash",
+    "name": {
+      "str": "鞭打"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n'施法者摆动一个水平斜杠，对一个大圆锥体中所有受影响的目标造成切割伤害。'",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_AOE",
       "RANDOM_DAMAGE"
     ],
@@ -8684,10 +9393,15 @@
   {
     "id": "mon_sflesh_fleshling_stingy_whiplash_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -8701,17 +9415,19 @@
     ],
     "effect_str": "mon_sflesh_fleshling_stingy_whiplash_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "id": "mon_sflesh_fleshling_stingy_sting",
     "type": "SPELL",
-    "name": "Sting",
+    "name": {
+      "str": "刺"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n“施法者将毒刺刺刺入目标，造成刺伤伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_AOE",
       "RANDOM_DAMAGE"
     ],
@@ -8730,10 +9446,15 @@
   {
     "id": "mon_sflesh_fleshling_stingy_sting_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -8748,14 +9469,14 @@
     "effect_str": "mon_sflesh_fleshling_stingy_sting_YES",
     "min_aoe": 69,
     "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1,
     "base_casting_time": 150
   },
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_stingy_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "extra_effects": [
       {
@@ -8803,30 +9524,33 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "RANDOM_DAMAGE",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_damage": 1,
     "max_damage": 3,
     "min_range": 1,
-    "max_range": 1,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 1
   },
   {
     "id": "mon_sflesh_fleshling_scavengy_flee",
     "type": "SPELL",
-    "name": "Flee",
+    "name": {
+      "str": "逃走"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n‘施法者避免与目标接触。’",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DURATION",
       "NO_PROJECTILE"
     ],
@@ -8842,7 +9566,9 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_scavengy_flee_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -8852,27 +9578,29 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_range": 5,
-    "max_range": 5,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 5
   },
   {
     "id": "mon_sflesh_fleshling_scavengy_explosive_pop",
     "type": "SPELL",
-    "name": "Pop",
+    "name": {
+      "str": "流行音乐"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这篇：\n“施法者爆炸，造成酸伤害并传播血酸。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -8894,7 +9622,9 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_scavengy_explosive_pop_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -8908,27 +9638,29 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_range": 1,
-    "max_range": 1,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 1
   },
   {
     "id": "mon_sflesh_fleshling_scavengy_tent_tentsurprise",
     "type": "SPELL",
-    "name": "Tentacle Surprise",
+    "name": {
+      "str": "触角惊喜"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就读一读这篇：\n“施法者冲进一小堆膜状血管，顶端有锋利的骨刃，然后快速地砍向目标，造成切割伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -8952,7 +9684,9 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_scavengy_sticky_sg",
-    "name": "Sticky Grasp",
+    "name": {
+      "str": "粘性抓握"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n‘施法者粘住目标。’",
     "extra_effects": [
       {
@@ -8962,6 +9696,8 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DURATION",
       "NO_PROJECTILE"
     ],
@@ -8979,10 +9715,14 @@
   {
     "id": "mon_sflesh_fleshling_ravagy_outb_cost",
     "type": "SPELL",
-    "name": "Cost",
+    "name": {
+      "str": "成本"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n“卡斯特付出代价”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
@@ -8990,17 +9730,19 @@
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "mon_sflesh_fleshling_ravagy_outb_pay",
-    "min_duration": 1,
-    "max_duration": 1
+    "effect_str": "mon_sflesh_fleshling_ravagy_outb_pay"
   },
   {
     "id": "mon_sflesh_fleshling_ravagy_outb",
     "type": "SPELL",
-    "name": "Outburst",
+    "name": {
+      "str": "突出"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n'的施法者引导它的身体，让它融合的肢体向各个方向疯狂地投掷自己。被击中的目标受到高打击伤害",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_TARGET"
     ],
@@ -9023,7 +9765,9 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_ravagy_outb_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "extra_effects": [
       {
@@ -9032,30 +9776,34 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "RANDOM_DAMAGE",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_damage": 2,
     "max_damage": 4,
     "min_range": 2,
-    "max_range": 2,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 2
   },
   {
     "id": "mon_sflesh_fleshling_ravagy_outb_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -9073,17 +9821,19 @@
     ],
     "effect_str": "mon_sflesh_fleshling_ravagy_outb_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "id": "mon_sflesh_fleshling_ravagy_fburst_cost",
     "type": "SPELL",
-    "name": "Cost",
+    "name": {
+      "str": "成本"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n“卡斯特付出代价”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
@@ -9091,17 +9841,19 @@
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "mon_sflesh_fleshling_ravagy_fburst_pay",
-    "min_duration": 1,
-    "max_duration": 1
+    "effect_str": "mon_sflesh_fleshling_ravagy_fburst_pay"
   },
   {
     "id": "mon_sflesh_fleshling_ravagy_fburst",
     "type": "SPELL",
-    "name": "Flesh Burst",
+    "name": {
+      "str": "肉爆裂"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这个：\n“施法者身体的一部分爆炸，向目标射出一大块肉，造成重击伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -9119,10 +9871,15 @@
   {
     "id": "mon_sflesh_fleshling_ravagy_fburst_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "hostile"
@@ -9140,14 +9897,14 @@
     ],
     "effect_str": "mon_sflesh_fleshling_ravagy_fburst_YES",
     "min_aoe": 69,
-    "max_aoe": 69,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 69
   },
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_ravagy_target_random",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
     "extra_effects": [
       {
@@ -9201,30 +9958,33 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "RANDOM_DAMAGE",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "secro_magic_target",
     "min_damage": 1,
     "max_damage": 3,
     "min_range": 2,
-    "max_range": 2,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_range": 2
   },
   {
     "id": "mon_sflesh_fleshling_ravagy_shred",
     "type": "SPELL",
-    "name": "Shred",
+    "name": {
+      "str": "切碎"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者的骨骼向邻近目标伸展，造成切割伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_TARGET"
     ],
@@ -9242,7 +10002,9 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_fleshling_ravagy_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -9260,11 +10022,13 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -9274,10 +10038,14 @@
   {
     "id": "mon_sflesh_camp_turret_aspit",
     "type": "SPELL",
-    "name": "Acid Spit",
+    "name": {
+      "str": "酸液"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'施法者向目标喷出一团酸液，造成酸液伤害，并在其下方产生血酸。随机铸造2到4次",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -9298,7 +10066,9 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_camp_turret_aspit_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -9307,11 +10077,13 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "WONDER"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "min_damage": 2,
     "max_damage": 4,
@@ -9323,10 +10095,15 @@
   {
     "id": "mon_sflesh_camp_turret_aspit_target_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "ally"
@@ -9340,17 +10117,19 @@
     ],
     "effect_str": "mon_sflesh_camp_turret_aspit_target_YES",
     "min_aoe": 10,
-    "max_aoe": 10,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 10
   },
   {
     "id": "mon_sflesh_camp_turret_adischarge",
     "type": "SPELL",
-    "name": "Acid Discharge",
+    "name": {
+      "str": "酸排放"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者通过核心通道，产生大量的酸并最终排出，对所有受影响的生物造成酸伤害，并在周围产生血酸。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -9372,10 +10151,15 @@
   {
     "id": "mon_sflesh_camp_turret_adischarge_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "ally"
@@ -9390,14 +10174,14 @@
     ],
     "effect_str": "mon_sflesh_camp_turret_adischarge_YES",
     "min_aoe": 10,
-    "max_aoe": 10,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 10
   },
   {
     "type": "SPELL",
     "id": "mon_sflesh_camp_turret_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -9412,11 +10196,13 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "WONDER"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "min_damage": 1,
     "max_damage": 1,
@@ -9428,10 +10214,14 @@
   {
     "id": "mon_sflesh_camp_turret_blade_swirl",
     "type": "SPELL",
-    "name": "Swirl",
+    "name": {
+      "str": "旋转"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者旋转，向各个方向射出数个骨钉，对被击中的人造成刺伤。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_TARGET"
     ],
@@ -9450,7 +10240,9 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_camp_turret_blade_swirl_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -9459,11 +10251,13 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "WONDER"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "min_damage": 5,
     "max_damage": 10,
@@ -9475,10 +10269,15 @@
   {
     "id": "mon_sflesh_camp_turret_blade_swirl_target_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "ally"
@@ -9492,17 +10291,19 @@
     ],
     "effect_str": "mon_sflesh_camp_turret_blade_swirl_target_YES",
     "min_aoe": 10,
-    "max_aoe": 10,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 10
   },
   {
     "id": "mon_sflesh_camp_turret_blade_slice",
     "type": "SPELL",
-    "name": "Slice",
+    "name": {
+      "str": "切片"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'施法者向目标挥动刀刃，对锥中所有受影响的生物造成切割伤害。'",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_AOE"
     ],
@@ -9523,10 +10324,15 @@
   {
     "id": "mon_sflesh_camp_turret_blade_slice_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "ally"
@@ -9541,14 +10347,14 @@
     ],
     "effect_str": "mon_sflesh_camp_turret_blade_slice_YES",
     "min_aoe": 10,
-    "max_aoe": 10,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 10
   },
   {
     "type": "SPELL",
     "id": "mon_sflesh_camp_turret_blade_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -9569,11 +10375,13 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "WONDER"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "min_damage": 1,
     "max_damage": 1,
@@ -9585,10 +10393,14 @@
   {
     "id": "mon_sflesh_camp_turret_tendril_thrust",
     "type": "SPELL",
-    "name": "Tendril Thrust",
+    "name": {
+      "str": "卷须推力"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么改为阅读这一条：\n'施法者将卷须插入目标，造成刺伤伤害并晕眩几圈",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_TARGET"
     ],
@@ -9609,10 +10421,15 @@
   {
     "id": "mon_sflesh_camp_turret_tendril_thrust_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "ally"
@@ -9627,17 +10444,19 @@
     ],
     "effect_str": "mon_sflesh_camp_turret_tendril_thrust_YES",
     "min_aoe": 10,
-    "max_aoe": 10,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 10
   },
   {
     "id": "mon_sflesh_camp_turret_tendril_slam",
     "type": "SPELL",
-    "name": "Tendril Slam",
+    "name": {
+      "str": "卷须猛击"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者猛击目标，造成高打击伤害，并对小范围内所有受影响的生物造成眩晕。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_TARGET"
     ],
@@ -9660,10 +10479,15 @@
   {
     "id": "mon_sflesh_camp_turret_tendril_slam_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "ally"
@@ -9678,17 +10502,19 @@
     ],
     "effect_str": "mon_sflesh_camp_turret_tendril_slam_YES",
     "min_aoe": 10,
-    "max_aoe": 10,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 10
   },
   {
     "id": "mon_sflesh_camp_turret_tendril_swing",
     "type": "SPELL",
-    "name": "Tendril Swing",
+    "name": {
+      "str": "卷须摆动"
+    },
     "description": "怪物施法的。如果你看到了这一点，那么请阅读这一条：\n'施法者向目标摆动卷须，造成重击伤害，并对锥中所有受影响的生物施加不稳定的立足点。'",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_AOE",
       "RANDOM_TARGET"
@@ -9712,10 +10538,15 @@
   {
     "id": "mon_sflesh_camp_turret_tendril_swing_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "ally"
@@ -9730,14 +10561,14 @@
     ],
     "effect_str": "mon_sflesh_camp_turret_tendril_swing_YES",
     "min_aoe": 10,
-    "max_aoe": 10,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 10
   },
   {
     "type": "SPELL",
     "id": "mon_sflesh_camp_turret_tendril_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -9761,11 +10592,13 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "WONDER"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "min_damage": 1,
     "max_damage": 3,
@@ -9777,10 +10610,14 @@
   {
     "id": "mon_sflesh_camp_turret_mouth_crunch",
     "type": "SPELL",
-    "name": "Crunch",
+    "name": {
+      "str": "嚼"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这篇：\n“施法者用它强壮的下颚咬住目标，造成很高的刺伤伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
@@ -9797,10 +10634,15 @@
   {
     "id": "mon_sflesh_camp_turret_mouth_crunch_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "ally"
@@ -9814,14 +10656,14 @@
     ],
     "effect_str": "mon_sflesh_camp_turret_mouth_crunch_YES",
     "min_aoe": 10,
-    "max_aoe": 10,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 10
   },
   {
     "type": "SPELL",
     "id": "mon_sflesh_camp_turret_mouth_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -9830,11 +10672,13 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "WONDER"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "min_damage": 1,
     "max_damage": 2,
@@ -9846,10 +10690,14 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_camp_turret_unify_form_bv",
-    "name": "Form Blood Vessel",
+    "name": {
+      "str": "形成血管"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这篇：\n‘脚轮形成血管。’",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_TARGET",
       "NO_PROJECTILE"
     ],
@@ -9869,10 +10717,14 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_camp_turret_unify_form_bf",
-    "name": "Form Blood Fiend",
+    "name": {
+      "str": "形成血魔"
+    },
     "description": "怪物施法的。如果你看到这个，那就读这篇：\n“施法者形成血妖”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_TARGET",
       "NO_PROJECTILE"
     ],
@@ -9892,7 +10744,9 @@
   {
     "type": "SPELL",
     "id": "mon_sflesh_camp_turret_unify_form_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -9922,13 +10776,13 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "WONDER",
       "RANDOM_DAMAGE"
     ],
     "valid_targets": [
-      "ally",
-      "hostile",
-      "ground"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -9940,10 +10794,15 @@
   {
     "id": "mon_sflesh_camp_turret_unify_form_target_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "ally"
@@ -9957,14 +10816,14 @@
     ],
     "effect_str": "mon_sflesh_camp_turret_unify_form_target_YES",
     "min_aoe": 10,
-    "max_aoe": 10,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 10
   },
   {
     "type": "SPELL",
     "id": "mon_sflesh_camp_turret_unify_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -9972,10 +10831,13 @@
       }
     ],
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "effect": "attack",
     "shape": "blast",
@@ -9985,10 +10847,14 @@
   {
     "id": "mon_sflesh_camp_turret_hravager_thrust",
     "type": "SPELL",
-    "name": "Decimate",
+    "name": {
+      "str": "毁灭"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这篇：\n“施法者造成致命一击，对目标造成巨大的切割伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_TARGET"
     ],
@@ -10006,10 +10872,15 @@
   {
     "id": "mon_sflesh_camp_turret_hravager_thrust_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "ally"
@@ -10024,17 +10895,19 @@
     ],
     "effect_str": "mon_sflesh_camp_turret_hravager_thrust_YES",
     "min_aoe": 10,
-    "max_aoe": 10,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 10
   },
   {
     "id": "mon_sflesh_camp_turret_hravager_slam",
     "type": "SPELL",
-    "name": "Tendril Slash",
+    "name": {
+      "str": "卷须刀"
+    },
     "description": "怪物施法的。如果你看到了这个，那就改读这篇：\n“施法者切割目标，造成切割伤害。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_TARGET"
     ],
@@ -10052,10 +10925,15 @@
   {
     "id": "mon_sflesh_camp_turret_hravager_slam_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "ally"
@@ -10070,17 +10948,19 @@
     ],
     "effect_str": "mon_sflesh_camp_turret_hravager_slam_YES",
     "min_aoe": 10,
-    "max_aoe": 10,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 10
   },
   {
     "id": "mon_sflesh_camp_turret_hravager_swing",
     "type": "SPELL",
-    "name": "Tendril Swing",
+    "name": {
+      "str": "卷须摆动"
+    },
     "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者向目标挥舞一根带刃卷须，造成切割伤害，并对圆锥体中所有受影响的生物施加不稳定的立足点。”",
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "RANDOM_AOE",
       "RANDOM_TARGET"
@@ -10104,10 +10984,15 @@
   {
     "id": "mon_sflesh_camp_turret_hravager_swing_note",
     "type": "SPELL",
-    "name": "a note",
+    "name": {
+      "str": "一张便条"
+    },
     "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
     "flags": [
-      "SILENT"
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
     ],
     "valid_targets": [
       "ally"
@@ -10122,14 +11007,14 @@
     ],
     "effect_str": "mon_sflesh_camp_turret_hravager_swing_YES",
     "min_aoe": 10,
-    "max_aoe": 10,
-    "min_duration": 1,
-    "max_duration": 1
+    "max_aoe": 10
   },
   {
     "type": "SPELL",
     "id": "mon_sflesh_camp_turret_hravager_target",
-    "name": "a spell",
+    "name": {
+      "str": "咒语"
+    },
     "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
     "extra_effects": [
       {
@@ -10177,11 +11062,13 @@
     ],
     "flags": [
       "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
       "RANDOM_DAMAGE",
       "WONDER"
     ],
     "valid_targets": [
-      "hostile"
+      "none"
     ],
     "min_damage": 1,
     "max_damage": 3,
@@ -10189,5 +11076,678 @@
     "shape": "blast",
     "min_range": 5,
     "max_range": 5
+  },
+  {
+    "id": "mon_zombieworm_onger_destroy",
+    "type": "SPELL",
+    "name": {
+      "str": "破坏"
+    },
+    "description": "怪物施法的。如果你看到了这一点，那就读这篇：\n“施法者摧毁附近平坦的地形，为他们创造新的道路。”",
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "IGNORE_WALLS",
+      "NO_PROJECTILE",
+      "RANDOM_TARGET",
+      "RANDOM_AOE"
+    ],
+    "valid_targets": [
+      "ground",
+      "ally",
+      "hostile"
+    ],
+    "effect": "ter_transform",
+    "shape": "cone",
+    "effect_str": "secro_wormonger_destroy",
+    "min_range": 3,
+    "max_range": 3,
+    "min_aoe": 45,
+    "max_aoe": 15
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_zombieworm_onger_destroy_random",
+    "name": {
+      "str": "咒语"
+    },
+    "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后随机施放一个法术。'",
+    "extra_effects": [
+      {
+        "id": "mon_zombieworm_onger_destroy",
+        "hit_self": true
+      }
+    ],
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "WONDER",
+      "RANDOM_DAMAGE",
+      "NO_PROJECTILE"
+    ],
+    "valid_targets": [
+      "none"
+    ],
+    "effect": "attack",
+    "shape": "blast",
+    "min_damage": 1,
+    "max_damage": 2,
+    "min_range": 70,
+    "max_range": 70
+  },
+  {
+    "id": "mon_zombieworm_onger_destroy_self",
+    "type": "SPELL",
+    "name": {
+      "str": "破坏"
+    },
+    "description": "怪物施法的。如果你看到了这个，那就改读这个：\n‘施法者摧毁下面的瓷砖。’",
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "IGNORE_WALLS",
+      "NO_PROJECTILE"
+    ],
+    "valid_targets": [
+      "self"
+    ],
+    "effect": "ter_transform",
+    "shape": "blast",
+    "effect_str": "secro_wormonger_destroy",
+    "min_aoe": 1,
+    "max_aoe": 1
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_zombieworm_onger_stun",
+    "name": {
+      "str": "尖叫"
+    },
+    "description": "怪物施法的目标。如果你看到了这个，那就改读这个：\n“施法者的尖叫震晕附近的目标。”",
+    "flags": [
+      "NO_PROJECTILE"
+    ],
+    "valid_targets": [
+      "hostile"
+    ],
+    "effect": "attack",
+    "shape": "blast",
+    "effect_str": "stunned",
+    "min_aoe": 7,
+    "max_aoe": 7,
+    "min_duration": 100,
+    "max_duration": 300
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_zombieworm_onger_destroy_target",
+    "name": {
+      "str": "咒语"
+    },
+    "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
+    "message": "<npcname>锁定了目标…",
+    "extra_effects": [
+      {
+        "id": "mon_zombieworm_onger_destroy_random"
+      },
+      {
+        "id": "mon_zombieworm_onger_destroy_self",
+        "hit_self": true
+      },
+      {
+        "id": "mon_zombieworm_onger_stun",
+        "hit_self": true
+      }
+    ],
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
+    ],
+    "valid_targets": [
+      "none"
+    ],
+    "effect": "attack",
+    "shape": "blast",
+    "min_range": 70,
+    "max_range": 70
+  },
+  {
+    "id": "mon_zombieworm_universal_destroy",
+    "type": "SPELL",
+    "name": {
+      "str": "破坏"
+    },
+    "description": "怪物施法的。如果你看到了这一点，那就读这篇：\n“施法者摧毁附近平坦的地形，为他们创造新的道路。”",
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "IGNORE_WALLS",
+      "NO_PROJECTILE",
+      "RANDOM_TARGET",
+      "RANDOM_AOE"
+    ],
+    "valid_targets": [
+      "ground",
+      "ally",
+      "hostile"
+    ],
+    "effect": "ter_transform",
+    "shape": "cone",
+    "effect_str": "secro_wormonger_destroy",
+    "min_range": 2,
+    "max_range": 2,
+    "min_aoe": 30,
+    "max_aoe": 10
+  },
+  {
+    "id": "mon_zombieworm_universal_destroy_self",
+    "type": "SPELL",
+    "name": {
+      "str": "破坏"
+    },
+    "description": "怪物施法的。如果你看到了这个，那就改读这个：\n‘施法者摧毁下面的瓷砖。’",
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "IGNORE_WALLS",
+      "NO_PROJECTILE"
+    ],
+    "valid_targets": [
+      "self"
+    ],
+    "effect": "ter_transform",
+    "shape": "blast",
+    "effect_str": "secro_wormonger_destroy",
+    "min_aoe": 1,
+    "max_aoe": 1
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_zombieworm_gravedigger_destroy_target",
+    "name": {
+      "str": "咒语"
+    },
+    "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
+    "message": "<npcname>锁定了目标…",
+    "extra_effects": [
+      {
+        "id": "mon_zombieworm_universal_destroy"
+      },
+      {
+        "id": "mon_zombieworm_universal_destroy_self",
+        "hit_self": true
+      }
+    ],
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
+    ],
+    "valid_targets": [
+      "none"
+    ],
+    "effect": "attack",
+    "shape": "blast",
+    "min_range": 70,
+    "max_range": 70
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_zombieworm_wriggly_destroy_target",
+    "name": {
+      "str": "咒语"
+    },
+    "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
+    "message": "<npcname>锁定了目标…",
+    "extra_effects": [
+      {
+        "id": "mon_zombieworm_universal_destroy"
+      },
+      {
+        "id": "mon_zombieworm_universal_destroy_self",
+        "hit_self": true
+      },
+      {
+        "id": "mon_zombieworm_wriggly_target"
+      }
+    ],
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
+    ],
+    "valid_targets": [
+      "none"
+    ],
+    "effect": "attack",
+    "shape": "blast",
+    "min_range": 70,
+    "max_range": 70
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_zombieworm_mawy_destroy_target",
+    "name": {
+      "str": "咒语"
+    },
+    "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
+    "message": "<npcname>锁定了目标…",
+    "extra_effects": [
+      {
+        "id": "mon_zombieworm_universal_destroy"
+      },
+      {
+        "id": "mon_zombieworm_universal_destroy_self",
+        "hit_self": true
+      },
+      {
+        "id": "mon_zombieworm_mawy_target_random"
+      }
+    ],
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
+    ],
+    "valid_targets": [
+      "none"
+    ],
+    "effect": "attack",
+    "shape": "blast",
+    "min_range": 70,
+    "max_range": 70
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_szombie_vessel_blades",
+    "name": {
+      "str": "武器-刀片"
+    },
+    "description": "怪物施法的。如果你看到了这一点，那就改读这一条：\n“施法者将他们的手臂扩张成锋利的骨刃。”",
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
+    ],
+    "valid_targets": [
+      "self"
+    ],
+    "effect": "attack",
+    "shape": "blast",
+    "effect_str": "mon_szombie_vessel_arma_blades",
+    "min_duration": 69000,
+    "min_range": 69,
+    "min_aoe": 69
+  },
+  {
+    "id": "mon_szombie_vessel_blades_note",
+    "type": "SPELL",
+    "name": {
+      "str": "一张便条"
+    },
+    "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
+    ],
+    "valid_targets": [
+      "hostile"
+    ],
+    "effect": "attack",
+    "shape": "blast",
+    "extra_effects": [
+      {
+        "id": "mon_szombie_vessel_blades",
+        "hit_self": true
+      }
+    ],
+    "effect_str": "mon_szombie_vessel_blades_YES",
+    "min_aoe": 69,
+    "min_duration": 1
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_szombie_vessel_tents",
+    "name": {
+      "str": "武器-触角"
+    },
+    "description": "怪物施法的。如果你看到了这个，那就读这篇：\n“施法者的身体长出了几根又粗又细的触角。”",
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
+    ],
+    "valid_targets": [
+      "self"
+    ],
+    "effect": "attack",
+    "shape": "blast",
+    "effect_str": "mon_szombie_vessel_arma_tents",
+    "min_duration": 69000,
+    "min_range": 69,
+    "min_aoe": 69
+  },
+  {
+    "id": "mon_szombie_vessel_tents_note",
+    "type": "SPELL",
+    "name": {
+      "str": "一张便条"
+    },
+    "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
+    ],
+    "valid_targets": [
+      "hostile"
+    ],
+    "effect": "attack",
+    "shape": "blast",
+    "extra_effects": [
+      {
+        "id": "mon_szombie_vessel_tents",
+        "hit_self": true
+      }
+    ],
+    "effect_str": "mon_szombie_vessel_tents_YES",
+    "min_aoe": 69,
+    "min_duration": 1
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_szombie_vessel_biters",
+    "name": {
+      "str": "武器-咬人者"
+    },
+    "description": "怪物施法的。如果你看到了这个，那就改读这篇：\n“施法者将他们的手臂扩大成咬人的手臂。”",
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
+    ],
+    "valid_targets": [
+      "self"
+    ],
+    "effect": "attack",
+    "shape": "blast",
+    "effect_str": "mon_szombie_vessel_arma_biters",
+    "min_duration": 69000,
+    "min_range": 69,
+    "min_aoe": 69
+  },
+  {
+    "id": "mon_szombie_vessel_biters_note",
+    "type": "SPELL",
+    "name": {
+      "str": "一张便条"
+    },
+    "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
+    ],
+    "valid_targets": [
+      "hostile"
+    ],
+    "effect": "attack",
+    "shape": "blast",
+    "extra_effects": [
+      {
+        "id": "mon_szombie_vessel_biters",
+        "hit_self": true
+      }
+    ],
+    "effect_str": "mon_szombie_vessel_biters_YES",
+    "min_aoe": 69,
+    "min_duration": 1
+  },
+  {
+    "id": "mon_szombie_vessel_spitter",
+    "type": "SPELL",
+    "name": {
+      "str": "酸液"
+    },
+    "description": "由物品施法。如果你看到了这个，那就改读这个：\n“施法者的喷吐武器向目标吐酸。”",
+    "message": "",
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "RANDOM_DAMAGE",
+      "RANDOM_DURATION"
+    ],
+    "valid_targets": [
+      "hostile"
+    ],
+    "effect": "attack",
+    "shape": "blast",
+    "effect_str": "secro_blood_acid",
+    "min_damage": 4,
+    "max_damage": 8,
+    "min_range": 69,
+    "damage_type": "acid",
+    "min_duration": 75,
+    "max_duration": 175
+  },
+  {
+    "id": "mon_szombie_vessel_spitter_note",
+    "type": "SPELL",
+    "name": {
+      "str": "一张便条"
+    },
+    "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
+    ],
+    "valid_targets": [
+      "hostile"
+    ],
+    "effect": "attack",
+    "shape": "blast",
+    "extra_effects": [
+      {
+        "id": "mon_szombie_vessel_spitter"
+      }
+    ],
+    "effect_str": "mon_szombie_vessel_spitter_YES",
+    "min_aoe": 69,
+    "min_duration": 1
+  },
+  {
+    "id": "mon_szombie_vessel_spitter_cs",
+    "type": "SPELL",
+    "name": {
+      "str": "深红色淋浴"
+    },
+    "description": "由物品施法。如果你看到了这个，那就改读这篇：\n“施法者的唾沫武器对目标进行深红冲锋-造成酸伤害并传播血酸场。”",
+    "message": "",
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "RANDOM_DAMAGE",
+      "RANDOM_DURATION"
+    ],
+    "valid_targets": [
+      "hostile",
+      "ground"
+    ],
+    "effect": "attack",
+    "shape": "cone",
+    "effect_str": "secro_blood_acid",
+    "min_damage": 5,
+    "max_damage": 10,
+    "min_range": 4,
+    "damage_type": "acid",
+    "min_duration": 125,
+    "max_duration": 250,
+    "min_aoe": 45,
+    "field_id": "fd_blood_acid",
+    "field_chance": 2,
+    "min_field_intensity": 1,
+    "max_field_intensity": 1
+  },
+  {
+    "id": "mon_szombie_vessel_spitter_cs_note",
+    "type": "SPELL",
+    "name": {
+      "str": "一张便条"
+    },
+    "description": "注意怪物施法。如果你看到了这个，那就改读这个：\n提供了一个关于施法结果的通知",
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
+    ],
+    "valid_targets": [
+      "hostile"
+    ],
+    "effect": "attack",
+    "shape": "blast",
+    "extra_effects": [
+      {
+        "id": "mon_szombie_vessel_spitter_cs"
+      }
+    ],
+    "effect_str": "mon_szombie_vessel_spitter_cs_YES",
+    "min_aoe": 69,
+    "min_duration": 1
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_szombie_vessel_range_target_random",
+    "name": {
+      "str": "咒语"
+    },
+    "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
+    "message": "<npcname>锁定了目标…",
+    "extra_effects": [
+      {
+        "id": "mon_szombie_vessel_spitter_cs_note"
+      },
+      {
+        "id": "mon_szombie_vessel_spitter_note"
+      },
+      {
+        "id": "mon_szombie_vessel_spitter_note"
+      },
+      {
+        "id": "mon_szombie_vessel_spitter_note"
+      },
+      {
+        "id": "mon_szombie_vessel_spitter_note"
+      },
+      {
+        "id": "mon_szombie_vessel_spitter_note"
+      }
+    ],
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "WONDER",
+      "NO_PROJECTILE"
+    ],
+    "valid_targets": [
+      "none"
+    ],
+    "effect": "attack",
+    "shape": "blast",
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 69,
+    "max_range": 69
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_szombie_vessel_fite_target_random",
+    "name": {
+      "str": "咒语"
+    },
+    "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
+    "message": "<npcname>锁定了目标…",
+    "extra_effects": [
+      {
+        "id": "mon_szombie_vessel_biters_note"
+      },
+      {
+        "id": "mon_szombie_vessel_tents_note"
+      },
+      {
+        "id": "mon_szombie_vessel_blades_note"
+      }
+    ],
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "WONDER",
+      "NO_PROJECTILE"
+    ],
+    "valid_targets": [
+      "none"
+    ],
+    "effect": "attack",
+    "shape": "blast",
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 69,
+    "max_range": 69
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_szombie_vessel_target",
+    "name": {
+      "str": "咒语"
+    },
+    "description": "怪物施法的目标。如果你看到了这个，那么改读这个：\n'施法者将视线锁定在目标上，然后施法",
+    "message": "<npcname>锁定了目标…",
+    "extra_effects": [
+      {
+        "id": "mon_szombie_vessel_fite_target_random"
+      },
+      {
+        "id": "mon_szombie_vessel_range_target_random"
+      }
+    ],
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "WONDER",
+      "NO_PROJECTILE"
+    ],
+    "valid_targets": [
+      "none"
+    ],
+    "effect": "attack",
+    "shape": "blast",
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 16,
+    "max_range": 16
   }
 ]
