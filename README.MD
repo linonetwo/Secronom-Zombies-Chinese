@@ -32,3 +32,12 @@ The _secronom.zip_ file contains the latest mod version's files that works for p
 ### Additional info:
 
 _Secronom_ mod folder has informational texts that might help you out...
+
+## Discord Links
+Discord servers the maintainer/author of this mod actively participates.
+
+#### SomeDeadGuy's Server for Undead Schmucks
+* https://discord.gg/M7MG7hnV5p
+
+#### CDDA Modding Community
+* https://discord.gg/PuMsXMPwaU
